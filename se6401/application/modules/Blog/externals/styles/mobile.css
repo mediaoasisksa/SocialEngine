@@ -1,0 +1,287 @@
+
+/* $Id: mobile.css 8825 2011-04-09 01:34:20Z john $ */
+
+
+
+/*
+COMPOSE BLOG ENTRY
+Styles the compose blog entry form.
+*/
+#blogs_create div.form-label
+{
+  float: none;
+  text-align: left;
+  margin: 0px;
+  padding: 0px 0px 5px 0px;
+}
+#blogs_create div.form-element
+{
+  float: none;
+}
+
+
+
+
+
+
+/*
+BROWSE BLOGS
+Styles the browse blogs page and the
+manage blog entries page.
+*/
+#show-wrapper
+{
+  display: none;
+}
+ul.blogs_browse
+{
+  clear: both;
+}
+ul.blogs_browse > li
+{
+  clear: both;
+  padding: 0px 0px 15px 0px;
+  overflow:hidden;
+}
+ul.blogs_browse > li + li
+{
+  border-top-width: 1px;
+  padding-top: 15px;
+}
+ul.blogs_browse > li .blogs_browse_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 20px;
+}
+ul.blogs_browse > li .blogs_browse_photo img
+{
+  width: 100px;
+  display:block;
+}
+ul.blogs_browse > li .blogs_browse_options
+{
+  display: none;
+}
+ul.blogs_browse > li .blogs_browse_options > a
+{
+  clear: both;
+  display: block;
+  font-size: 0.9em;
+  margin: 0 5px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+ul.blogs_browse > li .blogs_browse_info
+{
+  overflow: hidden;
+}
+ul.blogs_browse > li .blogs_browse_info_title
+{
+  font-weight: bold;
+  font-size: 13pt;
+  letter-spacing: -1px
+}
+ul.blogs_browse > li .blogs_browse_info_title > h3
+{
+  font-size: 12pt;
+}
+ul.blogs_browse > li .blogs_browse_info_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+ul.blogs_browse > li .blogs_browse_info .stat_info
+{
+  margin: 5px 0;
+}
+ul.blogs_browse > li .blogs_browse_info .stat_info span
+{
+  margin-right: 8px;
+}
+ul.blogs_browse > li .blogs_browse_info .views_blog
+{
+  display:none;
+}
+ul.blogs_browse > li .blogs_browse_info_blurb
+{
+  margin-top: 5px;
+}
+
+
+
+/*
+VIEW BLOG
+Styles both the 'view blog' and the 'view blog entry'
+pages, including the right-side gutter column by default.
+*/
+ul.blogs_entrylist > li
+{
+  padding-bottom: 10px;
+  border-bottom-width: 1px;
+  margin-bottom: 10px
+}
+ul.blogs_entrylist h3
+{
+  margin-bottom: 1px;
+}
+ul.blogs_entrylist .blog_entrylist_entry_date
+{
+  font-size: 9pt;
+  margin-bottom: 5px;
+  color: $theme_font_color_light;
+  text-align: center;
+}
+ul.blogs_entrylist .blog_entrylist_entry_body
+{
+  padding: 5px 5px 5px 0px;
+  margin: 0px;
+}
+ul.blogs_entrylist .blog_entrylist_entry_body img
+{
+  max-width: 100%;
+}
+ul.blogs_entrylist .blog_entrylist_entry_body + .buttonlink
+{
+  margin-top: 5px;
+}
+ul.blogs_entrylist + .comments
+{
+  padding-top: 10px;
+}
+#global_page_blog-index-view .layout_left
+{
+  display: none;
+}
+#global_page_blog-index-view h2
+{
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 1.3em;
+}
+#global_page_blog-index-view .comments
+{
+  width: auto;
+}
+div.blog_entrylist_entry_body.rich_content_body >p{
+padding-bottom: 1em;
+}
+div.blog_entrylist_entry_body.rich_content_body > ol{
+    padding: 0em 0em 1em 1em;
+}
+.rich_content_body blockquote {
+  border: 1px dashed $theme_border_medium_color;
+  background: $theme_body_background_color;
+  padding: 10px;
+  margin: 10px 10px;
+  display: block;
+}
+
+/* ACTION TYPE ICONS */
+.activity_icon_comment_blog:before
+{
+  content: "\\f075";
+  font-family:'Font Awesome\ 5 Free';
+}
+
+
+
+
+/* ITEM TYPE ICONS */
+.item_icon_blog:before,
+.item_icon_blog_entry:before
+{
+  content: "\\f0f6";
+  font-family:'Font Awesome\ 5 Free';
+}
+
+
+
+
+/* ICONS */
+.icon_blog_new
+{
+  position:relative;
+}
+
+.icon_blog_new:before 
+{
+  content: "\\f15c";
+}
+.icon_blog_new:after
+{
+  content: "\\f055";
+	font-weight: 900 !important;
+}
+
+.icon_blog_edit:before 
+{
+  content: "\\f303";
+	font-weight:900 !important;
+}
+.icon_blog_delete:before 
+{
+  content: "\\f056";
+	font-weight:900 !important;
+}
+.icon_blog_style:before 
+{
+  content: "\\f1fc";
+	font-weight:900 !important;
+}
+.icon_blog_viewall:before
+{
+  content: "\\f15c";
+}
+
+/*
+FEED ITEMS
+Styles items with classified attachments in the feed.
+*/
+ul.feed .feed_attachment_blog
+{
+  display: block;
+  overflow: hidden;
+  margin: 0px 5px 5px 0px;
+  vertical-align: top;
+}
+ul.feed .feed_attachment_blog > div > a
+{
+  display: block;
+  margin-bottom: 10px;
+}
+ul.feed .feed_attachment_blog > div > a > img
+{
+  display:block;
+  max-width:100%;
+	width:100%;
+  max-height:250px;
+	object-fit:cover;
+	object-position:center;
+  vertical-align: top;
+}
+ul.feed .feed_attachment_blog > div > div
+{
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hide menu items */
+.headline .tabs .navigation li > a.blog_main_create
+{
+  display: none;
+}

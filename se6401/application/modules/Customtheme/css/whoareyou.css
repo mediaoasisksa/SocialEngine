@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  overflow-x: hidden;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+nav {
+  background-color: #e0e0e0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: black;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #294f96;
+}
+
+nav img {
+  margin-left: -30px;
+}
+
+.icon-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-nav i:not(:last-child) {
+  margin-right: 20px;
+}
+
+.icon-nav i {
+  font-size: 20px;
+  color: #1e3869;
+}
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: -55px;
+  margin-top: 0.125rem;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+.btn-secondary:focus {
+  outline: none;
+  border: none;
+}
+.btn-secondary:hover {
+  background-color: rgba(192, 192, 192, 0.822);
+}
+/*End Nav  */
+
+/* start Home Page */
+.bg-home-who {
+  background-color: #1e3869;
+  width: 100%;
+  height: 500px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-who {
+  text-align: center;
+}
+
+.div-who h2 {
+  margin-bottom: 20px;
+}
+.div-who p {
+  margin-bottom: 30px;
+}
+
+.div-who button {
+  background-color: #3fb2ca;
+  padding: 10px;
+  width: 250px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  transition: all 0.3s;
+}
+
+.div-who button:hover {
+  background-color: white;
+  color: black;
+}
+/* end Home Page */
+
+/* Start Section Who Are */
+.section-Who {
+  background-color: #f7f7f7;
+  padding: 30px 0;
+}
+
+.Who-Are-All {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.Who-Are-Text {
+  max-width: 500px;
+}
+
+.enwan-khat {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.khat {
+  background-color: #1e3869;
+  width: 50px;
+  height: 3px;
+}
+
+.img-Who img {
+  max-width: 500px;
+}
+
+@media (max-width: 1200px) {
+  .img-Who img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .img-Who img {
+    max-width: 300px;
+  }
+  .Who-Are-All {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .Who-two {
+    flex-direction: column-reverse;
+  }
+}
+/* End Section Who Are */
+
+/* start SEction Main */
+
+.Main-Priciples {
+  background-color: #cfd2d8;
+  margin-bottom: 30px;
+  padding: 30px 0;
+}
+
+.box-main-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-main {
+  max-width: 400px;
+  /* height: 200px; */
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.box-main:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
+}
+
+.box-main h2 {
+  color: #455a6434;
+  font-weight: bold;
+}
+
+.num-Main {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #455a6434;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1300px) {
+  .box-main h2 {
+    color: #455a6434;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .box-main {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .box-main h2 {
+    color: #455a6434;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .box-main {
+    width: 300px;
+  }
+}
+@media (max-width: 991px) {
+  .box-main h2 {
+    color: #455a6434;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .box-main {
+    width: 220px;
+  }
+  .num-Main {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-color: #455a6434;
+    padding: 5px;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .box-main-all {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-main {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .box-main h2 {
+    color: #455a6434;
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+/* End SEction Main */
+
+/* start section Objectiv */
+.section-Objectiv {
+  background-color: #f7f7f7;
+  padding: 30px 0;
+}
+.enwan-Why-Consul2 {
+  text-align: center;
+}
+
+.enwan-Why-Consul2 h2 {
+  color: #1e3869;
+  margin-top: 70px;
+}
+
+.enwan-Why-Consul2 .khat-enwan-why {
+  width: 100px;
+  height: 2px;
+  background-color: #1e3869;
+  margin: 10px auto 30px;
+}
+
+.box-Objectiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.box-Objectiv-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.box-Objectiv .box {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.box-Objectiv .box:hover {
+  background-color: white;
+  transform: scale(1.05, 1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+}
+
+.box-Objectiv .box:hover .num-Objective {
+  transform: rotate(50deg);
+}
+
+.num-Objective {
+  background-color: silver;
+  border-radius: 50%;
+  padding: 15px;
+  position: absolute;
+  color: white;
+  top: -20px;
+  left: 45%;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1300px) {
+  .box-Objectiv .box {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .box-Objectiv .box {
+    width: 280px;
+  }
+}
+
+@media (max-width: 991px) {
+  .box-Objectiv .box {
+    width: 225px;
+  }
+}
+
+@media (max-width: 767px) {
+  .box-Objectiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .box-Objectiv .box {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+}
+/* End section Objectiv */
+
+/* start footer */
+footer {
+  background-color: #cfd2d8;
+  padding: 20px 0;
+  color: white;
+}
+.foot-All {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.foot-All a {
+  text-decoration: none;
+  color: white;
+}
+
+.foot-All a:hover {
+  color: #27498a;
+}
+
+.foot-All h2 {
+  color: #1e3869;
+}
+.foot-All h4 {
+  color: #1e3869;
+}
+.About-Foot a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.LOGO-FOOT {
+  text-align: center;
+}
+
+.LOGO-FOOT a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.LOGO-FOOT i:hover {
+  cursor: pointer;
+  color: #294f96;
+}
+
+.khat-foot {
+  background-color: #1e3869;
+  width: 100%;
+  height: 1px;
+}
+
+.txt-under-foot {
+  text-align: center;
+  color: #1e3869;
+}
+
+.txt-under-foot p {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+@media (max-width: 991px) {
+  .Contact-Us-Foot {
+    text-align: center;
+  }
+  .About-Foot {
+    text-align: center;
+  }
+  .Follow-Us-Foot {
+    text-align: center;
+  }
+  .English {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .foot-All {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .Contact-Us-Foot {
+    text-align: left;
+  }
+  .About-Foot {
+    text-align: left;
+  }
+  .Follow-Us-Foot {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .LOGO-FOOT {
+    text-align: left;
+  }
+  .English {
+    text-align: left;
+  }
+}
+/* end footer */

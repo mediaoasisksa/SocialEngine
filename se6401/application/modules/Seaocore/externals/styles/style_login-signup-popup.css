@@ -1,0 +1,487 @@
+/* SEAO core login & signup popup CSS start */
+/*.seaocore_popup_user_form_login ._slpff .form-label,
+.seaocore_popup_user_form_login .form-label
+.seaocore_popup_user_form_signup ._sspff .form-label,
+.seaocore_popup_user_form_signup .form-label {
+  display: none;
+}*/
+.seaocore_popup_user_form_signup.global_form #terms-wrapper .form-label,
+.seaocore_popup_user_form_signup ._sspff .form-element p {
+  display: none;
+}
+.seaocore_popup_user_form_login.global_form > div > div > h3 + div,
+.seaocore_popup_user_form_login.global_form > div > div > h3 + p + div,
+.seaocore_popup_user_form_signup.global_form > div > div > h3 + div,
+.seaocore_popup_user_form_signup.global_form > div > div > h3 + p + div{
+  margin-top: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+  box-sizing: border-box;
+}
+.seaocore_popup_user_form_login .form-element,
+._sspff  .form-element {
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
+
+.seaocore_popup_user_form_login.global_form ._slpff .form-element,
+.seaocore_popup_user_form_signup.global_form ._sspff .form-element {
+  width: 100%;
+  position: relative;
+  padding-left: 22px;
+  box-sizing: border-box;
+  min-width: 200px;
+}
+[dir="rtl"] .seaocore_popup_user_form_login.global_form ._slpff .form-element,
+[dir="rtl"] .seaocore_popup_user_form_signup.global_form ._sspff .form-element {
+	padding-right: 22px;
+	padding-left: 0;
+}
+.seaocore_popup_user_form_login.global_form div.form-element,
+.seaocore_popup_user_form_signup.global_form div.form-element {
+  min-width: 200px;
+}
+.seaocore_popup_user_form_login.global_form ._slpff  input[type="text"],
+.seaocore_popup_user_form_login.global_form ._slpff input[type="email"],
+.seaocore_popup_user_form_login.global_form ._slpff input[type="password"],
+.seaocore_popup_user_form_login.global_form ._slpff  input.text,
+.seaocore_popup_user_form_login.global_form ._slpff textarea,
+.seaocore_popup_user_form_login.global_form ._slpff div.form-element select,
+.seaocore_popup_user_form_signup.global_form ._sspff  div.form-element input[type="text"],
+.seaocore_popup_user_form_signup.global_form ._sspff div.form-element input[type="email"],
+.seaocore_popup_user_form_signup.global_form ._sspff div.form-element input[type="password"],
+.seaocore_popup_user_form_signup.global_form ._sspff  div.form-element input.text,
+.seaocore_popup_user_form_signup.global_form ._sspff div.form-element textarea,
+.seaocore_popup_user_form_signup.global_form ._sspff div.form-element select,
+.seaocore_popup_user_form_signup div.form-element select {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0 10px;
+  height: 40px;
+  outline: 0;
+  margin-bottom: 0;
+}
+.seaocore_popup_user_form_login.global_form ._slpff input[type=text]:focus,
+.seaocore_popup_user_form_login.global_form ._slpff input[type=email]:focus,
+.seaocore_popup_user_form_login.global_form ._slpff input[type=password]:focus,
+.seaocore_popup_user_form_login.global_form ._slpff input.text:focus,
+.seaocore_popup_user_form_login.global_form ._slpff textarea:focus,
+.seaocore_popup_user_form_login.global_form ._slpff select:focus,
+.seaocore_popup_user_form_signup.global_form ._sspff input[type=text]:focus,
+.seaocore_popup_user_form_signup.global_form ._sspff input[type=email]:focus,
+.seaocore_popup_user_form_signup.global_form ._sspff input[type=password]:focus,
+.seaocore_popup_user_form_signup.global_form ._sspff  input.text:focus,
+.seaocore_popup_user_form_signup.global_form ._sspff textarea:focus,
+.seaocore_popup_user_form_signup.global_form ._sspff select:focus,
+.seaocore_popup_user_form_signup.global_form select:focus {
+  width: 100% !important;
+  max-width: 100%;
+  transition-delay: 0s, 0s;
+  transition-duration: 0.2s, 0.2s;
+  transition-property: border, box-shadow;
+  transition-timing-function: linear, linear;
+}
+.seaocore_popup_user_form_login .form-email-phone-wrapper._slpff .form-element::before {
+  content: "\f007";
+}
+.seaocore_popup_user_form_login .form-wrapper._slpff .form-element::before,
+.seaocore_popup_user_form_signup .form-wrapper._sspff .form-element::before  {
+  display: block;
+  font-family: 'Font Awesome 5 Free';
+  position: absolute;
+  left: 1px;
+  width: 22px;
+  bottom: 0;
+  line-height: 33px;
+  font-size: 14px;
+  text-align: left;
+  text-rendering: auto;
+  font-weight:900;
+}
+[dir="rtl"] .seaocore_popup_user_form_login .form-wrapper._slpff .form-element::before,
+[dir="rtl"] .seaocore_popup_user_form_signup .form-wrapper._sspff .form-element::before {
+	right: 1px;
+	left: auto;
+	text-align: right;
+}
+.seaocore_popup_user_form_signup .form-description,
+.seaocore_popup_user_form_login .form-description,
+.seaocore_popup_user_form_signup h3,
+.seaocore_popup_user_form_login h3{
+  display: none;
+}
+.seaocore_popup_user_form_login .form-wrapper._slpff #password-element::before {
+  content: "\f023";
+}
+
+.seaocore_popup_user_form_login .form-wrapper._slpff #email-element::before {
+  content: "\f007";
+}
+
+.seaocore_popup_user_form_signup .form-wrapper.sitemenu_popup_form_field #phoneno-element::before {
+  content: "\f10b";
+  font-size: 20px;
+}
+.seaocore_popup_user_form_login .form-email-wrapper._slpff .form-element::before {
+  content: "\f0e0";
+}
+.seaocore_popup_user_form_login .form-wrapper._slpff #show-hide-password-element {
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  line-height: normal;
+}
+[dir="rtl"] .seaocore_popup_user_form_login .form-wrapper._slpff #show-hide-password-element {
+	left: 5px;
+	right: auto;
+}
+.global_form.seaocore_popup_user_form_signup .form-wrapper .user_showhidepassword {
+  top: 55% !important;
+}
+.seaocore_popup_user_form_login #submit-wrapper, .seaocore_popup_user_form_login #submit-element {
+  padding-left: 0px;
+}
+.seaocore_popup_user_form_login #submit-wrapper button, .seaocore_popup_user_form_login #submit-element button  {
+  width: 100%;
+}
+.seaocore_login_popup_wrapper .seaocore_popup_user_form_login #remember-wrapper{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.seaocore_popup_user_form_login #remember-wrapper .form-element  {
+  margin-top: 5px;
+  padding-left: 0px;
+  margin-bottom: 5px;
+  min-width: 200px;
+}
+.seaocore_popup_user_form_login .form-wrapper._slpff.form-wapper-focus .form-element::before,
+.seaocore_popup_user_form_signup .form-wrapper._sspff.form-wapper-focus .form-element::before {
+  width: 100% !important;
+  max-width: 100%;
+  transition-delay: 0s, 0s;
+  transition-duration: 0.2s, 0.2s;
+  transition-property: border, box-shadow;
+  transition-timing-function: linear, linear;
+}
+
+.seaocore_popup_user_form_signup.global_form ._sspff div.form-element select,
+.seaocore_popup_user_form_signup.global_form  div.form-element select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-image: url('../images/down-arrow.png');
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding-right: 30px;
+}
+[dir="rtl"] .seaocore_popup_user_form_signup.global_form ._sspff div.form-element select,
+[dir="rtl"] .seaocore_popup_user_form_signup.global_form  div.form-element select {
+  background-image: url('../images/down-arrow.png');
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding-left: 30px;
+  padding-right: 0;
+}
+.seaocore_popup_user_form_signup.global_form ._sspff div.form-element select::-ms-expand,
+.seaocore_popup_user_form_signup.global_form  div.form-element select::-ms-expand {	display: none; }
+.seaocore_login_popup_wrapper ._form_wapper #user_form_login,
+.seaocore_login_popup_wrapper ._form_wapper #sociallogin_signup_popup {
+  padding: 0 15px;
+/*  max-width: 450px;*/
+}
+.seaocore_login_popup_wrapper ._form_wapper #user_form_login .form-elements {
+	padding: 0;
+}
+.seaocore_login_popup_wrapper ._form_wapper .global_form > div > div {
+  border: none;
+  padding: 0px;
+}
+/*.seaocore_login_popup_wrapper .seaocore_popup_user_form_signup #terms-wrapper input + label {
+  display: contents;
+}*/
+.seaocore_login_popup_wrapper ._sspff .form-label label {
+  font-size: 13px;
+}
+.seaocore_login_popup_wrapper .seaocore_popup_user_form_signup h3 {
+  display: none;
+}
+.seaocore_login_popup_wrapper .seaocore_popup_user_form_signup h2 {
+  text-align: center;
+}
+.seaocore_login_popup_wrapper #seaocore_signupform_sociallinks {
+  text-align: center;
+}
+.seaocore_login_popup_wrapper .seaocore_popup_user_form_signup #submit-element,
+.seaocore_login_popup_wrapper .seaocore_popup_user_form_login #submit-element {
+  text-align: right;
+}
+[dir="rtl"] .seaocore_login_popup_wrapper .seaocore_popup_user_form_signup #submit-element,
+[dir="rtl"] .seaocore_login_popup_wrapper .seaocore_popup_user_form_login #submit-element {
+	text-align: left;
+}
+.seaocore_login_popup_wrapper .seaocore_popup_user_form_login #submit-wrapper{
+  float: right !important;
+}
+[dir="rtl"] .seaocore_login_popup_wrapper .seaocore_popup_user_form_login #submit-wrapper {
+	float: left !important;
+}
+.seaocore_login_popup_wrapper .seaocore_popup_user_form_login #forgot-label {
+	display: none;
+}
+.seaocore_login_popup_wrapper .seaocore_popup_user_form_login #forgot-element{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  text-align: center;
+
+}
+.seaocore_popup_user_form_signup .form-email-wrapper._sspff .form-element::before {
+  content: "\f0e0";
+}
+
+.seaocore_popup_user_form_signup .form-user-wrapper._sspff .form-element::before {
+  content: "\f007";
+}
+
+
+.seaocore_popup_user_form_signup .form-wrapper._sspff #phoneno-element::before {
+  content: "\f10b";
+  font-size: 20px;
+}
+.seaocore_popup_user_form_signup .form-wrapper._sspff.sitemenu_popup_profile_type_form_field .form-element::before,
+.seaocore_popup_user_form_signup  .form-wrapper._sspff #profile_type-element::before {
+  content: "\f007";
+}
+
+.seaocore_popup_user_form_signup .form-wrapper._sspff #password-element::before {
+  content: "\f023";
+}
+.seaocore_popup_user_form_signup .form-wrapper._sspff #passconf-element::before {
+  content: "\f023";
+}/*
+.seaocore_popup_user_form_signup ._spfhf#passconf-wrapper,
+.seaocore_popup_user_form_signup ._spfhf#language-wrapper {
+  margin-left: 2%;
+}*/
+.seaocore_popup_user_form_signup .form-wrapper._sspff #username-element::before {
+  content: "\f2b9";
+}
+.seaocore_popup_user_form_signup .form-wrapper._spfhf #timezone-element::before {
+  content: "\f017";
+}
+.seaocore_popup_user_form_signup .form-wrapper._spfhf #language-element::before {
+  content: "\f1ab";
+}
+
+.seaocore_login_popup_wrapper .seaocore_popup_user_form_signup {
+  margin-top: 5px;
+}
+.seaocore_login_popup_wrapper .seaocore_popup_user_form_signup #seaocore_signupform_sociallinks,
+.seaocore_popup_user_form_login #seaocore_loginform_sociallinks {
+  text-align: center;
+  /*background-color: $theme_form_background_color;*/
+  padding: 10px;
+}
+
+.seaocore_popup_user_form_login #seaocore_loginform_sociallinks {
+  text-align: center;
+}
+.seaocore_popup_user_form_login #seaocore_loginform_sociallinks .form-wrapper {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  margin-right: 5px;
+  border: none;
+}
+.seaocore_popup_user_form_login #seaocore_loginform_sociallinks .form-element {
+  margin-top: 0px;
+  /*padding-left: 0px;*/
+  margin-bottom: 0px;
+}
+
+.seaocore_popup_user_form_login #seaocore_loginform_sociallinks .form-wrapper:last-child {
+  margin-right: 0px;
+}
+.seaocore_popup_user_form_login #seaocore_loginform_sociallinks #twitter-wrapper a img,
+.seaocore_popup_user_form_login #seaocore_loginform_sociallinks  #facebook-wrapper a  img,
+#seaocore_signupform_sociallinks #facebook-wrapper #facebook-element a img,
+#seaocore_signupform_sociallinks #twitter-wrapper #twitter-element a img {
+  display: none;
+}
+
+.seaocore_popup_user_form_login #seaocore_loginform_sociallinks #twitter-wrapper #twitter-element a::before,
+#seaocore_signupform_sociallinks #twitter-wrapper #twitter-element a::before {
+  content:'\f099';
+  color: #fff;
+  font-family: 'Font Awesome 5 Brands';
+  font-size: 18px;
+  background-color: #55acee;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+.seaocore_popup_user_form_login #seaocore_loginform_sociallinks #twitter-wrapper #twitter-element a:hover::before,
+#seaocore_signupform_sociallinks #twitter-wrapper #twitter-element a:hover::before {
+  background-color: #62b8f9;
+}
+.seaocore_popup_user_form_login #seaocore_loginform_sociallinks #facebook-wrapper  #facebook-element a::before,
+#seaocore_signupform_sociallinks #facebook-wrapper #facebook-element a::before {
+  content:'\f09a';
+  color: #fff;
+  font-family: 'Font Awesome 5 Free','fontawesome';
+  font-size: 18px;
+  background-color: #3b5998;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+.seao_user_auth_popup  .sociallogin_signin_popup .signin_page_heading h2{
+  display: none !important;
+}
+.seaocore_popup_user_form_login #seaocore_loginform_sociallinks #facebook-wrapper  #facebook-element a:hover::before, 
+#seaocore_signupform_sociallinks #facebook-wrapper #facebook-element a:hover::before {
+  background-color: #3c61ae;
+}
+.global_form.seaocore_popup_user_form_signup #facebook-element {
+  width: auto;
+}
+#seaocore_signupform_sociallinks #twitter,
+#seaocore_signupform_sociallinks #facebook {
+  display: inline-block;
+  margin: 3px;
+}
+
+.seaocore_login_popup_wrapper .seao_smoothbox_lightbox_content_html {
+  min-width: 100%;
+  padding: 0;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.seaocore_login_popup_wrapper .seao_smoothbox_lightbox_content_html .user_login_page .user_login_form {
+  background: transparent;
+}
+
+.seaocore_login_popup_wrapper .seaocore_popup_user_form_login #buttons-wrapper {
+  margin-top: 0px;
+}
+.seaocore_popup_user_form_login #janrain-element.form-element {
+  padding-left: 0px;
+  text-align: center;
+}
+.seaocore_popup_user_form_login #janrain-element a.janrainEngage {
+  text-align: center;
+}
+.seaocore_login_popup_wrapper .seaocore_popup_user_form_login p.form-description {
+  font-size: 12px;
+}
+.seaocore_login_popup_wrapper ._headline-poup{
+  margin-bottom: 25px;
+}
+.seaocore_login_popup_wrapper ._headline-poup ._close_icon{
+  position: absolute;
+  font-size: 20px;
+  cursor: pointer;
+  height: 45px;
+  text-align: center;
+  width: 45px;
+  line-height: 45px;
+  right: 0px;
+}
+[dir="rtl"] .seaocore_login_popup_wrapper ._headline-poup ._close_icon {
+	left: 0px;
+	right: auto;
+}
+.seaocore_login_popup_wrapper ._headline-poup ._navigation{
+  font-size: 20px;
+  line-height: 20px;
+  padding: 0;
+  text-transform: none;
+  overflow: hidden;
+}
+.seaocore_login_popup_wrapper ._headline-poup ._navigation li{
+  display: none;
+  text-align: center;
+  line-height: 20px;
+  padding: 12px 15px;
+}
+.seaocore_login_popup_wrapper ._headline-poup ._navigation li.active {
+  display: block;
+}
+.seaocore_login_popup_wrapper ._form_wapper ._navigation._footer_bottom{
+  padding-top: 10px;
+}
+.seaocore_login_popup_wrapper ._form_wapper ._navigation._footer_bottom li{
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.seao_smoothbox_lightbox_content.seaocore_login_popup_wrapper{
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translate(-50%, 0);
+  max-width: 500px;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+	border-radius: 3px;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+@media only screen and (min-width: 601px) {
+  .seao_user_signup_popup ._spfhf#timezone-wrapper,
+  .seao_user_signup_popup ._spfhf#language-wrapper {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+  }/*
+  .seao_user_signup_popup ._spfhf#passconf-wrapper,
+  .seao_user_signup_popup ._spfhf#language-wrapper {
+    margin-left: 2%;
+  }
+  [dir="rtl"] .seao_user_signup_popup ._spfhf#passconf-wrapper,
+  [dir="rtl"] .seao_user_signup_popup ._spfhf#language-wrapper {
+    margin-left: 0;
+	  margin-right: 2%;
+  }*/
+  .seaocore_login_popup_wrapper .seao_smoothbox_lightbox_content_html {
+    min-width: 400px;
+	  border-radius: 3px;
+  }
+  .seaocore_popup_user_form_login.global_form div.form-element,
+  .seaocore_popup_user_form_signup.global_form div.form-element {
+    min-width: auto;
+  }
+  /*.seaocore_popup_user_form_login.global_form ._slpff .form-element,
+  .seaocore_popup_user_form_signup.global_form ._sspff .form-element {
+    min-width: 400px;
+  }*/
+  .seaocore_popup_user_form_signup.global_form ._spfhf .form-element{
+    min-width: 200px;
+  }
+  .seao_smoothbox_lightbox_content.seaocore_login_popup_wrapper{
+    top: 100px;
+  }
+}
+/* SEAO core login & signup popup CSS end */

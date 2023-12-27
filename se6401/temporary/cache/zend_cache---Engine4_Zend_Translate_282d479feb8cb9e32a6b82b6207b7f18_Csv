@@ -1,0 +1,100 @@
+a:1:{s:2:"en";a:67:{s:38:"_EMAIL_SERVICE_TELLAFRIEND_EMAIL_TITLE";s:27:"Service Tell a Friend Email";s:44:"_EMAIL_SERVICE_TELLAFRIEND_EMAIL_DESCRIPTION";s:91:"This is the email that gets sent to friends when a user wants to tell them about a Service.";s:40:"_EMAIL_SERVICE_TELLAFRIEND_EMAIL_SUBJECT";s:45:"[sender_name] wants you to visit this Service";s:37:"_EMAIL_SERVICE_TELLAFRIEND_EMAIL_BODY";s:283:"[header]
+
+Your friend [sender_name] with email id: [sender_email] wants you to look at the Service: [service_title].
+
+To view and explore this service, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+Your friend has also sent a message:
+
+[message]
+
+[footer]";s:39:"_EMAIL_PROVIDER_TELLAFRIEND_EMAIL_TITLE";s:28:"Provider Tell a Friend Email";s:45:"_EMAIL_PROVIDER_TELLAFRIEND_EMAIL_DESCRIPTION";s:100:"This is the email that gets sent to friends when a user wants to tell them about a Service Provider.";s:41:"_EMAIL_PROVIDER_TELLAFRIEND_EMAIL_SUBJECT";s:54:"[sender_name] wants you to visit this Service Provider";s:38:"_EMAIL_PROVIDER_TELLAFRIEND_EMAIL_BODY";s:294:"[header]
+
+Your friend [sender_name] with email id: [sender_email] wants you to look at the Service Provider: [provider_title].
+
+To view and explore this provider, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+Your friend has also sent a message:
+
+[message]
+
+[footer]";s:41:"_EMAIL_MAIL_SERVICE_BOOKING_REQUEST_TITLE";s:28:"Service Booking Notification";s:47:"_EMAIL_MAIL_SERVICE_BOOKING_REQUEST_DESCRIPTION";s:59:"This is the email that gets sent when someone book service.";s:43:"_EMAIL_MAIL_SERVICE_BOOKING_REQUEST_SUBJECT";s:35:"[sender_title] has booked a service";s:40:"_EMAIL_MAIL_SERVICE_BOOKING_REQUEST_BODY";s:155:"[header]
+
+
+[sender_title] has booked a service [service_title]. To view the service, please click the following link:
+
+http://[host][object_link]
+
+[footer]";s:40:"_EMAIL_MAIL_SERVICE_BOOKING_CANCEL_TITLE";s:35:"Service Booking Cancel Notification";s:46:"_EMAIL_MAIL_SERVICE_BOOKING_CANCEL_DESCRIPTION";s:72:"This is the email that gets sent when someone cancel the booked service.";s:42:"_EMAIL_MAIL_SERVICE_BOOKING_CANCEL_SUBJECT";s:44:"[sender_title] has canceled a booked service";s:39:"_EMAIL_MAIL_SERVICE_BOOKING_CANCEL_BODY";s:164:"[header]
+
+
+[sender_title] has canceled a booked service [service_title]. To view the service, please click the following link:
+
+http://[host][object_link]
+
+[footer]";s:40:"_EMAIL_MAIL_SERVICE_BOOKING_ACCEPT_TITLE";s:35:"Service Booking Accept Notification";s:46:"_EMAIL_MAIL_SERVICE_BOOKING_ACCEPT_DESCRIPTION";s:78:"This is the email that gets sent when service provider accept booking request.";s:42:"_EMAIL_MAIL_SERVICE_BOOKING_ACCEPT_SUBJECT";s:46:"[sender_title] has accept your booking request";s:39:"_EMAIL_MAIL_SERVICE_BOOKING_ACCEPT_BODY";s:182:"[header]
+
+
+[sender_title] has accept your booking request for the Service [service_title]. To view the service, please click the following link:
+
+http://[host][object_link]
+
+[footer]";s:40:"_EMAIL_MAIL_SERVICE_BOOKING_REJECT_TITLE";s:35:"Service Booking Reject Notification";s:46:"_EMAIL_MAIL_SERVICE_BOOKING_REJECT_DESCRIPTION";s:78:"This is the email that gets sent when service provider reject booking request.";s:42:"_EMAIL_MAIL_SERVICE_BOOKING_REJECT_SUBJECT";s:46:"[sender_title] has reject your booking request";s:39:"_EMAIL_MAIL_SERVICE_BOOKING_REJECT_BODY";s:183:"[header]
+
+
+[sender_title] has reject your booking request for the service: [service_title]. To view the service, please click the following link:
+
+http://[host][object_link]
+
+[footer]";s:44:"_EMAIL_MAIL_SERVICE_BOOKING_COMPLETION_TITLE";s:31:"Service Completion Notification";s:50:"_EMAIL_MAIL_SERVICE_BOOKING_COMPLETION_DESCRIPTION";s:72:"This is the email that gets sent when service provider complete service.";s:46:"_EMAIL_MAIL_SERVICE_BOOKING_COMPLETION_SUBJECT";s:60:"[sender_title] has marked your booked services as completed.";s:43:"_EMAIL_MAIL_SERVICE_BOOKING_COMPLETION_BODY";s:179:"[header]
+
+
+[sender_title] has marked your booked service: [service_title] as completed. To view the service, please click the following link:
+
+http://[host][object_link]
+
+[footer]";s:36:"_EMAIL_MAIL_PROVIDER_APPROVING_TITLE";s:30:"Provider Approval Notification";s:42:"_EMAIL_MAIL_PROVIDER_APPROVING_DESCRIPTION";s:71:"This is the email that gets sent when provider is approved by the admin";s:38:"_EMAIL_MAIL_PROVIDER_APPROVING_SUBJECT";s:31:"Your provider has been approved";s:35:"_EMAIL_MAIL_PROVIDER_APPROVING_BODY";s:179:"[header]
+
+
+[sender_title] has approved your created service provider [provider_title]. To view the provider, please click the following link:
+
+http://[host][object_link]
+
+[footer]";s:39:"_EMAIL_MAIL_PROVIDER_DISAPPROVING_TITLE";s:34:"Provider Dis-approval Notification";s:45:"_EMAIL_MAIL_PROVIDER_DISAPPROVING_DESCRIPTION";s:63:"This is the email that gets sent when provider is dis-approved.";s:41:"_EMAIL_MAIL_PROVIDER_DISAPPROVING_SUBJECT";s:36:"Your provider has been dis-approved.";s:38:"_EMAIL_MAIL_PROVIDER_DISAPPROVING_BODY";s:183:"[header]
+
+
+[sender_title] has dis-approved your created service provider [provider_title]. To view the provider, please click the following link:
+
+http://[host][object_link]
+
+[footer]";s:35:"_EMAIL_MAIL_SERVICE_APPROVING_TITLE";s:29:"Service Approval Notification";s:41:"_EMAIL_MAIL_SERVICE_APPROVING_DESCRIPTION";s:58:"This is the email that gets sent when service is approved.";s:37:"_EMAIL_MAIL_SERVICE_APPROVING_SUBJECT";s:30:"Your service has been approved";s:34:"_EMAIL_MAIL_SERVICE_APPROVING_BODY";s:168:"[header]
+
+
+[sender_title] has approved your created service [service_title]. To view the service, please click the following link:
+
+http://[host][object_link]
+
+[footer]";s:38:"_EMAIL_MAIL_SERVICE_DISAPPROVING_TITLE";s:33:"Service Dis-approval Notification";s:44:"_EMAIL_MAIL_SERVICE_DISAPPROVING_DESCRIPTION";s:62:"This is the email that gets sent when service is dis-approved.";s:40:"_EMAIL_MAIL_SERVICE_DISAPPROVING_SUBJECT";s:34:"Your service has been dis-approved";s:37:"_EMAIL_MAIL_SERVICE_DISAPPROVING_BODY";s:172:"[header]
+
+
+[sender_title] has dis-approved your created service [service_title]. To view the service, please click the following link:
+
+http://[host][object_link]
+
+[footer]";s:40:"_EMAIL_MAIL_PROVIDER_AUTOAPPROVING_TITLE";s:32:"Provider Publishing Notification";s:46:"_EMAIL_MAIL_PROVIDER_AUTOAPPROVING_DESCRIPTION";s:64:"This is the email that gets sent when provider is auto approved.";s:42:"_EMAIL_MAIL_PROVIDER_AUTOAPPROVING_SUBJECT";s:40:"Your service provider has been published";s:39:"_EMAIL_MAIL_PROVIDER_AUTOAPPROVING_BODY";s:162:"[header]
+
+
+Your created provider [provider_title] has been published. To view the provider, please click the following link:
+
+http://[host][object_link]
+
+[footer]";s:39:"_EMAIL_MAIL_SERVICE_AUTOAPPROVING_TITLE";s:31:"Service Publishing Notification";s:45:"_EMAIL_MAIL_SERVICE_AUTOAPPROVING_DESCRIPTION";s:63:"This is the email that gets sent when service is auto approved.";s:41:"_EMAIL_MAIL_SERVICE_AUTOAPPROVING_SUBJECT";s:31:"Your service has been published";s:38:"_EMAIL_MAIL_SERVICE_AUTOAPPROVING_BODY";s:159:"[header]
+
+
+Your created service [service_title] has been published. To view the service, please click the following link:
+
+http://[host][object_link]
+
+[footer]";s:41:"ACTIVITY_TYPE_SITEBOOKING_SERVICE_BOOKING";s:28:"When someone books services.";s:40:"ACTIVITY_TYPE_SITEBOOKING_SERVICE_CANCEL";s:40:"When someone cancel booking of services.";s:40:"ACTIVITY_TYPE_SITEBOOKING_SERVICE_ACCEPT";s:50:"When providers accept booking requeat of services.";s:40:"ACTIVITY_TYPE_SITEBOOKING_SERVICE_REJECT";s:50:"When providers reject booking request of services.";s:42:"ACTIVITY_TYPE_SITEBOOKING_SERVICE_COMPLETE";s:44:"When providers complete booking of services.";s:43:"ACTIVITY_TYPE_SITEBOOKING_PROVIDER_APPROVED";s:30:"When Admin approves providers.";s:46:"ACTIVITY_TYPE_SITEBOOKING_PROVIDER_DISAPPROVED";s:34:"When Admin dis-approves providers.";s:42:"ACTIVITY_TYPE_SITEBOOKING_SERVICE_APPROVED";s:29:"When Admin approves services.";s:45:"ACTIVITY_TYPE_SITEBOOKING_SERVICE_DISAPPROVED";s:33:"When Admin dis-approves services.";s:37:"_ACTIVITY_ACTIONTYPE_COMMENT_PROVIDER";s:50:"When someone post comment on the service provider.";s:36:"_ACTIVITY_ACTIONTYPE_COMMENT_SERVICE";s:41:"When someone post comment on the service.";s:33:"_ACTIVITY_ACTIONTYPE_PROVIDER_NEW";s:31:"When a new provider is created.";s:32:"_ACTIVITY_ACTIONTYPE_SERVICE_NEW";s:30:"When a new service is created.";s:34:"_ACTIVITY_ACTIONTYPE_LIKE_PROVIDER";s:34:"When I liked the service provider.";s:33:"_ACTIVITY_ACTIONTYPE_LIKE_SERVICE";s:25:"When I liked the service.";}}

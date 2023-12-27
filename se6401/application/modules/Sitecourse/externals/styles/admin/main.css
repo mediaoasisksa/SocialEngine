@@ -1,0 +1,306 @@
+#sitecourse_certificate_format_settings + a {
+  position: static;
+  float: right;
+}
+#global_page_sitecourse-admin-manage-transaction-details {
+  position: relative;
+}
+#global_page_sitecourse-admin-manage-transaction-details #global_content_simple {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+#global_page_sitecourse-admin-manage-disable-enrollment p a {
+  margin-left: 10px;
+}
+#global_page_sitecourse-admin-report-reportaction #global_content_simple {
+	width: 100%;
+}
+#global_page_sitecourse-admin-report-reportaction #global_content_simple .global_form_box {
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+}
+#global_page_sitecourse-admin-report-reportaction #global_content_simple .global_form_box .form-elements .form-element .form-options-wrapper li {
+	margin-bottom: 15px;
+}
+.search__filter_form.admin_search_form {
+	display: flex;
+	align-items: flex-start;
+	margin: 0 auto;
+	width: 100%;
+	flex-wrap: wrap;
+}
+.search__filter_form.admin_search_form .form_wrapper {
+	display: inline-block;
+	width: auto;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	position: relative;
+}
+.search__filter_form.admin_search_form .form_wrapper:last-child {
+	margin-right: 0;
+}
+.search__filter_form.admin_search_form .form_wrapper .form_label {
+	margin-bottom: 10px;
+}
+.search__filter_form.admin_search_form .form_wrapper .form_element input {
+	width: 100%;
+	border: 1px solid $theme_border_color;
+	box-sizing: border-box;
+	line-height: normal;
+	outline: none;
+	padding: 0 12px;
+	height: 40px;
+}
+/*.search__filter_form.admin_search_form .form_wrapper .submit_element button {
+	margin-top: 13px;
+}*/
+.global_form_box > div {
+	margin: 15px 7px !important;
+}
+.global_form_box > div input[type="date"] {
+	border: 1px solid $theme_border_color;
+	padding: 6px 10px;
+	color: $theme_input_font_color;
+	font-size: $theme_font_size;
+	outline: none;
+}
+
+
+#global_page_sitecourse-admin-manage-course-details #global_content_simple {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+}
+#global_page_sitecourse-admin-manage-course-details #global_content_simple h2 {
+  width: 100%;
+  padding: 15px 15px 0;
+}
+#global_page_sitecourse-admin-manage-course-details #global_content_simple .course-details, 
+#global_page_sitecourse-admin-manage-course-details #global_content_simple .profile-image {
+  width: 100%;
+  display: inline-block;
+  max-width: 50%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+#global_page_sitecourse-admin-manage-course-details #global_content_simple .profile-image > img {
+  width: 200px;
+  border-radius: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+#global_page_sitecourse-admin-manage-course-details #global_content_simple button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  height: 40px;
+  padding: 0;
+  border-radius: 5px;
+  margin: 15px;
+}
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*Categories Page*/
+.sitecourse_categories_left{
+  float:left;
+  margin-right:-2px;
+  width:100%;
+  max-width: 50%;
+}
+.sitecourse_cat_list_wrapper{
+  border-top-width:1px;
+  margin:10px;
+  padding:10px;
+  box-shadow: $theme_border_color 0 0 15px;
+}
+.sitecourse_cat_list{
+  padding: 15px 0;
+  border-bottom: 1px solid $theme_border_color;
+}
+.sitecourse_cat_list:last-child {
+  border-bottom: none;
+}
+.sitecourse_cat_handle{
+  float:left;
+  cursor: move;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+[dir="rtl"] .sitecourse_cat_handle {
+  float: right;
+}
+[dir="rtl"] .global_form_box label, [dir="rtl"] .global_form_box input {
+  margin-left: 5px !important;
+}
+.sitecourse_cat_det{
+  overflow:hidden;
+  font-size:12px;
+}
+.sitecourse_cat_det_name{
+  display: list-item;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.sitecourse_cat_det_options{
+  float:right;
+  margin-right:10px;
+  margin-left:5px;
+}
+[dir="rtl"] .sitecourse_cat_det_options {
+  float: left;
+}
+[dir="rtl"] table.admin_table tbody tr td, [dir="rtl"] table.admin_table thead tr th {
+  text-align: left;
+}
+table.admin_table tbody tr td, table.admin_table thead tr th {
+  word-break: break-word;
+}
+.sitecourse_cat_icon{
+  display:inline-block;
+  height:16px;
+  vertical-align:middle;
+  width:16px;
+  text-indent:-999px;
+}
+.sitecourse_cat_showhide{
+  vertical-align:middle;
+  float:left;
+  margin-right:5px;
+}
+[dir="rtl"] .sitecourse_cat_showhide {
+  float: right;
+}
+.sitecourse_cat_new{
+  font-size:11px;
+  margin-top:5px;
+  padding-left: 20px;
+}
+.sitecourse_cat{
+  font-size:12px;
+}
+.sitecourse_cat_selected{
+  background-color:#CFF7FF;
+  font-weight:bold;
+}
+.sitecourse_sub_cat_wrapper{
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.sitecourse_sub_cat_wrapper .sitecourse_sub_cat_wrapper{
+  padding-left:30px;
+}
+.sitecourse_categories_right{
+  border-left-width:2px;
+  overflow:hidden;
+  padding-left:10px;
+}
+.settings h4 {
+  font-size: 100% !important;
+}
+
+dl.payment_transaction_details dd, dl.payment_transaction_details dt {
+  margin-bottom: 15px;
+}
+dl.payment_transaction_details {
+  min-width: max-content;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.seaocore_settings_form .settings {
+  position: relative;
+}
+.seaocore_settings_form .settings > a {
+  position: absolute;
+  right: 15px;
+  bottom: 30px;
+  border-radius: 50px;
+  padding: .8em 1.5em;
+  font-size: 100%;
+  border: none;
+  background-color:#03A9F4;
+  border: 1px solid #03A9F4;
+  color:$theme_button_font_color;
+  transition: all .2s ease-in-out;
+  font-family: arial, sans-serif;
+  font-weight: 700;
+  outline-width: 0;
+}
+.seaocore_settings_form .settings > a:hover {
+  background-color: #045990;
+  border-color: #045990;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: .8;
+  transition: all .2s ease-in-out;  
+}
+.report-delete-modal-box {
+  padding: 15px;
+  box-sizing: border-box;
+}

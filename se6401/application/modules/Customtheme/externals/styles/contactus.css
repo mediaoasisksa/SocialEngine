@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+nav {
+  background-color: #e0e0e0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: black;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #294f96;
+}
+
+nav img {
+  margin-left: -30px;
+}
+
+.icon-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-nav i:not(:last-child) {
+  margin-right: 20px;
+}
+
+.icon-nav i {
+  font-size: 20px;
+  color: #1e3869;
+}
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: -55px;
+  margin-top: 0.125rem;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+.btn-secondary:focus {
+  outline: none;
+  border: none;
+}
+.btn-secondary:hover {
+  background-color: rgba(192, 192, 192, 0.822);
+}
+/*End Nav  */
+
+/* start section Get in touch */
+.section-Get-touch {
+  background-color: #1e3869;
+  width: 100%;
+  height: 400px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-Get-touch {
+  text-align: center;
+}
+.text-Get-touch h2,
+.text-Get-touch p{
+  color: #fff;
+}
+/* end section Get in touch */
+
+/* start section Contact us */
+.Contact {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+}
+
+.contact-All {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-contact-us input {
+  background-color: #cfd2d88c;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.form-contact-us textarea {
+  background-color: #cfd2d88c;
+  width: 100%;
+  height: 200px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.form-contact-us button {
+  background-color: #ff955d;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s;
+}
+
+.form-contact-us button:hover {
+  background-color: white;
+  color: #ff955d;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.185);
+}
+
+.form-contact-us {
+  width: 500px;
+  /* background-color: red; */
+  padding: 20px;
+}
+
+.firstName-lastName {
+  display: flex;
+}
+
+.firstName-lastName input:not(:last-child) {
+  margin-right: 10px;
+}
+
+.img-contact img {
+  width: 500px;
+}
+
+@media (max-width: 991px) {
+  .form-contact-us {
+    width: 400px;
+    padding: 20px;
+  }
+
+  .img-contact img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-All {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  .form-contact-us {
+    width: 320px;
+    padding: 20px;
+  }
+
+  .img-contact img {
+    width: 300px;
+  }
+}
+/* end section Contact us */
+
+/* start footer */
+footer {
+  background-color: #cfd2d8;
+  padding: 20px 0;
+  color: white;
+}
+.foot-All {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.foot-All a {
+  text-decoration: none;
+  color: white;
+}
+
+.foot-All a:hover {
+  color: #27498a;
+}
+
+.foot-All h2 {
+  color: #1e3869;
+}
+.foot-All h4 {
+  color: #1e3869;
+}
+.About-Foot a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.LOGO-FOOT {
+  text-align: center;
+}
+
+.LOGO-FOOT a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.LOGO-FOOT i:hover {
+  cursor: pointer;
+  color: #294f96;
+}
+
+.khat-foot {
+  background-color: #1e386959;
+  width: 100%;
+  height: 1px;
+}
+
+.txt-under-foot {
+  text-align: center;
+  color: #1e3869;
+}
+
+.txt-under-foot p {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+@media (max-width: 991px) {
+  .Contact-Us-Foot {
+    text-align: center;
+  }
+  .About-Foot {
+    text-align: center;
+  }
+  .Follow-Us-Foot {
+    text-align: center;
+  }
+  .English {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .foot-All {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .Contact-Us-Foot {
+    text-align: left;
+  }
+  .About-Foot {
+    text-align: left;
+  }
+  .Follow-Us-Foot {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .LOGO-FOOT {
+    text-align: left;
+  }
+  .English {
+    text-align: left;
+  }
+}
+/* end footer */

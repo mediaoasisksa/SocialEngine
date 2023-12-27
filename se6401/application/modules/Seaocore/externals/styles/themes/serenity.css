@@ -1,0 +1,25 @@
+/* ---------------- themes serenity------------------- */
+.layout_page_header .layout_main {overflow: inherit;}
+#sociallogin_signin_popup #user_form_login{padding:5px 15px;}
+.headline {margin-bottom: 15px;}
+
+#adv_activityfeed ul.feed .feed_item_icon > ul > .feed_item_option_comment a:before,
+#adv_activityfeed ul.feed .feed_item_icon > ul > .feed_item_option_share a:before{
+	content:none;
+}
+.headline{ margin-bottom: 15px;}
+
+#global_page_sitecontest-profile-tell-a-friend #global_content_simple{ padding: 15px; box-sizing: border-box; }
+
+/*div.tabs_alt > ul > li.tab_active > a, div.tabs_alt > ul > li.active > a, div.tabs_alt > ul > li:hover > a, div.tabs_alt > ul > li.active:hover > a {
+ background-color:#03598f!important;
+}*/
+.global_form > div > div {padding: 15px !important;}
+.signup_login_popup_wrapper #user_form_login .form-element, .signup_login_popup_wrapper #signup_account_form .form-element {min-width: auto;}
+.layout_sitebooking_dashboard_menu li.active a {color: #5f727f; font-weight: bold;}
+.advsearch li a:hover {color: inherit !important;}
+@media only screen and (min-width: 768px){
+	.layout_core_container_tabs .tabs_parent_sitemusic_home.only_views_type > ul {
+		position: static;
+	}
+}

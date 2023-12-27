@@ -1,0 +1,175 @@
+
+/*Calendar Buttons*/
+div.event_calendar_container{
+  margin-bottom: 4px;
+  display:block;
+  min-height: 20px;
+  float: left;
+  position: relative;
+}
+[dir="rtl"] div.event_calendar_container {
+  float: right;
+}
+div.event_calendar_container > button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+[dir="rtl"] div.event_calendar_container > button {
+  left: 10px;
+  right: auto;
+}
+input.seaocore_event_calendar,
+select.seaocore_event_calendar{
+  margin-right: 6px;
+  width: 100px !important;
+  float: left;
+}
+html[dir="rtl"] input.seaocore_event_calendar,
+html[dir="rtl"] select.seaocore_event_calendar{
+  margin-right: 0px;
+  margin-left: 6px;
+  float: right;
+}
+div.event_calendar_container button.event_calendar,
+div.event_calendar_container button.seaocore_event_calendar{
+  background: url(./images/event_calendar_icon.gif);
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+  float: left;
+  height: 20px;
+  width: 20px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 0;
+  line-height: 100%;
+  border-radius: 0;
+  margin-bottom: 5px;
+}
+.layout_left div.event_calendar_container button.event_calendar, .layout_left div.event_calendar_container button.seaocore_event_calendar, .layout_right div.event_calendar_container button.event_calendar, .layout_right div.event_calendar_container button.seaocore_event_calendar {
+  margin-bottom: 10px;
+}
+
+.layout_right div.event_calendar_container button.event_calendar,
+.layout_right div.event_calendar_container button.seaocore_event_calendar{
+  margin-bottom: 5px;
+}
+
+html[dir="rtl"] div.event_calendar_container button.event_calendar,
+html[dir="rtl"] div.event_calendar_container button.seaocore_event_calendar{
+  float: right;
+  margin-right: 0px;
+  margin-left: 6px;
+}
+button.event_calendar:hover, button.event_calendar.active,
+button.seaocore_event_calendar:hover, button.seaocore_event_calendar.active{
+  background-position: 0 20px;
+}
+
+/*Event Calendar*/
+div.seaocore_event_calendar table {
+  background-color: #444444;
+  border: 1px solid #ccc;
+  display: block;
+  overflow: hidden;
+/*  width: 212px;*/
+ -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+div.seaocore_event_calendar table a {
+  text-decoration: none;
+}
+div.seaocore_event_calendar table caption {
+  display: block;
+  line-height: 32px;
+  font-weight: bold;
+  color: #e2e2e2;
+  text-align: center;
+  text-shadow: 0 -1px black;
+  background: #333;
+  background-color: rgba(0, 0, 0, .3);
+  border-bottom: 1px solid #313131;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+}
+div.seaocore_event_calendar table caption a {
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: block;
+  line-height: 32px;
+  opacity: 0.8;
+  overflow: hidden;
+  text-indent: -100px;
+  width: 32px;
+}
+div.seaocore_event_calendar table caption a:hover {
+  background-color: rgba(0, 0, 0, .5);
+  opacity: 1;
+}
+div.seaocore_event_calendar table caption .prev {
+  background-image:url(./images/event_calendar_prev.png); 
+  float: left;
+}
+div.seaocore_event_calendar table caption .next {
+  background-image:url(./images/event_calendar_next.png); 
+  float: right;
+}
+div.seaocore_event_calendar caption span.month:after {
+  content: ', ';
+}
+div.seaocore_event_calendar table th, 
+div.seaocore_event_calendar table td {
+  width: 32px;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+}
+div.seaocore_event_calendar table th:first-child, 
+div.seaocore_event_calendar table td:first-child {
+  border-left: 0;
+}
+div.seaocore_event_calendar table th {
+  line-height: 20px;
+  font-size: 10px;
+  color: #696969;
+  text-transform: uppercase;
+  background: #f8f8f8;
+}
+div.seaocore_event_calendar table td {
+  background: #f8f8f8;
+  font-size: 11px;
+  font-weight: bold;
+  position: relative;
+  width: 32px;
+  line-height: 29px;
+  color: #b3b3b3;
+}
+div.seaocore_event_calendar table td.valid{
+  color: #606060;
+  cursor: pointer;
+  background-image: -webkit-linear-gradient(top, #eaeaea, #e5e5e5 60%, #d9d9d9);
+  background-image: -moz-linear-gradient(top, #eaeaea, #e5e5e5 60%, #d9d9d9);
+  background-image: -o-linear-gradient(top, #eaeaea, #e5e5e5 60%, #d9d9d9);
+  background-image: linear-gradient(to bottom, #eaeaea, #e5e5e5 60%, #d9d9d9);
+}
+div.seaocore_event_calendar table td.invalid{
+  background: #f8f8f8;
+  color: #ff0000;
+}
+div.seaocore_event_calendar table td.valid:hover, 
+div.seaocore_event_calendar table td.invalid:hover{
+  background: #c0c0c0;
+  color: #1e1e1e;
+}
+div.seaocore_event_calendar table td.active{
+  color: #f3f3f3;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.calendar_output_span {vertical-align: top;}

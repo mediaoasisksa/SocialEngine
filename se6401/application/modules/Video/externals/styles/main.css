@@ -1,0 +1,500 @@
+/* $Id:main.css 9998 2013-03-26 20:58:48Z jung $ */
+/*
+FEED COMPOSER
+Styles the insert video part of the feed composer.
+*/
+#compose-video-body .compose-preview-image {
+	float:left;
+	margin-right:2px;
+  border:1px solid $theme_photo_border_color;
+}
+html[dir="rtl"] #compose-video-body .compose-preview-image {
+	float:right;
+	margin-right:0px;
+	margin-left:2px;
+}
+#compose-video-body .compose-preview-info {
+	overflow:hidden;
+}
+#compose-video-body .compose-preview-info a {
+	font-weight:bold;
+	display:block;
+	margin-bottom:2px;
+}
+#compose-video-body .compose-preview-info > div {
+	font-size:1em;
+}
+/*
+BROWSE VIDEOS & FEED ITEMS
+Styles the browse videos page as well as videos embedded
+in the feed.
+*/
+.feed_item_attachments .video_thumb_wrapper {
+	width:100%;
+	height:300px;
+	border:0;
+	margin-bottom:10px;
+	float:none !important;
+}
+.feed_item_attachments video {
+	width:100%;
+}
+.feed_item_attachments .video_thumb_wrapper .bg_item_photo {
+	background-position:top center;
+}
+.feed_item_attachments .video_thumb_wrapper .video_length {
+	padding:6px 12px;
+}
+.feed_item_attachments .video_info > a {
+	font-size:1em;
+	font-weight:bold;
+}
+.video_title {
+	font-size:1em;
+	font-weight:bold;
+	display:inline-block;
+	clear:both;
+	padding:5px 10px;
+}
+.feed_item_attachments .video_desc {
+	margin-top:2px;
+	font-size:1em;
+}
+.videos_browse {
+	margin-bottom:1.6rem;
+}
+.videos_browse > div {
+	overflow:hidden;
+	position:relative;
+	border-width:1px;
+	border-bottom-width:4px;
+	border-radius:10px;
+	height:100%;
+}
+.video_length {
+ +opacity(.8);
+ +rounded(4px);
+	display:inline-block;
+	position:absolute;
+	margin:6px;
+	padding:3px 7px;
+	background:#000;
+	color:#fff;
+	font-size:1em;
+}
+.video_thumb_wrapper {
+ +rounded(4px);
+	float:left;
+	margin-bottom:2px;
+	background:#666;
+	width:100%;
+	height:140px;
+}
+.video_thumb_wrapper span {
+	border:0;
+	background-position:center center;
+}
+html[dir="rtl"] .video_thumb_wrapper {
+	float:right;
+}
+.video_thumb_wrapper:hover {
+	background:#2b3849;
+}
+.video_thumb_wrapper a {
+	display:block;
+	height:100%;
+}
+.video_thumb_wrapper img, .video_thumb_wrapper span.item_nophoto {
+	display:block;
+	margin:5px;
+}
+.video_author {
+	font-size:1em;
+	display:block;
+	padding:0 10px;
+}
+.video_stats {
+	padding:5px 10px;
+}
+.video_stats > span {
+	font-size:1em;
+  color:$theme_font_color_light;
+}
+.layout_video_browse_search, .layout_video_browse_menu_quick {
+	margin-bottom:15px;
+}
+/* Video Grid View */
+.videos_browse .video_thumb_wrapper {
+	width:100%;
+	float:left;
+	margin-bottom:10px;
+	background:transparent;
+	height:auto;
+	border:0;
+}
+.videos_browse .video_thumb_wrapper > a {
+	height:160px;
+}
+.videos_browse .video_thumb_wrapper > a img {
+	margin:0;
+	display:inline-block;
+}
+.videos_browse.video_length {
+	right:0;
+	bottom:0;
+	z-index:0;
+}
+[dir="rtl"] .videos_browse .video_length {
+	left:0;
+	right:auto;
+}
+.videos_browse .video_grid_info {
+	margin-bottom:15px;
+	width:100%;
+	float:left;
+	box-sizing:border-box;
+	padding:0 10px;
+}
+.videos_browse .video_title {
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	display:block;
+}
+.video_grid_info .video_author {
+	margin:5px 0;
+}
+.video_grid_info .video_author a {
+	word-break: break-word;
+}
+.videos_browse .video_grid_info .star_rating_wrapper {
+	float:right;
+}
+[dir="rtl"] .videos_browse .video_grid_info .star_rating_wrapper {
+	float:left;
+}
+.videos_browse  .video_author{
+  font-size:$theme_font_size_small;
+}
+/*
+MANAGE VIDEOS
+Styles the manage videos page.
+*/
+ul.videos_manage > li {
+	clear:both;
+	overflow:hidden;
+}
+ul.videos_manage > li + li {
+	margin-top:15px;
+	border-top-width:1px;
+	padding-top:15px;
+}
+ul.videos_manage .video_thumb_wrapper {
+ +rounded(4px);
+	float:left;
+	margin-bottom:2px;
+	background:#2b3849;
+	width:160px;
+	height:100px;
+}
+html[dir="rtl"] ul.videos_manage .video_thumb_wrapper {
+	float:right;
+}
+ul.videos_manage .video_thumb_wrapper:hover {
+	background:#3F4E61;
+}
+ul.videos_manage .video_thumb_wrapper a {
+	display:block;
+}
+ul.videos_manage .video_thumb_wrapper img {
+	display:block;
+	margin:5px;
+	border:1px solid #3F4E61;
+}
+ul.videos_manage .video_info {
+	overflow:hidden;
+	padding-left:15px;
+}
+html[dir="rtl"] ul.videos_manage .video_info {
+	padding-left:0px;
+	padding-right:10px;
+}
+ul.videos_manage .video_info h3 {
+	margin-bottom:0px;
+	padding-top:0;
+}
+ul.videos_manage .video_options {
+	float:right;
+	width:150px;
+	padding-left:15px;
+}
+html[dir="rtl"] ul.videos_manage .video_options {
+	float:left;
+	padding-left:0px;
+	padding-right:15px;
+}
+ul.videos_manage .video_options a {
+	clear:both;
+	display:block;
+  font-size:$theme_font_size_small;
+	margin:0 5px;
+	padding-bottom:2px;
+	padding-top:2px;
+}
+ul.videos_manage .video_title {
+	margin-bottom:1px;
+	margin-left:-1px;
+}
+html[dir="rtl"] ul.videos_manage .video_title {
+	margin-left:0px;
+	margin-right:-1px;
+}
+ul.videos_manage .video_author {
+	font-size:1em;
+	display:block;
+}
+ul.videos_manage .video_stats {
+	margin-top:2px;
+	padding:0;
+}
+ul.videos_manage .video_stats > span {
+	font-size:1em;
+  color:$theme_font_color_light;
+}
+/*
+VIEW VIDEO
+Styles the view video page, where a single
+video is shown.
+*/
+div.video_view h3 {
+	border-top-width:1px;
+	padding-top:7px;
+	margin-bottom:2px;
+}
+div.video_view .video_embed {
+	margin:10px 0px 3px 0px;
+}
+div.video_view .video_date {
+	font-size:1em;
+  color:$theme_font_color_light;
+}
+div.video_view .rating {
+	margin-top:7px;
+	height:20px;
+}
+.video_view .video_embed video {
+	outline:none;
+	height:100%;
+}
+.layout_page_video_index_view .layout_core_comments, div.video_view .comments {
+	margin-top:10px;
+	border-top-width:1px;
+	padding-top:10px;
+}
+.layout_page_video_index_view .layout_core_comments .comments_options span, div.video_view .comments_options span {
+	font-weight:bold;
+  color:$theme_font_color_light;
+	margin-bottom:6px;
+}
+.video_view_container .video_options a {
+	font-weight:bold;
+}
+.layout_page_video_index_view .layout_core_content {
+	margin-bottom:15px;
+}
+.layout_page_video_index_view .layout_core_comments h3 {
+	display:none;
+}
+/*
+Message VIDEO
+Styles for videos attached to the message page.
+*/
+div.message_attachment .video_info > a {
+	font-size:1em;
+	font-weight:bold;
+}
+div.message_attachment .video_info {
+	overflow:hidden;
+	padding-left:10px;
+}
+div.message_attachment .video_info h3 {
+	margin-bottom:0px;
+}
+div.message_attachment .video_desc {
+	margin-top:2px;
+	font-size:1em;
+}
+/* DEFAULT PHOTO THUMB */
+.bg_item_nophoto.bg_item_photo_video:before{
+  content:"\\f008";
+}
+/* ACTION TYPE ICONS */
+.activity_icon_comment_video:before {
+	content:"\\f075";
+	font-family:'Font Awesome\ 5 Free';
+}
+/* ITEM TYPE ICONS */
+.item_icon_video:before {
+	content:"\\f03d";
+	font-family:'Font Awesome\ 5 Free';
+	font-weight:900 !important;
+}
+/* NOTIFICATION TYPE ICONS */
+.notification_type_video_processed:before {
+	content:"\\f03d";
+	font-weight:900 !important;
+}
+/*
+ACTIVITY FEED COMPOSER VIDEO
+Used for the attachment composer above the main feed.
+*/
+#compose-video-activator:before, #compose-video-menu span:before {
+	content:"\\f03d";
+	font-family:'Font Awesome\ 5 Free';
+	color:#ff5722;
+	margin-right:6px;
+	font-weight:900 !important;
+}
+[dir="rtl"] #compose-video-activator:before, [dir="rtl"] #compose-video-menu span:before {
+	margin-right:0px;
+	margin-left :6px;
+}
+#compose-video-form-input {
+	width:300px;
+	margin-top:5px;
+}
+#compose-video-form-submit {
+	margin-top:5px;
+	clear:both;
+}
+.activity-post-container #compose-video-form-input, .activity-post-container #compose-video-form-input input {
+	width:100%;
+}
+.activity-post-container #compose-video-form-input {
+	margin-top:10px;
+}
+.activity-post-container #compose-video-form-input p {
+  font-size:$theme_font_size_small;
+	margin:5px 0 10px;
+}
+/* ICONS */
+.icon_video_new:before {
+	content:"\\f03d";
+	font-weight:900 !important;
+}
+.icon_video_edit:before {
+	content:"\\f303";
+	font-weight:900 !important;
+}
+.icon_video_delete:before {
+	content:"\\f056";
+	font-weight:900 !important;
+}
+/* VIDEO IFRAMES */
+.vimeo_iframe_big, .vimeo_iframe_small, .youtube_iframe_big, .youtube_iframe_small {
+	width:100%;
+}
+.video_object {
+	display:none;
+	margin-bottom:10px;
+}
+.video_object.video_object_iframely {
+	display:block;
+}
+.feed_item_attachments .video_object iframe {
+	width:100%;
+	height:350px;
+}
+.video_view_container .video_embed iframe {
+	width:100%;
+	height:500px;
+}
+#global_page_video-index-create #url-element p {
+	max-width:100%;
+}
+.video_create_form #tags-wrapper,
+.video_create_form #tags-element,
+.video_edit_form #tags-wrapper,
+.video_edit_form #tags-element{
+	overflow:visible !important;
+}
+.videos_browse .info_stat_grid {
+	top:0;
+	color:#fff;
+	right:0;
+	text-align:right;
+	padding:5px 10px;
+	position:absolute;
+	width:100%;
+	box-sizing:border-box;
+	opacity:0;
+}
+[dir="rtl"] .videos_browse .info_stat_grid {
+	left:auto;
+	right:0;
+}
+.videos_browse:hover .info_stat_grid {
+	opacity:1;
+	transition:all 0.2s ease-in-out;
+}
+.videos_browse .info_stat_grid span {
+	margin-right:10px;
+}
+[dir="rtl"] .videos_browse .info_stat_grid span {
+	margin-right:0px;
+	margin-left:10px;
+}
+.videos_browse .info_stat_grid span > i {
+  font-size:$theme_font_size_small;
+	margin-right:2px;
+}
+[dir="rtl"] .videos_browse .info_stat_grid span > i {
+	margin-right:0px;
+	margin-left:2px;
+}
+/* ---------- Responsive CSS -------------*/
+@media (max-width:600px) {
+ul.videos_manage .video_info {
+	clear:both;
+	padding-top:5px;
+	padding-left:0;
+}
+}
+@media(max-width:767px) {
+.video_view .video_embed video {
+	width:100%;
+}
+html ul.videos_manage .video_thumb_wrapper {
+	width:100%;
+	height:150px;
+}
+html ul.videos_manage .video_options {
+	width:100%;
+	padding-left:0;
+}
+html ul.videos_manage .video_options a {
+	display:inline-block;
+}
+}
+@media (min-width:980px) {
+.vimeo_iframe_big {
+	width:640px;
+	height:360px;
+}
+.vimeo_iframe_small {
+	width:400px;
+	height:230px;
+}
+.youtube_iframe_big {
+	width:560px;
+	height:340px;
+}
+.youtube_iframe_small {
+	width:425px;
+	height:344px;
+}
+}
+/* BREADCRUMB */
+.video_breadcrumb > p {
+	margin-bottom:0;
+}

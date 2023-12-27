@@ -1,0 +1,98 @@
+/* ---------------- themes insignia------------------- */
+@constants
+{
+  theme_pulldown_font_color_active: #fff;
+}
+
+/* Advanced main menu */
+#sitemenu_main_menu_wrapper {
+	margin-bottom: 0;
+}
+#sitemenu_main_menu_wrapper > nav {
+	width: 90%;
+	margin: 0 auto;
+}
+#sitemenu_mini_currency_updates_pulldown {
+	display: table-cell;
+}
+
+.layout_sitemenu_menu_mini {
+	padding-right: 5%;
+	display: inline-block;
+}
+.layout_sitemenu_menu_mini .layout_core_menu_mini {
+	padding-right: 0;
+}
+#global_header .layout_siteadvsearch_menu_mini #global_search_form,
+#global_header .layout_siteadvsearch_search_box #global_search_form {
+	margin-right: 10px;
+}
+.layout_sitemenu_menu_mini .layout_core_menu_mini > div > ul {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+@media only screen and (max-width: 1199px) {
+  .layout_siteusercoverphoto_user_cover_photo,
+  .layout_sitecontentcoverphoto_content_cover_photo {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+/* color of main menu label on hover main menu widget  */
+.sitemenu_main_menu > li > a.over{
+	color: #fff;
+	background: rgba(255, 255, 255, .2);
+}
+ 
+
+
+/*Profile Advanced Tabs*/
+.contentblock_right_inner_heading a:link{
+  color: #5f727f;
+}
+
+
+/* Add link option UI in mini menu */
+#core_menu_mini_menu li.siteaddlink_menus > a {
+	visibility: visible;
+overflow: hidden;
+width: 35px;
+height: 35px;
+text-align: center;
+	  display: block;
+  color: $theme_topbar_minimenu_link_color;
+  font-weight: 600;
+  font-size: 97%;
+  padding: 6px 5px 3px 5px;
+  text-transform: uppercase;
+ 
+}
+#core_menu_mini_menu li.siteaddlink_menus > a i {
+	display: block;
+	height: 100%;
+}
+#core_menu_mini_menu li.siteaddlink_menus > a i:before {
+visibility: visible;
+
+font-family: 'Font Awesome 5 Free','fontawesome';
+
+font-size: 16px;
+
+border: 1px solid;
+
+border-radius: 50%;
+
+width: 100%;
+
+height: 100%;
+
+display: block;
+
+padding-top: 8px;
+
+box-sizing: border-box;
+}
+#core_menu_mini_menu li.siteaddlink_menus > a i:after {
+	display: none;
+}

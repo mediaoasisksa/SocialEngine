@@ -1,0 +1,403 @@
+"Course";"Course"
+"Courses";"Courses"
+"course";"course"
+"courses";"courses"
+"Sitecourse Plugin";"Course Builder / Learning Management Plugin"
+"SITECOURSE_FORM_ADMIN_LEVEL_DESCRIPTION";"These settings are applied on a per member level basis. Start by selecting the member level you want to modify, then adjust the settings for that level below."
+"Member Level Settings";"Member Level Settings"
+"SITECOURSE_FORM_PAYMENT_PAYPAL_DESCRIPTION";" Below, you can configure your Paypal Account to receive payments from your Community. This information should be accurately provided and enabled to receive Course payments made by enrolled members."
+"SITECOURSE_VIEW_SCRIPTS_ADMINSETTINGS_CATEGORIES_DESCRIPTION.";"Below, you can add and manage the various categories, sub-categories for the course on your site."
+"Add New Category";"Add New Category"
+"There are currently no categories.";"There are currently no categories."
+"delete";"delete"
+"edit";"edit"
+"Options";"Options"
+"Category Name";"Category Name"
+"Sitecourse Entry Categories";"Sitecourse Entry Categories"
+"Manage_Courses_Request_Description";"This page lists all the courses your users have request for admin approval.You can take appropriate action based on the course content."
+"Manage_Courses_Description";"This page lists all the courses created on the website. You can use this page to manage these courses. Entering criteria into the filter fields will help you find a specific course. Leaving the filter fields blank will show all the courses on your website."
+"SITECOURSE_VIEW_SCRIPTS_ADMINSETTINGS_CATEGORIES_DESCRIPTION";"If you want to allow your users to categorize their courses, create the categories below. This feature is useful if you want to list all your users' courses that If you have no categories, your users will not be given the option of assigning a course category."
+"ACTIVITY_TYPE_SITECOURSE_APPROVAL";"When admin approves the course"
+"ACTIVITY_TYPE_SITECOURSE_DISAPPROVAL";"When admin disapproves the course"
+"Your report has been submitted";"Your report has been submitted"
+"To Download the Lesson Click Here";"To Download the Lesson Click Here"
+"Thanks for your purchase!";"Thanks for your purchase!"
+"Your Order ID is";"Your Order ID is"
+"The uploaded file is not supported or is corrupt.";"The uploaded file is not supported or is corrupt."
+"Max file size limit exceeded (probably).";"Max file size limit exceeded (probably)."
+"Invalid request method";"Invalid request method"
+"Invalid Upload";"Invalid Upload"
+"No file";"No file"
+"This will be the end of your Course URL. It should be indicative of the title and can contain alphabets, numbers, underscores, and dashes only. Its length should be in the range of 3-255 characters. The complete URL of your course will be:";"This will be the end of your Course URL. It should be indicative of the title and can contain alphabets, numbers, underscores, and dashes only. Its length should be in the range of 3-255 characters. The complete URL of your course will be:"
+"My Computer";"My Computer"
+"PayPal Account for receiving payments from";"PayPal Account for receiving payments from"
+"Create course";"Create course"
+"Create a course";"Create a course"
+"Apply Changes";"Apply Changes"
+"or";"or"
+"cancel";"cancel"
+"Loading...";"Loading..."
+"Edit Thumbnail";"Edit Thumbnail"
+"Save Settings";"Save Settings"
+"Course Builder / Learning Management Plugin";"Course Builder / Learning Management Plugin"
+"Course Details";"Course Details"
+"Delete Review?";"Delete Review?"
+"Are you sure that you want to delete this review? It will not be recoverable after being deleted.";"Are you sure that you want to delete this review? It will not be recoverable after being deleted."
+"Delete";"Delete"
+"Are you sure that you want to disable the enrollment for this course?";"Are you sure that you want to disable the enrollment for this course?"
+"Disable Enrollment";"Disable Enrollment"
+"Manage Courses";"Manage Courses"
+"Are you sure you want to delete selected pages?";"Are you sure you want to delete selected pages?"
+"Title";"Title"
+"Owner";"Owner"
+"Approval Status";"Approval Status"
+"Dis-Approved";"Dis-Approved"
+"Approved";"Approved"
+"Dificulty level";"Dificulty level"
+"Expert";"Expert"
+"Intermediate";"Intermediate"
+"Beginner";"Beginner"
+"Category";"Category"
+"Subcategory";"Subcategory"
+"Browse By";"Browse By"
+"Most Recent";"Most Recent"
+"Most Rated";"Most Rated"
+"Creation Date From";"Creation Date From"
+"Creation Date To";"Creation Date To"
+"Newest";"Newest"
+"Search";"Search"
+"No results were found.";"No results were found."
+"ID";"ID"
+"Course Title";"Course Title"
+"Owner Name";"Owner Name"
+"Enrollment Count";"Enrollment Count"
+"A";"A"
+"Creation Date";"Creation Date"
+"Modification Date";"Modification Date"
+"View";"View"
+"Details";"Details"
+"Disable-Enrollment";"Disable-Enrollment"
+"Enable-Enrollment";"Enable-Enrollment"
+"Price";"Price"
+"Pending";"Pending"
+"Make Approved";"Make Approved"
+"Make Dis-Approved";"Make Dis-Approved"
+"Manage Review";"Manage Review"
+"Action";"Action"
+"Manage_Review_Description";"This page lists all the courses which have been reviewed on the website. You can use this page to manage the reviews and can also Approve / Dis-Approve the Reviews."
+"Are you sure you want to delete selected reviews?";"Are you sure you want to delete selected reviews?"
+"Status";"Status"
+"Rating";"Rating"
+"0 to 1":"0 to 1"
+"1 to 2";"1 to 2"
+"2 to 3";"2 to 3"
+"3 to 4";"3 to 4"
+"4 to 5";"4 to 5"
+"Review";"Review"
+"Delete Selected";"Delete Selected"
+"Transaction Details";"Transaction Details"
+"User Name";"User Name"
+"Amount";"Amount"
+"Date";"Date"
+"Delete Report?";"Delete Report?"
+"Are you sure that you want to delete course?";"Are you sure that you want to delete course?"
+"Are you sure that you want to delete %s report? It will not be recoverable after being deleted.";"Are you sure that you want to delete %s report? It will not be recoverable after being deleted."
+"Manage_Report_Description";"This page lists all of the courses your users have reported as abusive for being misleading, offensive, inappropriate, licensed violating, or other reasons. You can view reported courses, dismiss reports, or take action on courses that have been reported."
+"Reporter";"Reporter"
+"Reasons";"Reasons"
+"take action";"take action"
+"dismiss";"dismiss"
+"Manage_Category_Description";"Below, you can add and manage the various categories, sub-categories for the course on your site."
+"Categories";"Categories"
+"Add Sub-Category";"Add Sub-Category"
+"There are currently no categories.";"There are currently no categories."
+"Add New Category";"Add New Category"
+"Delete Course Sub-Category?";"Delete Course Sub-Category?"
+"Are you sure that you want to delete this category? It will not be recoverable after being deleted.";"Are you sure that you want to delete this category? It will not be recoverable after being deleted."
+"Delete Course Category?";"Delete Course Category?"
+"The selected category will be replaced with current category for all courses created under this category.";"The selected category will be replaced with current category for all courses created under this category."
+"Browse the different FAQ sections of this plugin by clicking on the corresponding tabs below.";"Browse the different FAQ sections of this plugin by clicking on the corresponding tabs below."
+"This page contains utilities to help configure and troubleshoot the plugin.";"This page contains utilities to help configure and troubleshoot the plugin."
+"Ffmpeg Version";"Ffmpeg Version"
+"This will display the current installed version of ffmpeg.";"This will display the current installed version of ffmpeg."
+"Supported Video Formats";"Supported Video Formats"
+"This will run and show the output of 'ffmpeg -formats'.";"This will run and show the output of 'ffmpeg -formats'."
+"Course View Page";"View Course"
+"Course Learning Page";"Course Learning Page"
+"Edit Info";"Edit Info"
+"Target Your Students";"Target Your Students"
+"Course Builder";"Course Builder"
+"Course Overview";"Course Overview"
+"Announcements";"Announcements"
+"Enrolled Members";"Enrolled Members"
+"Add Photo";"Add Photo"
+"Payment Methods";"Payment Methods"
+"Transactions / Payments";"Transactions / Payments"
+"Manage Announcements";"Manage Announcements"
+"Post Announcements below for your courses. Announcements will appear on the course profile";"Post Announcements for your courses. Announcements will appear on the course profile page."
+"Post New Announcement";"Post New Announcement"
+"Enable Announcement";"Enable Announcement"
+"No Announcements have been posted for this course yet.";"No Announcements have been posted for this course yet."
+"Enrolled Members Info";"Enrolled Members Info"
+"No one enrolled in the course yet.";"No one enrolled in the course yet."
+"First-Name";"First-Name"
+"Last-Name";"Last-Name"
+"Email";"Email"
+"Upload New Intro Video";"Upload New Intro Video"
+"Upload Existing Intro Video";"Upload Existing Intro Video"
+"We could not find a video there - please check the URL and try again.If you are sure that the URL is valid, please click % s to continue.";"We could not find a video there - please check the URL and try again.If you are sure that the URL is valid, please click % s to continue."
+"here";"here"
+"Checking URL...";"Checking URL..."
+"Video Lesson";"Video Lesson"
+"Add New Topic";"Add New Topic"
+"Transaction ID";"Transaction ID"
+"Duration";"Duration"
+"Difficulty Level";"Difficulty Level"
+"Added as Favourites";"Added as Favourites"
+"You have already created the maximum number of courses allowed.";"You have already created the maximum number of courses allowed."
+"Please add a course into favourites.";"Please add a course into favourites."
+"Order Summary";"Order Summary"
+"Free";"Free"
+"Course Title:";"Course Title:"
+"Grand Total";"Grand Total"
+"Continue";"Continue"
+"Payment gateway is not enabled by Course Owner. Please contact the respective course owner to complete your purchase. Thanks for your patience!";"Payment gateway is not enabled by Course Owner. Please contact the respective course owner to complete your purchase. Thanks for your patience!"
+"Go Back";"Go Back"
+"Payment Method";"Payment Method"
+"Free Order";"Free Order"
+"Paypal";"Paypal"
+"Place Order";"Place Order"
+"Payment Pending";"Payment Pending"
+"Thank you for submitting your payment. Your payment is currently pending.";"Thank you for submitting your payment. Your payment is currently pending."
+"Payment Failed";"Payment Failed"
+"There was an error processing your transaction for the order: %s.";"There was an error processing your transaction for the order: %s."
+"We suggest that you please try again after some time.";"We suggest that you please try again after some time."
+"Go to My Course";"Go to My Course"
+"Browse Courses";"Browse Courses"
+"Processing Request. Please wait .....";"Processing Request. Please wait ....."
+"Minimum amount for this type of transaction is %s";"Minimum amount for this type of transaction is %s"
+"This Payment gateway does not support this currency please choose another payment method for processing further.";"This Payment gateway does not support this currency please choose another payment method for processing further."
+"Review Title";"Review Title"
+"click to rate";"click to rate"
+"you already rated";"you already rated"
+"please login to rate";"please login to rate"
+"click to rate";"click to rate"
+"You do not have any course created that matches your search criteria.";"You do not have any course created that matches your search criteria."
+"All Categories";"All Categories"
+"LMS Home";"LMS Home"
+"Please complete this field - it is required.";"Please complete this field - it is required."
+"You cannot rate this course";"You cannot rate this course"
+"Course owner cannot rate on their courses";"Course owner cannot rate on their courses"
+"View More";"View More"
+"Add a topic to build course";"Add a topic to build course"
+"Top Rated";"Top Rated"
+"Bestseller";"Bestseller"
+"Please try after some time";"Please try after some time"
+"No review found";"No review found"
+"Course Dashboard";"Course Dashboard"
+"My Purchased Courses";"My Purchased Courses"
+"Is this Plugin Integrated with Other Plugins?";"Is this Plugin Integrated with Other Plugins?"
+"I want to configure the various widgets of this plugin according to my requirements? How can I do it ?";"I want to configure the various widgets of this plugin according to my requirements? How can I do it ?"
+"To configure the various widgets of this plugin according to your requirements";"To configure the various widgets of this plugin according to your requirements"
+"Please place those widgets at the desired locations from the Layout Editor section.";"Please place those widgets at the desired locations from the Layout Editor section."
+"Select the Pages from the Editing dropdown in the Admin Panel and click on "edit" option against the desired widgets.";"Select the Pages from the Editing dropdown in the Admin Panel and click on "edit" option against the desired widgets."
+"Is there any limit for a member to post courses and the topics in the courses?";"Is there any limit for a member to post courses and the topics in the courses?"
+"There is no limit to add topics but for courses, limits can be set for each particular member level from the Member Level Settings under Admin Panel.";"There is no limit to add topics but for courses, limits can be set for each particular member level from the Member Level Settings under Admin Panel."
+"Can the course owner delete the courses & the topics after they are purchased?";"Can the course owner delete the courses & the topics after they are purchased?"
+"No, Course owner cannot delete the courses and any of the topics and the lessons added in the topics after the users enrolled in the course.";"No, Course owner cannot delete the courses and any of the topics and the lessons added in the topics after the users enrolled in the course."
+"If the courses are purchased by the users, can the price of the courses be changed?";"If the courses are purchased by the users, can the price of the courses be changed?"
+"No, the price of the courses cannot be changed if the users are enrolled in the courses.";"No, the price of the courses cannot be changed if the users are enrolled in the courses."
+"Can admin have the ability to limit the reminders for approval of the courses?";"Can admin have the ability to limit the reminders for approval of the courses?"
+"Yes, there is a setting of Maximum Reminder for Approval on the Admin Panel under Member Level Settings where admin can set the limit to maximum reminder for course owners.";"Yes, there is a setting of Maximum Reminder for Approval on the Admin Panel under Member Level Settings where admin can set the limit to maximum reminder for course owners."
+"To Approve the requests from the course owners, follow these steps:";"To Approve the requests from the course owners, follow these steps:"
+"Go to Manage Courses tab on admin panel.";"Go to Manage Courses tab on admin panel."
+"Go to Approve Request sub-tab on the Manage Courses tab.";"Go to Approve Request sub-tab on the Manage Courses tab."
+"Click on the Approve Icon(Green Tick) to Approve the courses.";"Click on the Approve Icon(Green Tick) to Approve the courses."
+"What are the actions I can take on the reported courses in which users are enrolled?";"What are the actions I can take on the reported courses in which users are enrolled?"
+"Admin can disable the future enrollment in the courses which are reported by other users.";"Admin can disable the future enrollment in the courses which are reported by other users."
+"What are the actions I can take on the reported courses in which no users are enrolled yet?";"What are the actions I can take on the reported courses in which no users are enrolled yet?"
+"Admin have the ability to delete, disapprove and disable the future enrollment of the courses which are published and reported by no users are enrolled in them.";"Admin have the ability to delete, disapprove and disable the future enrollment of the courses which are published and reported by no users are enrolled in them."
+"What are the fields we need to submit for publishing the courses?";"What are the fields we need to submit for publishing the courses?"
+"Course owners need to add the Intro Video and at least 1 topic and 1 lesson to the course before publishing the courses.";"Course owners need to add the Intro Video and at least 1 topic and 1 lesson to the course before publishing the courses."
+"How can I add the Background Image and the Company logo on the Certificates?";"How can I add the Background Image and the Company logo on the Certificates?"
+"To add the Background Image and Company logo, follow these steps:";"To add the Background Image and Company logo, follow these steps:"
+"Go to File & Media Manager section under Appearance on the Admin Panel and upload the Images and the logo.";"Go to File & Media Manager section under Appearance on the Admin Panel and upload the Images and the logo."
+"Go to Certificates tab on the Course Plugin on the Admin Panel.";"Go to Certificates tab on the Course Plugin on the Admin Panel."
+"'Select the files for Company logo and Background Image from the dropdown uploaded in the File & Media Manager section.";"'Select the files for Company logo and Background Image from the dropdown uploaded in the File & Media Manager section."
+"Click on the Save Settings button to save the Images.";"Click on the Save Settings button to save the Images."
+"What is FFMPEG Path in this plugin? Where will I get it?";"What is FFMPEG Path in this plugin? Where will I get it?"
+"Follow the steps below to install FFMPEG and to define path for it in Global Settings:";"Follow the steps below to install FFMPEG and to define path for it in Global Settings:"
+"Download FFMPEG static files from https://ffmpeg.org/download.html.";"Download FFMPEG static files from https://ffmpeg.org/download.html."
+"Place FFMPEG files in Document Root. For e.g. /var/www/html or /home/abc/public_html.";"Place FFMPEG files in Document Root. For e.g. /var/www/html or /home/abc/public_html."
+"Give 777 Recursive permission to the FFMPEG folder.";"Give 777 Recursive permission to the FFMPEG folder."
+"Go to 'Video Utilities' > 'Video Settings tab' in the admin panel of this plugin.";"Go to 'Video Utilities' > 'Video Settings tab' in the admin panel of this plugin."
+"Define FFMPEG path in 'Path to FFMPEG' field.";"Define FFMPEG path in 'Path to FFMPEG' field."
+"Click on the 'Save Changes' button to save the new changes in the settings.";"Click on the 'Save Changes' button to save the new changes in the settings."
+"You can check the version of FFMPEG that you have installed along with the supported video formats in the 'Global Settings' > 'Video Utilities' section available in the admin panel of this plugin.";"You can check the version of FFMPEG that you have installed along with the supported video formats in the 'Global Settings' > 'Video Utilities' section available in the admin panel of this plugin."
+"Do I need to upload videos in any specific format or it supports all formats?";"Do I need to upload videos in any specific format or it supports all formats?"
+"No, FFMPEG converts all the video formats dynamically for your website. So, you do not need to bother about video formats and resizing.";"No, FFMPEG converts all the video formats dynamically for your website. So, you do not need to bother about video formats and resizing."
+"The CSS of this plugin is not coming on my site. What should I do ?";"The CSS of this plugin is not coming on my site. What should I do ?"
+"Please enable the 'Development Mode' system mode for your site from the Admin homepage and then check the page which was not coming fine. It should now seem fine. Now you can again change the system mode to 'Production Mode.";"Please enable the 'Development Mode' system mode for your site from the Admin homepage and then check the page which was not coming fine. It should now seem fine. Now you can again change the system mode to 'Production Mode."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# mail templates
+
+# notify_status
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_STATUS_SUBJECT";"You have received a notification of your Course status."
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_STATUS_BODY";"[header]
+Your Course [title] is [status] by Admin.
+
+To view your Course, please click the following link:
+http://[host][object_link]
+
+[footer]"
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_STATUS_DESCRIPTION";"This is the email that gets sent when admin changes the status of Course."
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_STATUS_TITLE";"When a course is approved or disapproved by the admin."
+
+
+# notify_newest
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_NEWEST_SUBJECT";"Your course has been marked as one of the Newest Course."
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_NEWEST_BODY";"[header]
+Your Course [title] is marked as Newest.
+
+To view your Course, please click the following link:
+
+http://[host][object_link]
+
+[footer]
+"
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_NEWEST_DESCRIPTION";"This is the email that gets sent when your course is marked as one of the newest course."
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_NEWEST_TITLE";"When your course is marked as newest. (Using threshold values.)"
+
+
+
+# notify_bestseller
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_BESTSELLER_SUBJECT";"You have received a notification."
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_BESTSELLER_BODY";"[header]
+Your Course [title] is marked as BESTSELLER.
+
+To view your Course, please click the following link:
+
+http://[host][object_link]
+
+[footer]
+"
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_BESTSELLER_DESCRIPTION";"This is the email that gets sent when your course is marked as one of the bestseller course."
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_BESTSELLER_TITLE";"When your course is marked as bestseller."
+
+
+# notify_toprated
+
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_TOPRATED_SUBJECT";"Your course has been marked as a top-rated course."
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_TOPRATED_BODY";"
+[header]
+
+Your Course [title] is marked as a Top-Rated Course.
+
+To view your Course, please click the following link:
+
+http://[host][object_link]
+
+[footer]
+
+"
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_TOPRATED_DESCRIPTION";"This is the email that gets sent when your course is marked as top rated."
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_TOPRATED_TITLE";"When your course is marked as top rated.(Using threshold values.)"
+
+
+# notify_course_review
+
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_REVIEW_SUBJECT";"Someone has posted a review on your course."
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_REVIEW_BODY";"
+[header]
+
+[user_name] has written a review on ‘[course_title]’:
+
+[review_title]
+[review_description]
+
+To view this review, click on the link below, or copy-paste it in your browser:
+[review_link]
+
+[footer]
+"
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_REVIEW_DESCRIPTION";"This is the email that goes to a user when any visitor writes a review for course."
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_REVIEW_TITLE";"When someone reviews your course."
+
+
+# notify_course_purchase
+
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_PURCHASE_SUBJECT";"Your course has been purchased by [user_name]."
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_PURCHASE_BODY";"
+[header]
+
+Your Course [title] is purchased by [user_name].
+
+To view your Course, please click the following link:
+
+http://[host][object_link]
+
+[footer]
+"
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_PURCHASE_DESCRIPTION";"This is the email that gets sent when your course is purchased by user."
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_PURCHASE_TITLE";"When someone purchases your course."
+
+
+# notify_course_certificate
+
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_CERTIFICATE_SUBJECT";"Your certificate for course [title] has been issued."
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_CERTIFICATE_BODY";"
+[header]
+
+Your certificate for course [title] has been issued.
+
+To view your Course, please click the following link:
+
+http://[host][object_link]
+
+[footer]
+"
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_CERTIFICATE_DESCRIPTION";"This is the email that gets sent when your certificate is issued."
+"_EMAIL_NOTIFY_SITECOURSE_COURSE_CERTIFICATE_TITLE";"When your certificate is issued."
+
+
+"Mange Announcements";"Mange Announcements"
+"Below,you can manage the announcements for your course. Announcements are shown on the course profile.";"Post Announcements below for your courses. Announcements will appear on the course profile."
+"Post New Announcement";"Post New Announcement"
+"No Announcements have been posted for this course yet.";"No Announcements have been posted for this course yet."
+
+#notifications
+"_ACTIVITY_ACTIONTYPE_COURSE_NEW";"When the New Course is Published."
+"_ACTIVITY_ACTIONTYPE_SHARE_CONTENT";"When someone shares the courses."
+"ACTIVITY_TYPE_SITECOURSE_APPROVAL";"When a course is approved by the admin."
+"ACTIVITY_TYPE_SITECOURSE_BESTSELLER";"When a course is marked as a bestseller. (Using threshold values.)"
+"ACTIVITY_TYPE_SITECOURSE_CERTIFICATE";"When your certificate is issued."
+"ACTIVITY_TYPE_SITECOURSE_DISAPPROVAL";"When a course is disapproved by the admin."
+"ACTIVITY_TYPE_SITECOURSE_ENROLLMENT_DISABLED";"When enrollments on a course is banned by admin."
+"ACTIVITY_TYPE_SITECOURSE_ENROLLMENT_ENABLED";"When enrollments on a course is enabled by admin."
+"ACTIVITY_TYPE_SITECOURSE_FAVOURITE";"When someone adds your code to favorites."
+"ACTIVITY_TYPE_SITECOURSE_PURCHASE";"When someone purchases your course."
+"ACTIVITY_TYPE_SITECOURSE_REPORT";"When someone has reported your course."
+"ACTIVITY_TYPE_SITECOURSE_REVIEW";"When someone posts reviews of your course."
+"ACTIVITY_TYPE_SITECOURSE_REVIEWLIKE";"When someone likes your review."
+"ACTIVITY_TYPE_SITECOURSE_REVIEW_APPROVAL";"When your review is approved."
+"ACTIVITY_TYPE_SITECOURSE_REVIEW_DISAPPROVAL";"When your review is disapproved."
+
+
+
+
+
+
