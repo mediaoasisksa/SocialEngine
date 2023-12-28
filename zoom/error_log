@@ -1,0 +1,1350 @@
+[22-May-2021 09:28:50 UTC] PHP Notice:  Undefined index: code in /home/yaslook/public_html/zoom/callback.php on line 13
+[22-May-2021 09:54:29 UTC] PHP Notice:  Undefined index: user_id in /home/yaslook/public_html/zoom/callback.php on line 19
+[22-May-2021 10:14:43 UTC] PHP Warning:  Illegal string offset 'user_id' in /home/yaslook/public_html/zoom/class-db.php on line 41
+[22-May-2021 10:14:43 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/yaslook/public_html/zoom/class-db.php on line 22
+[22-May-2021 10:24:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getIdentity() on null in /home/yaslook/public_html/zoom/test.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/yaslook/public_html/zoom/test.php on line 1
+[22-May-2021 10:24:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getIdentity() on null in /home/yaslook/public_html/zoom/test.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/yaslook/public_html/zoom/test.php on line 1
+[22-May-2021 13:32:06 UTC] PHP Notice:  Undefined index: code in /home/yaslook/public_html/zoom/callback.php on line 13
+[22-May-2021 13:32:06 UTC] PHP Notice:  Undefined index: user_id in /home/yaslook/public_html/zoom/callback.php on line 14
+[24-May-2021 08:07:31 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function DB::get_access_token(), 0 passed in /home/yaslook/public_html/zoom/class-db.php on line 37 and exactly 1 expected in /home/yaslook/public_html/zoom/class-db.php:30
+Stack trace:
+#0 /home/yaslook/public_html/zoom/class-db.php(37): DB->get_access_token()
+#1 /home/yaslook/public_html/zoom/create-meeting.php(37): DB->get_refersh_token()
+#2 /home/yaslook/public_html/zoom/create-meeting.php(58): create_meeting()
+#3 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 30
+[24-May-2021 08:15:12 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[24-May-2021 08:16:49 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[24-May-2021 08:21:05 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[24-May-2021 08:26:20 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid client_id or client_secret","error":"invalid_client"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yasloo in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[24-May-2021 08:27:43 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[24-May-2021 08:32:50 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[24-May-2021 09:24:05 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function DB::store_meeting_data(), 1 passed in /home/yaslook/public_html/zoom/create-meeting.php on line 35 and exactly 3 expected in /home/yaslook/public_html/zoom/class-db.php:50
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(35): DB->store_meeting_data(Object(stdClass))
+#1 /home/yaslook/public_html/zoom/create-meeting.php(72): create_meeting()
+#2 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 50
+[24-May-2021 10:54:10 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[24-May-2021 10:54:52 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[24-May-2021 10:57:34 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[24-May-2021 11:17:10 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[24-May-2021 11:26:14 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[24-May-2021 11:32:01 UTC] PHP Notice:  Trying to get property 'access_token' of non-object in /home/yaslook/public_html/zoom/create-meeting.php on line 18
+[24-May-2021 11:32:02 UTC] PHP Notice:  Trying to get property 'refresh_token' of non-object in /home/yaslook/public_html/zoom/class-db.php on line 38
+[24-May-2021 11:32:02 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `400 Bad Request` response:
+{"reason":"Internal Error","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/v in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[24-May-2021 11:34:10 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[24-May-2021 12:37:08 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:37:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(77): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:38:57 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:38:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:40:11 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:40:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(76): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:41:27 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:41:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(76): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:42:53 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:42:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(76): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:44:02 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:44:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(76): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:45:46 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[24-May-2021 12:46:47 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[24-May-2021 12:49:21 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:49:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(76): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:51:19 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:51:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(76): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:53:45 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:53:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(77): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:57:10 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:57:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(77): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:58:04 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 12:58:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(77): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:00:06 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:00:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(77): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:01:28 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:01:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:03:17 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:03:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:06:30 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:06:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:07:49 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:07:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:08:21 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:08:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:08:54 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:08:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:09:20 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:09:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:10:51 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:10:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:13:07 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:13:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:15:04 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:15:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function check_meeting() on null in /home/yaslook/public_html/zoom/create-meeting.php:14
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 14
+[24-May-2021 13:15:59 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function DB::check_meeting(), 2 passed in /home/yaslook/public_html/zoom/create-meeting.php on line 20 and exactly 3 expected in /home/yaslook/public_html/zoom/class-db.php:56
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(20): DB->check_meeting('644', '2021-05-26T08:0...')
+#1 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#2 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 56
+[24-May-2021 13:16:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/yaslook/public_html/zoom/class-db.php:58
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(20): DB->check_meeting('644', '14', '2021-05-26T08:0...')
+#1 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#2 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 58
+[24-May-2021 13:17:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/yaslook/public_html/zoom/class-db.php:58
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(20): DB->check_meeting('644', '14', '2021-05-26T08:0...')
+#1 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#2 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 58
+[24-May-2021 13:18:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/yaslook/public_html/zoom/class-db.php:58
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(20): DB->check_meeting('644', '14', '2021-05-26T08:0...')
+#1 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#2 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 58
+[24-May-2021 13:19:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/yaslook/public_html/zoom/class-db.php:58
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(20): DB->check_meeting('644', '14', '2021-05-26T08:0...')
+#1 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#2 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 58
+[24-May-2021 13:22:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetchOneRow() on boolean in /home/yaslook/public_html/zoom/class-db.php:58
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(20): DB->check_meeting('644', '14', '2021-05-26T08:0...')
+#1 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#2 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 58
+[24-May-2021 13:25:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/yaslook/public_html/zoom/class-db.php:59
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(20): DB->check_meeting('644', '14', '2021-05-26T08:0...')
+#1 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#2 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 59
+[24-May-2021 13:27:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/yaslook/public_html/zoom/class-db.php:59
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(20): DB->check_meeting('644', '14', '2021-05-26T08:0...')
+#1 /home/yaslook/public_html/zoom/create-meeting.php(78): create_meeting()
+#2 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 59
+[24-May-2021 13:29:52 UTC] PHP Notice:  Undefined variable: result in /home/yaslook/public_html/zoom/class-db.php on line 59
+[24-May-2021 13:29:52 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/yaslook/public_html/zoom/class-db.php on line 59
+[24-May-2021 13:30:28 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/yaslook/public_html/zoom/class-db.php on line 59
+[24-May-2021 13:32:27 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/yaslook/public_html/zoom/class-db.php on line 59
+[24-May-2021 13:35:23 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/yaslook/public_html/zoom/class-db.php on line 59
+[24-May-2021 13:36:28 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/yaslook/public_html/zoom/class-db.php on line 59
+[24-May-2021 13:42:54 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/yaslook/public_html/zoom/class-db.php on line 59
+[24-May-2021 14:11:34 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[25-May-2021 05:26:48 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[25-May-2021 07:02:07 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[25-May-2021 07:17:25 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[25-May-2021 07:19:42 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[25-May-2021 07:27:59 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[25-May-2021 07:29:21 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[25-May-2021 12:58:51 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/get-zoom-meeting-url.php on line 8
+[25-May-2021 12:58:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_user_meeting() on null in /home/yaslook/public_html/zoom/get-zoom-meeting-url.php:8
+Stack trace:
+#0 /home/yaslook/public_html/zoom/get-zoom-meeting-url.php(17): get_meeting_url()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/get-zoom-meeting-url.php on line 8
+[25-May-2021 13:03:28 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/yaslook/public_html/zoom/get-zoom-meeting-url.php on line 11
+[25-May-2021 14:29:26 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function DB::get_refersh_token(), 0 passed in /home/yaslook/public_html/zoom/refresh_token.php on line 13 and exactly 1 expected in /home/yaslook/public_html/zoom/class-db.php:36
+Stack trace:
+#0 /home/yaslook/public_html/zoom/refresh_token.php(13): DB->get_refersh_token()
+#1 /home/yaslook/public_html/zoom/refresh_token.php(34): refresh_token()
+#2 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 36
+[26-May-2021 05:50:31 UTC] PHP Notice:  Trying to get property 'access_token' of non-object in /home/yaslook/public_html/zoom/create-meeting.php on line 18
+[26-May-2021 05:52:16 UTC] PHP Notice:  Trying to get property 'access_token' of non-object in /home/yaslook/public_html/zoom/create-meeting.php on line 18
+[26-May-2021 06:04:13 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 5
+[26-May-2021 06:04:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_refersh_token() on null in /home/yaslook/public_html/zoom/create-meeting.php:5
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(104): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 5
+[26-May-2021 06:06:48 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[26-May-2021 06:07:46 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[29-May-2021 09:11:54 UTC] PHP Notice:  Undefined index: code in /home/yaslook/public_html/zoom/callback.php on line 13
+[29-May-2021 10:47:46 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/yaslook/public_html/zoom/callback.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/yaslook/public_html/zoom/callback.php on line 6
+[29-May-2021 10:50:13 UTC] PHP Fatal error:  Uncaught Error: Class 'EspressoDev\Zoom\Zoom' not found in /home/yaslook/public_html/zoom/callback.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/yaslook/public_html/zoom/callback.php on line 6
+[29-May-2021 10:51:22 UTC] PHP Parse error:  syntax error, unexpected 'try' (T_TRY) in /home/yaslook/public_html/zoom/callback.php on line 5
+[29-May-2021 10:51:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Zoom' not found in /home/yaslook/public_html/zoom/callback.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/yaslook/public_html/zoom/callback.php on line 6
+[29-May-2021 11:47:04 UTC] PHP Notice:  Undefined index: code in /home/yaslook/public_html/zoom/callback.php on line 13
+[29-May-2021 11:47:04 UTC] PHP Notice:  Undefined index: user_id in /home/yaslook/public_html/zoom/callback.php on line 14
+[29-May-2021 12:29:42 UTC] PHP Notice:  Undefined variable: curl in /home/yaslook/public_html/zoom/callback.php on line 46
+[29-May-2021 12:29:42 UTC] PHP Warning:  curl_exec() expects parameter 1 to be resource, null given in /home/yaslook/public_html/zoom/callback.php on line 46
+[29-May-2021 12:29:42 UTC] PHP Notice:  Undefined variable: curl in /home/yaslook/public_html/zoom/callback.php on line 48
+[29-May-2021 12:29:42 UTC] PHP Warning:  curl_close() expects parameter 1 to be resource, null given in /home/yaslook/public_html/zoom/callback.php on line 48
+[29-May-2021 12:47:26 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/yaslook/public_html/zoom/callback.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/yaslook/public_html/zoom/callback.php on line 49
+[29-May-2021 13:18:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getBody() on boolean in /home/yaslook/public_html/zoom/callback.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/yaslook/public_html/zoom/callback.php on line 54
+[31-May-2021 05:28:51 UTC] PHP Notice:  Undefined index: access_token in /home/yaslook/public_html/zoom/callback.php on line 53
+[31-May-2021 05:39:34 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/yaslook/public_html/zoom/class-db.php:44
+Stack trace:
+#0 /home/yaslook/public_html/zoom/callback.php(65): DB->update_access_token('{"access_token"...', '644', '{"id":"mg45as4G...')
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 06:30:38 UTC] PHP Notice:  Undefined index: access_token in /home/yaslook/public_html/zoom/callback.php on line 53
+[31-May-2021 06:30:38 UTC] PHP Notice:  Undefined property: stdClass::$id in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 06:30:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/yaslook/public_html/zoom/callback.php:53) in /home/yaslook/public_html/zoom/callback.php on line 66
+[31-May-2021 06:31:13 UTC] PHP Notice:  Undefined index: access_token in /home/yaslook/public_html/zoom/callback.php on line 53
+[31-May-2021 06:31:13 UTC] PHP Notice:  Undefined property: stdClass::$id in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 06:31:13 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/yaslook/public_html/zoom/callback.php:53) in /home/yaslook/public_html/zoom/callback.php on line 66
+[31-May-2021 06:32:22 UTC] PHP Notice:  Undefined index: access_token in /home/yaslook/public_html/zoom/callback.php on line 53
+[31-May-2021 06:32:22 UTC] PHP Notice:  Undefined property: stdClass::$id in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 06:32:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/yaslook/public_html/zoom/callback.php:53) in /home/yaslook/public_html/zoom/callback.php on line 66
+[31-May-2021 07:14:51 UTC] PHP Fatal error:  Cannot redeclare DB::get_access_token() in /home/yaslook/public_html/zoom/class-db.php on line 90
+[31-May-2021 07:15:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/yaslook/public_html/zoom/class-db.php:92
+Stack trace:
+#0 /home/yaslook/public_html/zoom/deauth.php(59): DB->get_userData('mg45as4GSBqGoNB...')
+#1 /home/yaslook/public_html/zoom/deauth.php(6): removeUserData('')
+#2 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 92
+[31-May-2021 07:16:26 UTC] PHP Notice:  Undefined variable: start_time in /home/yaslook/public_html/zoom/class-db.php on line 91
+[31-May-2021 07:16:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/yaslook/public_html/zoom/class-db.php:92
+Stack trace:
+#0 /home/yaslook/public_html/zoom/deauth.php(59): DB->get_userData('mg45as4GSBqGoNB...')
+#1 /home/yaslook/public_html/zoom/deauth.php(6): removeUserData('')
+#2 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 92
+[31-May-2021 07:16:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/yaslook/public_html/zoom/class-db.php:92
+Stack trace:
+#0 /home/yaslook/public_html/zoom/deauth.php(59): DB->get_userData('mg45as4GSBqGoNB...')
+#1 /home/yaslook/public_html/zoom/deauth.php(6): removeUserData('')
+#2 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 92
+[31-May-2021 07:19:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/yaslook/public_html/zoom/class-db.php:92
+Stack trace:
+#0 /home/yaslook/public_html/zoom/deauth.php(59): DB->get_userData('mg45as4GSBqGoNB...')
+#1 /home/yaslook/public_html/zoom/deauth.php(6): removeUserData('')
+#2 {main}
+  thrown in /home/yaslook/public_html/zoom/class-db.php on line 92
+[31-May-2021 07:22:12 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/yaslook/public_html/zoom/class-db.php on line 92
+[31-May-2021 12:57:26 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[31-May-2021 12:57:41 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[31-May-2021 12:58:18 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[31-May-2021 14:04:31 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[31-May-2021 14:06:03 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[31-May-2021 14:06:26 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[31-May-2021 14:06:50 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[31-May-2021 14:07:07 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[31-May-2021 14:09:19 UTC] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home/yaslook/public_html/zoom/class-db.php on line 11
+[31-May-2021 14:11:23 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:24 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:25 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:26 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:27 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:28 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:28 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:29 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:30 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:31 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:32 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:32 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:33 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:34 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:35 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:36 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:37 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:37 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:38 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:39 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:40 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:41 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:41 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:42 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:43 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:44 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:45 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:46 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:46 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:46 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:47 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:47 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:48 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:48 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:49 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:49 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:50 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:50 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:50 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:51 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:51 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:51 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:52 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:52 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:53 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:53 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:54 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:54 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:54 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:55 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:55 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:55 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:56 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:56 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:57 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:57 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:58 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:58 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:59 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:59 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:11:59 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:00 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:00 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:00 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:01 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:01 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:02 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:02 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:03 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:03 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:03 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:04 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:04 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:04 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:05 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:05 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:05 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:06 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:06 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:06 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:07 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:07 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:07 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:08 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:08 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:08 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:08 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:09 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:09 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:09 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:09 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:09 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:10 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:10 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:10 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:11 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:11 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:11 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:12 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:12 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:12 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:12 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:13 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:13 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:13 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:13 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:14 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:14 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:14 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:14 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:15 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:15 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:15 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:16 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:16 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:16 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:17 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:17 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:17 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:17 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:17 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:18 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:18 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:18 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:18 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:19 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:19 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:19 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:20 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:20 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:20 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:21 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:21 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:21 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:22 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:22 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:22 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:23 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:23 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:23 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:23 UTC] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home/yaslook/public_html/zoom/class-db.php on line 11
+[31-May-2021 14:12:23 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:23 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:24 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:24 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:25 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:25 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:26 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:26 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:27 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:27 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:27 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:28 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:28 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:28 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:29 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:29 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:30 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:30 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:31 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:31 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:32 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:32 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:32 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:32 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:33 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:33 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:34 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:34 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:12:34 UTC] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home/yaslook/public_html/zoom/class-db.php on line 11
+[31-May-2021 14:12:34 UTC] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home/yaslook/public_html/zoom/class-db.php on line 11
+[31-May-2021 14:13:18 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:19 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:20 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:21 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:22 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:23 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:23 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:24 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:25 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:26 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:27 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:28 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:28 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:29 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:30 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:31 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:32 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:32 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:33 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:35 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:36 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:37 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:37 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:38 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:39 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:40 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:41 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:42 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:43 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:43 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:44 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:45 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:46 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:47 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:48 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:48 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:49 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:50 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:51 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:52 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:53 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:54 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:55 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:55 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:56 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:57 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:58 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:13:59 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:00 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:01 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:02 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:02 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:03 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:04 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:05 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:06 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:07 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:08 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:12 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:13 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:14 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:15 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:16 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:17 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:18 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:19 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:20 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:21 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:21 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:22 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:23 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:24 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:25 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:25 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:26 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:27 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:28 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:29 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:30 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:30 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:31 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:32 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:33 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:34 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:34 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:35 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:36 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:37 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:38 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:39 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:40 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:40 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:41 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:42 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:43 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:44 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:44 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:45 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:46 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:47 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:48 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:49 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:49 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:50 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:51 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:52 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:53 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:53 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:54 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:55 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:56 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:57 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:57 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:58 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:14:59 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:00 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:01 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:01 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:02 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:03 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:04 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:05 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:06 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:06 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:07 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:08 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:09 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:10 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:11 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:11 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:12 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:13 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:14 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:15 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:16 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:17 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:17 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:18 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:19 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:20 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:21 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:22 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:23 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:23 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:24 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:25 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:26 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:26 UTC] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home/yaslook/public_html/zoom/class-db.php on line 11
+[31-May-2021 14:15:58 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:58 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:15:59 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:00 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:01 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:02 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:03 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:03 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:05 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:05 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:06 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:07 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:08 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:09 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:10 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:10 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:11 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:12 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:13 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:14 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:14 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:15 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:16 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:17 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:18 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:19 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:20 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:20 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:21 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:22 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:23 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:24 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:24 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:25 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:26 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:27 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:28 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:29 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:30 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:30 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:31 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:32 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:33 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:34 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:35 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:35 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:36 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:37 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:38 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:39 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:39 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:40 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:41 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:42 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:43 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:44 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:45 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:46 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:47 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:47 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:48 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:49 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:50 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:51 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:52 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:52 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:53 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:54 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:55 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:56 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:57 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:58 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:58 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:16:59 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:00 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:01 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:02 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:02 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:03 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:04 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:05 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:06 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:06 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:07 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:08 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:09 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:10 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:11 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:12 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:12 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:13 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:13 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:14 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:15 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:16 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:17 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:17 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:18 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:19 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:20 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:21 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:22 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:22 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:23 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:24 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:25 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:25 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:26 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:26 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:27 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:28 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:29 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:30 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:30 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:31 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:32 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:33 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:34 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:35 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:35 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:36 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:37 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:38 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:39 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:39 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:40 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:41 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:42 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:43 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:43 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:44 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:44 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:45 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:46 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:47 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:48 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:49 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:49 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:50 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:51 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:52 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:53 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:53 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:54 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:55 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:56 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:57 UTC] PHP Notice:  Undefined property: stdClass::$refresh_token in /home/yaslook/public_html/zoom/class-db.php on line 44
+[31-May-2021 14:17:57 UTC] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home/yaslook/public_html/zoom/class-db.php on line 11
+[31-May-2021 14:21:36 UTC] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home/yaslook/public_html/zoom/class-db.php on line 11
+[31-May-2021 14:24:35 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:36 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:36 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:36 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:37 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:37 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:38 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:38 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:38 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:39 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:39 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:40 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:40 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:40 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:41 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:41 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:42 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:42 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:43 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:43 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:43 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:44 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:44 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:45 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:45 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:46 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:46 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:47 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:47 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:47 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:48 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:48 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:49 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:49 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:49 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:50 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:50 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:51 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:51 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:52 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:52 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:52 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:53 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:53 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:54 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:54 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:54 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:55 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:55 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:56 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:56 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:56 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:57 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:57 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:58 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:58 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:59 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:59 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:24:59 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:00 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:00 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:01 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:01 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:02 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:02 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:02 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:03 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:04 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:04 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:05 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:05 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:05 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:06 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:06 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:07 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:07 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:07 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:08 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:08 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:09 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:09 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:10 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:10 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:10 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:11 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:11 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:12 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:12 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:13 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:13 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:13 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:14 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:14 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:15 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:15 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:15 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:16 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:16 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:17 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:17 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:17 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:18 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:18 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:19 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:20 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:20 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:20 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:21 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:21 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:22 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:22 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:22 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:23 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:23 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:24 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:24 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:25 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:25 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:25 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:26 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:26 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:27 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:27 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:27 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:28 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:28 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:29 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:29 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:30 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:30 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:30 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:31 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:31 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:32 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:32 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:32 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:33 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:33 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:34 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:34 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:35 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:35 UTC] PHP Notice:  Undefined variable: response in /home/yaslook/public_html/zoom/create-meeting.php on line 100
+[31-May-2021 14:25:35 UTC] PHP Warning:  mysqli::__construct(): (HY000/1040): Too many connections in /home/yaslook/public_html/zoom/class-db.php on line 11
+[01-Jun-2021 04:54:23 UTC] PHP Notice:  Undefined variable: db in /home/yaslook/public_html/zoom/create-meeting.php on line 15
+[01-Jun-2021 04:54:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_refersh_token() on null in /home/yaslook/public_html/zoom/create-meeting.php:15
+Stack trace:
+#0 /home/yaslook/public_html/zoom/create-meeting.php(112): create_meeting()
+#1 {main}
+  thrown in /home/yaslook/public_html/zoom/create-meeting.php on line 15
+[07-Jun-2021 11:03:06 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[07-Jun-2021 11:03:26 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[07-Jun-2021 11:06:47 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[07-Jun-2021 11:14:33 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[30-Jul-2021 16:36:26 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/class-db.php on line 33
+[30-Jul-2021 16:36:47 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/class-db.php on line 33
+[30-Jul-2021 16:37:00 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/class-db.php on line 33
+[30-Jul-2021 16:44:11 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/class-db.php on line 33
+[30-Jul-2021 19:40:42 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/class-db.php on line 33
+[31-Jul-2021 12:44:43 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/class-db.php on line 33
+[31-Jul-2021 12:45:20 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/create-meeting.php on line 27
+[31-Jul-2021 12:45:21 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/create-meeting.php on line 27
+[31-Jul-2021 14:15:25 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/class-db.php on line 33
+[31-Jul-2021 14:16:43 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/class-db.php on line 33
+[31-Jul-2021 14:17:30 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/class-db.php on line 33
+[31-Jul-2021 14:19:49 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/create-meeting.php on line 27
+[31-Jul-2021 14:19:50 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[02-Aug-2021 11:04:47 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/class-db.php on line 33
+[02-Aug-2021 11:05:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/class-db.php on line 33
+[02-Aug-2021 11:09:08 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/yaslook/public_html/zoom/class-db.php on line 33
+[02-Aug-2021 11:09:34 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/yaslook/public_html/zoom/class-db.php on line 33
+[02-Aug-2021 12:03:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/create-meeting.php on line 27
+[02-Aug-2021 12:07:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/create-meeting.php on line 27
+[02-Aug-2021 12:14:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/create-meeting.php on line 27
+[02-Aug-2021 12:16:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/create-meeting.php on line 27
+[02-Aug-2021 12:17:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/create-meeting.php on line 27
+[02-Aug-2021 12:26:30 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/create-meeting.php on line 27
+[02-Aug-2021 12:34:29 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/yaslook/public_html/zoom/create-meeting.php on line 27
+[05-Sep-2021 08:46:58 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[05-Sep-2021 08:47:00 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/yaslook/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/yaslook/public_html/zoom/ in /home/yaslook/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[18-Sep-2021 12:26:40 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/consul2/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/consul2/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/consul2/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/consul2/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/consul2/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/consul2/public_html/zoom/ in /home/consul2/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[18-Sep-2021 12:26:40 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/consul2/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/consul2/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/consul2/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/consul2/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/consul2/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/consul2/public_html/zoom/ in /home/consul2/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[18-Sep-2021 12:26:42 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/consul2/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/consul2/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/consul2/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/consul2/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/consul2/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/consul2/public_html/zoom/ in /home/consul2/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[18-Sep-2021 12:46:27 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/consul2/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/consul2/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/consul2/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/consul2/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/consul2/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/consul2/public_html/zoom/ in /home/consul2/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[18-Sep-2021 13:12:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/consul2/public_html/zoom/class-db.php:32
+Stack trace:
+#0 /home/consul2/public_html/zoom/create-meeting.php(18): DB->get_access_token('1')
+#1 /home/consul2/public_html/zoom/create-meeting.php(92): create_meeting()
+#2 {main}
+  thrown in /home/consul2/public_html/zoom/class-db.php on line 32
+[18-Sep-2021 13:39:03 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `POST https://zoom.us/oauth/token` resulted in a `401 Unauthorized` response:
+{"reason":"Invalid Token!","error":"invalid_request"}
+ in /home/consul2/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /home/consul2/public_html/zoom/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /home/consul2/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /home/consul2/public_html/zoom/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /home/consul2/public_html/zoom/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /home/consul2/public_html/zoom/ in /home/consul2/public_html/zoom/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113

@@ -1,0 +1,55 @@
+
+.icon_siteapi_admin_add{
+  background-image:url(~/application/modules/Seaocore/externals/images/add.png);
+}
+
+.icon_siteapi_admin_back{
+  background-image:url(~/application/modules/Seaocore/externals/images/back.png);
+}
+
+.siteapi_admin_popup
+{
+	+rounded(5px);
+	background-color: #E9F4FA;
+	float: left;
+	padding: 7px;
+	margin:10px;
+}
+.siteapi_admin_popup > div
+{
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #D7E8F1;
+	overflow: hidden;
+	padding: 10px;
+}
+.siteapi_admin_popup > div .global_form_popup
+{
+	padding:5px;
+}
+
+
+/*view page*/
+.siteapi-view-detail-table td{
+	padding:3px;
+	vertical-align:top;
+}
+.siteapi-view-detail-table td b{
+	font-weight:bold;
+}
+/* small icons */
+.siteapi-view-detail-table .rating_star_generic{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-repeat: no-repeat;
+	font-size: 1px;
+	cursor: default;
+}
+.siteapi-view-detail-table .rating_star,
+.siteapi-view-detail-table .rating_star_half{
+	background-image: url(~/application/modules/Core/externals/images/star.png);
+}
+.siteapi-view-detail-table .rating_star_half{
+	background-image: url(~/application/modules/Core/externals/images/star_half.png);
+	width: 4px;
+}

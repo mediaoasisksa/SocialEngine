@@ -1,0 +1,5 @@
+@media only screen and (max-width: 1199px){
+    #global_header .layout_main, .layout_page_footer .layout_main, .layout_spectacular_menu_footer .footerlinks, #global_content .layout_main, #global_content_simple .layout_main {
+        width: 100% !important;
+    }
+}

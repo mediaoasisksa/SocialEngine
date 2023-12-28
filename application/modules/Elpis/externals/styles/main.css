@@ -1,0 +1,59 @@
+.elpis_menu_top_settings .color_modes > li.active > a{
+	background:$theme_button_font_color;
+	border:1px solid $theme_button_font_color;
+}
+.elpis_menu_top_settings ul > li,
+.elpis_menu_top_settings ul > li > a,
+.elpis_menu_top_settings ul > li > a *{
+  color:$theme_button_font_color !important;
+}
+.elpis_menu_top_settings .color_modes > li.active > a,
+.elpis_menu_top_settings .color_modes > li.active > a *,
+.elpis_menu_top_settings ul.resizer > li.active > a{
+	color:$theme_button_background_color !important;
+}
+.elpis_menu_top{
+	background:$theme_button_background_color;
+}
+.elips_member_box{
+  background:$theme_list_background_color;	
+}
+.elpis_menu_top_settings ul.resizer > li.active > a,
+.elpis_menu_top_settings ul.resizer > li.active > a *,
+.elpis_menu_top_settings ul.resizer > li > a:hover, 
+.elpis_menu_top_settings .color_modes > li > a:hover{
+	background:$theme_button_font_color;
+	color:$theme_button_background_color !important;
+	border:1px solid $theme_button_font_color;
+}
+.elpis_menu_top_settings .color_modes > li > a:hover *,
+.elpis_menu_top_settings ul.resizer > li > a:hover *{
+	color:$theme_button_background_color !important;
+}
+.dark_mode .layout_page_header {
+  background-color:$theme_topbar_background_color;
+}
+.light_mode .global_form button[type=submit],
+.light_mode .browsemembers_criteria button,
+.light_mode .profile_cover_btn i,
+.light_mode button,
+.light_mode ul.forum_categories > li > div > h3,
+.light_mode ul.grid_wrapper > li .groups_members *,
+.light_mode ul.profile_options_pulldown > li:hover a, 
+.light_mode .coverphoto_navigation ul > li:hover a{
+	color:$theme_button_font_color !important;
+}
+.light_mode .layout_core_menu_main .navigation > li > ul > li > a:hover *,
+.light_mode .layout_core_menu_main .navigation > li > ul > .selected_sub_main_menu > a *,
+.light_mode .layout_core_menu_main .navigation > .more_tab > ul > li.active > a *{
+	color:$theme_topbar_menu_link_color !important;
+}
+.light_mode .layout_core_menu_main .navigation > li > ul > li > a:hover,
+.light_mode .layout_core_menu_main .navigation > li > ul > .selected_sub_main_menu > a,
+.light_mode .layout_core_menu_main .navigation > .more_tab > ul > li.active > a{
+  background:$theme_list_background_color !important;
+}
+.dark_mode .layout_core_banner a:link, 
+.dark_mode .layout_core_banner a:visited{
+  background:$theme_button_background_color !important;	
+}

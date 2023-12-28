@@ -1,0 +1,119 @@
+/* Start work of Mobile app strip */
+ 
+.layout_siteapi_mobile_tip {position:relative; width:100%;}
+
+#dismissMobileBox {
+	background: $theme_tag_background_color;
+    z-index:999;
+    width: 100%;
+    display: table;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 0;
+	left:0;
+	right:0;
+    max-height: 70px;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,.35)
+}
+.seaocore-notice-icon {
+    display: table-cell;
+    padding: 8px 15px 8px 8px;
+	margin-right:1%;
+    vertical-align:middle;
+    width:55px;
+    border-radius:3px;
+ 
+}
+.seaocore-notice-icon img{
+	width:55px;
+	max-width:55px;
+	max-height:55px;
+	border-radius:3px;
+    vertical-align:middle;
+}
+.seaocore-notice-info {
+    float: left;
+    padding-top: 10px;
+	font-style:normal;
+    line-height:22px;
+}
+ .layout_page_footer .generic_layout_container.layout_siteapi_mobile_tip .seaocore-notice-info > h3 {
+    font-size:120% !important;
+    color:$theme_font_color !important;
+    font-weight:bold !important;
+	text-align:left !important;
+}
+.seaocore-notice-info > h3{
+     border-bottom: 0 none !important;
+     margin-bottom: 0px !important;
+     text-transform:capitalize !important;
+     color: $theme_font_color !important;
+     font-weight: 400;
+     font-size: 100% !important; 
+}
+.seaocore-notice-info > h3 + br{display:none;}
+.seaocore-notice-info {  color: $theme_font_color;}
+ 
+.seaocore-notice-info a {
+    color: $theme_link_color;
+}
+
+ .seaocore-download {
+    float: right;
+    display: inline-block;
+    padding: 8px 15px;
+    color: $theme_button_font_color;
+    background-color: $theme_button_background_color;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 35%;
+    font-size: 11px;
+    font-weight:bold !important;
+	right:8px;
+	cursor:pointer;
+}
+
+.dismiss-icon {
+	position: absolute;
+    top: 0;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+}
+.dismiss-icon a:before {
+    content: "\\f00d";
+    color:$theme_link_color;
+    font-size: 15px;
+    font-family: FontAwesome;
+}
+ 
+/* Mobile App strip responsive work */
+
+@media only screen and (max-width:920px) {
+     .seaocore-download { width:15%;}
+     .seaocore-notice-icon {width: 50px;  margin-right:0; padding: 7px 4%;}
+}
+@media only screen and (max-width:800px) {
+    .seaocore-notice-icon img{ width:100%; max-width:100%; max-height:50px;}
+}
+ 
+@media only screen and (max-width:480px) {
+.seaocore-notice-icon {width: 40px;}
+.seaocore-notice-icon img{ max-height:40px;}
+.seaocore-notice-info {padding-top:5px;  padding-bottom:5px; width:74%; font-size:88% !important;   }
+.seaocore-download {width:13%; font-size:80%; padding:5px 6px;}
+}
+ 
+ @media only screen and (max-width:320px) {
+	.seaocore-notice-info { line-height:17px; }
+ 
+ }
+  
+ 
+ 
+/* End work of Mobile app strip */
+
+ 
+
+ 

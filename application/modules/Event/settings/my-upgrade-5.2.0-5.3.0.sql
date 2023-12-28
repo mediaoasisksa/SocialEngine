@@ -1,0 +1,1 @@
+UPDATE `engine4_core_content` SET `params`= '{"title":"Guest Responses","titleCount":true}' WHERE `engine4_core_content`.`page_id` = (SELECT page_id FROM `engine4_core_pages` WHERE `engine4_core_pages`.`name` = 'event_profile_index') AND `engine4_core_content`.`name` = 'event.profile-members';

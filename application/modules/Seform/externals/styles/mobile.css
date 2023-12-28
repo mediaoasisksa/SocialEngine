@@ -1,0 +1,373 @@
+
+/* $Id: mobile.css 8825 2011-04-09 01:34:20Z john $ */
+
+
+
+/*
+FEED ITEMS
+Styles items with classified attachments in the feed.
+*/
+ul.feed .feed_attachment_classified
+{
+  display: block;
+  overflow: hidden;
+  margin: 0px 5px 5px 0px;
+  vertical-align: top;
+}
+ul.feed .feed_attachment_classified > div > a
+{
+  display: block;
+  margin-bottom: 10px;
+}
+ul.feed .feed_attachment_classified > div > a > img
+{
+  display:block;
+	width:100%;
+  max-width:100%;
+  max-height:250px;
+	object-fit:cover;
+	object-position:center;
+  vertical-align: top;
+}
+ul.feed .feed_attachment_classified > div > div
+{
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ITEM TYPE ICONS */
+.item_icon_classified:before
+{
+  content: "\\f1ea";
+  font-family:'Font Awesome\ 5 Free';
+}
+
+
+/*
+BROWSE CLASSIFIEDS
+These styles are used on the browse classifieds page
+*/
+.browseclassifieds_criteria span.overTxtLabel
+{
+  color: $theme_font_color_light;
+}
+.browseclassifieds_criteria > ul > li + li
+{
+  margin-top: 7px;
+}
+.browseclassifieds_criteria > ul > li
+{
+  clear: both;
+  font-size: .8em;
+  overflow: hidden;
+}
+.browseclassifieds_criteria > ul > li > span
+{
+  display: block;
+  margin-bottom: 3px;
+}
+ul.classifieds_browse
+{
+  clear: both;
+}
+ul.classifieds_browse > li
+{
+  clear: both;
+  padding: 0px 0px 15px 0px;
+  overflow: hidden;
+}
+ul.classifieds_browse > li + li
+{
+  padding-top: 15px;
+  border-top-width: 1px;
+}
+ul.classifieds_browse .classifieds_browse_photo
+{
+  overflow: hidden;
+  text-align: center;
+}
+ul.classifieds_browse .classifieds_browse_photo img
+{
+  max-width: 90%;
+}
+ul.classifieds_browse .classifieds_browse_options
+{
+  display: none;
+}
+ul.classifieds_browse .classifieds_browse_info
+{
+  overflow: hidden;
+}
+ul.classifieds_browse .classifieds_browse_info_title h3
+{
+  margin: 0px;
+  text-align: center;
+}
+ul.classifieds_browse .classifieds_browse_info_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+  text-align: center;
+  margin-top:3px;
+}
+ul.classifieds_browse .classifieds_browse_info_des
+{
+  margin-top: 2px;
+	text-align:center;
+}
+ul.classifieds_browse .classifieds_browse_info_blurb
+{
+  font-size: .8em;
+  text-align: center;
+  color: $theme_font_color_light;
+  margin-top:7px;
+}
+ul.classifieds_browse .classifieds_browse_info_blurb ul .field_currency > span {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+ul.classifieds_browse .classifieds_browse_info_blurb ul .field_currency > span:first-child {
+  display: none;
+}
+ul.classifieds_browse .classifieds_browse_info_blurb ul .field_location > span:first-child {
+  display: none;
+}
+ul.classifieds_browse .classifieds_browse_info_blurb ul .field_location > span:nth-child(2):before {
+  content: "\\f041";
+  font-family:'Font Awesome\ 5 Free';
+  color: $theme_font_color_light;
+	font-weight:900 !important;
+}
+ul.classifieds_browse .classifieds_browse_info_blurb li {
+  margin-bottom: 5px;
+}
+.browseclassifieds_criteria .browse-separator-wrapper
+{
+  display: none;
+}
+
+
+
+
+/*
+VIEW CLASSIFIED
+Styles both the 'view classifieds' and the 'view classified listing'
+pages, including the right-side gutter column by default.
+*/
+#global_page_classified-index-view h2
+{
+  text-align: center;
+}
+ul.classifieds_entrylist > li
+{
+  padding-bottom: 10px;
+}
+ul.classifieds_entrylist h3
+{
+  margin-bottom: 1px;
+}
+ul.classifieds_entrylist .classified_entrylist_entry_date
+{
+  text-align: center;
+  margin-bottom: 5px;
+}
+ul.classifieds_entrylist .classified_entrylist_entry_body
+{
+  line-height: 1.5em;
+  padding: 5px 5px 5px 0px;
+  text-align: center;
+}
+ul.classifieds_entrylist .classified_entrylist_entry_body img
+{
+  max-width: 100%;
+}
+ul.classifieds_entrylist .classified_entrylist_entry_body + .buttonlink
+{
+  margin-top: 5px;
+}
+ul.classifieds_entrylist + .comments
+{
+  padding-top: 10px;
+}
+ul.classifieds_entrylist .classified_entrylist_entry_date
+{
+  font-size: 10pt;
+  color: #777;
+}
+ul.classified_thumbs > li
+{
+  text-align: center;
+}
+ul.classified_thumbs > li + li
+{
+  margin-top: 10px;
+}
+ul.classified_thumbs > li img
+{
+  border: 1px solid $theme_photo_border_color;
+  max-width: 80%;
+}
+.classified_stats
+{
+  display: none;
+}
+#global_page_classified-index-view .comments
+{
+  width: auto;
+}
+
+
+
+/*
+CLASSIFIED PHOTOS UPLOAD FORM
+Some minor changes to the global form.
+*/
+.classified_form_upload #file-label,
+.classified_form_upload #submit-label
+{
+  display: none;
+}
+
+
+
+
+
+
+
+
+/*
+CLASSIFIEDS USER PROFILE TAB
+Styles the list of classified listings on a user's Classifieds profile tab.
+*/
+ul.classifieds_profile_tab > li
+{
+  overflow: hidden;
+}
+ul.classifieds_profile_tab > li + li
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+ul.classifieds_profile_tab .classifieds_profile_tab_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 7px;
+}
+ul.classifieds_profile_tab .classifieds_profile_tab_photo img
+{
+  max-width: 90px;
+}
+ul.classifieds_profile_tab .classifieds_profile_tab_info
+{
+  overflow: hidden;
+}
+ul.classifieds_profile_tab .classifieds_profile_tab_title > a
+{
+  font-weight: bold;
+}
+ul.classifieds_profile_tab .classifieds_browse_info_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+ul.classifieds_profile_tab .classifieds_browse_info_blurb
+{
+  margin-top: 7px;
+}
+
+
+
+
+
+
+/* ICONS */
+.icon_classified_new:before 
+{
+  content: "\\f1ea";
+}
+.icon_classified_edit:before
+{
+  content: "\\f303";
+	font-weight: 900 !important;
+}
+.icon_classified_close:before
+{
+  content: "\\f023";
+	font-weight: 900 !important;
+}
+.icon_classified_open:before
+{
+  content: "\\f13e";
+	font-weight: 900 !important;
+}
+.icon_classified_delete:before
+{
+  content: "\\f056";
+	font-weight: 900 !important;
+}
+.icon_classified_photo_new:before 
+{
+  content: "\\f03e";
+}
+.icon_classified_viewall:before
+{
+  content: "\\f060";
+	font-weight: 900 !important;
+}
+
+
+
+/* ACTION TYPE ICONS */
+.activity_icon_comment_classified:before
+{
+  content: "\\f075";
+  font-family:'Font Awesome\ 5 Free';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hide menu items */
+.headline .tabs .navigation li > a.classified_main_create
+{
+  display: none;
+}

@@ -1,0 +1,174 @@
+{
+  "type": "external",
+  "name": "jQuery",
+  "version": "6.2.2",
+  "revision": "9747",
+  "path": "externals\/jQuery",
+  "repository": null,
+  "sku": null,
+  "date": "Tue, 23 Aug 2022 12:11:24 +0000",
+  "title": "jQuery",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "meta": {
+    "date": "Tue, 23 Aug 2022 12:11:24 +0000",
+    "title": "jQuery",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/jQuery": {
+      "type": "directory",
+      "path": "externals\/jQuery",
+      "structure": [
+        {
+          "path": "core.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 15436,
+          "sha1": "53e3a2dd3514b96e28c32c59963617db3fd4bd18"
+        },
+        {
+          "path": "images",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 128,
+          "sha1": null
+        },
+        {
+          "path": "images\/arrow-white.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 364,
+          "sha1": "3f640da6b02826835b4a15ceb5e40d19490ca086"
+        },
+        {
+          "path": "images\/arrow.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 222,
+          "sha1": "ae005b5f8bf4758d64bc5c8784f5da66dc2edf61"
+        },
+        {
+          "path": "odering.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3368,
+          "sha1": "4a483e05090f71ff54a192df13bf29879195ea67"
+        },
+        {
+          "path": "jquery.idle.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2423,
+          "sha1": "cc4c6791a5fd5ffdd1542fc1e4678b0964eed5cb"
+        },
+        {
+          "path": "owlcarousel",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 128,
+          "sha1": null
+        },
+        {
+          "path": "owlcarousel\/owl.carousel.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 43010,
+          "sha1": "4589457431b92a4329a79c190362effd77f1aec5"
+        },
+        {
+          "path": "owlcarousel\/jquery.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 86833,
+          "sha1": "f9d1f2d187f16a8c603710cbb8a78d998f93c588"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 422,
+          "sha1": "98dd1f7f3605cc2b80bca6b00818ff149a29b3b1"
+        },
+        {
+          "path": "jquery-ui.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 30480,
+          "sha1": "3bf5b22da69f4e29adeb5cad2049e2e7017dd456"
+        },
+        {
+          "path": "jquery.min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 97210,
+          "sha1": "218ba3a2e8954b346e677acd05be6f5bb0bbadd6"
+        },
+        {
+          "path": "jquery.drag-n-crop.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 8939,
+          "sha1": "a3c060e81d1d0618053c6b5165f8c7fe0b0754cb"
+        },
+        {
+          "path": "jquery.drag-n-crop.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2429,
+          "sha1": "6d4cc54b1dbd10fb402188d04e5640d10144a56a"
+        },
+        {
+          "path": "imagesloaded.pkgd.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 26670,
+          "sha1": "6029d079f02f3d574c1e6ea4be5dc14548f889b1"
+        },
+        {
+          "path": "jquery-ui.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 253978,
+          "sha1": "f26d53c11eaf6a673ff832699c07f43c9aa74660"
+        }
+      ]
+    }
+  }
+}

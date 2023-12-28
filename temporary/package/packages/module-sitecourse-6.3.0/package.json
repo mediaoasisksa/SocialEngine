@@ -1,0 +1,3194 @@
+{
+  "type": "module",
+  "name": "sitecourse",
+  "version": "6.3.0",
+  "revision": null,
+  "path": "application\/modules\/Sitecourse",
+  "repository": null,
+  "sku": null,
+  "date": "Wed, 25 Jan 2023 05:48:53 +0000",
+  "title": "Course Builder \/ Learning Management Plugin",
+  "description": "Course Builder \/ Learning Management Plugin",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "<a href=\"http:\/\/www.socialapps.tech\" style=\"text-decoration:underline;\" target=\"_blank\">SocialApps.tech<\/a>"
+  ],
+  "meta": {
+    "date": "Wed, 25 Jan 2023 05:48:53 +0000",
+    "title": "Course Builder \/ Learning Management Plugin",
+    "description": "Course Builder \/ Learning Management Plugin",
+    "developer": null,
+    "authors": [
+      "<a href=\"http:\/\/www.socialapps.tech\" style=\"text-decoration:underline;\" target=\"_blank\">SocialApps.tech<\/a>"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Sitecourse\/settings\/install.php",
+    "class": "Sitecourse_Installer",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Sitecourse": {
+      "type": "directory",
+      "path": "application\/modules\/Sitecourse",
+      "structure": [
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminReportController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5973,
+          "sha1": "01bcca46395e69a56d66623741347f1b53157174"
+        },
+        {
+          "path": "controllers\/VideoController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15413,
+          "sha1": "28ec8c6af2244e74068fac85e8c60cccc0d8c34f"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 31294,
+          "sha1": "99f1f4d9d903ae6db39ec66dca262f21c952c084"
+        },
+        {
+          "path": "controllers\/PaymentController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9378,
+          "sha1": "8362eb1ac1fa14c3eb9880755eb9b515e80f7abb"
+        },
+        {
+          "path": "controllers\/AdminSettingsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 20109,
+          "sha1": "0be78cb5c1f60b6b33ab3753e262c94178d211ec"
+        },
+        {
+          "path": "controllers\/AdminLevelController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1816,
+          "sha1": "435ceafb8618ed648dec64f8530df2fd9da6c873"
+        },
+        {
+          "path": "controllers\/ReviewController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8673,
+          "sha1": "6de439d4f9c6df69015850aac810a21f6cabec26"
+        },
+        {
+          "path": "controllers\/DashboardController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 33819,
+          "sha1": "514ad44ca98a5458ef3784af8a1a0ec98492b975"
+        },
+        {
+          "path": "controllers\/OrderController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17855,
+          "sha1": "050eb5697ee66dcbc46b17876f4253ff7fdb05ab"
+        },
+        {
+          "path": "controllers\/DocController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1942,
+          "sha1": "9739ecf95e759199073cc2e40e30451e86b0b727"
+        },
+        {
+          "path": "controllers\/LearningController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6900,
+          "sha1": "b047960f0fd308559f830143c46c996f220ed68f"
+        },
+        {
+          "path": "controllers\/AdminManageController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 25441,
+          "sha1": "6b6cfc7c2fe91a2e535a0d8a771f21b4fcba5e2d"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 380,
+          "sha1": "37e38c703dffc83143bff2fe6fe0759c5f905bb4"
+        },
+        {
+          "path": "widgets\/browse-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 377,
+          "sha1": "9898cc66d73bb017bdc4ca760250b5153f3002ed"
+        },
+        {
+          "path": "widgets\/course-review",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/course-review\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1279,
+          "sha1": "441d5afd0def5a3a9a51603f85cead2c97a0de74"
+        },
+        {
+          "path": "widgets\/course-review\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9419,
+          "sha1": "ed1e771c1e009e3163ec794e882b8b8bc5c2ed22"
+        },
+        {
+          "path": "widgets\/newcourse-sitecourse",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/newcourse-sitecourse\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 423,
+          "sha1": "dd74a4d62b3ffc6ac142cc31a83d609b76dc0b41"
+        },
+        {
+          "path": "widgets\/newcourse-sitecourse\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 329,
+          "sha1": "a28470c309bf57bb55f17bcc2d84fd758591e612"
+        },
+        {
+          "path": "widgets\/course-curriculum",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/course-curriculum\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1082,
+          "sha1": "40b511d71118de989e28d669a941b957c1341212"
+        },
+        {
+          "path": "widgets\/course-curriculum\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2573,
+          "sha1": "91d2c0df56db475ea814330d39b8a0b36af0d366"
+        },
+        {
+          "path": "widgets\/course-promotional-video",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/course-promotional-video\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3557,
+          "sha1": "15d26282e220c6e8027f94f2d6efd300528e8ef0"
+        },
+        {
+          "path": "widgets\/course-promotional-video\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8975,
+          "sha1": "6881ef017fa326941702bf5fd4e2ee22f60dfabf"
+        },
+        {
+          "path": "widgets\/fullwidth-slider-courses",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/fullwidth-slider-courses\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3967,
+          "sha1": "a3815fa95e64d3c6de387c515f93f7d2a243d02b"
+        },
+        {
+          "path": "widgets\/fullwidth-slider-courses\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4633,
+          "sha1": "cf099db3cf58fdaa680cf781e7b4e307bd994201"
+        },
+        {
+          "path": "widgets\/newest-courses",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/newest-courses\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3401,
+          "sha1": "01f3c7dad1b378667c52c602d439b1d0f7313041"
+        },
+        {
+          "path": "widgets\/newest-courses\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 420,
+          "sha1": "87e0e1a2edb2487d13cc85fb48f93b3d489a7c92"
+        },
+        {
+          "path": "widgets\/course-profile-breadcrumb",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/course-profile-breadcrumb\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1154,
+          "sha1": "94f8d75fedc27b087391974981f6d6170b4c9309"
+        },
+        {
+          "path": "widgets\/course-profile-breadcrumb\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2063,
+          "sha1": "f0e4a238ae7da505528ba576388277212d381a74"
+        },
+        {
+          "path": "widgets\/toprated-courses",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/toprated-courses\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3933,
+          "sha1": "31bf5a6ac4a790cf70f1674ee426a5efd4c84c29"
+        },
+        {
+          "path": "widgets\/toprated-courses\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 467,
+          "sha1": "1227684a3efb7832a2a356b000cf3c843e23b1c6"
+        },
+        {
+          "path": "widgets\/tags-sitecourse",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/tags-sitecourse\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1804,
+          "sha1": "06f8f727b8fd7e296a9f8da7388b3d3c189912b6"
+        },
+        {
+          "path": "widgets\/tags-sitecourse\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1696,
+          "sha1": "b270baac9cb11a8a87c04c34b498cde65f92a205"
+        },
+        {
+          "path": "widgets\/course-profile-photo",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/course-profile-photo\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 605,
+          "sha1": "4670a393bdf9d08ac412a83734f77395a2ed4d6f"
+        },
+        {
+          "path": "widgets\/course-profile-photo\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 118,
+          "sha1": "463fc325ada996910c37c604652cbf9200c3b637"
+        },
+        {
+          "path": "widgets\/course-overview",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/course-overview\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 651,
+          "sha1": "37bb6ec442f5695c137c48ae710aeecc4d14f7e4"
+        },
+        {
+          "path": "widgets\/course-overview\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 32,
+          "sha1": "257a6ec3fa13e1c450fa477aad1512b554a19ae9"
+        },
+        {
+          "path": "widgets\/course-owner-info",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/course-owner-info\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1309,
+          "sha1": "6f4131033d24b73cfab002afaac56ecdc39f3eb8"
+        },
+        {
+          "path": "widgets\/course-owner-info\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1229,
+          "sha1": "be14c9e3845cbe1d3b754b394a2e87e16c2d2d71"
+        },
+        {
+          "path": "widgets\/course-options",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/course-options\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1596,
+          "sha1": "055f503ee2d4bb538b33a7240146718783465c40"
+        },
+        {
+          "path": "widgets\/course-options\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2408,
+          "sha1": "4422efb567d75bf3dd22f53ef56b947e54e87096"
+        },
+        {
+          "path": "widgets\/search-sitecourse",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/search-sitecourse\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1200,
+          "sha1": "b653cdda77529c03ed2920dc44867eab19425420"
+        },
+        {
+          "path": "widgets\/search-sitecourse\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2335,
+          "sha1": "5137798cfbaa39e3bba39127550e6f956acaf39d"
+        },
+        {
+          "path": "widgets\/course-benefits",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/course-benefits\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 737,
+          "sha1": "7d15c47a83a05459d77ee8efee49ba4d981d1ebf"
+        },
+        {
+          "path": "widgets\/course-benefits\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 53,
+          "sha1": "ffaf5be866475fe438706789ca5c2eb8deef810a"
+        },
+        {
+          "path": "widgets\/bestseller-courses",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/bestseller-courses\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": "f2397d5d9d5a47c3df22574c86652b64158018db"
+        },
+        {
+          "path": "widgets\/bestseller-courses\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 378,
+          "sha1": "f12ec3874a620e155c5d8b31d54cf63096fb817f"
+        },
+        {
+          "path": "widgets\/course-carousel",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/course-carousel\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3827,
+          "sha1": "172ee2f81751a663b3426fa24c80d7c571ca76fa"
+        },
+        {
+          "path": "widgets\/course-carousel\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1692,
+          "sha1": "210cf108349199b363f6c68c4f827c266583c96c"
+        },
+        {
+          "path": "widgets\/course-learning-content",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/course-learning-content\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 159,
+          "sha1": "67ebbd60eb9bb09a0876f22559e61ca0eed0f6cf"
+        },
+        {
+          "path": "widgets\/course-learning-content\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 166,
+          "sha1": "02ad4f23a0fe38eb1e8ba48cc6c84456a6bfec28"
+        },
+        {
+          "path": "widgets\/course-requirements",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/course-requirements\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 762,
+          "sha1": "bdbb64a592b78720f40cf1c7696428c8ad9352c1"
+        },
+        {
+          "path": "widgets\/course-requirements\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 47,
+          "sha1": "e4840a340feba3a6b8163d3c0d8fe69dd99cc48c"
+        },
+        {
+          "path": "widgets\/my-courses-sitecourse",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/my-courses-sitecourse\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1462,
+          "sha1": "9f04da4799d73c58e91261625d8299516571d41a"
+        },
+        {
+          "path": "widgets\/my-courses-sitecourse\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1990,
+          "sha1": "73d4e19451fe518c01d26adfa4ae29ff545f1338"
+        },
+        {
+          "path": "widgets\/my-purchased-courses-sitecourse",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/my-purchased-courses-sitecourse\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1441,
+          "sha1": "009ff199399bd324e7fffc47ae1748dbf7837fd1"
+        },
+        {
+          "path": "widgets\/my-purchased-courses-sitecourse\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1801,
+          "sha1": "32c170bcfb2538a004d0d4d9a3dc7cbc20e8f49b"
+        },
+        {
+          "path": "widgets\/course-announcement",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/course-announcement\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 710,
+          "sha1": "7722baf95b8c91bab8e2074dea7f423cf454d302"
+        },
+        {
+          "path": "widgets\/course-announcement\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 655,
+          "sha1": "0c7ce625d30edd1bde26c376ff5087f8d680c629"
+        },
+        {
+          "path": "widgets\/browse-courses-sitecourse",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-courses-sitecourse\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1343,
+          "sha1": "3549db25d52b9597db15079b9a56e3482f2d81c7"
+        },
+        {
+          "path": "widgets\/browse-courses-sitecourse\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2997,
+          "sha1": "89b29642e92cb9a2fdaae5ec1b2a5e43fc2cc219"
+        },
+        {
+          "path": "widgets\/about-instructor",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/about-instructor\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 660,
+          "sha1": "dd7dd5a6d2ede0b9acb2fa753dd4321e4c1bf51e"
+        },
+        {
+          "path": "widgets\/about-instructor\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 46,
+          "sha1": "f1f76990bd24ee0ebd17c722dab10e1512e46539"
+        },
+        {
+          "path": "widgets\/course-learning-curriculum",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/course-learning-curriculum\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2035,
+          "sha1": "b2293fd4fdfa01dd643c1e204101cf3f545aff97"
+        },
+        {
+          "path": "widgets\/course-learning-curriculum\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6656,
+          "sha1": "1024ee9a35448381cfc5fc4d39b069b74fe022d2"
+        },
+        {
+          "path": "widgets\/categories",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/categories\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2805,
+          "sha1": "422605ed0024598c2c22644fd350277e5d7f2a1f"
+        },
+        {
+          "path": "widgets\/categories\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7607,
+          "sha1": "1bca48cf0ac54001c642b3e7d5215b576206a6d4"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/style_sitecourse_dashboard.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5442,
+          "sha1": "856fe2adbcc0b76943f4f8f3b4bba69a961a0aab"
+        },
+        {
+          "path": "externals\/styles\/owl.theme.default.min.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1035,
+          "sha1": "f1efe13861d86d9527cd530ec96f881f76e0e2f3"
+        },
+        {
+          "path": "externals\/styles\/owl-carousel.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3664,
+          "sha1": "3e10e18eee75efec44a50e79402b31d2f172e3d3"
+        },
+        {
+          "path": "externals\/styles\/admin",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/admin\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6712,
+          "sha1": "86a71ce172734defc82841d9976afd3b534357a7"
+        },
+        {
+          "path": "externals\/styles\/owl.carousel.min.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2952,
+          "sha1": "6b2f3d48066814a6d73ee8b2c27bdd36c46ef6db"
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 88529,
+          "sha1": "754ffdd7608627b6dcf88322857ef5b0e8217a51"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/jquery.min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 84280,
+          "sha1": "ffe47a16e4b1550ddfba3577cc9cc9fdc8643aff"
+        },
+        {
+          "path": "externals\/scripts\/core.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 28,
+          "sha1": "b58d988070d02e44d27a6b019e23a1665bd1f790"
+        },
+        {
+          "path": "externals\/scripts\/owl.carousel.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 85703,
+          "sha1": "9108bfdb650ac5709cf7c2ce5d9ec1c12bb7fe14"
+        },
+        {
+          "path": "externals\/scripts\/composer_sitecourse.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1649,
+          "sha1": "2ded377c4c8be2fbc46fc350687a52aa7801325e"
+        },
+        {
+          "path": "externals\/scripts\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/scripts\/html2canvas.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 435621,
+          "sha1": "89e21fecbd49f3913daad98f9521dbec4c18b964"
+        },
+        {
+          "path": "externals\/scripts\/togglefavourite.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 420,
+          "sha1": "9cc345a2d69103c50380978d1c4077d3358f85f3"
+        },
+        {
+          "path": "externals\/scripts\/jquery.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 594929,
+          "sha1": "30336a23fcea97f8ec329d2915cb88abe47d76e1"
+        },
+        {
+          "path": "externals\/scripts\/courseslisting.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 13300,
+          "sha1": "4edc92f213ca08c6214ab6456e7aaa3af817d49b"
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 147,
+          "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/plus.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 434,
+          "sha1": "57ff0a62140b172440f74e423e16d4ae9dedbc4c"
+        },
+        {
+          "path": "externals\/images\/default_course_profile.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 18218,
+          "sha1": "bed66c894518281cef39cdf467b9329bbe68ae02"
+        },
+        {
+          "path": "externals\/images\/icons",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/icons\/close.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3423,
+          "sha1": "7aa6b295270615ed60e2b9700c9a1da5f67637f8"
+        },
+        {
+          "path": "externals\/images\/icons\/upload.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 653,
+          "sha1": "124dd7319ae3eebfe028991d6c3b162180b73e14"
+        },
+        {
+          "path": "externals\/images\/icons\/flip_horizontal.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 625,
+          "sha1": "aef2ebca3d00bd338102c8ba91b4cc1836af5d69"
+        },
+        {
+          "path": "externals\/images\/icons\/rotate_ccw.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 608,
+          "sha1": "49616ee556ab6919952b8da2b37fed640faa22e1"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagedocument.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 402,
+          "sha1": "2f55ededcb089f6f77102ffc00cd98a294e7f618"
+        },
+        {
+          "path": "externals\/images\/icons\/download.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 574,
+          "sha1": "60c757d32dca03316de6869d31c7bdbdb263ab8b"
+        },
+        {
+          "path": "externals\/images\/icons\/invite.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 754,
+          "sha1": "6cd1ff4a775d58d70d6440bdc097ca14b8153325"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepageevent_join.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 811,
+          "sha1": "a3728a716fad22f26c3de1a2bf566b0b93760a18"
+        },
+        {
+          "path": "externals\/images\/icons\/back16.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 569,
+          "sha1": "d3c6a8d5a3641e0a2ada69e9215c8f31d2dd078f"
+        },
+        {
+          "path": "externals\/images\/icons\/video16.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 653,
+          "sha1": "3811ee746f69176ff8c7b610ae5c4ce80e0ec50b"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagepoll_new.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 626,
+          "sha1": "54db8115fc526932b9a766fdf455609e99924b5f"
+        },
+        {
+          "path": "externals\/images\/icons\/import.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 596,
+          "sha1": "bfacd08b0610d36cb10595b57cba72b73b99aec0"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagedocument_edit.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 807,
+          "sha1": "e25fb883611d467ce7ad9c4dc2ea76c733b0b926"
+        },
+        {
+          "path": "externals\/images\/icons\/comment.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 413,
+          "sha1": "5040bd61de2f06bb58e2d1a5e78886578bcc61c5"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepageevent.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 626,
+          "sha1": "94a3d0236ff91e15de79c1c78524a077a1261fb8"
+        },
+        {
+          "path": "externals\/images\/icons\/thumb_down.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 711,
+          "sha1": "b516d8b2c1815c79145804b1ca72ca5c09cd12eb"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagedocument_approved0.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1018,
+          "sha1": "8f57c40b6a771c8695d412ca34beac2d46a7d22d"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagevideo_new.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 739,
+          "sha1": "606a684490fe55ff2ef051148ac1c63f019cad56"
+        },
+        {
+          "path": "externals\/images\/icons\/edit.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 450,
+          "sha1": "62a1b41ac5eefbf3d0ad578a19572d4096d88146"
+        },
+        {
+          "path": "externals\/images\/icons\/review.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 618,
+          "sha1": "31ccb1b272ca4499219c8759be04535779967ff6"
+        },
+        {
+          "path": "externals\/images\/icons\/embed.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 439,
+          "sha1": "f29b2df577df69225ea6f40ff76069ec11faa356"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagedocument_goldmedal1.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 499,
+          "sha1": "bf7ffa625cb2a1a990d792bd3fb42bd6d1e85cf6"
+        },
+        {
+          "path": "externals\/images\/icons\/offer.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 730,
+          "sha1": "2abdf311d6d4e7d550da990940a0e1ac19b09388"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagenote_publish.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 626,
+          "sha1": "e062acb4aa3336f70f3e361ca3437033fb556769"
+        },
+        {
+          "path": "externals\/images\/icons\/file.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 418,
+          "sha1": "f1ae641baab748e2112783061f51d5a20a31b594"
+        },
+        {
+          "path": "externals\/images\/icons\/rotate_cw.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 602,
+          "sha1": "9ebb50d335cd87e13bb64207eae94f8642ca1040"
+        },
+        {
+          "path": "externals\/images\/icons\/web.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 887,
+          "sha1": "75e3ab1c3f7fed8a407f9b948e797c44e54ae212"
+        },
+        {
+          "path": "externals\/images\/icons\/tagged.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 586,
+          "sha1": "59ba0d678437b8b8279013d9d6be13dcae376300"
+        },
+        {
+          "path": "externals\/images\/icons\/offer_featured.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 499,
+          "sha1": "bf7ffa625cb2a1a990d792bd3fb42bd6d1e85cf6"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagedocument_delete.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 740,
+          "sha1": "201689b7e328b8008ea41f6f2c66cdae0cea6e85"
+        },
+        {
+          "path": "externals\/images\/icons\/note.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 324,
+          "sha1": "b5cee8ee74c54c7035925ccb642ec1e8b99f2392"
+        },
+        {
+          "path": "externals\/images\/icons\/search.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 472,
+          "sha1": "0358d3f7126434f9849cd6a6d4aaafaf2be04f02"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagepoll.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 541,
+          "sha1": "4e9576a56db3d142113b8905d7aa93e31c9f441b"
+        },
+        {
+          "path": "externals\/images\/icons\/hot-offer.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 668,
+          "sha1": "47d7ac4a1268e7867ac0a4ef3412ce2b887571e2"
+        },
+        {
+          "path": "externals\/images\/icons\/loading.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 878,
+          "sha1": "54fc32753d51a95f7c61b10f0b8a0bfa1b2a2e57"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepageevent_accept.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 807,
+          "sha1": "ffffded4580b1077130c1aea09ef090a24ebaa93"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagedocument_publish.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 691,
+          "sha1": "ae53c8b4091acea248e03874e64cdd11b6eec31c"
+        },
+        {
+          "path": "externals\/images\/icons\/minus16_disabled.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 124,
+          "sha1": "d35ee112bd95565a1fd7941e29f3cfb35926fdca"
+        },
+        {
+          "path": "externals\/images\/icons\/share.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 743,
+          "sha1": "355df33576c0d155b4ff9c24cc017054e62f5de9"
+        },
+        {
+          "path": "externals\/images\/icons\/flip_vertical.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 669,
+          "sha1": "ff907e69ab622d86680688c67ac2c688145644ed"
+        },
+        {
+          "path": "externals\/images\/icons\/add.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3211,
+          "sha1": "7f29f4889c9f28c1afa2ee0776b4957353bea97e"
+        },
+        {
+          "path": "externals\/images\/icons\/page-photo-prev.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 239,
+          "sha1": "4a1c22f90e0021224614659f14e30b5ea9ec99ac"
+        },
+        {
+          "path": "externals\/images\/icons\/plus16_disabled.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 492,
+          "sha1": "2271bb0d08fe8a75b88f1bb8895ef9312ecdd95e"
+        },
+        {
+          "path": "externals\/images\/icons\/page-photo-close.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 415,
+          "sha1": "b6ac62635c0821107ac681929df7df8c7edd3d97"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepage.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 352,
+          "sha1": "54538c3e24a683cc1754bc883ddfed35c91bee86"
+        },
+        {
+          "path": "externals\/images\/icons\/unclose.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 815,
+          "sha1": "2107ef2e7ccdb11310a51c5b30d7b00f0438e96e"
+        },
+        {
+          "path": "externals\/images\/icons\/highlighted.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 483,
+          "sha1": "3baae1fa249b14cafcae828cb54777c317de6296"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagevideo_report.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 665,
+          "sha1": "6299e5cefae503a3e2891843b2a8c6cce0e15351"
+        },
+        {
+          "path": "externals\/images\/icons\/minus16.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 177,
+          "sha1": "241ab264647cafc3f3f284ea8b59db27651c526b"
+        },
+        {
+          "path": "externals\/images\/icons\/lightbox_comment.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 635,
+          "sha1": "728f6e7670a029c5d556607f3f1db05992145760"
+        },
+        {
+          "path": "externals\/images\/icons\/back.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 569,
+          "sha1": "d3c6a8d5a3641e0a2ada69e9215c8f31d2dd078f"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagedocument_allentries.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 635,
+          "sha1": "b32cc1f2cfc3ca5dd2e81c15a04afb194ca00ee2"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepageevent_leave.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 655,
+          "sha1": "a54e44499f7b408c6c58c209ed08fa14c07b2b7c"
+        },
+        {
+          "path": "externals\/images\/icons\/delete.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 715,
+          "sha1": "8f0ebcb45d7ba71a541d4781329f4a6900c7ee65"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepageevent_remove.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 767,
+          "sha1": "7c9dfd9e984a91c5c56f0ec9b77bebcf6da3f9a2"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepage_add.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 775,
+          "sha1": "7b26683f96dadd3d82ba070db1b09ab21d57054e"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagedocument_new.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 739,
+          "sha1": "18a2b3df06820d185cfd259bd44561bd9b24d88c"
+        },
+        {
+          "path": "externals\/images\/icons\/offer_unfeatured.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 567,
+          "sha1": "ad234dcdd0a9e13200acb8681e1cec70d6a8a933"
+        },
+        {
+          "path": "externals\/images\/icons\/plus13.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 293,
+          "sha1": "f8421514dfe9b655cb4d1c5c8479cf2ca213f30c"
+        },
+        {
+          "path": "externals\/images\/icons\/log_clear.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 849,
+          "sha1": "25184b9b95f1a60129180d83684984ce3a51a372"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagedocument16.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 402,
+          "sha1": "2f55ededcb089f6f77102ffc00cd98a294e7f618"
+        },
+        {
+          "path": "externals\/images\/icons\/mobile.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 378,
+          "sha1": "53d11491c0e82cd6219301e1d5c6c084ef4c7759"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagepoll_delete.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 636,
+          "sha1": "9907bed17735a3962fb9d037390597ecb01cf800"
+        },
+        {
+          "path": "externals\/images\/icons\/page-photo-nxt.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 241,
+          "sha1": "89a8d511fde49ccc73ae435039f94c7e50e4885f"
+        },
+        {
+          "path": "externals\/images\/icons\/thumb_up.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 692,
+          "sha1": "4d702159999df341f2f8aafe173599e92d7a1f60"
+        },
+        {
+          "path": "externals\/images\/icons\/download.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1535,
+          "sha1": "7c9d26444beb4d3be95b8573c93549439bc1101a"
+        },
+        {
+          "path": "externals\/images\/icons\/plus16.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 197,
+          "sha1": "896197e015eaffa179710ebff45a708ee12c27b3"
+        },
+        {
+          "path": "externals\/images\/icons\/Thumbs.db",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 126976,
+          "sha1": "3e0c89523ca5da198df36c56ded7478a8b721c09"
+        },
+        {
+          "path": "externals\/images\/icons\/allentries.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 324,
+          "sha1": "b5cee8ee74c54c7035925ccb642ec1e8b99f2392"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepageevent_create.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 703,
+          "sha1": "06d65fd73b66a54953d2d598dcc5358a1d02d708"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepageevent_cancel.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 827,
+          "sha1": "3542875c9f0e3b9bb2060e82bd0b626aeb7e2c5c"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagedocument_goldmedal0.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 567,
+          "sha1": "ad234dcdd0a9e13200acb8681e1cec70d6a8a933"
+        },
+        {
+          "path": "externals\/images\/icons\/new.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 641,
+          "sha1": "56103354951bb691902b919121e7eb3d99d256db"
+        },
+        {
+          "path": "externals\/images\/icons\/unhighlighted.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 452,
+          "sha1": "38f8da628d4db3b83afec0bc3c16e10a35cf83fd"
+        },
+        {
+          "path": "externals\/images\/icons\/sitecourse_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 18101,
+          "sha1": "8e53233af571ac80d91198fe48c46851a92e861c"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepageevent_reject.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 827,
+          "sha1": "3542875c9f0e3b9bb2060e82bd0b626aeb7e2c5c"
+        },
+        {
+          "path": "externals\/images\/icons\/sitepagedocument_approved1.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1012,
+          "sha1": "5c19528232d7dca4d2eb8eb55064f6d4bdcc3e69"
+        },
+        {
+          "path": "externals\/images\/icons\/album_editinfo.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 783,
+          "sha1": "b1fcd0cb0afa649abda653eae4f4186b9d3e07de"
+        },
+        {
+          "path": "externals\/images\/default_course_normal.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 16571,
+          "sha1": "a129ab5afad8b764781739fd953223ddf4b3acf9"
+        },
+        {
+          "path": "externals\/images\/minus.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 343,
+          "sha1": "7088ea9c6a21415fb22e7aaf9fec36eda462af09"
+        },
+        {
+          "path": "externals\/images\/companyLogo.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2459,
+          "sha1": "4e65d41bbd32cbcab4343c3631c873e47aa003b7"
+        },
+        {
+          "path": "externals\/images\/folder_open_yellow.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 118,
+          "sha1": "6ff05cf88c16180835bd1cc9fcc709702f3fcdda"
+        },
+        {
+          "path": "externals\/images\/folder_open_green.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 118,
+          "sha1": "f9d090e5b65f4874dfa757fce762aeb5e84a78a8"
+        },
+        {
+          "path": "externals\/images\/plus_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1383,
+          "sha1": "84407deef9a14d97c6b18c7bdd573fe8b1d6b870"
+        },
+        {
+          "path": "externals\/images\/loading.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 878,
+          "sha1": "54fc32753d51a95f7c61b10f0b8a0bfa1b2a2e57"
+        },
+        {
+          "path": "externals\/images\/sitecourse_approved0.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1018,
+          "sha1": "8f57c40b6a771c8695d412ca34beac2d46a7d22d"
+        },
+        {
+          "path": "externals\/images\/backgroundImage.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15743,
+          "sha1": "26c1ebeffdcec121716765e4e58498518d4902fb"
+        },
+        {
+          "path": "externals\/images\/white.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3421,
+          "sha1": "d24a4f3ac0c180b5acc64024df53523ffac5d748"
+        },
+        {
+          "path": "externals\/images\/default_course_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2693,
+          "sha1": "451e3555b0b8bcf89d5c2c5dfda3208a6ec4e38f"
+        },
+        {
+          "path": "externals\/images\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/images\/sitecourse_approved1.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1012,
+          "sha1": "5c19528232d7dca4d2eb8eb55064f6d4bdcc3e69"
+        },
+        {
+          "path": "externals\/images\/transparent.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1311,
+          "sha1": "9942de95d4b7e770036202946981aca24cd7719c"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "settings\/seaocore_install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2984,
+          "sha1": "fc80efb8be8c31f7a208c458ef203c2ca46bab50"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 32121,
+          "sha1": "0ffaba765b9ded865f7e624240f594fa01e5fa0e"
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 25399,
+          "sha1": "4dc6e2103416523b50998c86167c21f04ad063cd"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 31085,
+          "sha1": "6f74f9b717a4cd027ee5632f356818d25a24de9f"
+        },
+        {
+          "path": "settings\/sitemodule_install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4494,
+          "sha1": "8b33d994332fe038e6965cf6df19f7c7bbc59aa3"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8569,
+          "sha1": "a290fe97a8a289f855ba9adc0f4bbd4acd9e4637"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/_formEditImage.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4317,
+          "sha1": "533dfdd26a2ae74f1c4df9c320044f161cd9ed90"
+        },
+        {
+          "path": "views\/scripts\/_formSetDivAddress.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 179,
+          "sha1": "5fd7c1841dda28eba55362656ec6b626aff5d74f"
+        },
+        {
+          "path": "views\/scripts\/payment",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/payment\/process.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1339,
+          "sha1": "41d453e03664a729b79add333de0f996834e41ce"
+        },
+        {
+          "path": "views\/scripts\/_pageView.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 705,
+          "sha1": "6363fe341ba17555fbee42c3027b0461f469b988"
+        },
+        {
+          "path": "views\/scripts\/admin-level",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-level\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 609,
+          "sha1": "4e582f707652d15c5dfe8f5dc6e2771c30f952de"
+        },
+        {
+          "path": "views\/scripts\/review",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/review\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7178,
+          "sha1": "199411937b078a98edfaf3fe8b3bda6c70505be1"
+        },
+        {
+          "path": "views\/scripts\/review\/delete-review.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 795,
+          "sha1": "77d3ea3e6ac92937e847c59df679023f1d299c6f"
+        },
+        {
+          "path": "views\/scripts\/doc",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/doc\/doclesson_form.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 195,
+          "sha1": "3df29c159baa6b9bc9fc387940b8268c71a53582"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/manage.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 150,
+          "sha1": "b69b12a29dc8d9265141b02736e5beb6b71e309a"
+        },
+        {
+          "path": "views\/scripts\/index\/messageowner.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 42,
+          "sha1": "cb32b2ef2f7e101588a3be33a3f8e1061acfd234"
+        },
+        {
+          "path": "views\/scripts\/index\/publish.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 258,
+          "sha1": "af395fe98ae91daaf5225c78202a41204e0ed3d1"
+        },
+        {
+          "path": "views\/scripts\/index\/_view-text-lesson.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 103,
+          "sha1": "9004d64cba8d5597de1be959f39ad4461350f7c4"
+        },
+        {
+          "path": "views\/scripts\/index\/_view-video-lesson.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 392,
+          "sha1": "619d6f2209d8e9467e95f1e5a782a6dabab0e7b9"
+        },
+        {
+          "path": "views\/scripts\/index\/profile.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/index\/course-details.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1652,
+          "sha1": "b85166acbe520f070b3b75f72891322903c089c9"
+        },
+        {
+          "path": "views\/scripts\/index\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5416,
+          "sha1": "a93d483b326684baf795e6a515b638a304d10701"
+        },
+        {
+          "path": "views\/scripts\/index\/course-delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 153,
+          "sha1": "df2fa1acfcbbd71670026538efb171f6fcb3049e"
+        },
+        {
+          "path": "views\/scripts\/index\/report.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 153,
+          "sha1": "df2fa1acfcbbd71670026538efb171f6fcb3049e"
+        },
+        {
+          "path": "views\/scripts\/index\/favourites.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 358,
+          "sha1": "906d1f503905ea309dc942d21c93bae32236b5f3"
+        },
+        {
+          "path": "views\/scripts\/index\/create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3695,
+          "sha1": "c53e7353808c3527030b0fca015c02de823ebd57"
+        },
+        {
+          "path": "views\/scripts\/order",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/order\/success.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2046,
+          "sha1": "225eb1f78f24ab6b388b96b64d70c59fab070f52"
+        },
+        {
+          "path": "views\/scripts\/order\/buyer-details.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2878,
+          "sha1": "9f59d716725f4fa338235d4ba0ad85fdc0538662"
+        },
+        {
+          "path": "views\/scripts\/order\/checkout.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3905,
+          "sha1": "84f941757bcef175f7c785379b7d6496e76ac924"
+        },
+        {
+          "path": "views\/scripts\/order\/payment-info.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1405,
+          "sha1": "7a7e5f30a201e5ca1261abfbe72f1044ce82d2ca"
+        },
+        {
+          "path": "views\/scripts\/admin-settings",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/certificate.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 666,
+          "sha1": "5e29ad871bf87d86ee5685c13c557e9159ee5782"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 724,
+          "sha1": "ba7558dcc0ad613545ef80f933893c9466930eb1"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/categories.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6685,
+          "sha1": "9389fc5cc1ae69aee4eeb2138dda8dde2fa08a5d"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/preview-certificate.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 65,
+          "sha1": "7aee8f11fb9b457e40e83c82d84cd082e1b985b3"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1570,
+          "sha1": "94ca1a18b740632096cce11785d652819df22e25"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/form.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 195,
+          "sha1": "3df29c159baa6b9bc9fc387940b8268c71a53582"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/utility.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1356,
+          "sha1": "c783bc38c42f5af40eb74a26ba379f7a61d2b09a"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/faq.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11074,
+          "sha1": "d995343f84a40cae6e9e0f162e4887ecfdff80c4"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/delete-subcategory.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 727,
+          "sha1": "43f7cf2ad1d1139cc9b3b57dc6b88732b09ec3c7"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/video-settings.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 647,
+          "sha1": "c3180cdc24ef8328f13b39d07818bde218217178"
+        },
+        {
+          "path": "views\/scripts\/admin-report",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-report\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6743,
+          "sha1": "abad2b9e557e6fed00c6e63209fdc584b4e71f14"
+        },
+        {
+          "path": "views\/scripts\/admin-report\/coursedelete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 586,
+          "sha1": "654d8ea525d0387226aef14826263e39b19162cd"
+        },
+        {
+          "path": "views\/scripts\/admin-report\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1074,
+          "sha1": "8669130c1f6cc92119e215cc1d20fa9d3f4e95c1"
+        },
+        {
+          "path": "views\/scripts\/admin-report\/reportaction.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 153,
+          "sha1": "df2fa1acfcbbd71670026538efb171f6fcb3049e"
+        },
+        {
+          "path": "views\/scripts\/learning",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/learning\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/learning\/preview-certificate.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1870,
+          "sha1": "17edc3f1890b2984a31e170fb30f5679597bf57b"
+        },
+        {
+          "path": "views\/scripts\/dashboard",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/dashboard\/course-intro-video.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2941,
+          "sha1": "54b21a299af28ba50f8bac60ed10a6eab9a58c18"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/enrolled-members.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3314,
+          "sha1": "ae9a8ee93a34a39b3e391cf7698388a4a4db7e79"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/intro-video.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3674,
+          "sha1": "622a18ea4e3829df9c11b2fe2a833c5b63367095"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/delete-lesson.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 195,
+          "sha1": "3df29c159baa6b9bc9fc387940b8268c71a53582"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/course-picture.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1349,
+          "sha1": "f3c50bba7247ca3b51fd90ffa7d77a3f431231cc"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/announcements.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4727,
+          "sha1": "6a0b1fd5d798ba3fa185cd432afac5d08776c202"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/lesson_form.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 195,
+          "sha1": "3df29c159baa6b9bc9fc387940b8268c71a53582"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/transactions.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4249,
+          "sha1": "6136eaa6bc907ba4b223c47b5f261e0fcdc07035"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/edit-announcement.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 195,
+          "sha1": "3df29c159baa6b9bc9fc387940b8268c71a53582"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/topic_form.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 195,
+          "sha1": "3df29c159baa6b9bc9fc387940b8268c71a53582"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/_menu.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6359,
+          "sha1": "b73ee31c4d23e805bb5245d73aed85071acd00d5"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/targetstudents.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8451,
+          "sha1": "f6779693f9e2f423350547819994ade8a6240406"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/_dashboardNavigation.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 529,
+          "sha1": "efaa08846f8728ebf526aa19c0443c5abf991847"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/create-announcement.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 42,
+          "sha1": "ae6e2b735c7a2473577594bd1a9604c7d338f93e"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/course-overview.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1050,
+          "sha1": "c08b4f7f97c501bb29888e3c47d3e9b3cfc8247c"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/topics.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10064,
+          "sha1": "2ae4df0d5f9b2d43d3eadecfd566581075fa595b"
+        },
+        {
+          "path": "views\/scripts\/dashboard\/delete-announcement.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 195,
+          "sha1": "3df29c159baa6b9bc9fc387940b8268c71a53582"
+        },
+        {
+          "path": "views\/scripts\/_composeSitecourse.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1024,
+          "sha1": "d2069dc8ec917a9cd883f99bf762ebe789f14b35"
+        },
+        {
+          "path": "views\/scripts\/video",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/video\/upload-video.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 114,
+          "sha1": "808303b87888d3b24825f7ced50661bdeec14071"
+        },
+        {
+          "path": "views\/scripts\/video\/validation.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 285,
+          "sha1": "d39f982629b6d3dfa53b4a43ecae9985de77e429"
+        },
+        {
+          "path": "views\/scripts\/video\/create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12601,
+          "sha1": "739b0fd94e86e212175eb073311678d76987b611"
+        },
+        {
+          "path": "views\/scripts\/admin-manage",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/disable-enrollment.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 780,
+          "sha1": "b107093ae964fee0a53589cc536fcdf27b352dd2"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 16518,
+          "sha1": "e9caec5f186409d7ca2c758eb60a978fead161ab"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/transaction-details.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1775,
+          "sha1": "91045f0155b41fa19d5e5830249acd9b69f5a2b6"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/transactions.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6712,
+          "sha1": "56fe73279de9c6c41630634efb32501c6e000dc6"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/course-details.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1614,
+          "sha1": "f366b383eca1128024a6ac3f0d7c08b52f223645"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/delete-review.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 726,
+          "sha1": "0d6b7ce00c5e1bce02535cab870b66b5918bc898"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/review.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11260,
+          "sha1": "b7a250c5e334b3ec19aae9237afe94ca31946161"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/disapprove.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 195,
+          "sha1": "3df29c159baa6b9bc9fc387940b8268c71a53582"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/request.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11920,
+          "sha1": "7f68ed50fc510814a2bf28ae271d13b4632b617a"
+        },
+        {
+          "path": "Plugin",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Menus.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1125,
+          "sha1": "221f9d4515afebb0745187e560680965681d7a00"
+        },
+        {
+          "path": "Plugin\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 527,
+          "sha1": "990dee0e6bdd70ea4dc013ef260a8fd4d75b4b98"
+        },
+        {
+          "path": "Plugin\/Gateway",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Gateway\/PayPal.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 27367,
+          "sha1": "3e1fcfc2b76970c62a37e1e618f5d8c1c4e310e9"
+        },
+        {
+          "path": "Plugin\/Job",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Job\/Encode.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 16135,
+          "sha1": "816e1dfeb8719fca1bac06a87b6f1a9679f1b277"
+        },
+        {
+          "path": "Plugin\/Job\/Upload.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4035,
+          "sha1": "c6b9e00971169c3db10d77dfec7b9f38d03c9795"
+        },
+        {
+          "path": "Plugin\/Job\/DeleteUser.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3536,
+          "sha1": "04b7a0adbf4b6858c6bb42debf331558fe5598a0"
+        },
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Checks.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4285,
+          "sha1": "60195faabb7d20fe118c7ca194373049f2a95ab9"
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 34260,
+          "sha1": "dc57ca77196a4eb1a9042d9c24c03bbf9882db8e"
+        },
+        {
+          "path": "Api\/Language.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7641,
+          "sha1": "9e0da10915e5b5ce85c0f42d348c9a8c331435b8"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/Completedcourse.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 89,
+          "sha1": "9f7f5c43e72c614778c4ee0cdda4be2a1ea8f514"
+        },
+        {
+          "path": "Model\/Lesson.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 772,
+          "sha1": "1c0f2d92dbd2719d7bbc7dd175c1c68b6be47aba"
+        },
+        {
+          "path": "Model\/Favourite.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 82,
+          "sha1": "b744f92a0c97f2eaf74243df21344bb6ca134b20"
+        },
+        {
+          "path": "Model\/Video.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6193,
+          "sha1": "0bb826acb6260aaaebf5c561c1022eb0a75e57f2"
+        },
+        {
+          "path": "Model\/Buyerdetail.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 84,
+          "sha1": "bd99010c9872a35e16d722038140f7cd593719bd"
+        },
+        {
+          "path": "Model\/Category.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 478,
+          "sha1": "0c36ffd56eaf3f94aed06a5db646936f21a42c08"
+        },
+        {
+          "path": "Model\/Reviewlike.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 83,
+          "sha1": "484b6338dd04585c65a108ee72381733d582aa0d"
+        },
+        {
+          "path": "Model\/Announcement.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 85,
+          "sha1": "3632280cf6166ef703936d0e54c0d37b10f73077"
+        },
+        {
+          "path": "Model\/Completedlesson.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 89,
+          "sha1": "8e57ac51f264c91843a34ab779efd704bad8114a"
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/Ordercourses.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 341,
+          "sha1": "90c86b6ad3cf23be657620df49fd43e3efeed6c8"
+        },
+        {
+          "path": "Model\/DbTable\/Announcements.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1708,
+          "sha1": "87c139ffdf71a61e101f6f938b5c7d87da0fe714"
+        },
+        {
+          "path": "Model\/DbTable\/Completedlessons.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1191,
+          "sha1": "ddf6d3100003807a75bb5197bf9b4c30a872d900"
+        },
+        {
+          "path": "Model\/DbTable\/Reviews.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4680,
+          "sha1": "866e4b1e22c4ca1dddae4a29840cef20e0508b88"
+        },
+        {
+          "path": "Model\/DbTable\/Topics.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1640,
+          "sha1": "a77fa9b3f837c408eccaf574e39c0a9d2436e9c2"
+        },
+        {
+          "path": "Model\/DbTable\/Gateways.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1418,
+          "sha1": "4a7ddd788c6c96432faf8249af9e287e9cb5b28a"
+        },
+        {
+          "path": "Model\/DbTable\/Transactions.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3184,
+          "sha1": "b252d2c1cc4eee66a1ae105f3920ff606caa91e6"
+        },
+        {
+          "path": "Model\/DbTable\/Categories.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3155,
+          "sha1": "4ad2f11fd8fc2184f6674d14018be1d42babf0b9"
+        },
+        {
+          "path": "Model\/DbTable\/Reports.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1613,
+          "sha1": "ff9315cc6fc05c4f33db273ae683561c2eb5d76e"
+        },
+        {
+          "path": "Model\/DbTable\/Reviewlikes.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2664,
+          "sha1": "071ca3dfd65390a5d98b63ba492fbfaf3a0c385d"
+        },
+        {
+          "path": "Model\/DbTable\/Favourites.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1197,
+          "sha1": "8e6a8e87e1042c9409928c6da95491c03815b3f9"
+        },
+        {
+          "path": "Model\/DbTable\/Courses.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 13824,
+          "sha1": "8f865df614881e316024d30cbf8c33679504e91d"
+        },
+        {
+          "path": "Model\/DbTable\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Model\/DbTable\/Orders.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 667,
+          "sha1": "8237f97145ac442ebb90018b9557e0be070425df"
+        },
+        {
+          "path": "Model\/DbTable\/Buyerdetails.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1806,
+          "sha1": "405539f7721cc306dd01bbc181d50ed04612171c"
+        },
+        {
+          "path": "Model\/DbTable\/Lessons.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1715,
+          "sha1": "d29943b87b82ca865e29e442048c6fba84c3592f"
+        },
+        {
+          "path": "Model\/DbTable\/Completedcourses.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1461,
+          "sha1": "72a01e64e0bf8164875e6a847bdc226dd48585ca"
+        },
+        {
+          "path": "Model\/DbTable\/Videos.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 855,
+          "sha1": "80e5a5a501a7f4d9e9702a3965997a36218734f7"
+        },
+        {
+          "path": "Model\/Order.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3901,
+          "sha1": "3612a34a611cc0f4264c1ff44be0892c999e72c7"
+        },
+        {
+          "path": "Model\/Transaction.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 127,
+          "sha1": "f6f501c4690bdc8af7434cb2a9d2c5bd887a4bc0"
+        },
+        {
+          "path": "Model\/Ordercourse.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 84,
+          "sha1": "270fefe01c096761bf7c708a519e47578018d156"
+        },
+        {
+          "path": "Model\/Review.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 78,
+          "sha1": "b7f733aca708771b11a0884bd7142f69d5454a54"
+        },
+        {
+          "path": "Model\/Topic.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 78,
+          "sha1": "7a025a5d1d7d9336bf55d8d85e15b44f08b3fbd3"
+        },
+        {
+          "path": "Model\/Gateway.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1450,
+          "sha1": "b2a045554082772681d300cba984dbfb8053418d"
+        },
+        {
+          "path": "Model\/Course.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4374,
+          "sha1": "23432fba5b11974fe25702ff71167e478b71f423"
+        },
+        {
+          "path": "Model\/Report.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 78,
+          "sha1": "d28628871dd0e136540df1aaf69179f2a199eefa"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Doclesson.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1398,
+          "sha1": "56e5aab54eda16a0778a35779226f1356223c9ba"
+        },
+        {
+          "path": "Form\/Lesson.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1848,
+          "sha1": "232f728c8b1018c4c04360a2ff28345f9e5cadfa"
+        },
+        {
+          "path": "Form\/VideoLesson.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 248,
+          "sha1": "c13162006a6b93393d5884811eaf448e52fc1f46"
+        },
+        {
+          "path": "Form\/Video.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3775,
+          "sha1": "5363df23b9c31901b20fbb36683bcda34ffa8901"
+        },
+        {
+          "path": "Form\/LessonDelete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1042,
+          "sha1": "d99ff1bd27e5857a33a01634b280ae2f5ea579ac"
+        },
+        {
+          "path": "Form\/Announcement.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1751,
+          "sha1": "288d00cff800f998e5fba4875b2931cd4db3582f"
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Manage",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Manage\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2820,
+          "sha1": "28aa9bc2a92fb24d6ba9988ea0fb74f281e6d6b4"
+        },
+        {
+          "path": "Form\/Admin\/Manage\/Filter.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 453,
+          "sha1": "4876e0e02bdc2500819352751b58a59cc76645fe"
+        },
+        {
+          "path": "Form\/Admin\/Category.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1261,
+          "sha1": "c7e7cda623cbb01b24cfd576533d576aba3bb5fd"
+        },
+        {
+          "path": "Form\/Admin\/SubCategory.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 466,
+          "sha1": "49ffd17dfab304f784cc3e7e3b28b5ad3072eae9"
+        },
+        {
+          "path": "Form\/Admin\/Settings",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Settings\/Format.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3497,
+          "sha1": "33320286d07fbb9055e562535ee969e1759a223f"
+        },
+        {
+          "path": "Form\/Admin\/Settings\/Level.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10387,
+          "sha1": "30481f7e7e380076b6a7fe8468cbf4e86920991e"
+        },
+        {
+          "path": "Form\/Admin\/VideoSettings.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1834,
+          "sha1": "c4f031f649e12cb1f092e69ae0096cf78b68f1a7"
+        },
+        {
+          "path": "Form\/Admin\/Global.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6128,
+          "sha1": "f3edda6c244e4bb328b18778fa829fed5d19ca83"
+        },
+        {
+          "path": "Form\/Admin\/ReportAction.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1300,
+          "sha1": "af3e7e40fa5fbd750d2e12cefdb0696fdfe90957"
+        },
+        {
+          "path": "Form\/Create.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7678,
+          "sha1": "b2ef52b619699e70c0fd9f202de6c05df43b5190"
+        },
+        {
+          "path": "Form\/AnnouncementDelete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1014,
+          "sha1": "fdfb1fbed372205f29b723854ff35612d95718d9"
+        },
+        {
+          "path": "Form\/Disapprove.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1123,
+          "sha1": "3d0d115ff05b27cab9675a7ba4fb657a35379bd9"
+        },
+        {
+          "path": "Form\/IntroVideo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1961,
+          "sha1": "1d075919acc991476b9b47860afb26532c7acb57"
+        },
+        {
+          "path": "Form\/Publish.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 858,
+          "sha1": "d5becbc91e8f214c9f31f2dd82882b162a7cdda8"
+        },
+        {
+          "path": "Form\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3298,
+          "sha1": "5f692bc8e71fb0e5ad76a549e1f6521baa798fc3"
+        },
+        {
+          "path": "Form\/Topic.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1150,
+          "sha1": "20e5d9801677dd764d99c0404c3ed5b67fd208d7"
+        },
+        {
+          "path": "Form\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Form\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2225,
+          "sha1": "4207f60e91c4cbc752c3e516587de1c1e43d0646"
+        },
+        {
+          "path": "Form\/Report.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1435,
+          "sha1": "aa8d880d5c28b8ccd02570e62c2fd763b9c7f3ad"
+        },
+        {
+          "path": "Form\/CourseDelete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 859,
+          "sha1": "57899a4637e1207f34b889383750ec91877c2166"
+        },
+        {
+          "path": "Form\/TopicDelete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 872,
+          "sha1": "955321f81b4f37b4fe018444958074b70e2de8e1"
+        },
+        {
+          "path": "Form\/Photo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2155,
+          "sha1": "5062c3b8c05ffcd109949f15ea554a16704eea2d"
+        },
+        {
+          "path": "Form\/Order",
+          "dir": true,
+          "file": false,
+          "perms": "2777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Order\/Paypal.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4431,
+          "sha1": "28e06969cc241d769a1b36907fc73ee3ac57f5f3"
+        },
+        {
+          "path": "Form\/Courseoverview.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 939,
+          "sha1": "7a94641b863a822711074f7b3c68233a049df731"
+        },
+        {
+          "path": "Form\/Targetstudents.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2091,
+          "sha1": "541c087c0a894ab2da0f6dc8487807a225ddcb08"
+        },
+        {
+          "path": "Form\/MessageOwner.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1948,
+          "sha1": "57161f6cf6a4cb14aeb1838238dcad12346a0289"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 89,
+          "sha1": "cd278327321f7f2ce4513c2ba0dede44153f0d31"
+        }
+      ]
+    },
+    "application\/languages\/en\/sitecourse.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/sitecourse.csv",
+      "structure": {
+        "path": "sitecourse.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0777",
+        "size": 25727,
+        "sha1": "a8b87dcc0e50c93eb5ebc030fbf4cb1c9ea7f1ae"
+      }
+    }
+  }
+}

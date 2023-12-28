@@ -1,0 +1,76 @@
+2022-10-09T07:28:43+00:00 CRIT (2): Zend_View_Exception: Setting private or protected class members is not allowed in /home/consl2/public_html/upgrade/application/libraries/Zend/View/Abstract.php:823
+Stack trace:
+#0 /home/consl2/public_html/upgrade/application/modules/Customtheme/widgets/browse-services-listing/Controller.php(46): Zend_View_Abstract->assign(Array)
+#1 /home/consl2/public_html/upgrade/application/libraries/Engine/Content/Widget/Abstract.php(254): Customtheme_Widget_BrowseServicesListingController->indexAction()
+#2 /home/consl2/public_html/upgrade/application/libraries/Engine/Content/Element/Widget.php(73): Engine_Content_Widget_Abstract->render('index')
+#3 /home/consl2/public_html/upgrade/application/libraries/Engine/Content/Element/Abstract.php(583): Engine_Content_Element_Widget->_render()
+#4 /home/consl2/public_html/upgrade/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#5 /home/consl2/public_html/upgrade/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#6 /home/consl2/public_html/upgrade/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#7 /home/consl2/public_html/upgrade/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#8 /home/consl2/public_html/upgrade/application/libraries/Engine/Content/Decorator/Children.php(31): Engine_Content_Element_Abstract->render()
+#9 /home/consl2/public_html/upgrade/application/libraries/Engine/Content/Element/Abstract.php(594): Engine_Content_Decorator_Children->render('')
+#10 /home/consl2/public_html/upgrade/application/libraries/Engine/Content.php(219): Engine_Content_Element_Abstract->render()
+#11 /home/consl2/public_html/upgrade/application/libraries/Engine/Content/Controller/Action/Helper/Content.php(136): Engine_Content->render(154)
+#12 /home/consl2/public_html/upgrade/application/libraries/Engine/Content/Controller/Action/Helper/Content.php(38): Engine_Content_Controller_Action_Helper_Content->render()
+#13 /home/consl2/public_html/upgrade/application/libraries/Zend/Controller/Action/HelperBroker.php(277): Engine_Content_Controller_Action_Helper_Content->postDispatch()
+#14 /home/consl2/public_html/upgrade/application/libraries/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#15 /home/consl2/public_html/upgrade/application/libraries/Zend/Controller/Dispatcher/Standard.php(308): Zend_Controller_Action->dispatch('mentorServiceAc...')
+#16 /home/consl2/public_html/upgrade/application/libraries/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#17 /home/consl2/public_html/upgrade/application/modules/Core/Bootstrap.php(87): Zend_Controller_Front->dispatch()
+#18 /home/consl2/public_html/upgrade/application/libraries/Engine/Application.php(160): Core_Bootstrap->run()
+#19 /home/consl2/public_html/upgrade/application/index.php(236): Engine_Application->run()
+#20 /home/consl2/public_html/upgrade/boot.php(47): include('/home/consl2/pu...')
+#21 /home/consl2/public_html/upgrade/index.php(24): Engine_Boot->boot()
+#22 {main}
+2022-10-09T08:19:43+00:00 CRIT (2): 
+Error Code: ee28e6
+Zend_Db_Table_Row_Exception: Specified column "member_level" is not in the row in /home/consl2/public_html/upgrade/application/libraries/Zend/Db/Table/Row/Abstract.php:179
+Stack trace:
+#0 /home/consl2/public_html/upgrade/application/modules/Core/Api/Mail.php(415): Zend_Db_Table_Row_Abstract->__get('member_level')
+#1 /home/consl2/public_html/upgrade/application/modules/Core/Api/Mail.php(227): Core_Api_Mail->sendSystemRaw(Object(User_Model_User), 'MAIL_SERVICE_BO...', Array)
+#2 /home/consl2/public_html/upgrade/application/modules/Sitebooking/Api/Core.php(55): Core_Api_Mail->sendSystem('awalmarwan@gmai...', 'MAIL_SERVICE_BO...', Array)
+#3 /home/consl2/public_html/upgrade/application/modules/Sitebooking/controllers/IndexController.php(205): Sitebooking_Api_Core->sendServiceBookingMail(Object(User_Model_User), Object(Sitebooking_Model_Ser), Object(User_Model_User))
+#4 /home/consl2/public_html/upgrade/application/libraries/Zend/Controller/Action.php(516): Sitebooking_IndexController->bookServiceAction()
+#5 /home/consl2/public_html/upgrade/application/libraries/Zend/Controller/Dispatcher/Standard.php(308): Zend_Controller_Action->dispatch('bookServiceActi...')
+#6 /home/consl2/public_html/upgrade/application/libraries/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#7 /home/consl2/public_html/upgrade/application/modules/Core/Bootstrap.php(87): Zend_Controller_Front->dispatch()
+#8 /home/consl2/public_html/upgrade/application/libraries/Engine/Application.php(160): Core_Bootstrap->run()
+#9 /home/consl2/public_html/upgrade/application/index.php(236): Engine_Application->run()
+#10 /home/consl2/public_html/upgrade/boot.php(47): include('/home/consl2/pu...')
+#11 /home/consl2/public_html/upgrade/index.php(24): Engine_Boot->boot()
+#12 {main}
+2022-10-09T08:20:23+00:00 CRIT (2): 
+Error Code: db1880
+Zend_Db_Table_Row_Exception: Specified column "member_level" is not in the row in /home/consl2/public_html/upgrade/application/libraries/Zend/Db/Table/Row/Abstract.php:179
+Stack trace:
+#0 /home/consl2/public_html/upgrade/application/modules/Core/Api/Mail.php(415): Zend_Db_Table_Row_Abstract->__get('member_level')
+#1 /home/consl2/public_html/upgrade/application/modules/Core/Api/Mail.php(227): Core_Api_Mail->sendSystemRaw(Object(User_Model_User), 'MAIL_SERVICE_BO...', Array)
+#2 /home/consl2/public_html/upgrade/application/modules/Sitebooking/Api/Core.php(55): Core_Api_Mail->sendSystem('awalmarwan@gmai...', 'MAIL_SERVICE_BO...', Array)
+#3 /home/consl2/public_html/upgrade/application/modules/Sitebooking/controllers/IndexController.php(205): Sitebooking_Api_Core->sendServiceBookingMail(Object(User_Model_User), Object(Sitebooking_Model_Ser), Object(User_Model_User))
+#4 /home/consl2/public_html/upgrade/application/libraries/Zend/Controller/Action.php(516): Sitebooking_IndexController->bookServiceAction()
+#5 /home/consl2/public_html/upgrade/application/libraries/Zend/Controller/Dispatcher/Standard.php(308): Zend_Controller_Action->dispatch('bookServiceActi...')
+#6 /home/consl2/public_html/upgrade/application/libraries/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#7 /home/consl2/public_html/upgrade/application/modules/Core/Bootstrap.php(87): Zend_Controller_Front->dispatch()
+#8 /home/consl2/public_html/upgrade/application/libraries/Engine/Application.php(160): Core_Bootstrap->run()
+#9 /home/consl2/public_html/upgrade/application/index.php(236): Engine_Application->run()
+#10 /home/consl2/public_html/upgrade/boot.php(47): include('/home/consl2/pu...')
+#11 /home/consl2/public_html/upgrade/index.php(24): Engine_Boot->boot()
+#12 {main}
+2022-10-09T08:21:58+00:00 CRIT (2): 
+Error Code: 3b08b8
+Zend_Db_Table_Row_Exception: Specified column "member_level" is not in the row in /home/consl2/public_html/upgrade/application/libraries/Zend/Db/Table/Row/Abstract.php:179
+Stack trace:
+#0 /home/consl2/public_html/upgrade/application/modules/Core/Api/Mail.php(415): Zend_Db_Table_Row_Abstract->__get('member_level')
+#1 /home/consl2/public_html/upgrade/application/modules/Core/Api/Mail.php(227): Core_Api_Mail->sendSystemRaw(Object(User_Model_User), 'MAIL_SERVICE_BO...', Array)
+#2 /home/consl2/public_html/upgrade/application/modules/Sitebooking/Api/Core.php(55): Core_Api_Mail->sendSystem('awalmarwan@gmai...', 'MAIL_SERVICE_BO...', Array)
+#3 /home/consl2/public_html/upgrade/application/modules/Sitebooking/controllers/IndexController.php(205): Sitebooking_Api_Core->sendServiceBookingMail(Object(User_Model_User), Object(Sitebooking_Model_Ser), Object(User_Model_User))
+#4 /home/consl2/public_html/upgrade/application/libraries/Zend/Controller/Action.php(516): Sitebooking_IndexController->bookServiceAction()
+#5 /home/consl2/public_html/upgrade/application/libraries/Zend/Controller/Dispatcher/Standard.php(308): Zend_Controller_Action->dispatch('bookServiceActi...')
+#6 /home/consl2/public_html/upgrade/application/libraries/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#7 /home/consl2/public_html/upgrade/application/modules/Core/Bootstrap.php(87): Zend_Controller_Front->dispatch()
+#8 /home/consl2/public_html/upgrade/application/libraries/Engine/Application.php(160): Core_Bootstrap->run()
+#9 /home/consl2/public_html/upgrade/application/index.php(236): Engine_Application->run()
+#10 /home/consl2/public_html/upgrade/boot.php(47): include('/home/consl2/pu...')
+#11 /home/consl2/public_html/upgrade/index.php(24): Engine_Boot->boot()
+#12 {main}

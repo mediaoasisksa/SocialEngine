@@ -1,0 +1,118 @@
+{
+  "type": "external",
+  "name": "uploader",
+  "version": "6.2.2",
+  "revision": "9747",
+  "path": "externals\/uploader",
+  "repository": null,
+  "sku": null,
+  "date": "Tue, 23 Aug 2022 12:11:24 +0000",
+  "title": "Uploader",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "meta": {
+    "date": "Tue, 23 Aug 2022 12:11:24 +0000",
+    "title": "Uploader",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/uploader": {
+      "type": "directory",
+      "path": "externals\/uploader",
+      "structure": [
+        {
+          "path": "uploader.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1432,
+          "sha1": "e7c082ec031a0eb9838afe5a544ccb175a7ec26e"
+        },
+        {
+          "path": "uploader.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 7198,
+          "sha1": "25c17a491898596ca1b7e1a696130de88089792f"
+        },
+        {
+          "path": "images",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 160,
+          "sha1": null
+        },
+        {
+          "path": "images\/progress-bar",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 128,
+          "sha1": null
+        },
+        {
+          "path": "images\/progress-bar\/bar.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 163,
+          "sha1": "ae1931c8c1ef50618b987bda63d73eb28fa33f39"
+        },
+        {
+          "path": "images\/progress-bar\/progress.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1113,
+          "sha1": "bdcfcacf43527493946496d7887bfefe13eb4dcc"
+        },
+        {
+          "path": "images\/error.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 666,
+          "sha1": "3855754e8fc9331c67dd2d0789d9f2d6e7daae8b"
+        },
+        {
+          "path": "images\/finished.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 516,
+          "sha1": "d7d5903cca7649f70e98e5d8ed27df5ae1095883"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 373,
+          "sha1": "24bd8be7ca7f8fc488052b920a90fadd13896d3d"
+        }
+      ]
+    }
+  }
+}

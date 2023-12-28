@@ -1,0 +1,1 @@
+UPDATE `engine4_core_menuitems` SET `params` = '{"route":"default","module":"chat","icon":"fa fa-comment-dots"}' WHERE `name` = 'core_main_chat';

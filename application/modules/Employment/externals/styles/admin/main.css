@@ -1,0 +1,12 @@
+html .calendar_output_span {
+	margin-right:5px;
+	float:left;
+}
+html .event_calendar_container button.event_calendar {
+	background:none !important;
+	border:0 !important;
+	padding:0;
+}
+.event_calendar_container input {
+  margin-right:10px;
+}

@@ -1,0 +1,134 @@
+/*icons*/
+.sitecourse_icon_featured::before {
+    background: #00BCD4;
+}
+.sitecourse_icon_sponsored::before {
+    background: #FF9800;
+}
+.sitecourse_icon_unfeatured::before,
+.sitecourse_icon_unsponsored::before  {
+    background: #aaa;
+}
+.sitecourse_icon_featured,
+.sitecourse_icon_unfeatured,
+.sitecourse_icon_sponsored,
+.sitecourse_icon_unsponsored {
+    min-width: 16px !important;
+    min-height: 16px !important;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+.sitecourse_icon_featured::before,
+.sitecourse_icon_unfeatured::before,
+.sitecourse_icon_sponsored::before,
+.sitecourse_icon_unsponsored::before
+{
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    line-height: 16px;
+    display: block;
+    content: "\f005";
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    vertical-align: middle;
+
+}
+.sitecourse_featured_icon_size::before {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.sitecourse_carousel_title{
+	clear: both;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 5px;
+	max-height: 40px;
+	overflow: hidden;
+}
+.sitecourse_txt_light{
+	color:$theme_font_color_light;
+}
+.fright{
+	float:right !important;
+}
+.sitecourse_icon {
+    display:inline-block;
+    height:16px;
+    width:16px;
+}
+
+/*sitecourse_new_work*/
+
+/*owl_carousel*/
+.layout_sitecourse_owl_carousel_sitecourse {
+    margin-bottom: 15px;
+}
+.layout_sitecourse_owl_carousel_sitecourse .sitecourse_owl {
+    display: inline-block;
+    position: relative;
+    transition: 1s;
+    width: 100% !important;
+}
+.layout_sitecourse_owl_carousel_sitecourse .sitecourse_owl .sitecourse_owl_decs {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    overflow: hidden;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.layout_sitecourse_owl_carousel_sitecourse .sitecourse_owl .sitecourse_carousel_title {
+    margin: 5px auto;
+}
+.layout_sitecourse_owl_carousel_sitecourse .sitecourse_owl:hover .sitecourse_owl_decs {
+    height: 100% !important;
+}
+.layout_sitecourse_owl_carousel_sitecourse .sitecourse_owl .sitecourse_owl_decs .sitecourse_carousel_title, .layout_sitecourse_owl_carousel_sitecourse .sitecourse_owl .sitecourse_owl_decs a, .layout_sitecourse_owl_carousel_sitecourse .sitecourse_owl .sitecourse_owl_decs .sitecourse_txt_light {
+    color: #fff;
+}
+.layout_sitecourse_owl_carousel_sitecourse .owl-carousel .owl-item img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.layout_sitecourse_owl_carousel_sitecourse .owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(0, -50%);
+}
+.layout_sitecourse_owl_carousel_sitecourse .owl-carousel .owl-nav .owl-prev {
+    float: left;
+}
+.layout_sitecourse_owl_carousel_sitecourse .owl-carousel .owl-nav .owl-next {
+    float: right;
+}
+.layout_sitecourse_owl_carousel_sitecourse .owl-carousel .owl-nav .owl-prev:before {
+    content: "\f0d9";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+.layout_sitecourse_owl_carousel_sitecourse .owl-carousel .owl-nav .owl-next:before {
+    content: "\f0da";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+.layout_sitecourse_owl_carousel_sitecourse .owl-carousel .owl-nav div {
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+.layout_sitecourse_owl_carousel_sitecourse .owl-carousel .owl-nav div:hover {
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 1;
+}
+

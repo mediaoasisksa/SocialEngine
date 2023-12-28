@@ -1,0 +1,6 @@
+<?php
+
+class CustomTheme_Bootstrap extends Engine_Application_Bootstrap_Abstract
+{
+
+}

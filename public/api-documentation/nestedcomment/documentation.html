@@ -1,0 +1,1622 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>SocialEngine REST API</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"><style>@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Inconsolata|Raleway:200');.hljs-comment,.hljs-title{color:#8e908c}.hljs-variable,.hljs-attribute,.hljs-tag,.hljs-regexp,.ruby .hljs-constant,.xml .hljs-tag .hljs-title,.xml .hljs-pi,.xml .hljs-doctype,.html .hljs-doctype,.css .hljs-id,.css .hljs-class,.css .hljs-pseudo{color:#c82829}.hljs-number,.hljs-preprocessor,.hljs-pragma,.hljs-built_in,.hljs-literal,.hljs-params,.hljs-constant{color:#f5871f}.ruby .hljs-class .hljs-title,.css .hljs-rules .hljs-attribute{color:#eab700}.hljs-string,.hljs-value,.hljs-inheritance,.hljs-header,.ruby .hljs-symbol,.xml .hljs-cdata{color:#718c00}.css .hljs-hexcolor{color:#3e999f}.hljs-function,.python .hljs-decorator,.python .hljs-title,.ruby .hljs-function .hljs-title,.ruby .hljs-title .hljs-keyword,.perl .hljs-sub,.javascript .hljs-title,.coffeescript .hljs-title{color:#4271ae}.hljs-keyword,.javascript .hljs-function{color:#8959a8}.hljs{display:block;background:white;color:#4d4d4c;padding:.5em}.coffeescript .javascript,.javascript .xml,.tex .hljs-formula,.xml .javascript,.xml .vbscript,.xml .css,.xml .hljs-cdata{opacity:.5}.right .hljs-comment{color:#969896}.right .css .hljs-class,.right .css .hljs-id,.right .css .hljs-pseudo,.right .hljs-attribute,.right .hljs-regexp,.right .hljs-tag,.right .hljs-variable,.right .html .hljs-doctype,.right .ruby .hljs-constant,.right .xml .hljs-doctype,.right .xml .hljs-pi,.right .xml .hljs-tag .hljs-title{color:#c66}.right .hljs-built_in,.right .hljs-constant,.right .hljs-literal,.right .hljs-number,.right .hljs-params,.right .hljs-pragma,.right .hljs-preprocessor{color:#de935f}.right .css .hljs-rule .hljs-attribute,.right .ruby .hljs-class .hljs-title{color:#f0c674}.right .hljs-header,.right .hljs-inheritance,.right .hljs-name,.right .hljs-string,.right .hljs-value,.right .ruby .hljs-symbol,.right .xml .hljs-cdata{color:#b5bd68}.right .css .hljs-hexcolor,.right .hljs-title{color:#8abeb7}.right .coffeescript .hljs-title,.right .hljs-function,.right .javascript .hljs-title,.right .perl .hljs-sub,.right .python .hljs-decorator,.right .python .hljs-title,.right .ruby .hljs-function .hljs-title,.right .ruby .hljs-title .hljs-keyword{color:#81a2be}.right .hljs-keyword,.right .javascript .hljs-function{color:#b294bb}.right .hljs{display:block;overflow-x:auto;background:#1d1f21;color:#c5c8c6;padding:.5em;-webkit-text-size-adjust:none}.right .coffeescript .javascript,.right .javascript .xml,.right .tex .hljs-formula,.right .xml .css,.right .xml .hljs-cdata,.right .xml .javascript,.right .xml .vbscript{opacity:.5}body{color:black;background:white;font:400 14px / 1.42 'Roboto',Helvetica,sans-serif}header{border-bottom:1px solid #f2f2f2;margin-bottom:12px}h1,h2,h3,h4,h5{color:black;margin:12px 0}h1 .permalink,h2 .permalink,h3 .permalink,h4 .permalink,h5 .permalink{margin-left:0;opacity:0;transition:opacity .25s ease}h1:hover .permalink,h2:hover .permalink,h3:hover .permalink,h4:hover .permalink,h5:hover .permalink{opacity:1}.triple h1 .permalink,.triple h2 .permalink,.triple h3 .permalink,.triple h4 .permalink,.triple h5 .permalink{opacity:.15}.triple h1:hover .permalink,.triple h2:hover .permalink,.triple h3:hover .permalink,.triple h4:hover .permalink,.triple h5:hover .permalink{opacity:.15}h1{font:200 36px 'Raleway',Helvetica,sans-serif;font-size:36px}h2{font:200 36px 'Raleway',Helvetica,sans-serif;font-size:30px}h3{font-size:100%;text-transform:uppercase}h5{font-size:100%;font-weight:normal}p{margin:0 0 10px}p.choices{line-height:1.6}a{color:#428bca;text-decoration:none}li p{margin:0}hr.split{border:0;height:1px;width:100%;padding-left:6px;margin:12px auto;background-image:linear-gradient(to right, rgba(0,0,0,0) 20%, rgba(0,0,0,0.2) 51.4%, rgba(255,255,255,0.2) 51.4%, rgba(255,255,255,0) 80%)}dl dt{float:left;width:130px;clear:left;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:700}dl dd{margin-left:150px}blockquote{color:rgba(0,0,0,0.5);font-size:15.5px;padding:10px 20px;margin:12px 0;border-left:5px solid #e8e8e8}blockquote p:last-child{margin-bottom:0}pre{background-color:#f5f5f5;padding:12px;border:1px solid #cfcfcf;border-radius:6px;overflow:auto}pre code{color:black;background-color:transparent;padding:0;border:none}code{color:#444;background-color:#f5f5f5;font:'Inconsolata',monospace;padding:1px 4px;border:1px solid #cfcfcf;border-radius:3px}ul,ol{padding-left:2em}table{border-collapse:collapse;border-spacing:0;margin-bottom:12px}table tr:nth-child(2n){background-color:#fafafa}table th,table td{padding:6px 12px;border:1px solid #e6e6e6}.text-muted{opacity:.5}.note,.warning{padding:.3em 1em;margin:1em 0;border-radius:2px;font-size:90%}.note h1,.warning h1,.note h2,.warning h2,.note h3,.warning h3,.note h4,.warning h4,.note h5,.warning h5,.note h6,.warning h6{font-family:200 36px 'Raleway',Helvetica,sans-serif;font-size:135%;font-weight:500}.note p,.warning p{margin:.5em 0}.note{color:black;background-color:#f0f6fb;border-left:4px solid #428bca}.note h1,.note h2,.note h3,.note h4,.note h5,.note h6{color:#428bca}.warning{color:black;background-color:#fbf1f0;border-left:4px solid #c9302c}.warning h1,.warning h2,.warning h3,.warning h4,.warning h5,.warning h6{color:#c9302c}header{margin-top:24px}nav{position:fixed;top:24px;bottom:0;overflow-y:auto}nav .resource-group{padding:0}nav .resource-group .heading{position:relative}nav .resource-group .heading .chevron{position:absolute;top:12px;right:12px;opacity:.5}nav .resource-group .heading a{display:block;color:black;opacity:.7;border-left:2px solid transparent;margin:0}nav .resource-group .heading a:hover{text-decoration:none;background-color:bad-color;border-left:2px solid black}nav ul{list-style-type:none;padding-left:0}nav ul a{display:block;font-size:13px;color:rgba(0,0,0,0.7);padding:8px 12px;border-top:1px solid #d9d9d9;border-left:2px solid transparent;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}nav ul a:hover{text-decoration:none;background-color:bad-color;border-left:2px solid black}nav ul>li{margin:0}nav ul>li:first-child{margin-top:-12px}nav ul>li:last-child{margin-bottom:-12px}nav ul ul a{padding-left:24px}nav ul ul li{margin:0}nav ul ul li:first-child{margin-top:0}nav ul ul li:last-child{margin-bottom:0}nav>div>div>ul>li:first-child>a{border-top:none}.preload *{transition:none !important}.pull-left{float:left}.pull-right{float:right}.badge{display:inline-block;float:right;min-width:10px;min-height:14px;padding:3px 7px;font-size:12px;color:#000;background-color:#f2f2f2;border-radius:10px;margin:-2px 0}.badge.get{color:#70bbe1;background-color:#d9edf7}.badge.head{color:#70bbe1;background-color:#d9edf7}.badge.options{color:#70bbe1;background-color:#d9edf7}.badge.put{color:#f0db70;background-color:#fcf8e3}.badge.patch{color:#f0db70;background-color:#fcf8e3}.badge.post{color:#93cd7c;background-color:#dff0d8}.badge.delete{color:#ce8383;background-color:#f2dede}.collapse-button{float:right}.collapse-button .close{display:none;color:#428bca;cursor:pointer}.collapse-button .open{color:#428bca;cursor:pointer}.collapse-button.show .close{display:inline}.collapse-button.show .open{display:none}.collapse-content{max-height:0;overflow:hidden;transition:max-height .3s ease-in-out}nav{width:220px}.container{max-width:940px;margin-left:auto;margin-right:auto}.container .row .content{margin-left:244px;width:696px}.container .row:after{content:'';display:block;clear:both}.container-fluid nav{width:22%}.container-fluid .row .content{margin-left:24%}.container-fluid.triple nav{width:16.5%;padding-right:1px}.container-fluid.triple .row .content{position:relative;margin-left:16.5%;padding-left:24px}.middle:before,.middle:after{content:'';display:table}.middle:after{clear:both}.middle{box-sizing:border-box;width:51.5%;padding-right:12px}.right{box-sizing:border-box;float:right;width:48.5%;padding-left:12px}.right a{color:#428bca}.right h1,.right h2,.right h3,.right h4,.right h5,.right p,.right div{color:white}.right pre{background-color:#1d1f21;border:1px solid #1d1f21}.right pre code{color:#c5c8c6}.right .description{margin-top:12px}.triple .resource-heading{font-size:125%}.definition{margin-top:12px;margin-bottom:12px}.definition .method{font-weight:bold}.definition .method.get{color:#2e8ab8}.definition .method.head{color:#2e8ab8}.definition .method.options{color:#2e8ab8}.definition .method.post{color:#56b82e}.definition .method.put{color:#b8a22e}.definition .method.patch{color:#b8a22e}.definition .method.delete{color:#b82e2e}.definition .uri{word-break:break-all;word-wrap:break-word}.definition .hostname{opacity:.5}.example-names{background-color:#eee;padding:12px;border-radius:6px}.example-names .tab-button{cursor:pointer;color:black;border:1px solid #ddd;padding:6px;margin-left:12px}.example-names .tab-button.active{background-color:#d5d5d5}.right .example-names{background-color:#444}.right .example-names .tab-button{color:white;border:1px solid #666;border-radius:6px}.right .example-names .tab-button.active{background-color:#5e5e5e}#nav-background{position:fixed;left:0;top:0;bottom:0;width:16.5%;padding-right:14.4px;background-color:#fbfbfb;border-right:1px solid #f0f0f0;z-index:-1}#right-panel-background{position:absolute;right:-12px;top:-12px;bottom:-12px;width:48.6%;background-color:#333;z-index:-1}@media (max-width:1200px){nav{width:198px}.container{max-width:840px}.container .row .content{margin-left:224px;width:606px}}@media (max-width:992px){nav{width:169.4px}.container{max-width:720px}.container .row .content{margin-left:194px;width:526px}}@media (max-width:768px){nav{display:none}.container{width:95%;max-width:none}.container .row .content,.container-fluid .row .content,.container-fluid.triple .row .content{margin-left:auto;margin-right:auto;width:95%}#nav-background{display:none}#right-panel-background{width:48.6%}}.back-to-top{position:fixed;z-index:1;bottom:0;right:24px;padding:4px 8px;color:rgba(0,0,0,0.5);background-color:#f2f2f2;text-decoration:none !important;border-top:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top-left-radius:3px;border-top-right-radius:3px}.resource-group{padding:12px;margin-bottom:12px;background-color:white;border:1px solid #d9d9d9;border-radius:6px}.resource-group h2.group-heading,.resource-group .heading a{padding:12px;margin:-12px -12px 12px -12px;background-color:#f2f2f2;border-bottom:1px solid #d9d9d9;border-top-left-radius:6px;border-top-right-radius:6px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.triple .content .resource-group{padding:0;border:none}.triple .content .resource-group h2.group-heading,.triple .content .resource-group .heading a{margin:0 0 12px 0;border:1px solid #d9d9d9}nav .resource-group .heading a{padding:12px;margin-bottom:0}nav .resource-group .collapse-content{padding:0}.action{margin-bottom:12px;padding:12px 12px 0 12px;overflow:hidden;border:1px solid transparent;border-radius:6px}.action h4.action-heading{padding:6px 12px;margin:-12px -12px 12px -12px;border-bottom:1px solid transparent;border-top-left-radius:6px;border-top-right-radius:6px;overflow:hidden}.action h4.action-heading .name{float:right;font-weight:normal;padding:6px 0}.action h4.action-heading .method{padding:6px 12px;margin-right:12px;border-radius:3px;display:inline-block}.action h4.action-heading .method.get{color:#fff;background-color:#337ab7}.action h4.action-heading .method.head{color:#fff;background-color:#337ab7}.action h4.action-heading .method.options{color:#fff;background-color:#337ab7}.action h4.action-heading .method.put{color:#fff;background-color:#ed9c28}.action h4.action-heading .method.patch{color:#fff;background-color:#ed9c28}.action h4.action-heading .method.post{color:#fff;background-color:#5cb85c}.action h4.action-heading .method.delete{color:#fff;background-color:#d9534f}.action h4.action-heading code{color:#444;background-color:#f5f5f5;border-color:#cfcfcf;font-weight:normal;word-break:break-all;display:inline-block;margin-top:2px}.action dl.inner{padding-bottom:2px}.action .title{border-bottom:1px solid white;margin:0 -12px -1px -12px;padding:12px}.action.get{border-color:#bce8f1}.action.get h4.action-heading{color:#337ab7;background:#d9edf7;border-bottom-color:#bce8f1}.action.head{border-color:#bce8f1}.action.head h4.action-heading{color:#337ab7;background:#d9edf7;border-bottom-color:#bce8f1}.action.options{border-color:#bce8f1}.action.options h4.action-heading{color:#337ab7;background:#d9edf7;border-bottom-color:#bce8f1}.action.post{border-color:#d6e9c6}.action.post h4.action-heading{color:#5cb85c;background:#dff0d8;border-bottom-color:#d6e9c6}.action.put{border-color:#faebcc}.action.put h4.action-heading{color:#ed9c28;background:#fcf8e3;border-bottom-color:#faebcc}.action.patch{border-color:#faebcc}.action.patch h4.action-heading{color:#ed9c28;background:#fcf8e3;border-bottom-color:#faebcc}.action.delete{border-color:#ebccd1}.action.delete h4.action-heading{color:#d9534f;background:#f2dede;border-bottom-color:#ebccd1}</style></head><body class="preload"><a href="#top" class="text-muted back-to-top"><i class="fa fa-toggle-up"></i>&nbsp;Back to top</a><div class="container-fluid"><div class="row"><nav><div class="resource-group"><div class="heading"><div class="chevron"><i class="open fa fa-angle-down"></i></div><a href="#top">Overview</a></div><div class="collapse-content"><ul><li><a href="#header-base-url">Base URL</a></li><li><a href="#header-http-verbs">HTTP Verbs</a></li><li><a href="#header-supported-features">Supported Features</a></li><li><a href="#header-official-socialengine-plugins">Official SocialEngine Plugins</a></li><li><a href="#header-core-socialengine-features">Core SocialEngine Features</a></li><li><a href="#header-socialengineaddons-plugins-">SocialEngineAddOns Plugins:</a></li><li><a href="#header-advanced-comments-plugin-nested-comments,-replies,-voting-&amp;-attachments">Advanced Comments Plugin - Nested Comments, Replies, Voting & Attachments</a></li></ul></div></div><div class="resource-group"><div class="heading"><div class="chevron"><i class="open fa fa-angle-down"></i></div><a href="#">Resource Group</a></div><div class="collapse-content"><ul><li><a href="#get-likes-and-comments-get"><span class="badge get"><i class="fa fa-arrow-down"></i></span>Get Likes and Comments</a></li><li><a href="#comment-post-post"><span class="badge post"><i class="fa fa-plus"></i></span>Post Comment</a></li><li><a href="#reply-on-content-comment-post"><span class="badge post"><i class="fa fa-plus"></i></span>Reply On Content Comment</a></li><li><a href="#reply-on-activity-feed-comment-post"><span class="badge post"><i class="fa fa-plus"></i></span>Reply On Activity Feed Comment</a></li><li><a href="#edit-activity-feed-comment-post"><span class="badge post"><i class="fa fa-plus"></i></span>Edit Activity Feed Comment</a></li><li><a href="#delete-comment-delete"><span class="badge delete"><i class="fa fa-times"></i></span>Delete comment</a></li><li><a href="#like-comment-post"><span class="badge post"><i class="fa fa-plus"></i></span>Like Comment</a></li><li><a href="#send-notification-on-comment-post"><span class="badge post"><i class="fa fa-plus"></i></span>Send Notification On Comment</a></li></ul></div></div></nav><div class="content"><header><h1 id="top">SocialEngine REST API</h1></header><p><strong>What is REST API?</strong> Simply, REST API is the set of functions to which the developers can perform requests and receive responses. The interaction is performed via the HTTP/HTTPS protocol. An advantage of such an approach is the wide usage of HTTP/HTTPS that’s why REST API can be used practically for any programming language.</p>
+<p>Below are the characteristics of the SocialEngineAddOns REST API:</p>
+<ul>
+<li>
+<p>When a request is sent to the REST API server, the server will return a response that contains either the data you requested, or the status code, or both.</p>
+</li>
+<li>
+<p><strong>oauth_consumer_key / oauth_consumer_secret?</strong>  The <code>Consumer Key</code> and <code>Consumer Secret Key</code> are used to make a connection between API client and server. These keys are also used for creating <code>OAuth Tokens</code> for site members to access server resources without sharing their credentials.</p>
+</li>
+</ul>
+<pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span>
+<span class="hljs-attribute">oauth_consumer_key</span>: <span class="hljs-string">e6a5845684bf49df63d9eef489acfee1</span>
+<span class="hljs-attribute">oauth_consumer_secret</span>: <span class="hljs-string">42b9eef48e96c65f9ca29d07712d39fb</span></code></pre>
+<ul>
+<li><strong>oauth_token / oauth_secret?</strong> The <code>OAuth Token</code> and <code>OAuth Secret</code> are used for identifying site members.</li>
+</ul>
+<pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span>
+<span class="hljs-attribute">oauth_consumer_key</span>: <span class="hljs-string">e6a5845684bf49df63d9eef489acfee1</span>
+<span class="hljs-attribute">oauth_consumer_secret</span>: <span class="hljs-string">42b9eef48e96c65f9ca29d07712d39fb</span>
+<span class="hljs-attribute">oauth_token</span>: <span class="hljs-string">276ed9327d0478c2606adea438f4fd15</span>
+<span class="hljs-attribute">oauth_secret</span>: <span class="hljs-string">ffaff6754b5d4ca5f2fc4cc2a3a75478</span></code></pre>
+<h3 id="header-base-url">Base URL <a class="permalink" href="#header-base-url" aria-hidden="true">¶</a></h3>
+<p>All requests to this REST API should have the base URL:
+[<a href="https://example.com/api/rest/">https://example.com/api/rest/</a>]</p>
+<h3 id="header-http-verbs">HTTP Verbs <a class="permalink" href="#header-http-verbs" aria-hidden="true">¶</a></h3>
+<p>In REST API, there are four verbs that are used to manage resources: GET, POST, PUT, and DELETE. You can get the contents of a data using GET, delete the data using DELETE, and create or update the data using POST/PUT.</p>
+<h3 id="header-supported-features">Supported Features <a class="permalink" href="#header-supported-features" aria-hidden="true">¶</a></h3>
+<h4 id="header-official-socialengine-plugins">Official SocialEngine Plugins <a class="permalink" href="#header-official-socialengine-plugins" aria-hidden="true">¶</a></h4>
+<ul>
+<li>
+<p>Blogs Plugin</p>
+</li>
+<li>
+<p>Photo Albums Plugin</p>
+</li>
+<li>
+<p>Classifieds Plugin</p>
+</li>
+<li>
+<p>Groups Plugin</p>
+</li>
+<li>
+<p>Events Plugin</p>
+</li>
+<li>
+<p>Forums Plugin</p>
+</li>
+<li>
+<p>Polls Plugin</p>
+</li>
+<li>
+<p>Video Sharing Plugin</p>
+</li>
+<li>
+<p>Music Sharing Plugin</p>
+</li>
+</ul>
+<h4 id="header-core-socialengine-features">Core SocialEngine Features <a class="permalink" href="#header-core-socialengine-features" aria-hidden="true">¶</a></h4>
+<ul>
+<li>
+<p>Search</p>
+</li>
+<li>
+<p>Member Links</p>
+</li>
+<li>
+<p>Member Log-in</p>
+</li>
+<li>
+<p>Member Sign-up With Profile Fields</p>
+</li>
+<li>
+<p>Edit Member Profile Fields</p>
+</li>
+<li>
+<p>Activity Feeds</p>
+</li>
+<li>
+<p>Notifications</p>
+</li>
+<li>
+<p>Friend Requests</p>
+</li>
+<li>
+<p>Messages</p>
+</li>
+<li>
+<p>Member Settings</p>
+</li>
+<li>
+<p>Likes and Comments</p>
+</li>
+<li>
+<p>Easy Implementation of Photo Lightbox.</p>
+</li>
+<li>
+<p>Footer Menus</p>
+</li>
+</ul>
+<h4 id="header-socialengineaddons-plugins-">SocialEngineAddOns Plugins: <a class="permalink" href="#header-socialengineaddons-plugins-" aria-hidden="true">¶</a></h4>
+<ul>
+<li>Advanced Comments Plugin - Nested Comments, Replies, Voting &amp; Attachments</li>
+</ul>
+<h2 id="header-advanced-comments-plugin-nested-comments,-replies,-voting-&amp;-attachments">Advanced Comments Plugin - Nested Comments, Replies, Voting &amp; Attachments <a class="permalink" href="#header-advanced-comments-plugin-nested-comments,-replies,-voting-&amp;-attachments" aria-hidden="true">¶</a></h2>
+<p>These are the APIs for the SocialEngineAddOns Plugin: <a href="http://www.socialengineaddons.com/socialengine-advanced-activity-feeds-wall-plugin">Advanced Comments Plugin - Nested Comments, Replies, Voting &amp; Attachments</a>.</p>
+<section id="" class="resource-group"><h2 class="group-heading">Resource Group <a href="#" class="permalink">&para;</a></h2><div id="get-likes-and-comments" class="resource"><h3 class="resource-heading">Get Likes and Comments <a href="#get-likes-and-comments" class="permalink">&nbsp;&para;</a></h3><div id="get-likes-and-comments-get" class="action get"><h4 class="action-heading"><div class="name">Get Likes and Comments</div><a href="#get-likes-and-comments-get" class="method get">GET</a><code class="uri">/advancedcomments/likes-comments</code></h4><p>Get the paginated list of likes and comments respect of any feed or feed-comment.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th style="text-align:center">Required</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>subject_type</code></td>
+<td style="text-align:center">yes</td>
+<td>string</td>
+<td>event</td>
+<td>type of content</td>
+</tr>
+<tr>
+<td><code>subject_id</code></td>
+<td style="text-align:center">yes</td>
+<td>integer</td>
+<td>89</td>
+<td>content id</td>
+</tr>
+<tr>
+<td><code>view_all_comments</code></td>
+<td style="text-align:center">no</td>
+<td>integer</td>
+<td>1</td>
+<td>get list of users, who like to this content</td>
+</tr>
+<tr>
+<td><code>view_all_likes</code></td>
+<td style="text-align:center">no</td>
+<td>integer</td>
+<td>1</td>
+<td>get list of users, who comment to this content</td>
+</tr>
+</tbody>
+</table>
+<h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname"></span>/advancedcomments/likes-comments</span></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">oauth_consumer_key</span>: <span class="hljs-string">e6a5845684bf49df63d9eef489acfee1</span><br><span class="hljs-attribute">oauth_consumer_secret</span>: <span class="hljs-string">42b9eef48e96c65f9ca29d07712d39fb</span></code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+<span class="hljs-string">"reply_on_comment"</span>[
+<span class="hljs-string">"8"</span>: [
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">9</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/dc/06/85e52612611096313d6d0e8dbf253e01.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/de/06/4eabde367e5fc8e74d8debf6d6c1c178.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/dd/06/7ecbb0669fdc23d5b282b9ad82e11e39.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/df/06/e3d4104559ee5ed67f7a51d1a753b7fd.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/Sanjeet"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Sanjeet"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"every good event"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-04 07:43:02"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">9</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">9</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    }
+],
+<span class="hljs-string">"9"</span>: [
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">29</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/dc/06/85e52612611096313d6d0e8dbf253e01.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/de/06/4eabde367e5fc8e74d8debf6d6c1c178.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/dd/06/7ecbb0669fdc23d5b282b9ad82e11e39.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/df/06/e3d4104559ee5ed67f7a51d1a753b7fd.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/Sanjeet"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Sanjeet"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"ggodd"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-11 10:28:20"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">29</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">29</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    }
+],
+<span class="hljs-string">"18"</span>: [
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">19</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/eb/06/77e10e0217f2b11224aac5b822233e99.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/ed/06/fb213e3006956ba55a74fa77a976e394.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/ec/06/6e8cc0dcf56d8049f135189f941e6ea5.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/ee/06/6e7c75463334313402b9daed2a4ff67a.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/test08"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Shyam Kumar"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">4</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"nice"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-07 11:29:43"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">19</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">19</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    }
+],
+<span class="hljs-string">"22"</span>: [
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">38</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/dc/06/85e52612611096313d6d0e8dbf253e01.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/de/06/4eabde367e5fc8e74d8debf6d6c1c178.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/dd/06/7ecbb0669fdc23d5b282b9ad82e11e39.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/df/06/e3d4104559ee5ed67f7a51d1a753b7fd.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/Sanjeet"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Sanjeet"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"repy one"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-11 10:54:47"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">38</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">38</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    }
+],
+<span class="hljs-string">"29"</span>: [
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">30</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/dc/06/85e52612611096313d6d0e8dbf253e01.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/de/06/4eabde367e5fc8e74d8debf6d6c1c178.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/dd/06/7ecbb0669fdc23d5b282b9ad82e11e39.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/df/06/e3d4104559ee5ed67f7a51d1a753b7fd.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/Sanjeet"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Sanjeet"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"dsdss"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-11 10:28:32"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">30</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">30</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    }
+],
+<span class="hljs-string">"30"</span>: [
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">31</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/dc/06/85e52612611096313d6d0e8dbf253e01.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/de/06/4eabde367e5fc8e74d8debf6d6c1c178.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/dd/06/7ecbb0669fdc23d5b282b9ad82e11e39.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/df/06/e3d4104559ee5ed67f7a51d1a753b7fd.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/Sanjeet"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Sanjeet"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"niddkd"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-11 10:28:52"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">31</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">31</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    },
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">32</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/dc/06/85e52612611096313d6d0e8dbf253e01.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/de/06/4eabde367e5fc8e74d8debf6d6c1c178.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/dd/06/7ecbb0669fdc23d5b282b9ad82e11e39.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/df/06/e3d4104559ee5ed67f7a51d1a753b7fd.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/Sanjeet"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Sanjeet"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"niddkd"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-11 10:28:54"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">32</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">32</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    }
+],
+<span class="hljs-string">"31"</span>: [
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">33</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/dc/06/85e52612611096313d6d0e8dbf253e01.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/de/06/4eabde367e5fc8e74d8debf6d6c1c178.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/dd/06/7ecbb0669fdc23d5b282b9ad82e11e39.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/df/06/e3d4104559ee5ed67f7a51d1a753b7fd.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/Sanjeet"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Sanjeet"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"nicd"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-11 10:30:49"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">33</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">33</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    }
+],
+<span class="hljs-string">"33"</span>: [
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">34</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/dc/06/85e52612611096313d6d0e8dbf253e01.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/de/06/4eabde367e5fc8e74d8debf6d6c1c178.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/dd/06/7ecbb0669fdc23d5b282b9ad82e11e39.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/df/06/e3d4104559ee5ed67f7a51d1a753b7fd.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/Sanjeet"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Sanjeet"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"tesintgdlksd"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-11 10:52:01"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">34</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">34</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    }
+],
+<span class="hljs-string">"34"</span>: [
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">35</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/dc/06/85e52612611096313d6d0e8dbf253e01.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/de/06/4eabde367e5fc8e74d8debf6d6c1c178.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/dd/06/7ecbb0669fdc23d5b282b9ad82e11e39.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/df/06/e3d4104559ee5ed67f7a51d1a753b7fd.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/Sanjeet"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Sanjeet"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"nidldlsl"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-11 10:53:12"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">35</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">35</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    },
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">36</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/dc/06/85e52612611096313d6d0e8dbf253e01.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/de/06/4eabde367e5fc8e74d8debf6d6c1c178.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/dd/06/7ecbb0669fdc23d5b282b9ad82e11e39.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/df/06/e3d4104559ee5ed67f7a51d1a753b7fd.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/Sanjeet"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Sanjeet"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"nidldlsl"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-11 10:53:14"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">36</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">36</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    },
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">37</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/dc/06/85e52612611096313d6d0e8dbf253e01.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/de/06/4eabde367e5fc8e74d8debf6d6c1c178.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/dd/06/7ecbb0669fdc23d5b282b9ad82e11e39.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/df/06/e3d4104559ee5ed67f7a51d1a753b7fd.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/Sanjeet"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Sanjeet"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"nidldlsl"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-11 10:53:15"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">37</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">37</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    }
+],
+<span class="hljs-string">"38"</span>: [
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">39</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/ef/06/bd1f631334c50761d32ec5e5674fd64d.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/f1/06/92ba58ecde03ec08af50ed7054449e20.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/f0/06/b45e7412a1301cdde2c8704e6cf9ac7b.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/f2/06/6269cccb48ba764d534ab1db8c504f66.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/test10"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"xyz singh"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">5</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"reply 2"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-11 10:59:09"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">39</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">39</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    }
+],
+<span class="hljs-string">"39"</span>: [
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">40</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/dc/06/85e52612611096313d6d0e8dbf253e01.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/de/06/4eabde367e5fc8e74d8debf6d6c1c178.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/dd/06/7ecbb0669fdc23d5b282b9ad82e11e39.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/df/06/e3d4104559ee5ed67f7a51d1a753b7fd.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/Sanjeet"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Sanjeet"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"reply 3"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-11 11:01:45"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">40</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">40</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    },
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">42</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/ef/06/bd1f631334c50761d32ec5e5674fd64d.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/f1/06/92ba58ecde03ec08af50ed7054449e20.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/f0/06/b45e7412a1301cdde2c8704e6cf9ac7b.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/f2/06/6269cccb48ba764d534ab1db8c504f66.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/test10"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"xyz singh"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">5</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"reply 5"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-11 11:05:16"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">42</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">42</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    }
+],
+<span class="hljs-string">"40"</span>: [
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">41</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/ef/06/bd1f631334c50761d32ec5e5674fd64d.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/f1/06/92ba58ecde03ec08af50ed7054449e20.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/f0/06/b45e7412a1301cdde2c8704e6cf9ac7b.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/f2/06/6269cccb48ba764d534ab1db8c504f66.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/test10"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"xyz singh"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">5</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"repy4"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-11 11:04:39"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">41</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">41</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    }
+]
+],
+<span class="hljs-string">"viewAllComments"</span>: [
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">8</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/dc/06/85e52612611096313d6d0e8dbf253e01.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/de/06/4eabde367e5fc8e74d8debf6d6c1c178.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/dd/06/7ecbb0669fdc23d5b282b9ad82e11e39.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/df/06/e3d4104559ee5ed67f7a51d1a753b7fd.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/Sanjeet"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Sanjeet"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"nice event"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-04 07:42:33"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">8</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">8</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    },
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">18</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/eb/06/77e10e0217f2b11224aac5b822233e99.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/ed/06/fb213e3006956ba55a74fa77a976e394.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/ec/06/6e8cc0dcf56d8049f135189f941e6ea5.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/ee/06/6e7c75463334313402b9daed2a4ff67a.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/test08"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Shyam Kumar"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">4</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"nice event"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-07 11:26:51"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">18</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">18</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    },
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">20</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/eb/06/77e10e0217f2b11224aac5b822233e99.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/ed/06/fb213e3006956ba55a74fa77a976e394.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/ec/06/6e8cc0dcf56d8049f135189f941e6ea5.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/ee/06/6e7c75463334313402b9daed2a4ff67a.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/test08"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Shyam Kumar"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">4</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"nice"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-07 11:30:17"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">20</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">20</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    },
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">21</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/eb/06/77e10e0217f2b11224aac5b822233e99.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/ed/06/fb213e3006956ba55a74fa77a976e394.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/ec/06/6e8cc0dcf56d8049f135189f941e6ea5.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/ee/06/6e7c75463334313402b9daed2a4ff67a.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/test08"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Shyam Kumar"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">4</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"nice"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-07 11:30:18"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">21</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">21</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    },
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">22</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/eb/06/77e10e0217f2b11224aac5b822233e99.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/ed/06/fb213e3006956ba55a74fa77a976e394.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/ec/06/6e8cc0dcf56d8049f135189f941e6ea5.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/ee/06/6e7c75463334313402b9daed2a4ff67a.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/test08"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Shyam Kumar"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">4</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"nice"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-07 11:32:57"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">22</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">22</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    },
+    {
+        <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">43</span>,
+        <span class="hljs-string">"author_image"</span>: <span class="hljs-string">"http://xyz.com/public/user/dc/06/85e52612611096313d6d0e8dbf253e01.jpg"</span>,
+        <span class="hljs-string">"author_image_normal"</span>: <span class="hljs-string">"http://xyz.com/public/user/de/06/4eabde367e5fc8e74d8debf6d6c1c178.jpg"</span>,
+        <span class="hljs-string">"author_image_profile"</span>: <span class="hljs-string">"http://xyz.com/public/user/dd/06/7ecbb0669fdc23d5b282b9ad82e11e39.jpg"</span>,
+        <span class="hljs-string">"author_image_icon"</span>: <span class="hljs-string">"http://xyz.com/public/user/df/06/e3d4104559ee5ed67f7a51d1a753b7fd.jpg"</span>,
+        <span class="hljs-string">"content_url"</span>: <span class="hljs-string">"http://xyz.com/profile/Sanjeet"</span>,
+        <span class="hljs-string">"author_title"</span>: <span class="hljs-string">"Sanjeet"</span>,
+        <span class="hljs-string">"user_id"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">"comment_body"</span>: <span class="hljs-string">"recustsive comment"</span>,
+        <span class="hljs-string">"comment_date"</span>: <span class="hljs-string">"2017-12-12 09:35:49"</span>,
+        <span class="hljs-string">"params"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-string">"delete"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"delete"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Delete"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"comment-delete"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">43</span>
+            }
+        },
+        <span class="hljs-string">"like_count"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">"like"</span>: {
+            <span class="hljs-string">"name"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"label"</span>: <span class="hljs-string">"Like"</span>,
+            <span class="hljs-string">"url"</span>: <span class="hljs-string">"like"</span>,
+            <span class="hljs-string">"urlParams"</span>: {
+                <span class="hljs-string">"action_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"subject_type"</span>: <span class="hljs-string">"event"</span>,
+                <span class="hljs-string">"subject_id"</span>: <span class="hljs-number">2</span>,
+                <span class="hljs-string">"comment_id"</span>: <span class="hljs-number">43</span>
+            },
+            <span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>
+        }
+    }
+],
+<span class="hljs-string">"viewAllLikesBy"</span>: [],
+<span class="hljs-string">"isLike"</span>: <span class="hljs-number">0</span>,
+<span class="hljs-string">"canComment"</span>: <span class="hljs-number">1</span>,
+<span class="hljs-string">"canDelete"</span>: <span class="hljs-number">1</span>,
+<span class="hljs-string">"getTotalComments"</span>: <span class="hljs-number">22</span>,
+<span class="hljs-string">"getTotalLikes"</span>: <span class="hljs-number">0</span>
+}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>401</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Body</h5><pre><code>{
+  "<span class="hljs-attribute">status_code</span>": <span class="hljs-value"><span class="hljs-number">401</span></span>,
+  "<span class="hljs-attribute">error</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+  "<span class="hljs-attribute">error_code</span>": <span class="hljs-value"><span class="hljs-string">"unauthorized"</span></span>,
+  "<span class="hljs-attribute">message</span>": <span class="hljs-value"><span class="hljs-string">"User does not have access to this resource."</span>
+</span>}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="comment-post" class="resource"><h3 class="resource-heading">Comment Post <a href="#comment-post" class="permalink">&nbsp;&para;</a></h3><div id="comment-post-post" class="action post"><h4 class="action-heading"><div class="name">Post Comment</div><a href="#comment-post-post" class="method post">POST</a><code class="uri">/advancedcomments/comment</code></h4><p>Post comment on content.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th style="text-align:center">Required</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>body</code></td>
+<td style="text-align:center">yes</td>
+<td>string</td>
+<td>Nice</td>
+<td>status update post’s content</td>
+</tr>
+<tr>
+<td><code>subject_type</code></td>
+<td style="text-align:center">yes</td>
+<td>string</td>
+<td>video</td>
+<td>content type</td>
+</tr>
+<tr>
+<td><code>subject_id</code></td>
+<td style="text-align:center">yes</td>
+<td>int</td>
+<td>video</td>
+<td>content id</td>
+</tr>
+<tr>
+<td><code>attachment_id</code></td>
+<td style="text-align:center">no</td>
+<td>int</td>
+<td>256</td>
+<td>attchment id</td>
+</tr>
+<tr>
+<td><code>attachment_type</code></td>
+<td style="text-align:center">no</td>
+<td>string</td>
+<td>photo</td>
+<td>attachent type like photo,video</td>
+</tr>
+</tbody>
+</table>
+<h4>Example URI</h4><div class="definition"><span class="method post">POST</span>&nbsp;<span class="uri"><span class="hostname"></span>/advancedcomments/comment</span></div><div class="title"><strong>Request&nbsp;&nbsp;<code>valid</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">oauth_consumer_key</span>: <span class="hljs-string">e6a5845684bf49df63d9eef489acfee1</span><br><span class="hljs-attribute">oauth_consumer_secret</span>: <span class="hljs-string">42b9eef48e96c65f9ca29d07712d39fb</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">body</span>": <span class="hljs-value"><span class="hljs-string">"Happpy Birthday"</span></span>,
+    "<span class="hljs-attribute">subject_type</span>":<span class="hljs-value">event</span>,
+    "<span class="hljs-attribute">subject_id</span>": <span class="hljs-value"><span class="hljs-number">2015</span></span>,                
+ }</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>201</code></strong></div><div class="title"><strong>Response&nbsp;&nbsp;<code>401</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+  "<span class="hljs-attribute">status_code</span>": <span class="hljs-value"><span class="hljs-number">401</span></span>,
+  "<span class="hljs-attribute">error</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+  "<span class="hljs-attribute">error_code</span>": <span class="hljs-value"><span class="hljs-string">"unauthorized"</span></span>,
+  "<span class="hljs-attribute">message</span>": <span class="hljs-value"><span class="hljs-string">"User does not have access to this resource."</span>
+</span>}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="reply-on-content-comment" class="resource"><h3 class="resource-heading">Reply On Content Comment <a href="#reply-on-content-comment" class="permalink">&nbsp;&para;</a></h3><div id="reply-on-content-comment-post" class="action post"><h4 class="action-heading"><div class="name">Reply On Content Comment</div><a href="#reply-on-content-comment-post" class="method post">POST</a><code class="uri">/advancedcomments/comment</code></h4><p>Reply On Content Comment.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th style="text-align:center">Required</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>body</code></td>
+<td style="text-align:center">yes</td>
+<td>string</td>
+<td>Thank you</td>
+<td>status update post’s content</td>
+</tr>
+<tr>
+<td><code>subject_type</code></td>
+<td style="text-align:center">yes</td>
+<td>string</td>
+<td>video</td>
+<td>content type</td>
+</tr>
+<tr>
+<td><code>subject_id</code></td>
+<td style="text-align:center">yes</td>
+<td>int</td>
+<td>video</td>
+<td>content id</td>
+</tr>
+<tr>
+<td><code>comment_id</code></td>
+<td style="text-align:center">yes</td>
+<td>int</td>
+<td>121</td>
+<td>comment id where you want to reply on</td>
+</tr>
+<tr>
+<td><code>attachment_id</code></td>
+<td style="text-align:center">no</td>
+<td>int</td>
+<td>256</td>
+<td>attchment id</td>
+</tr>
+<tr>
+<td><code>attachment_type</code></td>
+<td style="text-align:center">no</td>
+<td>string</td>
+<td>photo</td>
+<td>attachent type like photo,video</td>
+</tr>
+</tbody>
+</table>
+<h4>Example URI</h4><div class="definition"><span class="method post">POST</span>&nbsp;<span class="uri"><span class="hostname"></span>/advancedcomments/comment</span></div><div class="title"><strong>Request&nbsp;&nbsp;<code>valid</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">oauth_consumer_key</span>: <span class="hljs-string">e6a5845684bf49df63d9eef489acfee1</span><br><span class="hljs-attribute">oauth_consumer_secret</span>: <span class="hljs-string">42b9eef48e96c65f9ca29d07712d39fb</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">body</span>": <span class="hljs-value"><span class="hljs-string">"Thank you"</span></span>,
+    "<span class="hljs-attribute">comment_id</span>":<span class="hljs-value"><span class="hljs-number">121</span></span>,
+    "<span class="hljs-attribute">subject_type</span>":<span class="hljs-value">event</span>,
+    "<span class="hljs-attribute">subject_id</span>": <span class="hljs-value"><span class="hljs-number">2015</span></span>,                
+ }</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>201</code></strong></div><div class="title"><strong>Response&nbsp;&nbsp;<code>401</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+  "<span class="hljs-attribute">status_code</span>": <span class="hljs-value"><span class="hljs-number">401</span></span>,
+  "<span class="hljs-attribute">error</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+  "<span class="hljs-attribute">error_code</span>": <span class="hljs-value"><span class="hljs-string">"unauthorized"</span></span>,
+  "<span class="hljs-attribute">message</span>": <span class="hljs-value"><span class="hljs-string">"User does not have access to this resource."</span>
+</span>}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="reply-on-activity-feed-comment" class="resource"><h3 class="resource-heading">Reply On Activity Feed Comment <a href="#reply-on-activity-feed-comment" class="permalink">&nbsp;&para;</a></h3><div id="reply-on-activity-feed-comment-post" class="action post"><h4 class="action-heading"><div class="name">Reply On Activity Feed Comment</div><a href="#reply-on-activity-feed-comment-post" class="method post">POST</a><code class="uri">/advancedcomments/reply</code></h4><p>Reply On Activity Feed Comment</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th style="text-align:center">Required</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>body</code></td>
+<td style="text-align:center">yes</td>
+<td>string</td>
+<td>Thank you</td>
+<td>status update post’s content</td>
+</tr>
+<tr>
+<td><code>action_id</code></td>
+<td style="text-align:center">yes</td>
+<td>int</td>
+<td>91</td>
+<td>action id of feed</td>
+</tr>
+<tr>
+<td><code>comment_id</code></td>
+<td style="text-align:center">yes</td>
+<td>int</td>
+<td>121</td>
+<td>comment id where you want to reply on</td>
+</tr>
+<tr>
+<td><code>attachment_id</code></td>
+<td style="text-align:center">no</td>
+<td>int</td>
+<td>256</td>
+<td>attchment id</td>
+</tr>
+<tr>
+<td><code>attachment_type</code></td>
+<td style="text-align:center">no</td>
+<td>string</td>
+<td>photo</td>
+<td>attachent type like photo,video</td>
+</tr>
+</tbody>
+</table>
+<h4>Example URI</h4><div class="definition"><span class="method post">POST</span>&nbsp;<span class="uri"><span class="hostname"></span>/advancedcomments/reply</span></div><div class="title"><strong>Request&nbsp;&nbsp;<code>valid</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">oauth_consumer_key</span>: <span class="hljs-string">e6a5845684bf49df63d9eef489acfee1</span><br><span class="hljs-attribute">oauth_consumer_secret</span>: <span class="hljs-string">42b9eef48e96c65f9ca29d07712d39fb</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">body</span>": <span class="hljs-value"><span class="hljs-string">"Thank you"</span></span>,
+    "<span class="hljs-attribute">comment_id</span>":<span class="hljs-value"><span class="hljs-number">121</span></span>,
+    "<span class="hljs-attribute">action_id</span>":<span class="hljs-value"><span class="hljs-number">91</span></span>,
+ }</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>201</code></strong></div><div class="title"><strong>Response&nbsp;&nbsp;<code>401</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+  "<span class="hljs-attribute">status_code</span>": <span class="hljs-value"><span class="hljs-number">401</span></span>,
+  "<span class="hljs-attribute">error</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+  "<span class="hljs-attribute">error_code</span>": <span class="hljs-value"><span class="hljs-string">"unauthorized"</span></span>,
+  "<span class="hljs-attribute">message</span>": <span class="hljs-value"><span class="hljs-string">"User does not have access to this resource."</span>
+</span>}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="edit-activity-feed-comment" class="resource"><h3 class="resource-heading">Edit Activity Feed Comment <a href="#edit-activity-feed-comment" class="permalink">&nbsp;&para;</a></h3><div id="edit-activity-feed-comment-post" class="action post"><h4 class="action-heading"><div class="name">Edit Activity Feed Comment</div><a href="#edit-activity-feed-comment-post" class="method post">POST</a><code class="uri">/advancedcomments/reply-edit</code></h4><p>Edit Activity Feed Comment</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th style="text-align:center">Required</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>body</code></td>
+<td style="text-align:center">yes</td>
+<td>string</td>
+<td>Nice</td>
+<td>status update post’s content</td>
+</tr>
+<tr>
+<td><code>action_id</code></td>
+<td style="text-align:center">yes</td>
+<td>int</td>
+<td>91</td>
+<td>action id of feed</td>
+</tr>
+<tr>
+<td><code>comment_id</code></td>
+<td style="text-align:center">yes</td>
+<td>int</td>
+<td>121</td>
+<td>comment id</td>
+</tr>
+</tbody>
+</table>
+<h4>Example URI</h4><div class="definition"><span class="method post">POST</span>&nbsp;<span class="uri"><span class="hostname"></span>/advancedcomments/reply-edit</span></div><div class="title"><strong>Request&nbsp;&nbsp;<code>valid</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">oauth_consumer_key</span>: <span class="hljs-string">e6a5845684bf49df63d9eef489acfee1</span><br><span class="hljs-attribute">oauth_consumer_secret</span>: <span class="hljs-string">42b9eef48e96c65f9ca29d07712d39fb</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+    "<span class="hljs-attribute">body</span>": <span class="hljs-value"><span class="hljs-string">"Nice"</span></span>,
+    "<span class="hljs-attribute">comment_id</span>":<span class="hljs-value"><span class="hljs-number">121</span></span>,
+    "<span class="hljs-attribute">action_id</span>":<span class="hljs-value"><span class="hljs-number">91</span></span>,
+ }</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>201</code></strong></div><div class="title"><strong>Response&nbsp;&nbsp;<code>401</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+  "<span class="hljs-attribute">status_code</span>": <span class="hljs-value"><span class="hljs-number">401</span></span>,
+  "<span class="hljs-attribute">error</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+  "<span class="hljs-attribute">error_code</span>": <span class="hljs-value"><span class="hljs-string">"unauthorized"</span></span>,
+  "<span class="hljs-attribute">message</span>": <span class="hljs-value"><span class="hljs-string">"User does not have access to this resource."</span>
+</span>}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="delete-comment" class="resource"><h3 class="resource-heading">Delete comment <a href="#delete-comment" class="permalink">&nbsp;&para;</a></h3><div id="delete-comment-delete" class="action delete"><h4 class="action-heading"><div class="name">Delete comment</div><a href="#delete-comment-delete" class="method delete">DELETE</a><code class="uri">/comment-delete</code></h4><p>Delete comment</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th style="text-align:center">Required</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>subject_type</code></td>
+<td style="text-align:center">yes</td>
+<td>string</td>
+<td>group</td>
+<td>status update post’s content</td>
+</tr>
+<tr>
+<td><code>subject_id</code></td>
+<td style="text-align:center">yes</td>
+<td>int</td>
+<td>235</td>
+<td>gorup id</td>
+</tr>
+<tr>
+<td><code>action_id</code></td>
+<td style="text-align:center">yes</td>
+<td>int</td>
+<td>91</td>
+<td>action id of feed</td>
+</tr>
+<tr>
+<td><code>comment_id</code></td>
+<td style="text-align:center">yes</td>
+<td>int</td>
+<td>121</td>
+<td>delete comment</td>
+</tr>
+</tbody>
+</table>
+<h4>Example URI</h4><div class="definition"><span class="method delete">DELETE</span>&nbsp;<span class="uri"><span class="hostname"></span>/comment-delete</span></div><div class="title"><strong>Request&nbsp;&nbsp;<code>valid</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">oauth_consumer_key</span>: <span class="hljs-string">e6a5845684bf49df63d9eef489acfee1</span><br><span class="hljs-attribute">oauth_consumer_secret</span>: <span class="hljs-string">42b9eef48e96c65f9ca29d07712d39fb</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+ "<span class="hljs-attribute">comment_id</span>":<span class="hljs-value"><span class="hljs-number">121</span></span>,
+"<span class="hljs-attribute">subject_type</span>":<span class="hljs-value">event</span>,
+"<span class="hljs-attribute">subject_id</span>": <span class="hljs-value"><span class="hljs-number">2015</span></span>,
+"<span class="hljs-attribute">action_id </span>":<span class="hljs-value"><span class="hljs-number">1995</span>
+</span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>201</code></strong></div><div class="title"><strong>Response&nbsp;&nbsp;<code>401</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+  "<span class="hljs-attribute">status_code</span>": <span class="hljs-value"><span class="hljs-number">401</span></span>,
+  "<span class="hljs-attribute">error</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+  "<span class="hljs-attribute">error_code</span>": <span class="hljs-value"><span class="hljs-string">"unauthorized"</span></span>,
+  "<span class="hljs-attribute">message</span>": <span class="hljs-value"><span class="hljs-string">"User does not have access to this resource."</span>
+</span>}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="like-comment" class="resource"><h3 class="resource-heading">Like Comment <a href="#like-comment" class="permalink">&nbsp;&para;</a></h3><div id="like-comment-post" class="action post"><h4 class="action-heading"><div class="name">Like Comment</div><a href="#like-comment-post" class="method post">POST</a><code class="uri">/like</code></h4><p>Like comment</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th style="text-align:center">Required</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>subject_type</code></td>
+<td style="text-align:center">yes</td>
+<td>string</td>
+<td>group</td>
+<td>status update post’s content</td>
+</tr>
+<tr>
+<td><code>subject_id</code></td>
+<td style="text-align:center">yes</td>
+<td>int</td>
+<td>235</td>
+<td>gorup id</td>
+</tr>
+<tr>
+<td><code>action_id</code></td>
+<td style="text-align:center">yes</td>
+<td>int</td>
+<td>91</td>
+<td>action id of feed</td>
+</tr>
+<tr>
+<td><code>comment_id</code></td>
+<td style="text-align:center">yes</td>
+<td>int</td>
+<td>121</td>
+<td>delete comment</td>
+</tr>
+</tbody>
+</table>
+<h4>Example URI</h4><div class="definition"><span class="method post">POST</span>&nbsp;<span class="uri"><span class="hostname"></span>/like</span></div><div class="title"><strong>Request&nbsp;&nbsp;<code>valid</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">oauth_consumer_key</span>: <span class="hljs-string">e6a5845684bf49df63d9eef489acfee1</span><br><span class="hljs-attribute">oauth_consumer_secret</span>: <span class="hljs-string">42b9eef48e96c65f9ca29d07712d39fb</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+ "<span class="hljs-attribute">comment_id</span>":<span class="hljs-value"><span class="hljs-number">121</span></span>,
+"<span class="hljs-attribute">subject_type</span>":<span class="hljs-value">event</span>,
+"<span class="hljs-attribute">subject_id</span>": <span class="hljs-value"><span class="hljs-number">2015</span></span>,
+"<span class="hljs-attribute">action_id </span>":<span class="hljs-value"><span class="hljs-number">1995</span>
+</span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>201</code></strong></div><div class="title"><strong>Response&nbsp;&nbsp;<code>401</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+  "<span class="hljs-attribute">status_code</span>": <span class="hljs-value"><span class="hljs-number">401</span></span>,
+  "<span class="hljs-attribute">error</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+  "<span class="hljs-attribute">error_code</span>": <span class="hljs-value"><span class="hljs-string">"unauthorized"</span></span>,
+  "<span class="hljs-attribute">message</span>": <span class="hljs-value"><span class="hljs-string">"User does not have access to this resource."</span>
+</span>}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="send-notification-on-comment" class="resource"><h3 class="resource-heading">Send Notification On Comment <a href="#send-notification-on-comment" class="permalink">&nbsp;&para;</a></h3><div id="send-notification-on-comment-post" class="action post"><h4 class="action-heading"><div class="name">Send Notification On Comment</div><a href="#send-notification-on-comment-post" class="method post">POST</a><code class="uri">/advancedcomments/add-comment-notifications</code></h4><p>Send Notification On Comment</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th style="text-align:center">Required</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>subject_type</code></td>
+<td style="text-align:center">yes</td>
+<td>string</td>
+<td>group</td>
+<td>subject type like group,event video</td>
+</tr>
+<tr>
+<td><code>subject_id</code></td>
+<td style="text-align:center">yes</td>
+<td>int</td>
+<td>235</td>
+<td>gorup id</td>
+</tr>
+<tr>
+<td><code>comment_id</code></td>
+<td style="text-align:center">yes</td>
+<td>int</td>
+<td>121</td>
+<td>delete comment</td>
+</tr>
+</tbody>
+</table>
+<h4>Example URI</h4><div class="definition"><span class="method post">POST</span>&nbsp;<span class="uri"><span class="hostname"></span>/advancedcomments/add-comment-notifications</span></div><div class="title"><strong>Request&nbsp;&nbsp;<code>valid</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Accept</span>: <span class="hljs-string">application/json</span><br><span class="hljs-attribute">oauth_consumer_key</span>: <span class="hljs-string">e6a5845684bf49df63d9eef489acfee1</span><br><span class="hljs-attribute">oauth_consumer_secret</span>: <span class="hljs-string">42b9eef48e96c65f9ca29d07712d39fb</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+ "<span class="hljs-attribute">comment_id</span>":<span class="hljs-value"><span class="hljs-number">121</span></span>,
+"<span class="hljs-attribute">subject_type</span>":<span class="hljs-value">event</span>,
+"<span class="hljs-attribute">subject_id</span>": <span class="hljs-value"><span class="hljs-number">2015</span></span>,
+"<span class="hljs-attribute">action_id </span>":<span class="hljs-value"><span class="hljs-number">1995</span>
+</span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>201</code></strong></div><div class="title"><strong>Response&nbsp;&nbsp;<code>401</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+  "<span class="hljs-attribute">status_code</span>": <span class="hljs-value"><span class="hljs-number">401</span></span>,
+  "<span class="hljs-attribute">error</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+  "<span class="hljs-attribute">error_code</span>": <span class="hljs-value"><span class="hljs-string">"unauthorized"</span></span>,
+  "<span class="hljs-attribute">message</span>": <span class="hljs-value"><span class="hljs-string">"User does not have access to this resource."</span>
+</span>}</code></pre><div style="height: 1px;"></div></div></div></div></div></section></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 14 Dec 2017</p><script>/* eslint-env browser */
+/* eslint quotes: [2, "single"] */
+'use strict';
+
+/*
+  Determine if a string ends with another string.
+*/
+function endsWith(str, suffix) {
+    return str.indexOf(suffix, str.length - suffix.length) !== -1;
+}
+
+/*
+  Get a list of direct child elements by class name.
+*/
+function childrenByClass(element, name) {
+  var filtered = [];
+
+  for (var i = 0; i < element.children.length; i++) {
+    var child = element.children[i];
+    var classNames = child.className.split(' ');
+    if (classNames.indexOf(name) !== -1) {
+      filtered.push(child);
+    }
+  }
+
+  return filtered;
+}
+
+/*
+  Get an array [width, height] of the window.
+*/
+function getWindowDimensions() {
+  var w = window,
+      d = document,
+      e = d.documentElement,
+      g = d.body,
+      x = w.innerWidth || e.clientWidth || g.clientWidth,
+      y = w.innerHeight || e.clientHeight || g.clientHeight;
+
+  return [x, y];
+}
+
+/*
+  Collapse or show a request/response example.
+*/
+function toggleCollapseButton(event) {
+    var button = event.target.parentNode;
+    var content = button.parentNode.nextSibling;
+    var inner = content.children[0];
+
+    if (button.className.indexOf('collapse-button') === -1) {
+      // Clicked without hitting the right element?
+      return;
+    }
+
+    if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+        // Currently showing, so let's hide it
+        button.className = 'collapse-button';
+        content.style.maxHeight = '0px';
+    } else {
+        // Currently hidden, so let's show it
+        button.className = 'collapse-button show';
+        content.style.maxHeight = inner.offsetHeight + 12 + 'px';
+    }
+}
+
+function toggleTabButton(event) {
+    var i, index;
+    var button = event.target;
+
+    // Get index of the current button.
+    var buttons = childrenByClass(button.parentNode, 'tab-button');
+    for (i = 0; i < buttons.length; i++) {
+        if (buttons[i] === button) {
+            index = i;
+            button.className = 'tab-button active';
+        } else {
+            buttons[i].className = 'tab-button';
+        }
+    }
+
+    // Hide other tabs and show this one.
+    var tabs = childrenByClass(button.parentNode.parentNode, 'tab');
+    for (i = 0; i < tabs.length; i++) {
+        if (i === index) {
+            tabs[i].style.display = 'block';
+        } else {
+            tabs[i].style.display = 'none';
+        }
+    }
+}
+
+/*
+  Collapse or show a navigation menu. It will not be hidden unless it
+  is currently selected or `force` has been passed.
+*/
+function toggleCollapseNav(event, force) {
+    var heading = event.target.parentNode;
+    var content = heading.nextSibling;
+    var inner = content.children[0];
+
+    if (heading.className.indexOf('heading') === -1) {
+      // Clicked without hitting the right element?
+      return;
+    }
+
+    if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+      // Currently showing, so let's hide it, but only if this nav item
+      // is already selected. This prevents newly selected items from
+      // collapsing in an annoying fashion.
+      if (force || window.location.hash && endsWith(event.target.href, window.location.hash)) {
+        content.style.maxHeight = '0px';
+      }
+    } else {
+      // Currently hidden, so let's show it
+      content.style.maxHeight = inner.offsetHeight + 12 + 'px';
+    }
+}
+
+/*
+  Refresh the page after a live update from the server. This only
+  works in live preview mode (using the `--server` parameter).
+*/
+function refresh(body) {
+    document.querySelector('body').className = 'preload';
+    document.body.innerHTML = body;
+
+    // Re-initialize the page
+    init();
+    autoCollapse();
+
+    document.querySelector('body').className = '';
+}
+
+/*
+  Determine which navigation items should be auto-collapsed to show as many
+  as possible on the screen, based on the current window height. This also
+  collapses them.
+*/
+function autoCollapse() {
+  var windowHeight = getWindowDimensions()[1];
+  var itemsHeight = 64; /* Account for some padding */
+  var itemsArray = Array.prototype.slice.call(
+    document.querySelectorAll('nav .resource-group .heading'));
+
+  // Get the total height of the navigation items
+  itemsArray.forEach(function (item) {
+    itemsHeight += item.parentNode.offsetHeight;
+  });
+
+  // Should we auto-collapse any nav items? Try to find the smallest item
+  // that can be collapsed to show all items on the screen. If not possible,
+  // then collapse the largest item and do it again. First, sort the items
+  // by height from smallest to largest.
+  var sortedItems = itemsArray.sort(function (a, b) {
+    return a.parentNode.offsetHeight - b.parentNode.offsetHeight;
+  });
+
+  while (sortedItems.length && itemsHeight > windowHeight) {
+    for (var i = 0; i < sortedItems.length; i++) {
+      // Will collapsing this item help?
+      var itemHeight = sortedItems[i].nextSibling.offsetHeight;
+      if ((itemsHeight - itemHeight <= windowHeight) || i === sortedItems.length - 1) {
+        // It will, so let's collapse it, remove its content height from
+        // our total and then remove it from our list of candidates
+        // that can be collapsed.
+        itemsHeight -= itemHeight;
+        toggleCollapseNav({target: sortedItems[i].children[0]}, true);
+        sortedItems.splice(i, 1);
+        break;
+      }
+    }
+  }
+}
+
+/*
+  Initialize the interactive functionality of the page.
+*/
+function init() {
+    var i, j;
+
+    // Make collapse buttons clickable
+    var buttons = document.querySelectorAll('.collapse-button');
+    for (i = 0; i < buttons.length; i++) {
+        buttons[i].onclick = toggleCollapseButton;
+
+        // Show by default? Then toggle now.
+        if (buttons[i].className.indexOf('show') !== -1) {
+            toggleCollapseButton({target: buttons[i].children[0]});
+        }
+    }
+
+    var responseCodes = document.querySelectorAll('.example-names');
+    for (i = 0; i < responseCodes.length; i++) {
+        var tabButtons = childrenByClass(responseCodes[i], 'tab-button');
+        for (j = 0; j < tabButtons.length; j++) {
+            tabButtons[j].onclick = toggleTabButton;
+
+            // Show by default?
+            if (j === 0) {
+                toggleTabButton({target: tabButtons[j]});
+            }
+        }
+    }
+
+    // Make nav items clickable to collapse/expand their content.
+    var navItems = document.querySelectorAll('nav .resource-group .heading');
+    for (i = 0; i < navItems.length; i++) {
+        navItems[i].onclick = toggleCollapseNav;
+
+        // Show all by default
+        toggleCollapseNav({target: navItems[i].children[0]});
+    }
+}
+
+// Initial call to set up buttons
+init();
+
+window.onload = function () {
+    autoCollapse();
+    // Remove the `preload` class to enable animations
+    document.querySelector('body').className = '';
+};
+</script></body></html>

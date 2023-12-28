@@ -1,0 +1,70 @@
+{
+  "type": "external",
+  "name": "moocrop",
+  "version": "6.2.2",
+  "revision": "9747",
+  "path": "externals\/cropper",
+  "repository": null,
+  "sku": null,
+  "date": "Tue, 23 Aug 2022 12:11:24 +0000",
+  "title": "Cropper",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "meta": {
+    "date": "Tue, 23 Aug 2022 12:11:24 +0000",
+    "title": "Cropper",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/cropper": {
+      "type": "directory",
+      "path": "externals\/cropper",
+      "structure": [
+        {
+          "path": "cropper.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3324,
+          "sha1": "044ecf1f5afc4c6ca20d216c8e6d6d83e6c8770e"
+        },
+        {
+          "path": "cropper.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 17554,
+          "sha1": "0e9e9e8eeb2193f64359ed04a08cd313002a4ee9"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 369,
+          "sha1": "7230f1bb77d30c4445e08f97b8fd97bcb416a4c7"
+        }
+      ]
+    }
+  }
+}

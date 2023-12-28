@@ -1,0 +1,950 @@
+
+/* $Id:main.css 9661 2012-03-21 21:55:06Z john $ */
+
+
+
+/*
+BROWSE MUSIC
+Styles the music browse page.
+*/
+ul.music_browse > li + li
+{
+  margin-top:15px;
+  border-top-width:1px;
+  padding-top:15px;
+}
+.music_browse_author_photo
+{
+  float:left;
+  overflow:hidden;
+  margin-right:10px;
+}
+[dir="rtl"] .music_browse_author_photo
+{
+  float:right;
+  margin-right:0px;
+  margin-left:10px;
+}
+.music_browse_options
+{
+  float:right;
+  overflow:hidden;
+  padding-left:20px;
+}
+[dir="rtl"] .music_browse_options
+{
+  float:left;
+  padding-right:20px;
+  padding-left:0px;
+}
+.music_browse_options a
+{
+  clear:both;
+  display:block;
+  margin:0 5px;
+  font-size:$theme_font_size_small;
+  padding-top:2px;
+  padding-bottom:2px;
+}
+.music_browse_info
+{
+  overflow:hidden;
+}
+.music_browse_info .music_info_top {
+  display:flex;
+	justify-content:space-between;
+}
+.music_browse_info .music_playlist_stats{
+  margin-bottom:0;	
+	font-size:$theme_font_size_small;
+  color:$theme_font_color_light;
+}
+.music_browse_info_title
+{
+  font-weight:bold;
+}
+.music_browse_info_date
+{
+  font-size:$theme_font_size_small;
+  color:$theme_font_color_light;
+}
+.music_browse_info_desc
+{
+  margin-top:5px;
+  overflow:hidden;
+}
+.music_browse_info_title h3,
+.music_browse_info_desc > p{
+	margin-bottom:0;
+}
+.music_browse_info_songs
+{
+  padding:10px 5px 5px 5px;
+  overflow:hidden;
+}
+.music_browse_info_art
+{
+  float:left;
+  overflow:hidden;
+  margin-right:10px;
+}
+.music_browse_info_art img
+{
+  display:block;
+  max-width:90px;
+  border:1px solid $theme_border_color;
+}
+.music_browse_info_songlist
+{
+  overflow:hidden;
+}
+.music_browse_info_songlist li
+{
+  font-size:$theme_font_size_small;
+}
+.music_browse_info_songlist li + li
+{
+  margin-top:3px;
+}
+.music_browse_info_songlist li object,
+.music_browse_info_songlist li embed,
+.music_browse_info_songlist li .playlist_song_actions
+{
+  padding-left:25px;
+}
+.music_browse_info_songlist li > a
+{
+  display:inline-block;
+  padding-left:25px;
+  background-repeat:no-repeat;
+  background-position:2px 2px;
+  font-weight:bold;
+  padding-top:3px;
+  padding-bottom:3px;
+}
+.music_browse_info_songlist li > a.playlist_song:before
+{
+   content:"\\f144";
+}
+.music_browse_info_songlist li .music_browse_info_plays
+{
+  display:block;
+  color:$theme_font_color_light;
+  margin-left:24px;
+}
+.music_browse_info_songlist li .music_player_small
+{
+  margin:5px 0px 5px 0px;
+}
+.music_browse_info_viewmore:before
+{
+  font-weight:bold;
+  content:"\\f144";
+  margin-top:10px;
+  margin-left:24px;
+  font-size:$theme_font_size_small;
+}
+.layout_music_browse_search,
+.layout_music_browse_menu_quick
+{
+  margin-bottom:15px;
+}
+
+/* Music Grid */
+ul.music_grid li .music_player
+{
+  float:left;
+}
+[dir="rtl"] ul.music_grid li .music_player
+{
+  float:right;
+}
+/*
+VIEW PLAYLIST
+Styles the view playlist page, where a single
+playlist is viewed.
+*/
+.music_playlist
+{
+  overflow:hidden;
+  margin-top:10px;
+  border-top-width:1px;
+  padding-top:15px;
+}
+.music_playlist_art
+{
+  float:left;
+  overflow:hidden;
+  margin-right:15px;
+}
+.music_playlist_art img
+{
+  max-width:200px;
+  max-height:200px;
+  border:1px solid $theme_photo_border_color;
+}
+.music_playlist_info
+{
+  overflow:hidden;
+}
+.music_playlist_info_title > p,
+.music_playlist_info_title h3
+{
+  margin-bottom:0;
+}
+.music_playlist_info_date
+{
+  color:$theme_font_color_light;
+  font-size:$theme_font_size_small;
+}
+.music_playlist_info_songs li
+{
+  margin:10px 0px 10px 0px;
+}
+.music_playlist_info_song
+{
+  font-weight:bold;
+  font-size:$theme_font_size_small;
+}
+.music_playlist_info_plays
+{
+  display:block;
+  color:$theme_font_color_light;
+  font-size:$theme_font_size_small;
+}
+.music_playlist_options
+{
+  float:right;
+  overflow:hidden;
+  width:200px;
+  padding-left:20px;
+}
+[dir="rtl"] .music_playlist_options
+{
+	float:left;
+	padding-left:0;
+	padding-right:20px;
+}
+.music_playlist_options a,
+.music_playlist_options a.buttonlink
+{
+  display:block;
+  margin:0 5px;
+  font-size:$theme_font_size_small;
+  padding-top:2px;
+  padding-bottom:2px;
+}
+.music_playlist_stats
+{
+  margin-bottom:10px;
+}
+.music_playlist_stats > a
+{
+  font-weight:bold;
+}
+.layout_page_music_playlist_view .layout_core_content
+{
+  margin-bottom:15px;
+}
+.layout_page_music_playlist_view .layout_core_comments h3
+{
+  display:none;
+}
+.music_playlist_info_rating {
+  margin: 4px 0;
+}
+
+
+
+
+
+
+/*
+MUSIC PLAYER SKIN
+*/
+.music_player
+{
+  +rounded;
+  width:100%;
+  background-color:#2c2e3c;
+  border:4px solid #3f4e61;
+  margin:10px 0px 10px 0px;
+  padding:10px;
+  max-width:100%;
+  box-sizing:border-box;
+}
+.music_player *{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+ul.music_grid .music_player
+{
+  max-width:100%;
+}
+.music_player_top
+{
+  overflow:hidden;
+}
+.music_player_art
+{
+  float:left;
+  overflow:hidden;
+  width:100px;
+  margin-right:10px;
+}
+.music_player_art .bg_item_photo 
+{
+  padding-bottom:100%;
+  border:3px solid #3f4e61;
+}
+.music_player_info
+{
+  overflow:hidden;
+}
+.music_player_controls_wrapper
+{
+  display:flex;
+}
+.music_player_controls_left{
+  flex:1;
+}
+.playlist_player_loaded .music_player_controls_left
+{
+  overflow:hidden;
+}
+.music_player_controls_volume
+{
+  float:left;
+  overflow:hidden;
+  width:40px;
+  height:30px;
+  margin-left:10px;
+  display:flex;
+  align-items:center;
+}
+.music_player_controls_volume_toggle:before
+{
+  display:block;
+  height:12px;
+  margin-right:3px;
+  content:"\\f144";
+  cursor:pointer;
+}
+.music_player_controls_volume_toggle_mute:before
+{
+  content:"\\f144";
+}
+.music_player_controls_volume_bar
+{
+  display:block;
+  margin-top:8px;
+  height:20px;
+  width:4px;
+  cursor:pointer;
+  padding:0px 1px 0px 0px;
+}
+.music_player_controls_volume_bar > span
+{
+  width:3px;
+  display:block;
+  background-color:#ccc;
+}
+.music_player_controls_volume_enabled > span,
+.music_player_controls_volume_hover > span,
+.music_player_controls_volume_bar:hover > span
+{
+  background-color:#fff;
+}
+.volume_bar_1
+{
+  margin-top:8px;
+  height:4px;
+}
+.volume_bar_2
+{
+  margin-top:6px;
+  height:8px;
+}
+.volume_bar_3
+{
+  margin-top:4px;
+  height:12px;
+}
+.volume_bar_4
+{
+  margin-top:2px;
+  height:16px;
+}
+.volume_bar_5
+{
+  margin-top:0px;
+  height:20px;
+}
+.music_player_controls_right
+{
+  overflow:hidden;
+  text-align:right;
+}
+.music_player_button_launch_tooltip
+{
+  +rounded(3px);
+  display:none;
+  position:absolute;
+  background:#222;
+  opacity:.9;
+  color:#fff;
+  text-align:center;
+  padding:5px;
+  width:110px;
+  font-size:$theme_font_size_small;
+  margin-top:-25px;
+  margin-left:-49px;
+}
+.music_player_button_launch_wrapper:hover .music_player_button_launch_tooltip
+{
+  display:block;
+}
+.music_player_button_prev,
+.music_player_button_play,
+.music_player_button_pause,
+.music_player_button_next,
+.music_player_button_launch
+{
+  +rounded(6px);
+  display:block;
+  float:left;
+  overflow:hidden;
+  width:25px;
+  height:25px;
+  background-color:#3f4e61;
+  margin-top:4px;
+  font-size:16px;
+  outline:none;
+  text-align:center;
+}
+.music_player_button_prev:before,
+.music_player_button_play:before,
+.music_player_button_pause:before,
+.music_player_button_next:before,
+.music_player_button_launch:before,
+.music_player_controls_volume_toggle:before {
+  font-family:'Font Awesome\ 5 Free';
+  color:#fff;
+  vertical-align:middle;
+}
+.music_player_button_prev:before
+{
+  content:"\\f048";
+	font-weight:900;
+}
+.music_player_button_next:before
+{
+  content:"\\f051";
+	font-weight:900;
+}
+.music_player_button_launch
+{
+  -ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  transform:rotate(90deg);
+}
+.music_player_button_launch:before
+{
+  margin-top:4px;
+  content:"\\f048";
+	font-weight:900;
+}
+.music_player_button_launch:hover
+{
+  text-decoration:none;
+}
+.music_player_button_play
+{
+  margin:0px 3px 0px 3px;
+  width:33px;
+  height:33px;
+  font-size:22px;
+}
+.music_player_button_play:before
+{
+  content:"\\f04b";
+	font-weight:900;
+}
+.music_player_button_pause:before
+{
+  content:"\\f04c";
+}
+.music_player_button_prev:hover,
+.music_player_button_play:hover,
+.music_player_button_next:hover,
+.music_player_button_launch:hover
+{
+  background-color:#2b3849;
+  cursor:pointer;
+}
+.music_player_trackname
+{
+  margin-top:5px;
+  font-size:8pt;
+  font-weight:bold;
+  color:#fff;
+  overflow:hidden;
+}
+.music_player .audiojs
+{
+  +rounded(3px);
+  background-color:#3f4e61;
+  display:flex;
+  margin-top:10px;
+  width:100%;
+}
+.music_player .audiojs .play-pause
+{
+  display:none;
+}
+.music_player .audiojs audio
+{
+  position:absolute;
+  left:-1px;
+}
+.music_player .audiojs .scrubber{
+  background:#2b3849;
+  flex:1;
+  position:relative;
+  height:14px;
+  margin:10px;
+  overflow:hidden;
+}
+.music_player .audiojs .loaded
+{
+  position:absolute;
+  top:0px;
+  left:0px;
+  height:14px;
+  width:0px;
+  background:#000;
+}
+.music_player .audiojs .progress
+{
+  background:#ccc;
+  position:absolute;
+  top:0px;
+  left:0px;
+  height:14px;
+  width:0px;
+  z-index:1; 
+} 
+.music_player .audiojs .time
+{ 
+  display:flex;
+  align-items:center;
+  padding:0px 6px 0px 12px;
+  border-left:1px solid #000;
+  color:#ddd;
+  text-shadow:1px 1px 0px rgba(0,0,0,0.5);
+  font-size:$theme_font_size_small;
+} 
+.music_player .audiojs .time em
+{
+  padding:0px 2px 0px 0px;
+  color:#f9f9f9;
+  font-style:normal;
+} 
+.music_player .audiojs .time strong
+{
+  padding:0px 0px 0px 2px;
+  font-weight:normal;
+}
+.music_player_tracks
+{
+  border:1px solid #2b3849;
+  margin-top:10px;
+  overflow:hidden;
+  overflow-y:auto;
+  max-height:95px;
+}
+.music_player_tracks > li
+{
+  overflow:hidden;
+  background-color:#3f4e61;
+  padding:5px 7px 5px 7px;
+}
+.music_player_tracks > li + li
+{
+  margin-top:1px;
+}
+.music_player_tracks > li:hover,
+.music_player_tracks > li.song_playing
+{
+  background-color:#2b3849;
+  cursor:pointer;
+}
+.music_player_tracks > li > div
+{
+  font-size:8pt;
+  color:#eee;
+}
+.music_player_tracks .music_player_tracks_name
+{
+  overflow:hidden;
+  -moz-user-select:none;
+  -webkit-user-select:none;
+}
+.music_player_tracks .music_player_tracks_name a
+{
+  text-decoration:none;
+  color:#eee;
+  outline:none;
+}
+.music_player_tracks .music_player_tracks_plays
+{
+  display:inline-block;
+  color:#bbb;
+  margin-left:5px;
+  font-size:$theme_font_size_small;
+}
+.music_player_tracks .music_player_tracks_add_wrapper
+{
+  float:right;
+  overflow:hidden;
+  text-align:right;
+  font-weight:normal;
+  -moz-user-select:none;
+  -webkit-user-select:none;
+}
+.music_player_tracks .music_player_tracks_add_tooltip
+{
+  +rounded(3px);
+  display:none;
+  position:absolute;
+  background:#222;
+  opacity:.9;
+  color:#fff;
+  text-align:center;
+  padding:5px;
+  width:120px;
+  font-size:1.1em;
+  margin-top:-30px;
+  margin-left:-55px;
+}
+.music_player_tracks .music_player_tracks_add_wrapper:hover .music_player_tracks_add_tooltip
+{
+  display:block;
+}
+.music_player_tracks .music_player_tracks_add_wrapper:hover .music_player_tracks_add:before
+{
+  content:"\\f067";
+  font-family:'Font Awesome\ 5 Free';
+  color:#fff;
+	font-weight:900;
+}
+.music_player_tracks .music_player_tracks_add:before
+{
+  display:inline-block;
+  margin-left:5px;
+  content:"\\f067";
+  width:9px;
+  height:9px;
+  outline:none;
+  text-decoration:none;
+  font-family:'Font Awesome\ 5 Free';
+  color:rgba(255, 255, 255, .3);
+	font-weight:900;
+}
+
+
+/*
+ATTACHED MUSIC LAUNCH SKIN
+This is a small version of the player. It doesn't actually play
+tracks itself, but when clicked, loads the full player and initiates
+playback of the first track. Some of its styles are inherited from
+the full music player's skin.
+*/
+.playlist_short_player
+{
+  border:none;
+  padding:3px 0px 3px 0px;
+  cursor:pointer;
+}
+.playlist_short_player .music_player_top
+{
+  padding:2px 4px;
+}
+.playlist_short_player .music_player_button_play
+{
+  margin-right:5px;
+  margin-left:0;
+}
+.playlist_short_player_title
+{
+  color:#fff;
+  font-weight:bold;
+  padding-right:10px;
+}
+.playlist_short_player_tracks
+{
+  font-size:$theme_font_size_small;
+  color:#bbb;
+  font-weight:normal;
+}
+
+
+
+
+
+/*
+ADD SONG TO PLAYLIST FORM
+Styles the form that pops up when you click to add a song
+to your playlist via a music player.
+*/
+#form-playlist-append .form-label
+{
+  margin-bottom:2px;
+}
+#form-playlist-append #title-wrapper
+{
+  margin-top:10px;
+}
+#form-playlist-append #submit-wrapper
+{
+  margin-top:10px;
+}
+
+
+
+
+
+
+/*
+UPLOAD MUSIC FORM
+*/
+#form-upload-music #demo-list li.file:before
+{
+  content:"\\f001";
+  font-family:'Font Awesome\ 5 Free';
+  margin-right:6px;
+	font-weight:900 !important;
+}
+#form-upload-music #demo-list li.file-success:before
+{
+  content:"\\f001";
+  font-family:'Font Awesome\ 5 Free';
+  margin-right:6px;
+	font-weight:900 !important;
+}
+[dir="rtl"] #form-upload-music #demo-list li.file-success:before
+{
+  margin-right:0px;
+  margin-left:6px;
+}
+#form-upload-music #demo-list li.file-uploading:before
+{
+  content:"\\f110";
+  -webkit-animation:spinning 2s infinite linear;
+  animation:spinning 2s infinite linear;
+	font-family:'Font Awesome\ 5 Free';
+	font-weight:900 !important;
+}
+#form-upload-music #demo-list span.file-name
+{
+  display:inline;
+}
+#form-upload-music #demo-status .buttonlink + .buttonlink
+{
+  margin-left:20px;
+}
+html[dir="rtl"] #form-upload-music #demo-status .buttonlink + .buttonlink
+{
+  margin-left:0px;
+  margin-right:20px;
+}
+
+/* DEFAULT PHOTO THUMB */
+.bg_item_nophoto.bg_item_photo_music_playlist:before{
+  content:"\\f51f";
+}
+.bg_item_nophoto.bg_item_photo_music_playlist.bg_thumb_icon:before{
+  font-size:30px;
+}
+/* ITEM TYPE ICONS */
+.item_icon_music:before,
+.item_icon_music_playlist:before,
+.item_icon_music_song:before,
+.activity_icon_music_playlist_new:before
+{
+   content:"\\f001";
+	 font-weight:900 !important;
+}
+#compose-music-activator:before,
+#compose-music-menu span:before
+{
+   content:"\\f001";
+   font-family:'Font Awesome\ 5 Free';
+   margin-right:6px;
+   color:#00BCD4;
+	 font-weight:900 !important;
+}
+[dir="rtl"] #compose-music-activator:before,
+[dir="rtl"] #compose-music-menu span:before
+{
+   margin-right:0px;
+   margin-left:6px;
+}
+#compose-music-form-fancy-file:before
+{
+   content:"\\f001";
+	 font-weight:900 !important;
+}
+a.compose-music-link:before
+{
+   content:"\\f144";
+   font-family:'Font Awesome\ 5 Free';
+   margin-right:6px;
+}
+a.compose-music-link-playing:before
+{
+   content:"\\f110";
+   -webkit-animation:spinning 2s infinite linear;
+   animation:spinning 2s infinite linear;
+}
+html[dir="rtl"] a.compose-music-link,
+html[dir="rtl"] a.compose-music-link-playing
+{
+   padding-left:0px;
+   padding-right:20px;
+}
+
+
+/*
+POPUP MUSIC PLAYER SKIN
+Opens the player in a small new window.
+*/
+.music_player_popup
+{
+  background-color:#2c2e3c;
+  padding-top:20px;
+}
+body#global_page_music-playlist-view #global_content_simple{
+  display:block;
+  width:100%;
+}
+body#global_page_music-playlist-view #global_content_simple .music_playlist_popout_wrapper{
+  margin-left:auto;
+  margin-right:auto;
+  width:430px;
+  max-width: 100%;
+}
+body#global_page_music-playlist-view #global_content_simple .music_player_button_launch,
+body#global_page_music-playlist-view #global_content_simple .layout_core_comments{
+  display:none;
+}
+
+
+
+/*
+PROFILE MUSIC PLAYER
+Styles the mini-player that only shows up on the member profile page.
+*/
+.layout_music_profile_player
+{
+  margin-top:20px;
+}
+#profile_music_player
+{
+  margin-top:5px;
+}
+#profile_music_player h3
+{
+  display:none;
+}
+#profile_music_player .music_browse_info_date
+{
+  margin-top:4px;
+}
+#profile_music_player .music_player_art
+{
+  display:none;
+}
+#profile_music_player .music_player_button_prev,
+#profile_music_player .music_player_button_next
+{
+  display:none;
+}
+#profile_music_player .music_player_button_play
+{
+  margin:0px;
+}
+#profile_music_player .music_player_trackname
+{
+  font-weight:normal;
+	font-weight:900 !important;
+}
+
+
+
+
+/* ICONS */
+.icon_music_new:before
+{
+  content:"\\f001";
+	font-weight:900 !important;
+}
+.icon_music_edit:before
+{
+  content:"\\f303";
+	font-weight:900 !important;
+}
+.icon_music_delete:before
+{
+  content:"\\f056";
+	font-weight:900 !important;
+}
+.icon_music_playonprofile:before,
+.icon_music_disableonprofile:before
+{
+  content:"\\f001";
+	font-weight:900 !important;
+}
+.icon_music_upload:before
+{
+  content:"\\f001";
+}
+@media (max-width:767px) {
+    .music_player_art
+    {
+     width:75px;
+    }
+}
+@media (max-width:600px) {
+    .music_browse_options
+    {
+     float:none;
+     padding-left:0;
+     margin:10px 0 5px 0;
+    }
+    .music_browse_options li
+    {
+     display:inline-block;
+    }
+    .music_playlist_info
+    {
+     clear:both;
+     padding-top:5px;
+    }
+    .music_playlist_options
+    {
+     padding-left:0;
+     width:auto;
+     float:none;
+    }
+		.music_browse_options a {
+     margin:0 5px 0 0;
+     font-size:.75em;
+    }
+}
+/* BREADCRUMB */
+.music_breadcrumb > p{
+  margin-bottom:0;
+}

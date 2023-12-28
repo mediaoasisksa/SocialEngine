@@ -1,0 +1,5122 @@
+.collage_mid_content_details .profile_button .trans_profile_coverinfo_buttons_dropdown + ul.seaocore_profile_options_pulldown/*Profile Cover Photo Start Here*/
+.layout_siteusercoverphoto_user_cover_photo,
+.layout_sitecontentcoverphoto_content_cover_photo {
+  border:none !important;
+  padding: 0 !important;
+  clear:both;
+  margin-bottom:15px;
+}
+
+
+
+
+
+/*button padding issue*/
+/*div.layout_sitecontentcoverphoto_content_cover_photo.sc_cover_template_3 #sitecontentcover_middle_content .seaocore_button#others_button_dropdown > a {
+    padding: 4px !important;
+}*/
+
+
+/*User profile page tabs, profile photo, buttons on cover photo and pulldowns*/
+/*
+TABS (TAB STYLE, NON-DEFAULT)
+*/
+.tabs_alt > ul > li.tab_active > a, .tabs_alt > ul > li.active > a {
+  background-color: transparent;
+  border: 0;
+}
+.tabs_alt > ul > li.tab_active > a:hover, .tabs_alt > ul > li.active > a:hover {
+  background-color: transparent;
+  border: 0;
+}
+.tabs_alt {
+  background-color: transparent;
+  background-image: none;
+  margin: 10px 0 10px;
+  padding: 0px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.tabs_alt > ul {
+  margin: 0px;
+  text-align: left;
+  border-bottom:1px solid $theme_tabs_border_color;
+  display: inline-table;
+  width: 100%;
+  padding: 0;
+  line-height: normal;
+  background: transparent;
+}
+html[dir="rtl"] .tabs_alt > ul {
+  text-align: right;  
+}
+.tabs_alt > ul > li {
+  display: inline-block;
+  padding: 0px;
+  border-bottom: 5px solid transparent;
+  *display:inline; /* fix for IE7 */
+}
+.tabs_alt > ul > li.active {
+  position: relative;
+  border-bottom:5px solid $theme_tabs_border_color_hover;
+  background-image: none;
+}
+div .tabs_alt > ul > li > a {
+  display: block;
+  outline: medium none;
+  padding: 8px 12px;
+  text-decoration: none;
+  /*text-transform: uppercase;*/
+  color: $theme_font_color ;
+}
+.tabs_alt > ul > li > a span {
+  font-weight: normal;
+  margin-left: 7px;
+  border: none;
+  color:$theme_tabs_font_color_active;
+}
+html[dir="rtl"] .tabs_alt > ul > li > a span {
+  margin-right: 7px;
+  margin-left: 0px; 
+}
+.tabs_alt > ul > li > a:hover {
+  color:$theme_tabs_font_color_hover;
+}
+div.tabs_alt > ul > li.active > a:hover {
+  background-color:$theme_tabs_background_color_active !important;
+  color:$theme_tabs_font_color_active;
+}
+.tab_container_inactive {
+  display: none;
+}
+.tabs_alt > ul > li.tab_open > a {
+  background-color:$theme_pulldown_background_color_active;
+  color:$theme_pulldown_font_color_active;
+  position: relative;
+  /*top: 1px;*/
+  /*padding: 5px 6px;*/
+}
+.tab_pulldown_contents_wrapper {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  padding: 2px;
+  margin-top: 38px;
+  background-color:$theme_pulldown_background_color_hover;
+  z-index: 13;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
+}
+.tab_pulldown_contents {
+  overflow: hidden;
+  /*background:$theme_pulldown_contents_background_color;*/
+  max-height: 500px;
+  overflow-y: auto;
+}
+.tab_pulldown_contents > ul > li {
+  padding: 7px;
+  font-size: .9em;
+  min-width: 100px;
+  max-width: 250px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  float: none;
+}
+.tab_pulldown_contents > ul > li.active {
+  background-color:$theme_pulldown_contents_list_background_color_active;
+}
+.tab_pulldown_contents > ul > li + li {
+  border-top:1px solid $theme_border_color;
+}
+.tab_pulldown_contents > ul > li:hover {
+  background-color:$theme_pulldown_contents_list_background_color_hover;
+  cursor: pointer;
+}
+.tabs_alt > ul > li.tab_open .tab_pulldown_contents_wrapper {
+  display: block;
+  border: none;
+}
+.tabs_alt > ul > li .seaocore_tab_icon {
+  margin-top: 5px !important;
+}
+.tabs_alt > ul > li div.seaocore_tab_select_view_tooltip {
+  margin-top: -25px;
+}
+html li.seaocore_tab_open .tab_pulldown_contents_wrapper{
+  width:auto;
+  margin-top:40px;
+}
+html li.seaocore_tab_open .tab_pulldown_contents{
+  width:auto;
+  max-width:170px;
+}
+div .seaocore_tab_open ul li a, div .seaocore_tab_open ul li a:hover, div .seaocore_tab_open ul li.active > a {
+  padding: 8px 5px !important;
+}
+
+/*.default_temp_outside.layout_siteusercoverphoto_user_cover_photo {
+  padding-bottom: 15px !important;
+}*/
+.seaocore_profile_cover_wrapper {
+  margin:0;
+	position: relative;
+  z-index: 12;
+}
+.seaocore_profile_cover_photo_wrapper {
+  position:relative;
+  clear:both;
+  padding:0px;
+}
+.seaocore_profile_cover_photo {
+  overflow:hidden;
+  position:relative;
+  height:100%;
+  width:100%;
+}
+.seaocore_profile_cover_photo img {
+  max-width: 100%;
+  min-height:100%;
+  border:none;
+  position:relative;
+  width: 100%;
+ /* height: 100%;*/
+}
+.seaocore_profile_cover_photo_empty {
+  border:none;
+  height:100%;
+  background-color:#fff;
+  background-image:-webkit-gradient(linear, left top, left bottom, from( rgba(226, 226, 226, .5)), to( rgba(0, 0, 0, .5))); /* Saf4+, Chrome */
+  background-image:-webkit-linear-gradient(  rgba(226, 226, 226, .5), rgba(0, 0, 0, .5)); /* Chrome 10+, Saf5.1+ */
+  background-image:-moz-linear-gradient( rgba(226, 226, 226, .5), rgba(0, 0, 0, .5)); /* FF3.6 */
+  background-image:-ms-linear-gradient( rgba(226, 226, 226, .5), rgba(0, 0, 0, .5)); /* IE10 */
+  background-image:-o-linear-gradient( rgba(226, 226, 226, .5), rgba(0, 0, 0, .5)); /* Opera 11.10+ */
+  background-image:linear-gradient( rgba(226, 226, 226, .5), rgba(0, 0, 0, .5));
+}
+.seaocore_profile_cover_photo_wrapper .draggable {
+  opacity:0.5;
+  cursor:move;
+}
+.seaocore_profile_cover_gradient{
+	background-image:-webkit-gradient(linear, left top, left bottom, from( rgba(22, 24, 27, 0)), to( rgba(22, 24, 27, 0.8))); /* Saf4+, Chrome */
+  background-image:-webkit-linear-gradient( rgba(22, 24, 27, 0), rgba(22, 24, 27, 0.8)); /* Chrome 10+, Saf5.1+ */
+  background-image:-moz-linear-gradient( rgba(22, 24, 27, 0), rgba(22, 24, 27, 0.8)); /* FF3.6 */
+  background-image:-ms-linear-gradient( rgba(22, 24, 27, 0), rgba(22, 24, 27, 0.8)); /* IE10 */
+  background-image:-o-linear-gradient( rgba(22, 24, 27, 0), rgba(22, 24, 27, 0.8)); /* Opera 11.10+ */
+  background-image:linear-gradient( rgba(22, 24, 27, 0), rgba(22, 24, 27, 0.8));
+	bottom: 0;
+	height: 100px;
+	position: absolute;
+	width: 100%;
+}
+/*Profile Cover Photo Endst Here*/
+/*Cover Information Starts Here*/
+/*.seaocore_profile_cover_head_section {
+  border-style:solid;
+  border-width:1px;
+  clear:both;
+  padding:10px 10px 20px;
+  min-height:40px;
+  position:relative;
+  display: none;
+}*/
+.seaocore_profile_main_photo_wrapper{
+  width:165px;
+  float:left;
+  margin-left:20px;
+  position:relative;
+  overflow:visible;
+}
+[dir="rtl"] .seaocore_profile_main_photo_wrapper{
+  float: right;
+  margin-right:20px;
+  margin-left:0;
+}
+.seaocore_profile_main_photo {
+  background-color:#FFFFFF;
+  border-radius:3px;
+  border-style:solid;
+  border-width:1px;
+  bottom:-45px;
+  overflow:hidden;
+  padding:2px;
+  position:absolute;
+}
+.seaocore_profile_main_photo .item_photo {
+  min-height:100px;
+  max-height:160px;
+  overflow:hidden;
+  width:160px;
+}
+.seaocore_profile_main_photo .show_photo_box{
+  height:160px;
+}
+.seaocore_profile_main_photo .item_photo table {
+  height:100%;
+  width:100%;
+}
+.seaocore_profile_main_photo .item_photo table td {
+  text-align:center;
+}
+[dir="rtl"] .seaocore_profile_main_photo .item_photo table td{
+  text-align: center;
+}
+.seaocore_profile_main_photo .item_photo table td img {
+  border: 0 none !important;
+  border-radius: 0 !important;
+  /*max-height: 200px;*/
+  max-width: 160px;
+  min-height: 100px;
+  padding: 0;
+  width: 100%;
+}
+.seaocore_profile_cover_head_section_inner{
+  margin-left:195px;
+}
+.seaocore_profile_coverinfo_status {
+  overflow:hidden;
+	float:left;
+}
+[dir="rtl"] .seaocore_profile_coverinfo_status {
+ float:right;
+}
+.seaocore_profile_coverinfo_status h2 {
+  margin-bottom:5px;
+  font-size:20px;
+  font-weight:bold;
+  letter-spacing:normal;
+  line-height: normal;
+}
+.seaocore_profile_coverinfo_stats{
+  font-size: 11px;
+  margin-top: 3px;
+}
+.seaocore_profile_coverinfo_buttons div.seao_share_links .social_share_wrap > a {
+  border-radius: 2px !important;
+    padding: 7px 10px !important;
+}
+.seaocore_profile_coverinfo_buttons .social_share_wrap > a:hover {
+	opacity: 1;
+}
+.seaocore_profile_coverinfo_buttons {
+  float:right;
+}
+[dir="rtl"] .seaocore_profile_coverinfo_buttons{
+  float: left;
+}
+@media only screen and (min-width: 1200px) {
+  .seaocore_profile_coverinfo_buttons {
+    margin-right: 20px;
+  }
+}
+.seaocore_profile_coverinfo_buttons > div {
+  float:left;
+  margin-left:5px;
+  height: 30px;
+	text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px; 
+}
+[dir="rtl"] .seaocore_profile_coverinfo_buttons > div{
+  float:right;
+  margin-left:0px;
+  margin-right:5px;
+}
+.seaocore_profile_coverinfo_buttons > div .layout_seaocore_like_button,
+.seaocore_profile_coverinfo_buttons > div .layout_sitelike_commoncover_like_button{
+  margin:0;
+}
+.seaocore_profile_coverinfo_buttons .seaocore_follower_count{
+	display:none;
+}
+/*Cover Information Ends Here*/
+.seaocore_profile_cover_inside_tabs .seaocore_profile_main_photo{
+  bottom: 12px;
+  z-index: 1;
+}
+/*.layout_core_container_tabs .tabs_alt {
+  margin-top: -56px;
+}*/
+.seaocore_profile_cover_inside_tabs .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {
+  top: -85px;
+}
+.transparent_cover_temp .seaocore_profile_cover_photo_wrapper .seaocore_profile_main_photo_options .edit-button {
+  top: 0;
+}
+.seaocore_profile_cover_inside_tabs .seaocore_profile_cover_options .save-button {
+  bottom: 24px;
+  right: 20px;
+}
+[dir="rtl"] .seaocore_profile_cover_inside_tabs .seaocore_profile_cover_options .save-button{
+  left:20px;
+  right: auto;
+}
+.seaocore_profile_cover_inside_tabs .seaocore_profile_cover_head_section_inner {
+  margin-left:195px;
+  position:relative;
+}
+.seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_status {
+  bottom: 80px;
+  position:absolute;
+}
+.seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_buttons {
+  bottom: 60px;
+  position: absolute;
+}
+.seaocore_profile_cover_inside_tabs .seaocore_profile_cover_fb_like_button {
+  position: relative;
+  bottom: 0;
+  margin: 0 auto;
+}
+.sc_cover_template_3 .seaocore_profile_cover_inside_tabs .seaocore_profile_cover_fb_like_button, .sc_cover_template_2 .seaocore_profile_cover_inside_tabs .seaocore_profile_cover_fb_like_button {
+  position: inherit;  
+}
+.sc_cover_template_3 .seaocore_profile_cover_inside_tabs .seaocore_profile_cover_fb_like_button ..layout_Facebookse_facebookse_commonlike ul li, .sc_cover_template_2 .seaocore_profile_cover_inside_tabs .seaocore_profile_cover_fb_like_button ..layout_Facebookse_facebookse_commonlike ul li {
+  display: table;
+  margin: 0 auto;
+}
+#sitecontent_main_photo.seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_status, 
+#sitecontent_main_photo.seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_buttons{
+  bottom: 30px;
+}
+#sitecontent_main_photo.seaocore_profile_cover_inside_tabs .seaocore_profile_main_photo {
+  bottom: -12px;
+}
+.seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_status{
+  overflow:inherit;
+	max-width:55%;
+  left: 0;
+  right: 0;
+}
+.seaocore_profile_cover_info{
+	max-width: 250px;
+  position: relative;
+}
+/*.seaocore_profile_cover_inside_tabs.seaocore_profile_cover_has_fblike .seaocore_profile_coverinfo_status {
+  bottom:75px;
+}*/
+.seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_status h2 {
+  background:none;
+  color: #FFFFFF;
+  font-size:24px;
+  margin:0 0 5px 0;
+  text-shadow:0 0 3px rgba(0, 0, 0, 0.3);
+}
+.seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_stats,
+.seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_stats a{
+  color:#FFFFFF;
+  text-shadow:0 0 2px rgba(0, 0, 0, 0.8);
+}
+.seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_buttons {
+  right:0;
+  z-index:10;
+	margin: 0 15px;
+}
+[dir="rtl"] .seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_buttons{
+  left: 0;
+  right: auto;
+}
+.seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_status .siteevent_listings_stats i,
+.seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_status .siteevent_listings_stats img{
+  display: none;
+}
+.seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_status .siteevent_listings_stats i + div i {
+	display: block;
+	height: 11px;
+	width: 16px;
+	background:url(../images/up_right.png) no-repeat scroll left bottom;
+}
+/*Cover photo inside tab view*/
+/* + .seaocore_profile_cover_head_section {
+  border:1px solid rgba(0, 0, 0, 0.4);
+  position:absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset;
+	width: 100%;
+	box-sizing: border-box;
+  display: block;
+}*/
+/*.layout_core_container_tabs div.tabs_alt {
+	z-index: 9;
+}*/
+.seaocore_cover_inside_container_tabs div.tabs_alt > ul > li {
+	/*border-left: 1px solid rgba(255, 255, 255, 0.15);*/
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+.seaocore_cover_inside_container_tabs div.tabs_alt > ul > li:first-child {
+  border-left: 0 none;
+}
+.seaocore_cover_inside_container_tabs div.tabs_alt > ul > li > a {
+	font-weight: normal;
+}
+.seaocore_cover_inside_container_tabs div.tabs_alt > ul > li.active {
+	background-image:none;
+}
+
+/*Icons*/
+.seaocore_profile_cover_options ul li i::before, 
+ul.seaocore_profile_options_pulldown > li > a::before, 
+ul.seaocore_profile_options_pulldown > li > ul > li > a::before {
+	float: left;
+	font-family: 'Font Awesome 5 Free';
+	font-size: 16px;
+	margin-right: 7px;
+  font-weight: 900;
+	/*padding-left:5px;*/
+}
+.seaocore_profile_cover_icon_photo_edit::before 	{content: "\f303"; font-weight: 900;}
+.seaocore_profile_cover_icon_photo_add::before 		{content: "\f055";} 
+.seaocore_profile_cover_icon_photo_upload::before {content: "\f093";}
+.seaocore_profile_cover_icon_photo_view::before 	{content: "\f03e";}  
+.seaocore_profile_cover_icon_move::before 				{content: "\f0b2";} 
+.seaocore_profile_cover_icon_photo_delete::before {content: "\f056";} 
+.seaocore_profile_cover_icon_camera::before 			{content: "\f030";} 
+.seaocore_profile_cover_icon_photo_color::before  {content: "\f031";} 
+
+/*Cover Photo Add Edit Options Starts Here*/
+.seaocore_profile_cover_btn {
+  cursor:pointer;
+  background-color:#fff;
+  display:block;
+}
+.seaocore_profile_cover_btn:hover{
+  cursor:pointer;
+  background-color:#fff;
+  background-image:-webkit-gradient(linear, left top, left bottom, from( #ffffff), to( #dfdfdf)); /* Saf4+, Chrome */
+  background-image:-webkit-linear-gradient( #ffffff, #dfdfdf); /* Chrome 10+, Saf5.1+ */
+  background-image:-moz-linear-gradient( #ffffff, #dfdfdf); /* FF3.6 */
+  background-image:-ms-linear-gradient( #ffffff, #dfdfdf); /* IE10 */
+  background-image:-o-linear-gradient( #ffffff, #dfdfdf); /* Opera 11.10+ */
+  background-image:linear-gradient( #ffffff, #dfdfdf);
+}
+.seaocore_profile_cover_btn i {
+  font-style:normal;
+  background-repeat:no-repeat;
+  background-position:5px center;
+  display:block;
+  color:#333;
+}
+[dir="rtl"] .seaocore_profile_cover_btn i{
+  padding:5px 20px 5px 10px;
+  background-position: 99% center;
+}
+.seaocore_profile_cover_options {
+  display:none;
+}
+.seaocore_profile_cover_options .edit-button {
+  position:absolute;
+  top:20px;
+  right:40px;
+  z-index: 99;
+}
+[dir="rtl"] .seaocore_profile_cover_options .edit-button{
+  left:40px !important;
+  right:auto !important;
+}
+.seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {
+  right: 12px;
+  top: -85px;
+}
+[dir="rtl"] .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button{
+  left:12px;
+  right:auto;
+}
+.seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options.seaocore_profile_main_photo_options .edit-button {
+  right: 16px;
+}
+/*.seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options#sitecontentcoverphoto_main_options .edit-button {
+  right: 7px;
+}*/
+/*.seaocore_profile_cover_photo_wrapper:hover .seaocore_profile_main_photo_options {
+  display: none;
+}*/
+.seaocore_profile_cover_photo_wrapper:hover .seaocore_profile_cover_options {
+  display: block;
+}
+.seaocore_profile_main_photo_wrapper:hover .seaocore_profile_cover_options.seaocore_profile_main_photo_options {
+  display: block;
+}
+.seaocore_profile_cover_options > ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+  border-radius:3px;
+}
+.seaocore_profile_cover_options.seaocore_profile_main_photo_options .seaocore_profile_options_pulldown {
+  left: 0;
+  right: auto;
+}
+.seaocore_profile_options_pulldown {
+  right: 0;
+}
+.seaocore_profile_options_pulldown,
+.seaocore_cover_inside_container_tabs .tab_pulldown_contents_wrapper {
+  float:left;
+  position:absolute;
+ z-index:10;
+/*z-index:999;*/
+	font-size: 13px;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.32);
+}
+[dir="rtl"] .seaocore_profile_options_pulldown,
+[dir="rtl"] .seaocore_cover_inside_container_tabs .tab_pulldown_contents_wrapper{
+  float: right;
+}
+.seaocore_profile_settings_btn .seaocore_profile_options_pulldown, 
+.seaocore_profile_option_btn .seaocore_profile_options_pulldown {
+  top:30px;
+  min-width: 200px;
+}
+ul.seaocore_profile_options_pulldown{
+  display:none;
+}
+.seaocore_profile_options_pulldown li a {
+  font-style:normal;
+  font-weight:normal;
+  display:block;
+  line-height:normal;
+  padding: 5px 20px 5px 25px;
+  text-decoration:none;
+  white-space:normal;
+  width: 100%;
+  box-sizing: border-box;
+}
+.seaocore_cover_inside_container_tabs .tab_pulldown_contents_wrapper ul li{
+  font-weight: 400;
+  display: block;
+  padding: 7px 15px 7px 15px;
+  text-transform: uppercase;
+}
+[dir="rtl"] .seaocore_profile_options_pulldown li a,
+[dir="rtl"] .seaocore_cover_inside_container_tabs .tab_pulldown_contents_wrapper ul li{
+  padding:5px 25px 5px 20px;
+  background-position: 98% center;
+}
+.seaocore_profile_cover_options ul li i, 
+ul.seaocore_profile_options_pulldown > li > a, 
+ul.seaocore_profile_options_pulldown > li > ul > li > a {
+	padding:6px 10px;
+	line-height: 20px;
+	display: flex;
+  font-size: 12px;
+}
+#sitecontent_cover_settings_options_pulldown li > ul > li > a,
+#siteuser_cover_settings_options_pulldown li > ul > li > a{padding:5px 10px;}
+ul.seaocore_profile_options_pulldown li a:hover,
+.seaocore_cover_inside_container_tabs .tab_pulldown_contents_wrapper ul li.active {
+  background-color: #CCC;
+}
+.seaocore_cover_inside_container_tabs .tab_pulldown_contents_wrapper ul li:hover {
+  background-color: #F4F6F7;
+}
+.seaocore_profile_settings_btn ul li a, 
+.seaocore_profile_option_btn ul li a
+/*.layout_core_container_tabs .tab_pulldown_contents_wrapper ul li*/{
+  border-radius:0 !important;
+  background-image:none !important;
+  padding: 5px 20px 5px 10px;
+}
+[dir="rtl"] .seaocore_profile_settings_btn ul li a, 
+[dir="rtl"] .seaocore_profile_option_btn ul li a,
+[dir="rtl"] .seaocore_cover_inside_container_tabs .tab_pulldown_contents_wrapper ul li{
+  padding: 5px 10px 5px 20px;
+}
+.seaocore_profile_cover_options li:hover ul.seaocore_profile_options_pulldown {
+  display:block;
+}
+.seaocore_profile_cover_options .save-button {
+  right:10px;
+  bottom:10px;
+  position:absolute;
+	z-index: 1;
+}
+[dir="rtl"] .seaocore_profile_cover_options .save-button{
+  left:10px;
+  right:auto;
+}
+.seaocore_profile_cover_options .save-button span {
+  display:inline-block;
+  margin-left:5px;
+}
+[dir="rtl"] .seaocore_profile_cover_options .save-button span{
+  margin-left: 0;
+  margin-right: 5px;
+}
+.seaocore_profile_cover_options .save-button span i {
+  padding:5px;
+}
+.seaocore_profile_option_btn .icon_cog, 
+.seaocore_profile_option_btn .icon_down {
+  display:inline-block;
+  position:relative;
+  width: 17px;
+  top: 0;
+}
+.seaocore_button.seaocore_profile_option_btn .icon_down {
+	background-image: none;
+}
+.seaocore_cover_rsvp_button select{
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.seaocore_profile_options_pulldown.siteuser_cover_settings li a{
+  padding:5px 7px;
+}
+/*Cover Photo Add Edit Options Ends Here*/
+/*Cover Position Tip Start Here*/
+.cover_photo_wap .cover_tip_wrap {
+  line-height:26px;
+  position:absolute;
+  text-align:center;
+  top:50%;
+  margin-top:-13px;
+  width:100%;
+  z-index: 20;
+}
+.cover_photo_wap .cover_tip {
+  background:#546185 url(../images/icons/drag.png) 9px 8px no-repeat;
+  background-color:rgba(0, 0, 0, .4);
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  color:#fff;
+  display:inline;
+  font-size:13px;
+  font-weight:bold;
+  padding:4px 9px 6px 29px;
+}
+[dir="rtl"] .cover_photo_wap .cover_tip{
+  background-position: 223px center;
+  padding:4px 29px 6px 9px;
+}
+/*Cover Position Tip End Here*/
+/*Cover Photo Upload Photo Popup Starts Here*/
+.seaocore_upload_photo_popup {
+  margin:15px 0 0 15px;
+  width:400px;
+}
+[dir="rtl"] .seaocore_upload_photo_popup{
+  margin:15px 15px 0 0;
+}
+.seaocore_upload_photo_popup .form-label {
+  margin:10px 0 5px;
+  font-weight:bold;
+}
+.seaocore_upload_photo_popup .form-element input[type="file"]{
+  margin: 5px 0;
+}
+.seaocore_upload_photo_popup button {
+  clear:both;
+  margin-top:15px;
+}
+
+/*Cover Photo Upload Photo Popup Ends Here*/
+/*Cover Photo Choose Photo Popup Starts Here*/
+.seaocore_choose_photos_content ul.thumbs {
+  margin:10px 0;
+}
+.seaocore_choose_photos_content ul.thumbs li {
+  clear:none;
+  display:inline-block;
+  float:none;
+  height:auto;
+  margin-bottom:10px;
+  vertical-align:top;
+}
+/*Cover Photo Choose Photo Popup Endss Here*/
+/*Profile Info Widget*/
+.seaocore_profile_info h4 {
+  border:none;
+  margin-bottom:2px;
+  padding:0px;
+}
+.seaocore_profile_info h4 span {
+  position:static;
+  background:none;
+  padding:0;
+}
+.seaocore_profile_info ul li span {
+  font-size:12px;
+}
+
+/*Event Cover RSVP info tip CSS*/
+.seaocore_cover_member_tip{
+  border: 1px solid #000000;
+  margin-top: 10px;
+  padding: 0 10px 10px;
+  position: absolute;
+  width: 300px;
+  z-index: 11;
+}
+.seaocore_cover_member_tip_a{
+  position: absolute;
+  right: 20px;
+  top: -13px;
+}
+.seaocore_cover_member_tip_photo{
+  margin-right: 10px;
+}
+
+/*Profile Cover Members Starts Here*/
+.seaocore_members_cover_listing{
+	border-style:solid;
+	border-width:1px;
+	height:120px;
+	overflow:hidden;
+}
+.seaocore_members_cover_listing .seaocore_members_cover_member {
+	float: left;
+	height:120px;
+	overflow: hidden;
+	position: relative;
+	width: 120px;
+}
+.seaocore_members_cover_listing img.thumb_profile {
+  width:100%;
+  min-height:120px;
+  border:none;
+  float:left;
+}
+span.seaocore_members_cover_member_name {
+  display:none;
+  left:0;
+  right:0;
+  width:100%;
+  bottom:0px;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  background-image: -ms-linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  background-image: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  background-image: -webkit-gradient(transparent, rgba(0, 0, 0, 0.9));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.0)), color-stop(1, rgba(0, 0, 0, 0.9)));
+  position:absolute;
+  text-align:center;
+  overflow:hidden;
+}
+span.seaocore_members_cover_member_name a {
+  text-decoration:none;
+  color:#fff;
+}
+.seaocore_members_cover_member:hover .seaocore_members_cover_member_name {
+  display:block;
+}
+/*Profile Cover Members Ends Here*/
+/*Facebook Like Button*/
+.layout_siteusercoverphoto_user_cover_photo .seaocore_profile_cover_fb_like_button .layout_facebookse_facebookse_commonlike {
+  clear: both;/*
+  float: left;*/
+  margin-top: 10px;
+}
+/*.default_temp_inside.layout_siteusercoverphoto_user_cover_photo .seaocore_profile_cover_fb_like_button .layout_facebookse_facebookse_commonlike {
+  position: relative;
+  bottom: 33px;
+}*/
+.transparent_cover_temp.layout_siteusercoverphoto_user_cover_photo .seaocore_profile_cover_fb_like_button .layout_facebookse_facebookse_commonlike {
+  margin-top: 0;
+  margin-left: 5px;
+}
+.seaocore_cover_inside_container_tabs.seaocore_profile_cover_fb_like_button{
+  bottom:15px;
+  position: absolute;
+}
+ .seaocore_cover_inside_container_tabs .layout_Facebookse_facebookse_commonlike{
+  margin: 0;
+}
+ .seaocore_cover_inside_container_tabs .fb_edge_widget_with_comment{
+  height: 50px;
+}
+.seaocore_cover_inside_container_tabs.seaocore_profile_cover_fb_like_button .fb_iframe_widget span, .fb_iframe_widget span{
+  overflow: inherit !important;
+}
+.seaocore_cover_inside_container_tabs.seaocore_profile_cover_fb_like_button .fb_iframe_widget{
+  z-index:12;
+}
+/*Sponsored Label*/
+.seaocore_coverphoto_profile_label{
+	clear: both;
+	color: #fff;
+	letter-spacing: 0.6px;
+	padding: 2px 6px;
+	position: absolute;
+	top: 37px;
+	left: 0;
+	z-index: 9;
+	text-transform: capitalize;
+}
+/*.layout_sitecontentcoverphoto_content_cover_photo  .seaocore_coverphoto_profile_label {
+  margin-top: 11px;
+}*/
+[dir="rtl"] .seaocore_coverphoto_profile_label{
+	text-align:center;
+}
+/*Below css apply when there is no tab container*/
+/*.seaocore_notabs .seaocore_profile_cover_head_section{
+  border-width: 0;
+	min-height:0;
+	padding:0 10px;
+}
+.seaocore_notabs .seaocore_profile_cover_head_section .seaocore_profile_main_photo_wrapper{
+  height: 0;
+}*/
+.seaocore_notabs .seaocore_profile_cover_inside_tabs  .seaocore_profile_coverinfo_status, 
+.seaocore_notabs .seaocore_profile_cover_inside_tabs  .seaocore_profile_coverinfo_buttons {
+  bottom: 20px;
+}
+.seaocore_button i.plus_icon::before{
+	content:"\f067";
+}
+.seaocore_button i.minus_icon::before{
+	content:"\f00d";
+}
+.siteevent_addcalender .layout_siteevent_add_to_my_calendar_siteevent{margin-bottom:0;}
+.siteevent_addcalender .siteevent_calender_button .siteevent_buttonlink > span {padding-left:0;background-image: none;}
+
+/*Full width Cover Photo*/
+/*Content and user profile pages*/
+/*.seaocore_profile_fullwidth_cover_photo + .seaocore_profile_cover_head_section { display: block;}*/
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo {margin-left: 20px; bottom: 15px; z-index: 1;}
+.default_temp_inside .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo {
+  margin-left: 20px;
+}
+/*.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {right: 0;}*/
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_photo{background-color:#070826;}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_photo img{opacity:0.7;/* top: 0px !important;*/}
+html .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status *,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status a:link{text-align:center; float:none !important; overflow:visible;max-width:100% !important; margin-bottom: 5px; justify-content: center;}
+.seaocore_profile_coverinfo_status h2{font-size:25px; overflow:hidden; padding-bottom:10px; font-weight: bold !important;}
+html .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status h2 > a:link{font-size:60px !important;  line-height:70px !important;}
+.seaocore_profile_fullwidth_cover_photo .rating {width: 100%;} 
+html .seaocore_profile_fullwidth_cover_photo .siteverify_tip_wrapper {right: auto;top: 0px;/* width: 100%;*/ line-height: 25px; vertical-align: middle;}
+html .seaocore_profile_fullwidth_cover_photo .siteverify_tip {font-size: 12px !important;line-height: normal; margin-left: 0 !important; margin-right: 0 !important; top: 50%; transform: translateY(-50%);}
+html .seaocore_profile_fullwidth_cover_photo .rating_text { color: #fff;}
+html .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status{
+	bottom: 0; 
+	margin-bottom: 30px;
+	position: relative;
+	max-width:100%; 
+	float:none;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons{
+	bottom: 0;
+	float: none; 
+	position: relative;
+	text-align: center;
+}
+.layout_top + .layout_main .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons {
+  position: relative;
+  bottom: auto;
+  left: 0;
+  right: 0;
+}
+html .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons > div{
+	float:none; 
+	display:inline-block; 
+	vertical-align:top;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner {
+	display: table-cell;
+	position: relative;
+	vertical-align: middle;
+	width: 10%;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_options .edit-button,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_options .save-button{
+	position: absolute;
+	z-index: 12;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options {
+	bottom: 0;
+	position: absolute;
+	z-index: 999;
+	width: 176px;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper {
+	position: static;
+	float: none;
+	margin: 0 auto;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .seaocore_like_button > a:hover,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .seaocore_button > a:hover,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .sitepage_button:hover,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .sitegroup_button:hover,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .seaocore_follow_button:hover,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .social_share_wrap > a.sitevideo_unsubscribe_icon:hover,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .social_share_wrap > a.sitevideo_subscribe_icon:hover {
+	background-image: none !important;
+	opacity: 0.8;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .siteevent_calender_button .siteevent_buttonlink,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner .seaocore_button > a, 
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner .seaocore_like_button a,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .sitegroup_button:hover,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner a.seaocore_follow_button,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .social_share_wrap > a.sitevideo_unsubscribe_icon,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .social_share_wrap > a.sitevideo_subscribe_icon {
+	padding: 5px 15px !important;
+	line-height: normal;
+}
+/*.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner .seaocore_button.seaocore_profile_option_btn > a {
+  padding-top: 3px !important;
+}
+ #sitecontentcover_middle_content .seaocore_button.seaocore_profile_option_btn > a {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}*/
+div.seaocore_profile_fullwidth_cover_photo i.siteevent_icon_strip.siteevent_icon,
+div.seaocore_profile_fullwidth_cover_photo i.seao_icon_strip.seao_icon {
+	display: inline-block;
+	text-align: center;
+}
+#sitecontent_cover_photo #sitecontentcover_middle_content, #siteuser_cover_photo #siteusercover_middle_content {
+  position: relative;/*
+	z-index: 12;*/
+}
+/* .seaocore_button.seaocore_profile_option_btn > a {
+  padding: 5px 7px 5px !important;
+  line-height: 20px;
+}*/
+ .seaocore_button.seaocore_profile_option_btn .icon_down:before {
+  margin-right: -8px;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .siteevent_listings_stats,
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .seao_listings_stats {
+	margin-bottom: 15px;
+	margin-top: 0;
+}
+html .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .siteevent_listings_stats *,
+html .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .seao_listings_stats * {
+	font-size:17px;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .siteevent_listings_stats i {
+	display: none;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo .item_photo table td img {
+  min-height: 120px;
+}
+.seaocore_profile_coverinfo_buttons .siteevent_grid_footer,
+.sitevideo_view_links .siteevent_grid_footer {
+	position: relative;
+}
+.seaocore_profile_coverinfo_buttons .siteevent_share_links.dropdown-menu,
+.sitevideo_view_links .siteevent_share_links.dropdown-menu{
+	margin-top: 8px;
+	min-width: 180px;
+	padding: 5px;
+	text-align: left;
+	width: 100%;
+	box-sizing: border-box;
+	position:absolute;
+	z-index: 1;
+	top: 25px;
+	right: 0;
+}
+.layout_sitecontentcoverphoto_content_cover_photo .siteevent_grid_footer ul.dropdown-menu li {
+  padding: 3px;
+}
+/*.sc_cover_template_3 .seaocore_profile_coverinfo_buttons .siteevent_share_links.dropdown-menu {
+  right: auto;
+  left: 1px;
+}*/
+#sitecontentcoverphoto_share_links.dropdown-menu {
+	min-width: 180px;
+	padding: 5px;
+	text-align: left;
+	box-sizing: border-box;
+	z-index: 13;
+}
+.sitevideo_view_links .siteevent_share_links.dropdown-menu {
+	right: auto;
+}
+/*.seaocore_profile_coverinfo_buttons .siteevent_share_links.dropdown-menu::after,
+.sitevideo_view_links .siteevent_share_links.dropdown-menu::after {
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	content: " ";
+	display: inline-block;
+	right: 7%;
+	position: absolute;
+	top: -10px;
+}*/
+.seaocore_profile_coverinfo_buttons .siteevent_share_links.dropdown-menu li > a,
+.sitevideo_view_links .siteevent_share_links.dropdown-menu li > a,
+#sitecontentcoverphoto_share_links.dropdown-menu li > a{
+  padding: 5px;
+	display: block;
+}
+.sitevideo_view_links .siteevent_share_links.dropdown-menu li > a {
+	float:none;
+}
+.seaocore_profile_coverinfo_buttons .siteevent_share_links.dropdown-menu li > a:hover,
+.sitevideo_view_links .siteevent_share_links.dropdown-menu li > a:hover,
+#sitecontentcoverphoto_share_links.dropdown-menu li > a:hover{
+	background-color: rgba(0, 0, 0, 0.04);
+	text-decoration: none;
+}
+.seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {
+	z-index: 100;
+}
+/*Facebook Like button*/
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_fb_like_button{
+  bottom:0;
+  position: relative;
+}
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_fb_like_button .fb_iframe_widget {
+	text-align: center;
+	width: 100%;
+}
+.seaocore_profile_fullwidth_cover_photo .fb_iframe_widget iframe {
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 3px;/*
+	margin-top: 15px;*/
+}
+.seaocore_button.profile_button > a span,
+.seaocore_profile_cover_head_section_inner .seaocore_like_button.profile_button a span
+/*.seaocore_profile_cover_head_section_inner .seaocore_like_button.profile_button a i*/ {
+  float: none;
+}
+
+/*---------USER COVER PHOTO CSS END HERE----------------*/
+.seaocore_profile_main_photo_wrapper #user_profile_photo {
+	background-position: center top;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 160px;
+	width: 160px;
+	background-size: cover;
+}
+.layout_siteusercoverphoto_user_cover_photo .seaocore_list_featured_label {
+  top: 10px;
+}
+/*Default Template*/
+
+/*.default_temp_outside .seaocore_profile_cover_head_section {
+  display: none;
+}*/
+.default_temp_outside .seaocore_profile_cover_head_section_inner {
+  margin-top: 10px;
+}
+.default_temp_outside .seaocore_button.seaocore_profile_option_btn > a {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  line-height: 19px;
+}
+.default_temp_outside .seaocore_favourite_button a i::before,
+.default_temp_outside .seaocore_profile_option_btn .icon_cog::before,
+.default_temp_outside .seaocore_profile_option_btn .icon_down::before {
+  margin-right: -6px;
+}
+.default_temp_outside .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {
+  top: -85px;
+}
+.default_temp_outside .seaocore_profile_halfwidth_cover_photo  .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {
+  top: -95px;
+  right: 5px;
+}
+.layout_siteusercoverphoto_user_cover_photo .tip {
+  position: absolute;
+  z-index: 13;
+  top: 200px;
+  left: 10px;
+  right: 10px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.54);
+  width: 50%;
+}
+.tip > span {
+  margin-bottom: 0;
+}
+/*.profile_button.seaocore_like_button a i, .profile_button.seaocore_favourite_button a i {
+  margin-right: 0;
+}*/
+.default_temp_outside .seaocore_profile_coverinfo_buttons {
+  margin-right: 10px;
+}
+.default_temp_inside .seaocore_like_button a i {
+  margin-top: 0px;
+}
+.default_temp_inside .seaocore_profile_coverinfo_buttons .seaocore_button a i,
+.default_temp_outside .seaocore_profile_coverinfo_buttons .seaocore_button a i {
+  margin-top: 3px;
+  float: left;
+}
+.default_temp_inside .seaocore_profile_fullwidth_cover_photo #others_button_dropdown > a i,
+.default_temp_outside .seaocore_profile_fullwidth_cover_photo #others_button_dropdown > a i {
+  float: none; 
+  display: inline-block;
+}
+.seaocore_profile_coverinfo_buttons .seaocore_button > a.default_profile_coverinfo_buttons_dropdown:after {
+  border-left: 1px solid rgba(255, 255, 255, 0.4)
+}
+.default_temp_inside  .seaocore_button.seaocore_profile_option_btn > a,
+.default_temp_outside  .seaocore_button.seaocore_profile_option_btn > a {
+  padding: 5px 7px 4px !important;
+}
+.default_temp_inside .seaocore_like_button a {
+  padding: 5px;
+}
+.default_temp_inside .seaocore_button > a {
+  padding: 5px !important;
+}
+.default_temp_outside .seaocore_profile_halfwidth_cover_photo .seaocore_like_button a i {
+  margin-top: 2px;
+}
+.default_temp_outside .seaocore_profile_halfwidth_cover_photo .seaocore_profile_coverinfo_buttons > .profile_button > a.trans_profile_coverinfo_buttons_dropdown:after, 
+.default_temp_outside .seaocore_profile_halfwidth_cover_photo .seaocore_profile_coverinfo_buttons > .seaocore_button > a.default_profile_coverinfo_buttons_dropdown:after {
+  padding-top: 11px !important;
+  padding-bottom: 11px !important;
+}
+/*.layout_left + .layout_middle > .layout_core_container_tabs div.tabs_alt,
+.layout_left + .layout_right + .layout_middle > .layout_core_container_tabs div.tabs_alt {
+  margin-left: 0;
+}*/
+
+/*------------------  Transparent Outer tabbed template  -----------------------*/
+/*Middle box*/
+.generic_layout_container.layout_core_container_tabs.transparent_cover_tabs {
+  padding: 6px;
+}
+.trans_cover_temp #siteuser_cover_photo #siteusercover_middle_content {
+  background: rgba(255, 255, 255, 0.45);
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 95%;*/
+  padding: 0 20px;
+  box-sizing: border-box;
+  height: 250px;
+  margin-top: -150px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 10px;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  -o-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+.trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner {
+  height: 100%;
+  float: left;
+  left: 220px;
+  padding-top: 5em;
+  -webkit-animation: slideIn 2s forwards;
+  -moz-animation: slideIn 2s forwards;
+  -o-animation: slideIn 2s forwards;
+  animation: slideIn 2s forwards;
+  width: 80%;
+  box-sizing: border-box;
+  margin-left: 0;
+  z-index: 99;
+}
+[dir="rtl"] .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner {
+  left: auto;
+  right: 220px;
+  float: right;
+}
+.trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper {
+  float: left;
+}
+
+[dir="rtl"] .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper {
+  float: right;
+}
+.trans_cover_temp .seaocore_profile_main_photo {
+  top: 15%;
+  border-radius: 50%;
+  border: 0;
+  padding: 10px;
+  bottom: inherit;
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 10px;
+  -webkit-animation: slideIn 1s forwards;
+  -moz-animation: slideIn 1s forwards;
+  animation: slideIn 1s forwards;
+}
+.trans_cover_temp .seaocore_profile_main_photo .item_photo span {
+  border-radius: 50%;
+  transform-origin: opacity 50% 0 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 10px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 10px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 10px inset;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  -o-transition: box-shadow 0.2s ease-in;
+  transition-delay: box-shadow 0.2s ease-in;
+  background-position: center center;
+}
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status {
+  margin-bottom: 0;
+}
+.trans_cover_temp div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status h2 {
+  font-size: 42px;
+  line-height: 50px;
+  text-transform: none;
+  padding-bottom: 10px;
+}
+.trans_cover_temp .seaocore_profile_coverinfo_status h2,
+.trans_cover_temp .seaocore_profile_coverinfo_buttons {
+  text-align: left;
+}
+.trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options {
+  top: 25px;
+  bottom: inherit;
+  display: block;
+}
+/*Cover photo options*/
+.trans_cover_temp .temp_cover_options .edit-button {
+  top: initial;
+  right: 200px;
+  bottom: 175px;
+}
+[dir="rtl"] .trans_cover_temp .temp_cover_options .edit-button {
+  left: 200px !important;
+  right: auto !important;
+}
+.trans_cover_temp .seaocore_profile_main_photo_options .edit-button {
+  -webkit-animation: slideIn 1s forwards;
+  -moz-animation: slideIn 1s forwards;
+  -o-animation: slideIn 1s forwards;
+  animation: slideIn 1s forwards;
+  top: 20px;  
+}
+/*main Pofile Photo options*/
+.menu-button-main {
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px !important;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  right: -20px;
+  text-align: center;
+  top: 0;
+  width: 50px;
+  z-index: 1;
+}
+[dir="rtl"] .menu-button-main {
+  text-align: center;
+}
+.menu-button {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: normal;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+}
+.menu-button i {
+  font-size: 24px;
+  vertical-align: top;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu-button a {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  text-align: center;
+  line-height: normal;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  right: 30px;
+  bottom: 30px;
+  position: absolute;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+}
+[dir="rtl"] .menu-button a {
+  right: auto;
+  left: 30px;
+}
+.menu-button a:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.menu-button a:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  order: 1;
+}
+.menu-button a:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  order: 2;
+}
+.menu-button a:nth-child(4) {
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  order: 3;
+}
+.menu-button a:nth-child(5) {
+  -webkit-transition-delay: 0.6s;
+  -moz-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+  order: 4;
+}
+.menu-button a:nth-child(6) {
+  -webkit-transition-delay: 0.7s;
+  -moz-transition-delay: 0.7s;
+  -o-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+  order: 5;
+}
+.menu-button-main + .menu-button:hover a,
+.menu-button-main:hover + .menu-button a {
+  visibility: visible;
+  width: 50px;
+  height: 50px;
+}
+.menu-button-main:hover + .menu-button a {
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.menu-button-main + .menu-button:hover a:hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  background: #323232;
+}
+.menu-button-main + .menu-button:hover a:nth-child(2),
+.menu-button-main:hover + .menu-button a:nth-child(2) {
+  right: 60px;
+  bottom: -60px;
+  left: auto;
+}
+[dir="rtl"] .menu-button-main + .menu-button:hover a:nth-child(2),
+[dir="rtl"] .menu-button-main:hover + .menu-button a:nth-child(2) {
+  right: auto;
+  left: 60px;
+}
+.menu-button-main + .menu-button:hover a:nth-child(3),
+.menu-button-main:hover + .menu-button a:nth-child(3) {
+  right: 85px;
+  bottom: 5px;
+  left: auto;
+}
+[dir="rtl"] .menu-button-main + .menu-button:hover a:nth-child(3),
+[dir="rtl"] .menu-button-main:hover + .menu-button a:nth-child(3) {
+  right: auto;
+  left: 85px;
+}
+.menu-button-main + .menu-button:hover a:nth-child(4),
+.menu-button-main:hover + .menu-button a:nth-child(4) {
+  right: 50px;
+  bottom: 70px;
+  left: auto;
+}
+[dir="rtl"] .menu-button-main + .menu-button:hover a:nth-child(4),
+[dir="rtl"] .menu-button-main:hover + .menu-button a:nth-child(4) {
+  right: auto;
+  left: 50px;
+}
+.menu-button-main + .menu-button:hover a:nth-child(5),
+.menu-button-main:hover + .menu-button a:nth-child(5) {
+  right: -25px;
+  bottom: 70px;
+  left: auto;
+}
+[dir="rtl"] .menu-button-main + .menu-button:hover a:nth-child(5),
+[dir="rtl"] .menu-button-main:hover + .menu-button a:nth-child(5) {
+  right: auto;
+  left: -25px;
+}
+/*Transparent templatre Sitelike Plugin*/
+/*.transparent_cover_temp .seaocore_profile_fullwidth_cover_photo #siteusercover_middle_content .layout_sitelike_commoncover_like_button > div.seaocore_like_button > a {
+  padding: 4px 10px !important;
+}*/
+.transparent_cover_temp .seaocore_profile_coverinfo_buttons > div .layout_sitelike_commoncover_like_button {
+  margin-top: 1px;
+}
+.trans_cover_temp .seaocore_profile_coverinfo_buttons .seaocore_like_button a i {
+  margin-top: 1px;
+}
+/*End Sitelike Plugin*/
+
+/*2 column layout setting*/
+.suc_global_content_wrapper .layout_left + .layout_middle .trans_cover_temp #siteuser_cover_photo #siteusercover_middle_content,
+/*.suc_global_content_wrapper .layout_left + .layout_middle .trans_cover_temp .seaocore_profile_fullwidth_cover_photo + .seaocore_profile_cover_head_section,*/
+.suc_global_content_wrapper .layout_left + .layout_right + .layout_middle .trans_cover_temp #siteuser_cover_photo #siteusercover_middle_content,
+/*.suc_global_content_wrapper .layout_left + .layout_right + .layout_middle .trans_cover_temp .seaocore_profile_fullwidth_cover_photo + .seaocore_profile_cover_head_section,*/
+.suc_global_content_wrapper .layout_right + .layout_middle .trans_cover_temp #siteuser_cover_photo #siteusercover_middle_content
+/*.suc_global_content_wrapper .layout_right + .layout_middle .trans_cover_temp .seaocore_profile_fullwidth_cover_photo + .seaocore_profile_cover_head_section */ {
+  width: 95%;
+}
+.suc_global_content_wrapper .layout_left + .layout_middle div.layout_core_container_tabs.transparent_cover_tabs div.tabs_alt,
+.suc_global_content_wrapper .layout_left + .layout_right + .layout_middle div.seaocore_cover_inside_container_tabs.transparent_cover_tabs div.tabs_alt,
+.suc_global_content_wrapper .layout_right + .layout_middle div.seaocore_cover_inside_container_tabs.transparent_cover_tabs div.tabs_alt,
+.scc_global_content_wrapper .layout_left + .layout_middle .sc_cover_template_2_tabs.seaocore_cover_inside_container_tabs div.tabs_alt,
+.scc_global_content_wrapper .layout_left + .layout_right + .layout_middle .sc_cover_template_2_tabs.seaocore_cover_inside_container_tabs div.tabs_alt,
+.scc_global_content_wrapper .layout_right + .layout_middle .sc_cover_template_2_tabs.seaocore_cover_inside_container_tabs div.tabs_alt,
+.scc_global_content_wrapper .layout_left + .layout_middle .sc_cover_template_3_tabs.seaocore_cover_inside_container_tabs div.tabs_alt,
+.scc_global_content_wrapper .layout_left + .layout_right + .sc_cover_template_3_tabs.seaocore_cover_inside_container_tabs div.tabs_alt,
+.scc_global_content_wrapper .layout_right + .layout_middle .sc_cover_template_3_tabs.seaocore_cover_inside_container_tabs div.tabs_alt {
+  position: relative;
+}
+.suc_global_content_wrapper .layout_left + .layout_middle .trans_cover_temp .temp_cover_options .edit-button,
+.suc_global_content_wrapper .layout_left + .layout_right + .layout_middle .trans_cover_temp .temp_cover_options .edit-button,
+.suc_global_content_wrapper .layout_right + .layout_middle .trans_cover_temp .temp_cover_options .edit-button {
+  right: 50px;
+}
+.suc_global_content_wrapper .layout_left + .layout_middle .transparent_cover_temp #siteusercoverphoto_main_options .toolTipElement .tooltiptext,
+.suc_global_content_wrapper .layout_left + .layout_right + .layout_middle .transparent_cover_temp #siteusercoverphoto_main_options .toolTipElement .tooltiptext,
+.suc_global_content_wrapper .layout_right + .layout_middle .transparent_cover_temp #siteusercoverphoto_main_options .toolTipElement .tooltiptext {
+  width: 100%;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/*.scc_global_content_wrapper .layout_right + .layout_middle .generic_layout_container.layout_sitecontentcoverphoto_content_cover_photo .sc_halfwidth_inside_coverphoto_template .seaocore_profile_cover_head_section_inner,
+.scc_global_content_wrapper .layout_left + .layout_middle .generic_layout_container.layout_sitecontentcoverphoto_content_cover_photo .sc_halfwidth_inside_coverphoto_template .seaocore_profile_cover_head_section_inner,
+.scc_global_content_wrapper .layout_left + .layout_right + .layout_middle .generic_layout_container.layout_sitecontentcoverphoto_content_cover_photo .sc_halfwidth_inside_coverphoto_template .seaocore_profile_cover_head_section_inner {
+    margin-left: 10px !important;
+}*/
+.layout_sitecontentcoverphoto_content_cover_photo .siteevent_listings_stats .siteevent_icon_time + span + img[title="End Date"] {
+  display: none;
+}
+
+/*Profile Buttons*/
+html .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status * {
+  text-align: left;
+}
+[dir="rtl"] .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status * {
+  text-align: right;
+}
+.trans_cover_temp .seaocore_profile_coverinfo_buttons {
+  margin-top: 10px;
+  text-align: left;
+  display: table-cell;
+}
+.collage_image_template .seaocore_profile_coverinfo_buttons {
+  margin: 10px 0 0 0;
+  text-align: left;
+}
+.trans_cover_temp .seaocore_profile_coverinfo_buttons .profile_button > a {
+  padding: 6px 10px !important;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 13px;
+	 display: inline-block;
+	line-height: normal;
+}
+.collage_image_template .seaocore_profile_coverinfo_buttons .profile_button > a {
+  padding: 5px 10px !important;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: normal;
+}
+.trans_cover_temp .seaocore_profile_coverinfo_buttons .profile_button > a span {
+  float: none;
+}
+/*.trans_cover_temp .generic_layout_container.layout_seaocore_like_button,
+.collage_image_template .generic_layout_container.layout_seaocore_like_button{ margin-right: -8px;}*/
+
+.collage_image_template .generic_layout_container.layout_sitemember_review_button,
+.trans_cover_temp .generic_layout_container.layout_sitemember_review_button {
+  float: left;
+/*  margin-left: 8px;
+  margin-top: -4px;*/
+}
+.trans_cover_temp .seaocore_profile_coverinfo_buttons > .profile_button > a > i,
+.collage_image_template .seaocore_profile_coverinfo_buttons > .profile_button > a > i {
+  margin-right: 5px;
+  display: inline-block;
+}
+[dir="rtl"] .trans_cover_temp .seaocore_profile_coverinfo_buttons > .profile_button > a > i {
+    margin-left: 5px;
+    margin-right: 0;
+}
+.seaocore_profile_coverinfo_buttons > .profile_button > a.trans_profile_coverinfo_buttons_dropdown:after,
+.seaocore_profile_coverinfo_buttons .seaocore_button > a.default_profile_coverinfo_buttons_dropdown:after {
+  content: "\f0d7";
+  font-family: 'Font Awesome 5 Free';
+  padding: 7px 0 7px 8px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  font-weight:900;
+}
+[dir="rtl"] .seaocore_profile_coverinfo_buttons > .profile_button > a.trans_profile_coverinfo_buttons_dropdown:after,
+[dir="rtl"] .seaocore_profile_coverinfo_buttons .seaocore_button > a.default_profile_coverinfo_buttons_dropdown:after {
+  padding: 7px 8px 7px 7px;
+}
+.trans_cover_temp ul.seaocore_profile_options_pulldown,
+.collage_image_template ul.seaocore_profile_options_pulldown {
+  width: 180px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+.default_temp_inside ul.siteuser_cover_settings {
+  /*width: 127px;*/
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+.collage_image_template ul.seaocore_profile_options_pulldown {
+  right: auto;
+  top: 30px;
+  left: 0;
+}
+.trans_cover_temp ul.seaocore_profile_options_pulldown ul li a,
+.collage_image_template ul.seaocore_profile_options_pulldown ul li a {
+  font-size: 13px;
+}
+/*.trans_cover_temp .seaocore_profile_coverinfo_buttons .seaocore_like_button.profile_button > a
+.collage_image_template .seaocore_profile_coverinfo_buttons .seaocore_like_button.profile_button >  {
+  margin-top: -1px;
+}a*/
+.collage_image_template .seaocore_profile_coverinfo_buttons .seaocore_like_button.profile_button > a i {
+  margin-right: 2px;
+  margin-top: 2px;
+}
+/*Tabs Transparent template*/
+/*.trans_cover_temp .seaocore_profile_fullwidth_cover_photo + .seaocore_profile_cover_head_section {
+  margin: 10px auto;
+  box-sizing: border-box;
+  border: 0px solid transparent;
+  min-height: 55px;
+  width: 95%;
+  position: relative;
+  padding: 0;
+  display: block;
+}*/
+.transparent_cover_tabs .tabs_alt {
+  margin: -76px auto 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: transparent;
+}
+.transparent_cover_tabs .tabs_alt > ul {
+  text-align: center;
+  border-bottom: 0;
+  padding: 0;
+  overflow-y: visible;
+}
+[dir="rtl"] .transparent_cover_tabs .tabs_alt > ul {
+  text-align: center;
+}
+.transparent_cover_tabs .tabs_alt > ul > li {
+  border-right: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 1px 0 1px -1px rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  margin: 0 0 0 -2px;
+  padding: 0 1.8em;
+  text-align: center;
+  /*position: relative;*/
+  border-bottom: 2px solid transparent;
+  line-height: 30px;
+  height: 55px;
+  cursor: pointer;
+}
+.transparent_cover_tabs .tabs_alt > ul > li:last-child {
+  border-right: 0;
+  box-shadow: none;
+}
+.transparent_cover_tabs .tabs_alt > ul > li > a {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.transparent_cover_tabs .tabs_alt > ul > li > a:hover {
+  background: transparent;
+  border: 0px;
+}
+.transparent_cover_tabs div.tabs_alt>ul>li.active {
+  background-image: none;
+  border-bottom: 2px solid transparent;
+}
+.transparent_cover_tabs .tabs_alt > ul > li:hover,
+.transparent_cover_tabs .tabs_alt > ul > li.active {
+  background: rgba(0, 0, 0, 0.14);
+}
+.transparent_cover_tabs .tabs_alt > ul > li.more_tab.tab_open ul li {
+  line-height: 25px;
+  font-weight: normal;
+}
+.transparent_cover_tabs .tabs_alt > ul > li.tab_open .tab_pulldown_contents_wrapper,
+.transparent_cover_tabs .tabs_alt > ul > li .tab_pulldown_contents_wrapper {
+  margin-top: 55px;
+  margin-left: -18px;
+  border-radius: 0 0 3px 3px;
+}
+.transparent_cover_tabs .tabs_alt > ul > li.more_tab.tab_open ul li:hover,
+.transparent_cover_tabs .tabs_alt > ul > li.more_tab.tab_open ul li.active {
+  background: rgba(0, 0, 0, 0.14);
+}
+/*Tool Tip*/
+.toolTipElement .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.73);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 13px;
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  line-height: normal;
+  right: 120%;
+  transform: translateY(-45%);
+}
+.toolTipElement .tooltiptext:after, .toolTipElement .tooltiptext:before,
+.toolTipElement .toolTiplast:after, .toolTipElement .toolTiplast:before {
+  border: 6px solid transparent;
+  border-left-color: rgba(0, 0, 0, 0.43);
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+}
+.toolTipElement .tooltiptext:after, .toolTipElement .tooltiptext:before {
+  left: 100%;
+}
+.toolTiplast {
+  right: auto;
+  left: 120%;
+}
+.toolTipElement .toolTiplast:after, .toolTipElement .toolTiplast:before {
+  left: -12px;
+  border-left-color: transparent;
+  border-right-color: rgba(0, 0, 0, 0.43);
+}
+.toolTipElement:hover .tooltiptext {
+  visibility: visible;
+}
+.layout_sitecontentcoverphoto_content_cover_photo .toolTipElement .tooltiptext {
+  height: auto;
+}
+/*Recently viewed members in Transparent template*/
+.transparent_cover_temp .coverphoto_recentlyviewed_members  {
+  top: 55%;
+  transform: translateY(-55%);
+  bottom: auto;
+}
+/*Member Level Setting Default user cover photo*/
+.temp_def_cover_options.temp_cover_options .edit-button {
+  top: 0;
+  right: 40px;
+  bottom: auto;
+}
+.temp_cover_options.temp_def_cover_options .toolTipElement .toolTiplast:before,
+.temp_cover_options.temp_def_cover_options .toolTipElement .toolTiplast:after {
+  top: -25% !important;
+}
+.temp_cover_options.temp_def_cover_options .toolTipElement .tooltiptext {
+  font-size: 12px;
+  padding: 5px !important;
+}
+
+/*------------------  End Transparent Outer tabbed template  -----------------------*/
+
+/*------------------  Collase Image template  -----------------------*/
+
+/*Collage Tabs*/
+/*.collage_image_container .seaocore_profile_fullwidth_cover_photo + .seaocore_profile_cover_head_section {
+  display: none;
+}*/
+.collage_image_temp_tabs.seaocore_cover_inside_container_tabs {
+  position: absolute;
+  left: 0;
+  z-index: 99;
+  bottom: 0;
+  right: 0;
+}
+.collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt > ul {
+  text-align: left;
+}
+.collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt > ul > li {
+  border: 0;
+  display: inline-table;
+}
+.collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt > ul > li > a {
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 3px 3px 0 0;
+  font-weight: 400;
+}
+.collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt > ul > li > a:hover,
+.collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt > ul > li.active > a:hover {
+  background-color: #000 !important;
+}
+.collage_image_temp_tabs .tabs_alt>ul {
+  border-bottom: 0px;
+}
+.collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt > ul > li.active > a {
+  background: rgb(0, 0, 0);/*
+  border: 0px solid transparent;*/
+}
+.collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt > ul > li.tab_open .tab_pulldown_contents_wrapper {
+	margin-top: 40px;
+}
+.collage_mid_content .collage_profile_photo:hover .seaocore_profile_cover_options.seaocore_profile_main_photo_options {
+  display: block;
+}
+.collage_image_temp_tabs .layout_user_profile_fields .profile_fields {
+  margin-top: 0;
+}
+/*Collage Mid Content*/
+.collage_mid_content {
+  position: relative;
+  left: 140px;
+  right: 0;
+  display: table;
+  z-index: 99;
+}
+.collage_mid_content .collage_profile_photo {
+  display: table-cell;
+  vertical-align: middle;
+}
+.collage_mid_content .collage_profile_photo span#user_profile_photo {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  display: block;
+  border: 2px solid #fff;
+}
+.collage_mid_content .collage_mid_content_details {
+  display: table-cell;
+  width: 83%;
+  vertical-align: top;
+  padding-left: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+/*Sitelike Plugin*/
+.seaocore_profile_fullwidth_cover_photo .collage_mid_content_details .layout_sitelike_commoncover_like_button > div.seaocore_like_button > a {
+    padding: 4px 10px !important;
+}
+.collage_mid_content_details .seaocore_profile_coverinfo_buttons > div .layout_sitelike_commoncover_like_button {
+  margin-top: -5px;
+}
+.collage_image_template .collage_mid_content_details .seaocore_profile_cover_head_section_inner {
+  width: 460px;
+}
+/*End Sitelike Plugin*/
+
+html .collage_image_template .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status * {
+  text-align: left;
+}
+.collage_image_template .collage_mid_content .collage_mid_content_details h2{
+  color: #fff;
+  font-size: 32px;
+  text-align: left;
+  line-height: 42px;
+}
+html .collage_image_template .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status {
+  margin-bottom: 10px;
+}
+html .collage_image_template .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons > div {
+  display: inline-flex;
+  margin-bottom: 5px;
+  vertical-align: top;
+}
+.collage_images_box {
+  position: absolute;
+  top: 20px;
+  margin: 0px;
+  padding: 0px;
+  overflow: visible;
+  background-image: none;
+  background-position: 0px 0px;
+  text-indent: 0em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.collage_images_box > div {
+  display: inline-block;
+  position: absolute;
+  visibility: visible;
+}
+.collage_images_box > div > span {
+  display: block;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+}
+.choose_collage_photo {
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px 0;
+}
+.choose_collage_photo a i {
+  margin-right: 7px;
+  margin-left: 7px;
+}
+
+/*menu buttons*/
+.collage_image_template .temp_cover_options .edit-button {
+  top: 10px;
+  right: 30px;
+  bottom: intial;
+}
+.collage_mid_content .collage_profile_photo .seaocore_profile_main_photo_options {
+  position: relative;
+}
+.collage_mid_content .collage_profile_photo .seaocore_profile_main_photo_options .edit-button {
+  top: -35px;
+  right: 5px;
+}
+.collage_mid_content .collage_profile_photo .seaocore_profile_main_photo_options .edit-button .menu-button {
+  top: 0;
+}
+/*.collage_image_template .seaocore_profile_cover_head_section {
+	display: none;
+}*/
+
+.temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(2),
+.temp_cover_options .menu-button-main:hover + .menu-button a:nth-child(2) {
+  right: 65px;
+  bottom: 0;
+}
+[dir="rtl"] .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(2),
+[dir="rtl"] .temp_cover_options .menu-button-main:hover + .menu-button a:nth-child(2) {
+  left: 65px;
+  right: auto;
+}
+.temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(3),
+.temp_cover_options .menu-button-main:hover + .menu-button a:nth-child(3) {
+  right: 130px;
+  bottom: 0;
+}
+[dir="rtl"] .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(3),
+[dir="rtl"] .temp_cover_options .menu-button-main:hover + .menu-button a:nth-child(3) {
+  left: 130px;
+  right: auto;
+}
+.temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(4),
+.temp_cover_options .menu-button-main:hover + .menu-button a:nth-child(4) {
+  right: 195px;
+  bottom: 0;
+}
+[dir="rtl"] .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(4),
+[dir="rtl"] .temp_cover_options .menu-button-main:hover + .menu-button a:nth-child(4) {
+  left: 195px;
+  right: auto;
+}
+.temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(5),
+.temp_cover_options .menu-button-main:hover + .menu-button a:nth-child(5) {
+  right: 260px;
+  bottom: 0;
+}
+[dir="rtl"] .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(5),
+[dir="rtl"] .temp_cover_options .menu-button-main:hover + .menu-button a:nth-child(5) {
+  left: 260px;
+  right: auto;
+}
+.temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(6),
+.temp_cover_options .menu-button-main:hover + .menu-button a:nth-child(6) {
+  right: 325px;
+  bottom: 0;
+}
+[dir="rtl"] .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(6),
+[dir="rtl"] .temp_cover_options .menu-button-main:hover + .menu-button a:nth-child(6) {
+  left: 325px;
+  right: auto;
+}
+/*Tooltip*/
+.temp_cover_options .toolTipElement .tooltiptext,
+.temp_cover_options .toolTiplast {
+  width: 160px;
+  right: -50px;
+  transform: none;
+  margin: auto;
+  top: 120%;
+  left: auto;
+}
+.temp_cover_options .toolTipElement .tooltiptext:after,
+.temp_cover_options .toolTipElement .tooltiptext:before,
+.temp_cover_options .toolTiplast:before,
+.temp_cover_options .toolTiplast:after {
+  border: 6px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.43);
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: -39%;
+  transform: none;
+}
+
+/*Animations*/
+/*End Animations*/
+.collage_img1 {
+  left: 1000px;
+  top: 2px;
+  z-index: 8;
+  animation: slideInDown 2s ease-in-out forwards;
+}
+.collage_img1_span{
+  width: 226px;
+  height: 228px;
+}
+.collage_img2 {
+  left: 836px;
+  top: 123px;
+  z-index: 9;
+  animation: slideInLeft 1.5s ease-in-out both;
+}
+.collage_img2_span{
+  width: 254px;
+  height: 249px;
+}
+.collage_img3 {
+  left: 1420px;
+  top: -210px;
+  z-index: 10;
+  -webkit-animation: slide-bl 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bl 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.collage_img3_span{
+  width: 294px;
+  height: 298px;
+}
+@-webkit-keyframes slide-bl {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(300px) translateX(-300px);
+            transform: translateY(300px) translateX(-300px);
+    opacity: 1;
+  }
+}
+@keyframes slide-bl {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(300px) translateX(-300px);
+            transform: translateY(300px) translateX(-300px);
+     opacity: 1;
+  }
+}
+.collage_img4 {
+  left: 1025px;
+  top: 99px;
+  z-index: 11;
+	-webkit-animation: rotate-scale-up 4.75s linear both;
+	        animation: rotate-scale-up 4.75s linear both;
+}
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+     opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+     opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+     opacity: 1;
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+     opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+     opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+     opacity: 1;
+  }
+}
+.collage_img4_span{
+  width: 166px;
+  height: 175px;
+}
+.collage_img5 {
+  left: 918px;
+  top: 337px;
+  z-index: 12;
+}
+.collage_img5_span{
+  width: 237px;
+  height: 239px;
+  -webkit-animation: slideInUp ease-out 6s;
+  -moz-animation: slideInUp ease-out 6s;
+  animation: slideInUp ease-out 6s;  
+}
+@-webkit-keyframes slideInUp {
+  100% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes slideInUp {
+ 100% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+}
+@keyframes slideInUp {
+  100% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+}
+.collage_img6 {
+  left: 998px;
+  top: 196px;
+  z-index: 13;
+}
+.collage_img6_span{
+  width: 262px;
+  height: 259px;
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  animation-delay: 5s;
+}
+.collage_img7 {
+  left: 850px;
+  top: 329px;
+  z-index: 14;
+}
+.collage_img7_span{
+  width: 112px;
+  height: 111px;
+  -webkit-animation: slideInLeft ease-in 5.58s;
+  -moz-animation: slideInLeft ease-in 5.58s;
+  animation: slideInLeft ease-in 5.58s;  
+}
+@-webkit-keyframes slideInLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes slideInLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.collage_img8 {
+  left: 1108px;
+  top: 265px;
+  z-index: 1;
+  -webkit-animation: slide-tl 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-tl 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.collage_img8_span{
+  width: 250px;
+  height: 252px;
+}
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translateY(400px) translateX(400px);
+            transform: translateY(400px) translateX(400px);
+  }
+  100% {
+    -webkit-transform: translateY(20px) translateX(20px);
+            transform: translateY(20px) translateX(20px);
+  }
+}
+@keyframes slide-tl {
+  0% {
+    -webkit-transform: translateY(400px) translateX(400px);
+            transform: translateY(400px) translateX(400px);
+  }
+  100% {
+    -webkit-transform: translateY(20px) translateX(20px);
+            transform: translateY(20px) translateX(20px);
+  }
+}
+.collage_img9 {
+  left: 1054px;
+  top: 422px;
+  z-index: 16;
+	-webkit-animation: rotate-scale-down 4.25s linear forwards;
+	        animation: rotate-scale-down 4.25s linear forwards;
+}
+.collage_img9_span{
+  width: 163px;
+  height: 169px;
+}
+@-webkit-keyframes rotate-scale-down {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+            transform: scale(0.5) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-down {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+            transform: scale(0.5) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+  
+/*Collage Album Popup*/
+#global_page_siteusercoverphoto-profile-get-featured-photos .seaocore_choose_photos_content ul.thumbs li > div {
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+#global_page_siteusercoverphoto-profile-get-featured-photos .seaocore_choose_photos_content ul.thumbs li > div.selected {
+  border: 2px solid #2fca13;
+}
+#global_page_siteusercoverphoto-profile-get-featured-photos .seaocore_choose_photos_content ul.thumbs li {
+  margin: 0px 9px 0px 9px;  
+}
+
+/*Collage Recently Viewed Members*/
+.collage_image_template .coverphoto_recentlyviewed_members {
+    bottom: -30px;
+}
+
+.featured_album_upload_popup {
+  width: 490px;
+}
+/*----------------------------------------------
+-------------------Content Cover Photo Plugin CSS----------------------------*/
+.seaocore_profile_coverinfo_status,
+.seaocore_profile_coverinfo_status h2,
+.seaocore_profile_coverinfo_status a,
+.seaocore_profile_coverinfo_status div,
+.seaocore_profile_coverinfo_statistics,
+.seaocore_profile_coverinfo_statistics div {
+  color: #fff;
+}
+#sitecontent_cover_photo .seaocore_button .icon_down {
+  background-image: none;
+  width: auto;
+}
+#sitecontent_cover_photo .seaocore_button .icon_down:after {
+  content: "\f0d7";
+  font-family: 'Font Awesome 5 Free';
+  padding: 7px 0 7px 8px;
+  margin-left: 10px;
+  font-weight: 900;
+  box-sizing: border-box;
+  font-style: normal;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+.tab_pulldown_contents > ul > li {
+  min-width: 150px;
+  max-width: 100%;
+  font-size: 100%;
+}
+#sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .seaocore_profile_coverinfo_statistics,
+#sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .sc_cover_midcontent_btns {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+#sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .seaocore_profile_coverinfo_statistics {
+  margin-right: 0;
+}
+#sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .seaocore_profile_coverinfo_statistics > div {
+  display: inline-block;
+  margin-left: 10px;
+}
+#sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .sc_cover_midcontent_btns > div {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: top;
+}
+.sc_cover_midcontent_ratings span.seao_star_rating_disabled,
+.sc_cover_midcontent_ratings span.seao_star_rating_disabled:before {
+  color: #fff;
+  font-size: 14px;
+}
+.sc_cover_midcontent_ratings span.seao_rating_star_generic {
+  margin-top: 4px;
+}
+.sc_coverphoto_halfwidth_inside_content .sc_cover_midcontent_ratings span.rating_text {
+  margin-left: 0;
+}
+.sc_cover_template_1 .sc_halfwidth_inside_coverphoto_template .seaocore_profile_cover_gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from( rgba(22, 24, 27, 0)), to( rgba(22, 24, 27, 0.32)));
+  background-image: -webkit-linear-gradient( rgba(22, 24, 27, 0), rgba(22, 24, 27, 0.32));
+  background-image: -moz-linear-gradient( rgba(22, 24, 27, 0), rgba(22, 24, 27, 0.32));
+  background-image: -ms-linear-gradient( rgba(22, 24, 27, 0), rgba(22, 24, 27, 0.32));
+  background-image: -o-linear-gradient( rgba(22, 24, 27, 0), rgba(22, 24, 27, 0.32));
+  background-image: linear-gradient( rgba(22, 24, 27, 0), rgba(22, 24, 27, 0.32));
+  bottom: 0;
+  height: auto;
+  position: absolute;
+  width: 100%;
+/*  top: 0; */
+}
+.sc_cover_template_1 .sc_halfwidth_inside_coverphoto_template  + .seaocore_cover_inside_container_tabs {
+  background: rgba(0, 0, 0, 0.7);
+}
+.sc_cover_desc > span {
+  cursor: pointer;
+}
+.sc_cover_template_1 .sc_halfwidth_outside_coverphoto_template .seaocore_button#setting_button_dropdown > a {
+  padding-top: 5px !important;
+  padding-bottom: 6px !important;
+}
+.sc_cover_template_1 div.sc_author_ratings {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*Template 2*/
+.sc_cover_template_2 .seaocore_profile_cover_head_section_inner {
+  vertical-align: top;
+}
+.sc_cover_template_2_top_content {
+  box-sizing: border-box;
+  position: relative;
+  display: table;
+  width: 100%;
+  z-index: 12;
+}
+.sc_cover_template_2_top_content > div {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+}
+.sc_cover_template_2_user_photo {
+  position: relative;
+  margin: auto;
+  width: 130px;
+  height: 130px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.sc_cover_template_2_user_photo span,
+.sc_cover_template_3_profile_photo span {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+}
+.sc_cover_template_2 #sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .seaocore_profile_coverinfo_statistics,
+.sc_cover_template_2 #sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .sc_cover_midcontent_btns {
+  text-align: center;
+}
+.sc_cover_template_2 .seaocore_profile_main_photo_options .edit-button,
+.sc_cover_template_2 .sc_halfwidth_inside_coverphoto_template .seaocore_profile_main_photo_options .edit-button {
+  top: 60%;
+  right: auto;
+  left: 15px;
+}
+.sc_cover_template_3 #others_button_dropdown ul.seaocore_profile_options_pulldown,
+.sc_cover_template_3 #setting_button_dropdown ul.seaocore_profile_options_pulldown {
+  left: 0;
+  right: auto !important;
+  top: 32px;
+  min-width: 200px;
+}
+.scc_global_content_wrapper .sc_cover_template_3 #sitecontent_cover_photo .seaocore_profile_coverinfo_buttons > div {
+  margin-bottom: 8px;
+}
+.scc_global_content_wrapper .sc_cover_template_3_content_details {
+  width: 55%;
+}
+.sc_cover_template_2_btm_row {
+  background: rgba(255, 255, 255, 0.35);
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 65px;
+}
+.sc_cover_template_2_btm_row ul li {
+  line-height: 65px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 18px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0 10px;
+}
+.sc_cover_template_2_btm_count_3 ul li {
+  display: inline-block;
+  width: 33%;
+}
+.sc_cover_template_2_btm_count_2 ul li {
+  display: inline-block;
+  width: 49.8%;
+}
+.sc_cover_template_2_btm_count_1 ul li {
+  display: block;
+  width: 45%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.3);
+}
+.sc_cover_template_2_btm_row ul li:nth-child(1), .sc_cover_template_2_btm_row ul li:nth-child(3) {
+  background: rgba(255, 255, 255, 0.3);	
+}
+.sc_cover_template_2_btm_row ul li:nth-child(2) {
+  background: rgba(255, 255, 255, 0.5);
+}
+.sc_cover_template_2_btm_row ul li i {
+  width: 30px;
+  margin-right: 10px;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 50%;
+  line-height: 30px;
+}
+
+.sc_cover_template_3 .seaocore_cover_inside_container_tabs {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset;
+  border:1px solid rgba(0, 0, 0, 0.4);
+  width: 100%;
+	box-sizing: border-box;
+}
+.sc_cover_template_2 .seaocore_cover_inside_container_tabs,
+.sc_cover_template_3 .seaocore_cover_inside_container_tabs {
+/*  min-height: 49px;*/
+  background: #000;
+}
+/*.layout_left + .layout_middle .sc_cover_template_2_tabs.layout_core_container_tabs div.tabs_alt, .layout_right + .layout_middle .sc_cover_template_2_tabs.layout_core_container_tabs div.tabs_alt,
+.layout_left + .layout_middle .sc_cover_template_3_tabs.layout_core_container_tabs div.tabs_alt, .layout_right + .layout_middle .sc_cover_template_3_tabs.layout_core_container_tabs div.tabs_alt {
+  margin: -77px auto 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}*/
+/*.layout_left + .layout_right + .layout_middle .sc_cover_template_2_tabs.layout_core_container_tabs div.tabs_alt,
+.layout_left + .layout_right + .layout_middle .sc_cover_template_3_tabs.layout_core_container_tabs div.tabs_alt {
+  margin: -77px auto 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}*/
+.sc_cover_template_2_tabs .tabs_alt > ul,
+.sc_cover_template_3_tabs .tabs_alt > ul {
+  text-align: center;
+  display: block;
+}
+.sc_cover_template_2_tabs div.tabs_alt > ul > li a,
+.sc_cover_template_2_tabs div.tabs_alt > ul > li a:hover,
+.sc_cover_template_2_tabs div.tabs_alt > ul > li.active > a,
+.sc_cover_template_2_tabs div.tabs_alt > ul > li.tab_open > a,
+.sc_cover_template_3_tabs div.tabs_alt > ul > li a,
+.sc_cover_template_3_tabs div.tabs_alt > ul > li a:hover,
+.sc_cover_template_3_tabs div.tabs_alt > ul > li.active > a,
+.sc_cover_template_3_tabs div.tabs_alt > ul > li.tab_open > a {
+  padding: 10px 20px;
+  /*float: none;*/
+  display: inline-block;
+}
+.sc_cover_template_2_tabs div.tabs_alt > ul > li,
+.sc_cover_template_3_tabs div.tabs_alt > ul > li {
+  float: none;
+  border-bottom: 0;
+}
+.sc_cover_template_3_tabs .tab_pulldown_contents_wrapper,
+.sc_cover_template_2_tabs .tab_pulldown_contents_wrapper {
+  margin-top: 47px;
+}
+/*Halfwidth inside template 2*/
+.sc_cover_template_2 .seaocore_profile_cover_head_section_inner {
+  margin-left: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.sc_cover_template_2 .seaocore_profile_coverinfo_status {
+  bottom: 0;
+  margin-bottom: 15px !important;
+  position: relative;
+  max-width: 100%;
+  float: none;
+}
+.sc_cover_template_3 .seaocore_profile_coverinfo_status {
+  bottom: 0;
+  margin-bottom: 30px;
+  position: relative;
+  max-width: 100%;
+  float: none;
+}
+.sc_cover_template_2 .seaocore_profile_cover_photo,
+.sc_cover_template_3 .seaocore_profile_cover_photo {
+  background-color: #070826;
+}
+.sc_cover_template_2 .seaocore_profile_cover_photo img,
+.sc_cover_template_3 .seaocore_profile_cover_photo img {
+  opacity: 0.7;
+ /* top: -50% !important;*/
+}
+.sc_cover_template_2 .seaocore_profile_coverinfo_status * {
+  text-align: center;
+  float: none !important;
+  max-width: 100%;
+}
+.sc_cover_template_2 .seaocore_profile_coverinfo_buttons,
+.sc_cover_template_3 .seaocore_profile_coverinfo_buttons {
+  bottom: 0;
+  float: none;
+  position: relative;
+  text-align: center;
+}
+.sc_cover_template_2 .seaocore_profile_coverinfo_buttons > div {
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+}
+.sc_cover_template_2 .temp_cover_options .edit-button {
+  z-index: 99;
+}
+.sc_cover_template_2 #sitecontent_cover_photo #setting_button_dropdown > a {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.sc_coverphoto_halfwidth_inside_content .seaocore_profile_cover_info {
+  z-index: 1;
+}
+/*.sc_coverphoto_halfwidth_inside_content .sc_cover_midcontent_ratings {
+  position: absolute;
+  z-index: 1;
+}*/
+.sc_cover_adminname {
+  margin-bottom: 15px !important;
+}
+.layout_right + .layout_middle .sc_cover_template_2 .sc_cover_template_2_btm_row ul,
+.layout_left + .layout_middle .sc_cover_template_2 .sc_cover_template_2_btm_row ul {
+  width: 100%;
+}
+.sc_cover_template_2 .siteevent_listings_price_free:before {
+  content: "\f155";
+}
+/*Template 3*/
+.sc_cover_template_3 .seaocore_profile_cover_info{
+	max-width: 100%;
+}
+.sc_cover_template_3 div.sc_author_ratings,
+.sc_cover_template_2 div.sc_author_ratings {/*
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;*/
+  max-width: fit-content;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: -ms-fit-content;
+  max-width: -o-fit-content;
+  padding: 10px 50px 10px 0;
+  margin: 10px 0;
+}
+.sc_cover_template_2 div.sc_author_ratings {
+  margin: 10px auto;
+  padding: 10px 50px 10px 50px;
+}
+.sc_cover_template_2 .sc_author_ratings .sc_cover_adminname,
+.sc_cover_template_2 .sc_author_ratings .layout_sitevideo_user_ratings,
+.sc_cover_template_3 .sc_author_ratings .sc_cover_adminname,
+.sc_cover_template_3 .sc_author_ratings .layout_sitevideo_user_ratings {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+.sc_cover_template_2 .sc_author_ratings .layout_sitevideo_user_ratings #channel_rating,
+.sc_cover_template_3 .sc_author_ratings .layout_sitevideo_user_ratings #channel_rating {
+  border: 0;
+  padding: 0;
+  display: inline-block;
+}
+.sc_cover_template_3 #sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .seaocore_profile_coverinfo_statistics > div:first-child,
+.sc_cover_template_3 #sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .sc_cover_midcontent_btns > div:first-child {
+  margin-left: 0;
+}
+.se_cover_ratings { 
+  padding: 10px 0 0 0;
+}
+.sc_cover_template_3_profile_photo {
+  width: 20%;
+  height: 320px;
+  display: inline-block;
+  position: relative;
+}
+.sc_cover_template_3_profile_photo span#user_profile_photo {
+  border-radius: 0 !important;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.4), 0 8px 10px -5px rgba(0,0,0,0.5);
+  border: 5px solid #fff;
+  box-sizing: border-box;
+}
+.sc_cover_template_3_content_details {
+  display: inline-block;
+  padding-left: 50px;
+  vertical-align: top;
+  width: 76%;
+  box-sizing: border-box;
+}
+[dir="rtl"] .sc_cover_template_3_content_details {
+  padding-left: 0;
+  padding-right: 50px;
+}
+.sc_cover_template_3 .sc_cover_template_3_middle_content {
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 70%;
+  transform: translateY(-90%);
+  z-index: 11;
+}
+.sc_cover_template_2 .sc_cover_template_2_top_content .seao_rating_star_disabled::before,
+.sc_cover_template_2 .sc_cover_template_2_top_content .rating_text,
+.sc_cover_template_3 .sc_cover_template_3_content_details .seao_rating_star_disabled::before,
+.sc_cover_template_3 .sc_cover_template_3_content_details .rating_text {
+  color: #fff;
+}
+.sc_cover_template_2 .sc_cover_template_2_top_content .rating_text,
+.sc_cover_template_3 .sc_cover_template_3_content_details .rating_text {
+  float: none;
+  display: inline-block;
+  vertical-align: super;
+}
+.sc_cover_template_3 .sc_cover_template_3_profile_photo .edit-button,
+.sc_cover_template_3 .sc_halfwidth_inside_coverphoto_template  .sc_cover_template_3_profile_photo .edit-button {
+  right: 0;
+  top: 43%;
+  transform: translateY(-43%);
+}
+html .sc_cover_template_3 .seaocore_profile_cover_photo_wrapper .seaocore_profile_coverinfo_status * {
+  text-align: left;
+}
+.sc_cover_template_3 .seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_buttons {
+  margin: 0;
+  text-align: left;
+}
+.sc_cover_template_3 #sitecontent_cover_photo .seaocore_profile_coverinfo_buttons > div {
+  margin-left: 0;
+  margin-right: 5px;
+  text-align: left;
+}
+/*.sc_cover_template_3  .seaocore_button.seaocore_profile_option_btn > a {
+  line-height: 22px;
+}*/
+.sc_cover_template_3 .seaocore_profile_coverinfo_buttons {
+  text-align: left;
+  right: auto;
+  position: static;
+  bottom: 60px;
+}
+.sc_cover_template_3 .seaocore_profile_coverinfo_status {
+  margin-bottom: 0;
+}
+.sc_cover_template_3 .sc_halfwidth_inside_coverphoto_template .seaocore_profile_coverinfo_status,
+.sc_cover_template_3 .sc_halfwidth_outside_coverphoto_template .seaocore_profile_coverinfo_status {
+  margin-bottom: 15px;
+}
+#sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .seaocore_profile_coverinfo_statistics div:first-child,
+#sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .sc_cover_midcontent_btns div:firs-child {
+  margin-left: 0;
+}
+.sc_cover_template_3 .sc_halfwidth_outside_coverphoto_template #setting_button_dropdown > a  {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+/*Template 3 Content Cover Photo Inside Halfwidth*/
+/*.sc_cover_template_3 .sc_halfwidth_inside_coverphoto_template .seaocore_profile_cover_photo img,
+.sc_cover_template_3 .sc_halfwidth_outside_coverphoto_template .seaocore_profile_cover_photo img {
+  top: -50% !important;
+}*/
+.sc_cover_template_3 .sc_halfwidth_inside_coverphoto_template .temp_cover_options .edit-button,
+.sc_cover_template_2 .sc_halfwidth_inside_coverphoto_template .temp_cover_options .edit-button {
+  right: 30px;
+}
+
+/*Template 1 Halfwidth Cover Photo*/
+#sitecontent_cover_photo .sc_halfwidth_coverphoto .seaocore_profile_coverinfo_buttons .seaocore_profile_coverinfo_statistics,
+#sitecontent_cover_photo .sc_halfwidth_coverphoto .seaocore_profile_coverinfo_buttons .sc_cover_midcontent_btns {
+  text-align: right;
+  padding-right: 5px;
+  box-sizing: border-box;
+}
+.sc_coverphoto_halfwidth_outside_content {
+  margin-top: 10px;
+}
+[dir="rtl"] .sc_coverphoto_halfwidth_outside_content .seaocore_profile_options_pulldown li ul li {
+  padding: 5px
+}
+.sc_halfwidth_inside_coverphoto_template .seaocore_profile_cover_options .edit-button {
+  top: 10px;
+  right: 10px;
+}
+
+.seaocore_cover_inside_container_tabs {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  clear: both;
+  min-height: 40px;
+  margin: 0 auto;
+}
+.seaocore_cover_inside_container_tabs::after{
+  clear: both;
+  display:block;
+}
+.seaocore_cover_inside_container_tabs.sc_cover_template_1_tabs,
+.seaocore_cover_inside_container_tabs.default_temp_tabs {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.4);;
+  clear: both;        
+  box-sizing: border-box;
+}
+.seaocore_cover_inside_container_tabs.sc_cover_template_1_tabs .tabs_alt,
+.seaocore_cover_inside_container_tabs.default_temp_tabs .tabs_alt {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;/*
+  z-index: 99;*/
+  bottom: 0;
+}
+.layout_top + .layout_main .seaocore_cover_inside_container_tabs.sc_cover_template_1_tabs .tabs_alt, .layout_top + .layout_main .seaocore_cover_inside_container_tabs.default_temp_tabs .tabs_alt {
+  left: auto;
+}
+[dir="rtl"] .layout_top + .layout_main .seaocore_cover_inside_container_tabs.sc_cover_template_1_tabs .tabs_alt, [dir="rtl"] .layout_top + .layout_main .seaocore_cover_inside_container_tabs.default_temp_tabs .tabs_alt {
+  left: 0;
+  right: auto;
+}
+.seaocore_cover_inside_container_tabs.transparent_cover_tabs {
+  min-height: 55px;     
+}
+.seaocore_cover_inside_container_tabs .tabs_alt {
+  margin: 0 0;
+}
+.seaocore_cover_inside_container_tabs .tabs_alt .more_tab {
+  position: relative;
+}
+.seaocore_cover_inside_container_tabs .tabs_alt>ul>li.tab_open>a {
+  background-color: transparent;
+  position: relative;
+  top: inherit;
+}
+.seaocore_cover_inside_container_tabs .tabs_alt .more_tab > .tab_pulldown_contents_wrapper {
+  right: 0;
+  margin-top: 40px;
+}
+.seaocore_cover_inside_container_tabs .tabs_alt > ul { 
+  text-align: center;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+}
+[dir="rtl"] .seaocore_cover_inside_container_tabs .tabs_alt > ul {
+  text-align: center;
+}
+.seaocore_cover_inside_container_tabs.sc_cover_template_1_tabs .tabs_alt > ul > li > a,
+.seaocore_cover_inside_container_tabs.sc_cover_template_1_tabs .tabs_alt > ul > li > a > span,
+.seaocore_cover_inside_container_tabs.default_temp_tabs .tabs_alt > ul > li > a,
+.seaocore_cover_inside_container_tabs.default_temp_tabs .tabs_alt > ul > li > a > span{
+  color: #fff;
+}
+
+
+/*div.layout_sitecontentcoverphoto_content_cover_photo .seaocore_list_featured_label {
+  background-image: none;
+  font-style: normal;
+  height: auto;
+  left: -30px;
+  letter-spacing: 1px;
+  padding: 2px 40px;
+  text-indent: inherit;
+  top: 27px;
+  transform: rotate(-45deg);
+  width: auto;
+  font-size: 13px;
+  transition: all 0.4s ease-in 0s;
+}*/
+
+/*----------------------------------------RESPONSIVENESS WORK----------------------------------------------*/
+
+/*@media only screen and (min-width: 1199px) {
+  .trans_cover_temp #siteuser_cover_photo #siteusercover_middle_content {
+    width: 76%;
+  }
+  .trans_cover_temp .seaocore_profile_fullwidth_cover_photo + .seaocore_profile_cover_head_section {
+    width: 76%;
+  }
+}*/
+@media only screen and (min-width: 1360px) and (max-width: 1420px) {
+  /* div.sc_cover_template_2 .seaocore_profile_cover_photo img, div.sc_cover_template_3 .seaocore_profile_cover_photo img {
+    top: -90px !important;
+  }*/
+  .sc_cover_template_3_content_details {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 1360px) {
+  /*Collage Album*/
+  .collage_mid_content {
+    left: 20px;
+  }
+  [dir="rtl"] .collage_mid_content {
+    left: auto;
+    right: 20px;
+  }
+  .collage_images_box {
+    left: 5.5%;
+  }
+  [dir="rtl"] .collage_images_box {
+    left: auto;
+    right: 5.5%
+  }
+  .collage_img1 {
+    left: 728px;
+    top: 12px;
+    right: auto;
+  }
+  [dir="rtl"] .collage_img1 {
+    right: 728px;
+    left: auto;
+  }
+  .collage_img1_span {
+    width: 222.798px;
+    height: 224.77px;
+  } 
+  .collage_img2 {
+    left: 634px;
+    top: 123px;
+    right: auto;
+  } 
+  [dir="rtl"] .collage_img2 {
+    right: 634px;
+    left: auto;
+  }
+  .collage_img2_span {
+    width: 254px;
+    height: 249px;
+  } 
+  .collage_img3 {
+    left: 1152px;
+    top: -250px;
+    right: auto;
+  } 
+  [dir="rtl"] .collage_img3 {
+    right: 1152px;
+    left: auto;
+  }
+  .collage_img3_span {
+    width: 314px;
+    height: 318px;
+  }
+  .collage_img4 {
+    left: 803px;
+    top: 109px;
+    right: auto;
+  }
+  [dir="rtl"] .collage_img4 {
+    right: 803px;
+    left: auto;
+  }
+  .collage_img4_span {
+    width: 166px;
+    height: 175px;
+  }
+  .collage_img5 {
+    left: 686px;
+    top: 337px;
+    right: auto;
+  } 
+  [dir="rtl"] .collage_img5 {
+    right: 686px;
+    left: auto;
+  }
+  .collage_img5_span {
+    width: 237px;
+    height: 239px;
+  } 
+  .collage_img6 {
+    left: 766px;
+    top: 196px;
+    right: auto;
+  } 
+  [dir="rtl"] .collage_img6 {
+    right: 766px;
+    left: auto;
+  }
+  .collage_img6_span {
+    width: 262px;
+    height: 259px;
+  }
+  .collage_img7 {
+    left: 648px;
+    top: 316px;
+    right: auto;
+  }
+  [dir="rtl"] .collage_img7 {
+    right: 648px;
+    left: auto;
+  }
+  .collage_img7_span {
+    width: 112px;
+    height: 111px;
+  }
+  .collage_img8 {
+    left: 896px;
+    top: 235px;
+    right: auto;
+  }
+  [dir="rtl"] .collage_img8 {
+    right: 896px;
+    left: auto;
+  }
+  .collage_img8_span {
+    width: 250px;
+    height: 252px;
+  } 
+  .collage_img9 {
+    left: 842px;
+    top: 322px;
+    right: auto;
+  } 
+  [dir="rtl"] .collage_img9 {
+    right: 842px;
+    left: auto;
+  }
+  .collage_img9_span {
+    width: 163px;
+    height: 169px;
+  } 
+  /*Collage Tabs*/
+  .collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt {
+    margin-left: 15px;
+  }
+  [dir="rtl"] .collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt {
+    margin-left: auto;
+    margin-right: 15px;
+    left: auto;
+    right: 0;
+  }
+  /*Content Cover Photo Template 3*/
+  .sc_cover_template_3_content_details {
+    width: 72%;
+  }
+  #siteusercoverphoto_main_options .toolTipElement .tooltiptext {
+    width: 90px;
+    font-size: 12px;
+  }
+ 
+}
+@media only screen and (min-width: 1199px) and (max-width: 1280px) {
+  .collage_img3 {
+    left: 1122px;
+    top: -250px;
+  }
+  .collage_img3_span {
+    width: 284px;
+    height: 288px;
+  }
+  .collage_img8 {
+    left: 869px;
+    top: 265px;
+  }
+  .collage_img8_span {
+    width: 232px;
+    height: 232px;
+  }
+  .collage_image_template .temp_cover_options .edit-button {
+    right: 80px;
+  }
+  .sc_cover_template_3_content_details {
+    width: 71%;
+  }
+  .sc_cover_template_3 #sitecontentcover_middle_content {
+    width: 98%;
+  }
+ .seaocore_profile_cover_inside_tabs  .seaocore_profile_coverinfo_buttons {
+    right: 10px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  /*New all user cover template common css*/
+ /* body .layout_middle > .generic_layout_container.layout_siteusercoverphoto_user_cover_photo.transparent_cover_temp {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .layout_sitecontentcoverphoto_content_cover_photo {
+    margin-left: -20px;
+    margin-right: -20px;
+  }*/
+  /*Default Template*/
+  .seaocore_profile_halfwidth_cover_photo .seaocore_profile_main_photo_wrapper + .seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_buttons {
+    bottom: 30px;
+    right: 10px;
+    top: auto;  
+  }
+  .default_temp_outside .seaocore_profile_cover_head_section_inner { 
+    left: 22%;
+    bottom: 10px;
+    width: 78%;
+  }
+  .default_temp_outside .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner {
+    left: 0;
+    bottom: 0;
+    width: 10%;
+    position: relative;
+    top: -40px;
+  }
+  
+  /*Transparent Template*/
+  .temp_cover_options .edit-button {
+    right: 50px;
+  }
+ 
+
+  /*Transparent outer tabbed tooltip*/
+  .seaocore_profile_main_photo_options .toolTipElement .tooltiptext {
+    right: auto;
+    left: 120%;
+  }
+  .seaocore_profile_main_photo_options .toolTipElement .tooltiptext:after, .seaocore_profile_main_photo_options .toolTipElement .tooltiptext:before,
+  .seaocore_profile_main_photo_options .toolTipElement .toolTiplast:after, .seaocore_profile_main_photo_options .toolTipElement .toolTiplast:before {
+    border-right-color: rgba(0, 0, 0, 0.43);
+    right: 100%;
+    left: auto;
+    border-left-color: rgba(255, 255, 255, 0);
+  }
+  .toolTiplast {
+    right: 120%;
+    left: auto;
+  } 
+  .temp_cover_options .toolTipElement .toolTiplast:after, .toolTipElement .toolTiplast:before {
+    left: auto;
+    border-right-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0.43);
+    right: -12px;
+  }
+  /*Collage Image Template*/
+  .collage_mid_content {
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    top: 45%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 99;
+  }
+  .collage_image_template .collage_mid_content .collage_mid_content_details h2 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .collage_mid_content .collage_profile_photo {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+  }
+  .collage_mid_content .collage_profile_photo span#user_profile_photo {
+    width: 150px;
+    height: 150px;
+  }
+  .collage_mid_content .menu-button-main + .menu-button a,
+  .collage_mid_content .menu-button-main + .menu-button,
+  .collage_image_template .temp_cover_options .menu-button-main + .menu-button,
+  .collage_image_template .temp_cover_options .menu-button-main + .menu-button a,
+  .collage_image_template .temp_cover_options .menu-button-main:hover + .menu-button a {
+    width: 40px;
+    height: 40px;
+  }
+  .collage_mid_content .menu-button-main,
+  .collage_image_template .temp_cover_options .menu-button-main {
+    line-height: 40px;
+     width: 40px;
+    height: 40px;
+  }
+  .collage_mid_content .menu-button-main + .menu-button i,
+  .collage_image_template .temp_cover_options .menu-button-main + .menu-button i,
+  .collage_mid_content .menu-button-main,
+  .collage_image_template .temp_cover_options .menu-button-main {
+    font-size: 18px;
+  }
+  .choose_collase_photo {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  .collage_image_template .seaocore_profile_coverinfo_buttons .profile_button > a {
+    font-size: 12px;
+    padding: 4px 5px;
+    margin-right: 4px;
+  }
+  .collage_image_template .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons {
+    text-align: left;
+    top: 0;
+  }
+  .collage_image_template .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons > div {
+    height: auto;
+  }
+ .collage_mid_content_details .profile_button .trans_profile_coverinfo_buttons_dropdown + ul.seaocore_profile_options_pulldown {
+    right: auto;
+    left: auto;
+  }
+  .collage_image_template ul.seaocore_profile_options_pulldown {
+    width: 160px;
+  }
+  .collage_image_template ul.seaocore_profile_options_pulldown ul li a {
+    font-size: 12px;
+  }
+  .collage_image_template ul.seaocore_profile_options_pulldown ul li a i:before {
+    font-size: 13px;
+  }
+  .collage_mid_content .collage_mid_content_details {
+    display: block;
+    padding-left: 0;
+    padding-top: 10px;
+    width: 100%;
+  }
+  .collage_image_template .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner {
+    height: auto !important;
+  }
+  .collage_image_template .collage_mid_content_details .seaocore_profile_coverinfo_status {
+    margin-bottom: 5px;
+  }
+
+  /*Collage Album*/
+  .collage_images_box {
+    left: 0;
+  }
+  .collage_img1 {
+    left: 647px;
+    top: 39px;
+  }
+  .collage_img1_span {
+    width: 192.765px;
+    height: 194.471px;
+  }  
+  .collage_img2 {
+    left: 519px;
+    top: 145px;
+  }
+  .collage_img2_span {
+    width: 216.647px;
+    height: 212.382px;
+  } 
+  .collage_img3 {
+    left: 1100px;
+    top: -210px;
+  }
+  .collage_img3_span {
+    width: 267.824px;
+    height: 271.235px;
+  }   
+  .collage_img4 {
+    left: 707px;
+    top: 133px;
+  }
+  .collage_img4_span {
+    width: 141.588px;
+    height: 149.265px;
+  } 
+  .collage_img5 {
+    left: 557px;
+    top: 327px;
+  }
+  .collage_img5_span {
+    width: 202.147px;
+    height: 203.853px;
+  }   
+  .collage_img6 {
+    left: 670px;
+    top: 207px;
+  }
+  .collage_img6_span {
+    width: 223.471px;
+    height: 220.912px;
+  } 
+  .collage_img7 {
+    left: 522px;
+    top: 310px;
+  }
+  .collage_img7_span {
+    width: 95.5294px;
+    height: 94.6765px;
+  }   
+  .collage_img8 {
+    left: 803px;
+    top: 266px;
+  }
+  .collage_img8_span {
+    width: 213.235px;
+    height: 214.941px;
+  } 
+  .collage_img9 {
+    left: 710px;
+    top: 389px;
+  }
+  .collage_img9_span {
+    width: 139.029px;
+    height: 144.147px;
+  } 
+  /*Default Template*/
+ .default_temp_inside {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+ .default_temp_inside .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button,
+ .default_temp_inside .seaocore_profile_cover_options .edit-button {
+   right: 10px;   
+ }
+  /*More dropdown in cover photo*/
+  .seaocore_profile_options_pulldown, .seaocore_cover_inside_container_tabs .tab_pulldown_contents_wrapper {left: auto; right: 0}
+
+  .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_options .seaocore_profile_options_pulldown {
+    right: auto; left: 0;
+  }
+  /*Content Cover Photo template 3*/
+  .sc_cover_template_3_middle_content .sc_cover_template_3_profile_photo {
+    width: 230px;
+    height: 280px;
+  }
+  .sc_cover_template_3_content_details {
+    width: 73%;
+  }
+  .sc_cover_template_2_tabs div.tabs_alt,
+  .sc_cover_template_3_tabs div.tabs_alt {
+    z-index: 20;
+  }
+  div.sc_cover_template_2_tabs div.tabs_alt > ul > li a, div.sc_cover_template_2_tabs div.tabs_alt > ul > li a:hover, div.sc_cover_template_2_tabs div.tabs_alt > ul > li.active > a, div.sc_cover_template_2_tabs div.tabs_alt > ul > li.tab_open > a, div.sc_cover_template_3_tabs div.tabs_alt > ul > li a, div.sc_cover_template_3_tabs div.tabs_alt > ul > li a:hover, div.sc_cover_template_3_tabs div.tabs_alt > ul > li.active > a, div.sc_cover_template_3_tabs div.tabs_alt > ul > li.tab_open > a {
+    padding: 14px; 
+  }
+  .sc_cover_template_3 #sitecontentcover_middle_content {
+    width: 98%;
+  }
+  .sc_cover_template_2_btm_row ul {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  /*Collage Album*/
+  .collage_img1 {
+    left: 527px;
+    top: 39px;
+  } 
+  .collage_img2 {
+    left: 439px;
+    top: 145px;
+  }
+  .collage_img3 {
+    left: 950px;
+    top: -210px;
+  } 
+  .collage_img4 {
+    left: 617px;
+    top: 133px;
+  }
+  .collage_img5 {
+    left: 517px;
+    top: 327px;
+  } 
+  .collage_img6 {
+    left: 560px;
+    top: 207px;
+  }
+  .collage_img7 {
+    left: 482px;
+    top: 310px;
+  }
+  .collage_img8 {
+    left: 713px;
+    top: 266px;
+  }
+  .collage_img9 {
+    left: 650px;
+    top: 389px;
+  }
+  .trans_cover_temp .temp_cover_options .edit-button {
+    right: 35px;
+  }
+  /*Content Cover Photo*/
+  .layout_sitecontentcoverphoto_content_cover_photo .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status h2{ padding-bottom: 0;}
+  .sc_cover_adminname{ margin-bottom: 15px !important;}
+} 
+@media only screen and (min-width:1024px) and (max-width:1199px) {
+  .default_temp_outside .seaocore_profile_cover_photo img {
+    height: 100%;
+    min-height: auto;
+  }
+  .default_temp_outside .seaocore_profile_cover_head_section_inner {
+    left: 18%;
+    bottom: 10px;
+    width: 82%;
+  }
+  .default_temp_inside .seaocore_cover_inside_container_tabs div.tabs_alt {
+    margin-left: 0;
+  }
+  /*Content Cover Photo Template 3*/
+  .sc_cover_template_1 .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper {
+    margin-left: 20px !important;
+    width: 100%;
+  }
+  .sc_cover_template_2_tabs.seaocore_cover_inside_container_tabs div.tab_pulldown_contents_wrapper,
+  .sc_cover_template_3_tabs.seaocore_cover_inside_container_tabs div.tab_pulldown_contents_wrapper {
+    right: auto;
+  }
+  
+}
+@media only screen and (min-width: 921px) and (max-width: 1360px) {
+  .sc_cover_template_3_tabs .tab_pulldown_contents_wrapper {
+    right: auto;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .sc_cover_template_2_btm_count_2 ul li {
+    width: 49.7%;
+  }
+	.seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_status h2 { font-size:20px;}
+	.seaocore_profile_coverinfo_buttons > div {margin-bottom: 5px; margin-top: 5px;}
+	/*Full width cover photo*/
+	.seaocore_profile_cover_no_profile_photo div.tabs_alt {width:100%;}
+	html .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status {margin-left: 0px!important;}
+
+/*	div + .seaocore_profile_cover_head_section,*/
+ 
+	div .seaocore_profile_coverinfo_buttons {margin: 0; top: -12px;}
+	div .seaocore_profile_cover_head_section_inner,
+	div.seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_status,
+	div > .seaocore_profile_cover_head_section_inner {margin-left: auto;}
+	div .seaocore_profile_main_photo_wrapper + .seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_status { margin-left: 180px;}
+	/*Fb like button*/
+	div .seaocore_profile_cover_fb_like_button {display:none;}
+	div.seaocore_profile_cover_has_fblike .seaocore_profile_coverinfo_status {bottom:30px;}
+	/*Album Cover photo*/
+	/*div.seaocore_profile_coverinfo_statistics span {font-size: 14px;}*/
+	div .seaocore_profile_coverinfo_statistics,
+	div .seaocore_profile_coverinfo_statistics > div {text-shadow: 0 1px 1px transparent;}
+
+	/*Default template*/
+  .default_temp_inside .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper {
+    width: 100%;
+  }
+  .default_temp_inside .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo {
+    margin-left: 20px;
+  }  
+/*  div div.tabs_alt > ul > li a:hover,
+  div div.tabs_alt > ul > li.active > a,
+  div div.tabs_alt > ul > li.active > a:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+   .tabs_alt > ul{margin-left: 0;}*/
+  div.default_temp_outside.layout_siteusercoverphoto_user_cover_photo {
+    padding-bottom: 0 !important;
+  }
+  .default_temp_outside .seaocore_profile_cover_photo img{
+    min-height: auto;
+    height: 90%;
+  }
+  .default_temp_outside .seaocore_profile_cover_photo img {
+    height: 100%;
+  }
+  .default_temp_outside .seaocore_profile_halfwidth_cover_photo div.seaocore_profile_main_photo { 
+    bottom: -45px;
+  }
+  .default_temp_outside .seaocore_profile_halfwidth_cover_photo .seaocore_profile_cover_head_section_inner { 
+    left: 10px;
+    bottom: 0;
+    width: 73%;
+    position: relative;
+  } 
+  .default_temp_outside .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status {
+    margin-bottom: 0;
+  }
+  .default_temp_outside .seaocore_profile_coverinfo_buttons {
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+  }
+  /*Tranparent Outer tabbed*/  
+ .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper {
+    width: 200px; 
+  }
+  .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner {
+    width: 73%;
+    left: 29%;
+  }
+  .trans_cover_temp .seaocore_profile_coverinfo_buttons .profile_button > a {
+    font-size: 12px;
+    margin-right: 0px;
+  }
+  .transparent_cover_temp .coverphoto_recentlyviewed_members {
+    position: absolute;
+    top: 40%;
+    transform: none;
+  }
+  .trans_cover_temp div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status h2 {
+    font-size: 32px;
+    line-height: 32px;
+  } 
+  /*Content Cover Photo*/
+   #sitecontentcover_middle_content .seaocore_profile_cover_info > div {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  #sitecontentcover_middle_content .seaocore_profile_cover_info > div.sc_cover_desc,
+  #sitecontentcover_middle_content .seaocore_profile_cover_info > div.sc_cover_midcontent_ratings {
+    display: block;
+  }
+  #sitecontent_cover_photo .sc_coverphoto_halfwidth_outside_content .seaocore_profile_coverinfo_buttons .seaocore_profile_coverinfo_statistics,
+  #sitecontent_cover_photo .sc_coverphoto_halfwidth_outside_content .seaocore_profile_coverinfo_buttons .sc_cover_midcontent_btns {
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  #sitecontent_cover_photo .sc_coverphoto_halfwidth_outside_content .seaocore_profile_coverinfo_buttons .seaocore_profile_coverinfo_statistics > div:first-child {
+    margin-left: 0;
+  }
+   #sitecontent_cover_photo .sc_coverphoto_halfwidth_outside_content .seaocore_profile_coverinfo_buttons .sc_cover_midcontent_btns > div {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+ 
+  div.sc_coverphoto_halfwidth_inside_content .seaocore_profile_coverinfo_buttons { top: -90px !important; right: 5px; }
+  /*div.sc_coverphoto_halfwidth_inside_content .seaocore_profile_coverinfo_status { bottom: 40px;}*/
+  
+  /*Content Cover Photo Template 3*/
+  .sc_cover_template_3_middle_content .sc_cover_template_3_profile_photo {
+    width: 200px;
+    height: 250px;
+  }
+  .sc_cover_template_3_content_details {
+    width: 70%;
+  }
+  
+  .sc_cover_template_3_tabs .tab_pulldown_contents_wrapper {
+    right: auto;
+  }  
+  .sc_cover_template_3 .sc_halfwidth_outside_coverphoto_template #setting_button_dropdown > a,
+  .sc_cover_template_1 .sc_halfwidth_outside_coverphoto_template #setting_button_dropdown > a {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  /*Content Cover Photo template 2*/
+  .sc_cover_template_2 #sitecontentcover_middle_content .sc_cover_template_2_top_content .seaocore_profile_cover_info .seao_icon_strip_impo_info {
+    display: none;
+  }
+  div.sc_cover_template_2 div.seaocore_profile_cover_head_section_inner,
+  div.sc_cover_template_1 .seaocore_profile_cover_head_section_inner {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .sc_cover_template_2 .sc_cover_template_2_btm_count_1 ul li {
+    width: 60%;
+  }
+  .seaocore_profile_main_photo {
+    margin-left: 10px;
+  }
+  #sitecontent_cover_photo.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner{ display: block; width: 98%;} 
+  .sc_cover_fullwidth_mid_content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .sc_cover_template_1 .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper {
+    width: 100%;  
+  }
+}
+@media only screen and (min-width: 921px) and (max-width: 1023px) {
+  .collage_img1 {
+    left: 617px;
+    top: 53px;
+  }
+  .collage_img2{
+    left: 737px;
+    top: 51px;
+  }
+  .collage_img5 {
+    left: 617px;
+    top: 161px;
+  }
+  .collage_img6{
+    left: 685px;
+    top: 123px;
+  }
+  .collage_img8 {
+    left: 727px;
+    top: 146px;
+    animation: slide-tl 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-tl 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -moz-animation: slide-tl 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  /*Content Cover Photo Template 3*/
+  .sc_cover_template_1 .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper {
+    margin-left: 20px !important;
+    width: 100%;
+  }
+  .sc_cover_template_1 .sc_halfwidth_outside_coverphoto_template .seaocore_profile_coverinfo_buttons {
+    right: 10px;
+    position: absolute;
+  }
+  .generic_layout_container.layout_core_container_tabs.transparent_cover_tabs > div.tabs_alt {
+    position: absolute !important;
+    margin: -76px auto 0 !important;
+    width: 95%;
+  }
+  .collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt li.more_tab > .tab_pulldown_contents_wrapper ul > li {
+    border-right: 0;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 920px) {
+  .collage_img1 {
+    left: 487px;
+    top: 53px;
+  }
+  .collage_img2{
+    left: 607px;
+    top: 51px;
+  }
+  .collage_img5 {
+    left: 487px;
+    top: 161px;
+  }
+  .collage_img6{
+    left: 555px;
+    top: 123px;
+  }
+  .collage_img8 {
+    left: 587px;
+    top: 146px;
+    animation: slide-tl 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-tl 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -moz-animation: slide-tl 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner {
+    height: 100%;
+  }
+  .generic_layout_container.layout_core_container_tabs.transparent_cover_tabs > div.tabs_alt {
+    position: absolute !important;
+    margin: -87px auto 0 !important;
+    width: 95%;
+  }
+  
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .trans_cover_temp .temp_cover_options .edit-button {
+    right: 30px;
+  }
+  div.transparent_cover_tabs.layout_core_container_tabs div.tabs_alt li.more_tab > .tab_pulldown_contents_wrapper ul > li:hover {
+    background: rgba(0, 0, 0, 0.15) !important;
+  }
+  .collage_image_template div.seaocore_profile_fullwidth_cover_photo, .collage_image_template div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_photo {
+    height: 400px !important;
+  }  
+  /*Collage Template*/
+  .collage_image_template div#siteuser_cover_photo #siteusercover_middle_content {
+    height: 400px;
+    margin-top: -400px;
+  }
+  .collage_image_template div.seaocore_profile_fullwidth_cover_photo,
+  .collage_image_template div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_photo {
+    height: 400px !important;
+  }
+  .collage_mid_content .collage_mid_content_details .seaocore_profile_coverinfo_buttons > div {
+    margin-left: 0;
+  }
+  .collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt li.more_tab > a, .collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt li.more_tab:hover > a {
+    display: block;
+    margin-top: -2px;
+  }
+  
+  .collage_image_temp_tabs .tabs_alt > ul > li.tab_open > a {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+  }
+  .collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tab_pulldown_contents_wrapper {
+    position: absolute;
+    margin-top: 37px;
+    display: none;
+    box-shadow: inherit;
+    border: inherit;
+    background: #E5E5E5;
+  }
+  /*Collage Album*/
+  .collage_images_box {
+    top: 10px;
+    left: 0;
+  }
+  .collage_images_box .collage_img3,
+  .collage_images_box .collage_img4,
+  .collage_images_box .collage_img7,
+  .collage_images_box .collage_img9 {
+    display: none;
+  }
+  .collage_img1_span {
+    width: 141.337px;
+    height: 142.588px;
+  }
+  .collage_img2_span {
+    width: 141.337px;
+    height: 142.588px;
+  }
+  .collage_img5_span {
+    width: 141.337px;
+    height: 142.588px;
+  }
+  .collage_img6_span {
+    width: 113.851px;
+    height: 113.851px;
+    animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+  }
+  .collage_img8 {
+    animation: slide-tl 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-tl 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -moz-animation: slide-tl 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  .collage_img8_span {
+    width: 141.337px;
+    height: 142.588px;
+  }
+  /*Content Cover Photo Plugin*/
+  .sc_halfwidth_inside_coverphoto_template .seaocore_profile_main_photo .item_photo {
+    width: 140px;
+    max-height: 140px;
+  }
+  .sc_halfwidth_inside_coverphoto_template .seaocore_profile_main_photo_wrapper #user_profile_photo {
+    width: 140px;
+    height: 140px;
+  }
+  /*Content Cover Photo pLugin template 2*/
+  .sc_cover_template_2 .sc_cover_template_2_btm_count_3 ul li {
+    width: 32%;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .sc_cover_template_1 .sc_halfwidth_outside_coverphoto_template .seaocore_profile_coverinfo_buttons {
+    margin-right: 30px;
+    float: left;
+  }
+  .sc_cover_template_1 .sc_halfwidth_outside_coverphoto_template .seaocore_profile_main_photo {
+    bottom: 0px;
+  }
+  .sc_cover_template_1 .sc_halfwidth_outside_coverphoto_template .seaocore_profile_cover_head_section_inner {
+    margin-left: 0px !important;
+    bottom: 0;
+  } 
+  .sc_cover_template_2_tabs.seaocore_cover_inside_container_tabs .tabs_alt > ul,
+  .sc_cover_template_3_tabs.seaocore_cover_inside_container_tabs .tabs_alt > ul {
+    overflow-y: hidden;
+  }
+/*  .sc_cover_template_2  + .seaocore_profile_cover_head_section {
+    top: 0
+  }*/
+  .sc_cover_template_2_tabs.seaocore_cover_inside_container_tabs div.tabs_alt li.more_tab,
+  .sc_cover_template_3_tabs.seaocore_cover_inside_container_tabs div.tabs_alt li.more_tab {
+    vertical-align: top; 
+    padding: 5px 0;
+  }
+  .sc_cover_template_2_tabs.seaocore_cover_inside_container_tabs div.tab_pulldown_contents_wrapper,
+  .sc_cover_template_3_tabs.seaocore_cover_inside_container_tabs div.tab_pulldown_contents_wrapper {
+    position: absolute;
+    margin-top: 45px;
+    display: none;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.32);
+    border: inherit;
+    background: #fff;
+    right: auto;
+  }
+  .sc_cover_template_2_tabs.seaocore_cover_inside_container_tabs div.tabs_alt li.more_tab > a,
+  .sc_cover_template_2_tabs.seaocore_cover_inside_container_tabs div.tabs_alt li.more_tab:hover > a,
+  .sc_cover_template_3_tabs.seaocore_cover_inside_container_tabs div.tabs_alt li.more_tab > a,
+  .sc_cover_template_3_tabs.seaocore_cover_inside_container_tabs div.tabs_alt li.more_tab:hover > a {
+    display: inherit;
+    padding-top: 8px;
+  }
+  div.sc_cover_template_2_tabs div.tabs_alt > ul > li a,  
+  div.sc_cover_template_3_tabs div.tabs_alt > ul > li a {
+    color: #fff;
+  }
+/*  .sc_cover_template_2.layout_sitecontentcoverphoto_content_cover_photo  + .seaocore_profile_cover_head_section,
+  .sc_cover_template_3.layout_sitecontentcoverphoto_content_cover_photo  + .seaocore_profile_cover_head_section {
+    display: block !important;
+  }*/
+/*  .sc_cover_template_3.layout_sitecontentcoverphoto_content_cover_photo  + .seaocore_profile_cover_head_section { 
+    top: auto;
+  }*/
+  .sc_cover_template_3 .seaocore_profile_coverinfo_status {
+    margin-bottom: 15px;
+  }
+  /*User cover Photo*/
+/*  .default_temp_inside .seaocore_profile_fullwidth_cover_photo + .seaocore_profile_cover_head_section {
+    display: none;
+  }*/
+  .seaocore_cover_inside_container_tabs.sc_cover_template_1_tabs div.tabs_alt li.more_tab > .tab_pulldown_contents_wrapper,
+  .seaocore_cover_inside_container_tabs.default_temp_tabs div.tabs_alt li.more_tab > .tab_pulldown_contents_wrapper {
+    margin-top: 0;
+  }
+   .seaocore_cover_inside_container_tabs.sc_cover_template_1_tabs div.tabs_alt li.more_tab > .tab_pulldown_contents_wrapper,
+  .seaocore_cover_inside_container_tabs.default_temp_tabs div.tabs_alt li.more_tab > .tab_pulldown_contents_wrapper ul > li {
+    display: inline-block;
+    min-width: auto;
+    border-right: 0;
+  }
+  
+  /*Transparent tabs*/
+  .transparent_cover_tabs .tabs_alt > ul > li.more_tab:hover {
+    background: transparent;
+  }
+  .transparent_cover_tabs .tabs_alt > ul > li.tab_open .tab_pulldown_contents_wrapper,
+  .transparent_cover_tabs .tabs_alt > ul > li .tab_pulldown_contents_wrapper {
+    margin-top: 0;
+    margin-left: 0;
+    border-radius: 0;
+  }
+  .transparent_cover_tabs .tabs_alt > ul > li .tab_pulldown_contents_wrapper .tab_pulldown_contents {
+    background: transparent;
+  }
+  .transparent_cover_tabs.layout_core_container_tabs div.tabs_alt li.more_tab > .tab_pulldown_contents_wrapper ul > li {
+    display: inline-block;
+    border-right: 1px solid rgba(255, 255, 255, 0.45);
+    box-shadow: 1px 0 1px -1px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 5px 12px 4px 12px;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 45px;
+    height: 45px;
+  }
+  
+}
+@media only screen and (min-width: 768px) {
+  .trans_cover_temp .seaocore_profile_main_photo .item_photo,
+  .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo .item_photo {
+    width: 160px;
+    height: 160px;
+    min-height: 160px;
+  }
+  .trans_cover_temp .seaocore_profile_main_photo_wrapper #user_profile_photo {
+    height: 160px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner {
+        top:70px !important;
+    }
+  .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo {
+    margin: 0 auto !important;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    width: 110px;
+    top: 50px;
+  }
+  .seaocore_profile_main_photo .item_photo {
+      height:100px;
+    width: 100%;
+  }
+  .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo .item_photo {
+    width: 100%;
+    max-height: 100px;
+  }
+  .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 135px;
+  }
+  .sc_cover_fullwidth_mid_content {
+    transform: translateY(-50%);
+  }
+	.seaocore_profile_main_photo_wrapper{margin-left:0;margin-bottom:50px;}
+	/*full width Cover Photo*/
+	html div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status *, 
+	div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status a:link {font-size: 15px;}
+	html div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status {margin-bottom:0; margin-left:0;}
+	html div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status h2{font-size:20px; line-height: 25px;}
+  div .seaocore_profile_coverinfo_status h2, div.seaocore_profile_coverinfo_status h2 {font-size: 16px;}
+	html div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .siteevent_listings_stats * {font-size: 18px !important;}
+	html div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .siteevent_listings_stats, 
+	html div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > h2 + .seao_listings_stats {margin-bottom:15px;}
+	.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons {float:none; width:auto;}	
+	/*div#siteuser_cover_photo #siteusercover_middle_content{height: 250px; margin-top: -250px;}*/
+	div#sitecontent_cover_photo #sitecontentcover_middle_content{min-height: 310px;}
+	.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo .item_photo table td img {min-height: 75px;}
+	/*Cover photo with inside tabs*/
+	.seaocore_profile_cover_photo_wrapper,
+	.seaocore_profile_fullwidth_cover_photo .cover_photo_wap, 
+	.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner, 
+	div.seaocore_profile_cover_photo, .seaocore_profile_cover_photo_wrapper {min-height: 300px !important; height: 100%;}
+  #sitecontent_cover_photo.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner{min-height: 310px !important; display: block; width: 98%;}
+  #sitecontent_cover_photo .seaocore_profile_cover_photo,
+  .layout_sitecontentcoverphoto_content_cover_photo .seaocore_profile_cover_photo_wrapper {min-height: 350px !important;}
+
+  .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner { vertical-align: middle; top: 50px; }
+	div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_gradient {bottom: 0px;}
+	/*div.seaocore_profile_main_photo .item_photo, 
+	.seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo .item_photo {height: 75px; min-height: 75px; width: 75px;}*/
+	div.seaocore_profile_main_photo .item_photo table td img {min-height: 75px;}
+	div.seaocore_profile_main_photo_wrapper {margin: 0; width: 90px;}
+/*	div.seaocore_profile_cover_head_section { padding: 1%;}*/
+	div .seaocore_profile_cover_head_section_inner,
+	div.seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_status,
+	div > .seaocore_profile_cover_head_section_inner {margin-left: auto;}
+	div .seaocore_profile_coverinfo_status {max-width: 100%; margin-left: 90px;}
+	div .seaocore_profile_coverinfo_buttons {margin: 0; top: -7px;}
+  
+	.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons {bottom: auto;top: 130px;}
+  .sc_cover_template_2_top_content .seaocore_profile_coverinfo_buttons{top: auto;}
+	/*div .seaocore_profile_main_photo_wrapper + .seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_status { margin-left: 85px;}*/
+	div.seaocore_profile_cover_head_section_inner {box-sizing: border-box; margin-left: auto; position: absolute; width: 98%;}
+  /*.seaocore_profile_main_photo_wrapper #user_profile_photo {height:75px; width:100%;}*/
+  
+  /*Transparent Outer Tabbed*/
+  .temp_cover_options .edit-button {
+    top: 0;
+    right: 25px;
+  }
+  
+  /*Collage image Template*/
+  .collage_image_template .collage_mid_content .collage_mid_content_details h2 {
+    font-size: 25px;
+  }
+  .collage_img1 {
+    left: 427px;
+    top: 33px;
+  }
+  .collage_img2{
+    left: 557px;
+    top: 33px;
+  }
+  .collage_img5 {
+    left: 427px;
+    top: 141px;
+  }
+  .collage_img6{
+    left: 501px;
+    top: 83px;
+  }
+  .collage_img8 {
+    left: 537px;
+    top: 116px;
+  }
+  /*Template 3 Content Cover Plugin*/
+  .sc_cover_template_3 div#sitecontent_cover_photo #sitecontentcover_middle_content{min-height: 350px;}
+
+  .sc_cover_template_2 div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status {
+    margin-bottom: 8px;
+  }
+  
+}
+@media only screen and (max-width: 767px) {
+.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner {
+  top: 0 !important;
+}
+.seaocore_profile_coverinfo_buttons {
+  float:none;
+}
+
+  /*.sc_cover_template_2 #sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .sc_cover_midcontent_btns{ display: flex; justify-content: center; }*/
+  
+  .sc_cover_template_2 #sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .sc_cover_midcontent_btns> div{ margin: 5px; }
+
+.sc_cover_template_3 .seaocore_profile_coverinfo_buttons {
+  position: relative;
+}
+  .sc_coverphoto_halfwidth_inside_content .seaocore_profile_cover_info {
+    display: none;
+  }
+  .seaocore_profile_coverinfo_buttons .siteevent_share_links.dropdown-menu, .sitevideo_view_links .siteevent_share_links.dropdown-menu {
+      right: auto;
+  }
+  .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options {
+    z-index: 100;
+  }
+  /*Default Template*/
+  .default_temp_inside .seaocore_profile_cover_options .edit-button {
+    top: 10px;
+  }
+  .default_temp_outside .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner {
+    padding-bottom: 30px;
+    vertical-align: middle;
+  }
+  .default_temp_outside .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_buttons {
+    float: none;
+    margin-right: 0;
+  }
+  div.layout_core_container_tabs div.tabs_alt {
+    overflow: hidden;
+  }
+/*  div.layout_core_container_tabs .tabs_alt > ul {
+    width: 100%;
+  }*/
+  .default_temp_tabs div.tabs_alt {
+    width: 100%;
+  }
+  .default_temp_tabs div.tabs_alt > ul {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-bottom: 0px;
+  }
+  .default_temp_tabs.layout_core_container_tabs div.tabs_alt #main_tabs li {
+    border-bottom: 0;
+  }
+    .seaocore_cover_inside_container_tabs.sc_cover_template_1_tabs div.tabs_alt #main_tabs li.more_tab .tab_pulldown_contents_wrapper ul li,
+  .seaocore_cover_inside_container_tabs.default_temp_tabs div.tabs_alt #main_tabs li.more_tab .tab_pulldown_contents_wrapper ul li  {
+    border-bottom: 1px solid #d8dbe2;
+    border-right: 0;
+  }
+  .seaocore_profile_halfwidth_cover_photo .seaocore_profile_main_photo_wrapper + .seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_status {
+    bottom: 150px;
+    left: 30px;  
+  }
+  .seaocore_profile_halfwidth_cover_photo .seaocore_profile_main_photo {
+    bottom: 120px; 
+    left: 20px;
+  }
+  .seaocore_profile_halfwidth_cover_photo .seaocore_profile_main_photo_wrapper .seaocore_profile_main_photo_options {
+    position: relative;
+    left: 20px;
+    top: -110px;
+  }
+  .seaocore_profile_halfwidth_cover_photo .seaocore_profile_main_photo_options .seaocore_profile_options_pulldown {
+    right: auto;
+    left: 0;
+  }
+  .seaocore_profile_halfwidth_cover_photo .seaocore_profile_main_photo_wrapper + .seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_buttons {
+    bottom: 5px;
+  }
+  /*Default Outside Template*/
+  .default_temp_outside .seaocore_profile_halfwidth_cover_photo div.seaocore_profile_main_photo{
+    left: 15px;
+    bottom: -50px;
+  }
+  .default_temp_outside .seaocore_profile_halfwidth_cover_photo .seaocore_profile_main_photo_wrapper #user_profile_photo {
+    height: 100%;
+  }
+  .default_temp_outside .seaocore_profile_cover_head_section_inner {
+    left: 2%;
+    bottom: 0;
+    width: 80%;
+    position: relative;
+  }
+  .default_temp_outside .seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_status {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+ 
+ .default_temp_outside .seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_buttons {
+    float: left;
+  }
+  .default_temp_outside .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {
+    right: auto;
+    left: 10px;
+  }
+  .default_temp_outside .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options ul.seaocore_profile_options_pulldown {
+    right: auto;
+    left: 0;
+  }
+  .default_temp_outside .seaocore_profile_cover_options .edit-button {
+    top: 10px;
+    right: 10px;
+  }
+  .default_temp_outside .seaocore_profile_cover_photo img {
+    height: auto;
+  }
+  .default_temp_outside .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_photo img {
+    height: 100%;
+  }
+  .default_temp_outside .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons > div {
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+  .default_temp_outside .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo {
+    bottom: 5px;
+  }
+/*  .default_temp_inside  + .seaocore_profile_cover_head_section {
+    display: none;
+  }*/
+   div.default_temp_outside .seaocore_profile_halfwidth_cover_photo .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {
+    top: -40px;
+  }
+ /*Transparent Outer tabbed layout*/
+  .trans_cover_temp #siteuser_cover_photo #siteusercover_middle_content {
+    height: 350px;
+    margin-top: -350px;
+    padding-bottom: 0;
+  }
+  .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper {
+    width: auto; 
+  }
+  .trans_cover_temp .seaocore_profile_main_photo .item_photo,
+  .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo .item_photo {
+    width: 100px;
+    height: 100px;
+    min-height: 100px;
+  }
+  .trans_cover_temp .seaocore_profile_main_photo_wrapper #user_profile_photo {
+    height: 100px;
+    width: 100%;
+  }
+  .trans_cover_temp #siteuser_cover_photo #siteusercover_middle_content:before {
+    left: 45%;  
+  }
+  .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner {
+    width: 100%;
+    float: none;
+    padding-top: 7em;
+    left: 0;
+    height: auto !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  [dir="rtl"] .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner {
+    float: none;
+    right: 0;
+    left: 0
+  }
+  .trans_cover_temp .seaocore_profile_cover_photo_wrapper {
+    min-height: 350px !important;
+  } 
+  .trans_cover_temp .seaocore_profile_main_photo {
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+  }
+  .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status > div > h2,
+  .trans_cover_temp .seaocore_profile_coverinfo_buttons {
+    text-align: center;
+  }
+  .trans_cover_temp div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status h2 {
+    line-height: normal;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+/*  .trans_cover_temp .seaocore_profile_fullwidth_cover_photo + .seaocore_profile_cover_head_section {
+    width: 95%;
+  }*/
+  .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options {
+    top: 0; 
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {
+    top: 0 !important;
+    left: 0;
+    right: 0;
+  }
+  .trans_cover_temp .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .menu-button {
+    left: -40px;
+    right: 0;
+    margin: auto;
+    top: 20px;
+  }
+  [dir="rtl"] .trans_cover_temp .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .menu-button {
+    left: 0;
+    right: -40px; 
+  }
+  html .trans_cover_temp .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status * {
+    text-align: center;
+  }  
+  /*Transparent outer tabbed*/
+  div.transparent_cover_tabs .tabs_alt > ul > li {
+    height: auto;
+    line-height: normal;
+  }
+/*  .transparent_cover_temp .trans_cover_temp .seaocore_profile_fullwidth_cover_photo + .seaocore_profile_cover_head_section {
+    visibility: hidden;
+  }*/
+  .transparent_cover_tabs .tabs_alt>ul {
+    padding: 2px;
+  }
+  .transparent_cover_tabs .tabs_alt > #main_tabs > li > a {
+    font-weight: bold;
+  }
+  .transparent_cover_tabs .tabs_alt > ul > li {
+    line-height: normal;
+    height: auto;
+  }
+  .transparent_cover_tabs .tabs_alt > ul > li:hover:before {
+    display: none;
+  }
+  .transparent_cover_tabs .tabs_alt > ul > li.tab_open .tab_pulldown_contents_wrapper,
+  .transparent_cover_tabs .tabs_alt > ul > li .tab_pulldown_contents_wrapper {
+    margin-top: 0;
+    margin-left: 0;
+    border-radius: 0;
+  }
+  .transparent_cover_tabs .tabs_alt > ul > li .tab_pulldown_contents_wrapper ul li {
+    border-bottom-width: 1px;
+    text-transform: uppercase;
+  }
+  /*Collage Template*/
+  .collage_image_template div.seaocore_profile_fullwidth_cover_photo, .collage_image_template div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_photo {
+    height: 300px !important;
+  } 
+  .collage_image_template div#siteuser_cover_photo #siteusercover_middle_content {
+    height: 300px;
+    margin-top: -300px;
+  } 
+  .collage_mid_content .collage_profile_photo .seaocore_profile_main_photo_options .edit-button .menu-button {
+    top: 10px;
+    right: 0;
+  }
+  .collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt > ul > li {
+    display: block;
+  }
+  .collage_mid_content {
+    top: 0;
+    transform: none;
+  }
+  .collage_image_template .temp_cover_options .edit-button {
+    top: 5px;
+    right: 25px;
+  }
+  .collage_mid_content .collage_profile_photo {
+    display: inline-block;
+    vertical-align: top;
+    width: 95px;
+	white-space: nowrap;
+  }
+  .collage_mid_content .collage_profile_photo span#user_profile_photo {
+    width: 80px;
+    height: 80px;
+  }
+  .collage_image_template .seaocore_profile_coverinfo_buttons .profile_button > a {
+    font-size: 10px;
+  }
+  .choose_collage_photo > a {
+    font-size: 11px;
+    line-height: normal;
+  }
+  .collage_mid_content .menu-button-main + .menu-button a,
+  .collage_mid_content .menu-button-main + .menu-button,
+  .collage_image_template .temp_cover_options .menu-button-main + .menu-button,
+  .collage_image_template .temp_cover_options .menu-button-main + .menu-button a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .collage_mid_content div.menu-button i,
+  .collage_image_template .temp_cover_options .menu-button i {
+    font-size: 15px;
+  }
+  .collage_mid_content .menu-button-main + .menu-button:hover a:nth-child(2) {
+    right: 30px;
+    bottom: -50px;
+  }
+  .collage_mid_content .menu-button-main + .menu-button:hover a:nth-child(3) {
+    right: 60px;
+    bottom: -7px;
+  }
+  .collage_mid_content .menu-button-main + .menu-button:hover a:nth-child(4) {
+    right: 55px;
+    bottom: 45px;
+  }
+  .collage_mid_content .menu-button-main + .menu-button:hover a:nth-child(5) {
+    right: 0px;
+    bottom: 60px;
+  }
+  .collage_image_template .menu-button-main + .menu-button a {
+    bottom: 0;
+    right: 0;
+  }
+  .collage_image_template .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(2) {
+    right: 50px;
+  }
+  .collage_image_template .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(3) {
+    right: 100px;
+  }
+  .collage_image_template .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(4) {
+    right: 150px;
+  }
+  .collage_image_template .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(5) {
+    right: 200px;
+  }
+  .collage_image_template .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(6) {
+    right: 250px;
+  }  
+  .collage_image_template .seaocore_profile_coverinfo_buttons .seaocore_like_button.profile_button > a i {
+    margin-right: 0;
+    margin-top: 0;
+  }
+  /* div.collage_image_template .seaocore_profile_coverinfo_buttons .profile_button > a, .sc_cover_template_3 .seaocore_button > a,  .seaocore_profile_coverinfo_buttons > div .layout_seaocore_like_button a,  .seaocore_profile_coverinfo_buttons .layout_seaocore_seaocore_follow a {
+    padding: 4px !important;
+  }*/
+  .seaocore_profile_coverinfo_buttons > .profile_button > a.trans_profile_coverinfo_buttons_dropdown::after, .seaocore_profile_coverinfo_buttons .seaocore_button > a.default_profile_coverinfo_buttons_dropdown::after {
+    padding: 2px 0 2px 8px !important;
+  }
+ /* div.collage_image_template .seaocore_profile_coverinfo_buttons .profile_button.seaocore_like_button > a {
+    padding: 5px !important;
+  } */
+  /*Collage template Popup*/
+  #global_page_siteusercoverphoto-profile-get-featured-photos #global_content_simple {
+    display: block;
+  }
+  .collage_popup {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .collage_popup,
+  .collage_popup .seaocore_popup_content,
+  .collage_popup .seaocore_popup_content > div.seaocore_popup_content_inner {
+    width: 100%;
+  }
+  /*.trans_cover_temp .seaocore_profile_coverinfo_buttons .seaocore_like_button.profile_button > a {
+    margin-top: -3px;
+    padding: 4px 12px !important;
+  }*/
+  /*Collage Album*/
+  .collage_images_box {
+    top: 10px;
+    left: 0;
+  }
+  .collage_images_box .collage_img1,
+  .collage_images_box .collage_img4,
+  .collage_images_box .collage_img5,
+  .collage_images_box .collage_img7,
+  .collage_images_box .collage_img8,
+  .collage_images_box .collage_img9 {
+    display: none;
+  }
+  .collage_img2{
+    left: auto;
+    right: 25%;
+    top: 40px;
+  }
+  .collage_img2_span {
+    width: 130px;
+    height: 130px;
+  }
+  .collage_img3{
+    left: auto;
+    right: -35%;
+    top: -255px;
+    animation: slide-bl 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-bl 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  .collage_img3_span {
+    width: 130px;
+    height: 130px;
+  }
+  .collage_img6{
+    left: auto;
+    top: 95px;
+    right: 19%;
+  }
+  .collage_img6_span {
+    -webkit-animation-delay: 2.05s;
+    -moz-animation-delay: 2.05s;
+    animation-delay: 2.05s;
+    width: 130px;
+    height: 130px;
+  }
+  /*Collage Tabs*/
+  div.collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt {
+    left: auto;
+    margin-top: 0;
+    margin-left: 0;
+    position: relative;
+  }
+  .collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt > ul > li.active > a,
+  .collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt > ul > li > a:hover,
+  .collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt > ul > li.active > a:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+  .collage_image_temp_tabs.seaocore_cover_inside_container_tabs div.tabs_alt > ul > li > a {
+    font-weight: bold;
+    text-align: left;
+    margin-right: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 7px 9px;
+  }
+  .menu-button-main {
+    display: none;
+  }
+  .trans_cover_temp .temp_cover_options .edit-button {
+    right: 25px;
+    top: 25px;
+  }
+  /*Content Cover Photo Plugin*/
+  #sitecontentcover_middle_content .seaocore_profile_coverinfo_statistics,
+  #sitecontentcover_middle_content .seaocore_profile_coverinfo_buttons > div,
+  #sitecontentcover_middle_content .seaocore_profile_coverinfo_buttons > div > span:before {
+    font-size: 12px;
+  }
+  #sitecontentcover_middle_content .seaocore_profile_cover_info > div * {
+    font-size: 13px;
+  }
+  #sitecontent_cover_photo div.sc_cover_desc {
+    display: none;
+  }
+  .sc_cover_template_2 .sc_cover_template_2_top_content .seaocore_profile_cover_info {
+    display: none;
+  }
+  /*Content Cover Photo Template 2*/
+  .sc_cover_template_2_user_photo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }  
+  /*Content Cover photo All template tabs*/
+  .sc_cover_template_2_tabs.seaocore_cover_inside_container_tabs div.tabs_alt,
+  .sc_cover_template_3_tabs.seaocore_cover_inside_container_tabs div.tabs_alt {
+    margin: 10px 0; position: relative;
+  }  
+  div.sc_cover_template_2_tabs div.tabs_alt > ul > li a, div.sc_cover_template_2_tabs div.tabs_alt > ul > li a:hover, div.sc_cover_template_2_tabs div.tabs_alt > ul > li.active > a, div.sc_cover_template_2_tabs div.tabs_alt > ul > li.tab_open > a, div.sc_cover_template_3_tabs div.tabs_alt > ul > li a, div.sc_cover_template_3_tabs div.tabs_alt > ul > li a:hover, div.sc_cover_template_3_tabs div.tabs_alt > ul > li.active > a, div.sc_cover_template_3_tabs div.tabs_alt > ul > li.tab_open > a {
+    padding: 5px; 
+  }
+
+  .sc_halfwidth_outside_coverphoto_template .seaocore_profile_main_photo_wrapper,
+  div.sc_coverphoto_halfwidth_outside_content {
+    margin-left: 10px;
+    position: relative;
+  }
+  .sc_coverphoto_halfwidth_outside_content .seaocore_profile_cover_info > div {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  #sitecontent_cover_photo .sc_coverphoto_halfwidth_outside_content .seaocore_profile_coverinfo_buttons .seaocore_profile_coverinfo_statistics,
+  #sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .sc_cover_midcontent_btns {
+    font-size: 12px;
+  }
+  #sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .sc_cover_midcontent_btns > div {
+    margin-left: 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  #sitecontent_cover_photo .sc_coverphoto_halfwidth_inside_content .seaocore_profile_coverinfo_buttons .sc_cover_midcontent_btns > div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  div.sc_cover_template_1 .sc_coverphoto_halfwidth_inside_content.seaocore_profile_cover_head_section_inner .seaocore_button#setting_button_dropdown > a {
+    padding-top: 3px;
+    padding-bottom: 2px;
+  }
+  #sitecontent_cover_photo .sc_cover_midcontent_btns div span:before {
+    font-size: 12px;
+  }
+  #sitecontent_cover_photo .sc_coverphoto_halfwidth_outside_content .sc_cover_midcontent_btns .seaocore_button > a {
+    padding: 5px !important;
+  }
+  #sitecontent_cover_photo .sc_coverphoto_halfwidth_outside_content #setting_button_dropdown > a {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+  }  
+
+/*  #sitecontentcover_middle_content #others_button_dropdown > a {
+    padding-top: 2px !important;
+    padding-bottom: 3px !important;
+  }*/
+  .sc_halfwidth_outside_coverphoto_template .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options.seaocore_profile_main_photo_options .edit-button {
+    right: auto;
+    left: 0; 
+  }
+  .sc_halfwidth_coverphoto .seaocore_profile_coverinfo_buttons .seaocore_profile_coverinfo_statistics {
+    margin-bottom: 0;
+  }  
+  /*.sc_halfwidth_coverphoto .seaocore_profile_coverinfo_buttons {
+    width: 100%;
+  }*/
+  /*Template 3 Content Cover Photo Plugin*/
+  
+/*  .sc_cover_template_3  + .seaocore_profile_cover_head_section {
+    display: none;
+  } */
+  .sc_cover_template_3 div.seaocore_profile_coverinfo_status,
+  .sc_cover_template_2 div.seaocore_profile_coverinfo_status {
+    margin-bottom: 8px !important;
+    margin-left: 0;
+  }
+  .sc_cover_template_3 .sc_halfwidth_inside_coverphoto_template  .seaocore_profile_coverinfo_buttons,
+  .sc_cover_template_2 .sc_halfwidth_inside_coverphoto_template  .seaocore_profile_coverinfo_buttons {
+    bottom: 10px;
+  }
+  div.sc_cover_adminname {
+    margin-bottom: 5px !important;
+  }
+  .sc_cover_template_3_content_details {
+    width: 64%;
+  }
+  .sc_cover_template_3 .seaocore_profile_cover_info {
+    max-width: 350px;
+  }
+  .sc_cover_template_3 .sc_halfwidth_outside_coverphoto_template #sitecontent_cover_photo .seaocore_profile_cover_photo, 
+  .sc_cover_template_3 .sc_halfwidth_outside_coverphoto_template .seaocore_profile_cover_photo_wrapper {
+    height: 350px !important;
+  }
+  html .sc_cover_template_3 .seaocore_profile_cover_photo_wrapper .seaocore_profile_coverinfo_status * {
+    font-size: 13px;
+  }
+  html .sc_cover_template_3 .seaocore_profile_cover_photo_wrapper .seaocore_profile_coverinfo_status h2 {font-size: 20px;}
+  .sc_cover_template_3_tabs .tab_pulldown_contents_wrapper {right: 0;}
+  .sc_cover_template_3 .sc_cover_template_3_middle_content {left: 0; right: 0;}
+  /*.sc_cover_template_3 .sc_halfwidth_outside_coverphoto_template .seaocore_profile_cover_photo img {
+    top: 0 !important;
+  }*/
+  
+  /*Content Cover Photo Template 2 and 3 menu options*/
+  .sc_cover_template_2 .menu-button,
+  .sc_cover_template_3 .menu-button,
+  .sc_cover_template_2 .menu-button a,
+  .sc_cover_template_3 .menu-button a,
+  .sc_cover_template_2 .menu-button-main,
+  .sc_cover_template_3 .menu-button-main {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .sc_cover_template_2 .menu-button-main + .menu-button:hover a,
+  .sc_cover_template_2 .menu-button-main:hover + .menu-button a,
+  .sc_cover_template_3 .menu-button-main + .menu-button:hover a,
+  .sc_cover_template_3 .menu-button-main:hover + .menu-button a {
+    width: 40px;
+    height: 40px;
+  }
+  .sc_cover_template_2 .menu-button i,
+  .sc_cover_template_2 .menu-button-main i,
+  .sc_cover_template_3 .menu-button i,
+  .sc_cover_template_3 .menu-button-main i {
+    font-size: 22px;
+  }
+  .sc_cover_template_2 .temp_cover_options .edit-button,
+  .sc_cover_template_3 .temp_cover_options .edit-button {
+    top: 10px;
+  }
+  .sc_cover_template_3 .menu-button-main + .menu-button a,
+  .sc_cover_template_2 .menu-button-main + .menu-button a {
+    bottom: 0;
+  }
+  .sc_cover_template_3 .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(2),
+  .sc_cover_template_2 .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(2) {
+    right: 50px;
+  }
+  .sc_cover_template_3 .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(3),
+  .sc_cover_template_2 .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(3) {
+    right: 100px;
+  }
+  .sc_cover_template_3 .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(4),
+  .sc_cover_template_2 .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(4) {
+    right: 150px;
+  }
+  .sc_cover_template_3 .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(5),
+  .sc_cover_template_2 .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(5) {
+    right: 200px;
+  }
+  .sc_cover_template_3 .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(6),
+  .sc_cover_template_2 .temp_cover_options .menu-button-main + .menu-button:hover a:nth-child(6) {
+    right: 250px;
+  }
+  .sc_cover_template_2 .seaocore_profile_main_photo_options .menu-button-main + .menu-button:hover a:nth-child(2),
+  .sc_cover_template_3 .seaocore_profile_main_photo_options .menu-button-main + .menu-button:hover a:nth-child(2) { 
+    right: 40px;
+    bottom: -45px;
+  }
+  .sc_cover_template_2 .seaocore_profile_main_photo_options .menu-button-main + .menu-button:hover a:nth-child(3),
+  .sc_cover_template_3 .seaocore_profile_main_photo_options .menu-button-main + .menu-button:hover a:nth-child(3) { 
+    right: 65px;
+    bottom: -5px;  
+  }
+  .sc_cover_template_2 .seaocore_profile_main_photo_options .menu-button-main + .menu-button:hover a:nth-child(4),
+  .sc_cover_template_3 .seaocore_profile_main_photo_options .menu-button-main + .menu-button:hover a:nth-child(4) { 
+    right: 40px;
+    bottom: 45px;
+  }
+  .sc_cover_template_2 .seaocore_profile_main_photo_options .menu-button-main + .menu-button:hover a:nth-child(5),
+  .sc_cover_template_3 .seaocore_profile_main_photo_options .menu-button-main + .menu-button:hover a:nth-child(5) { 
+    right: -15px;
+    bottom: 50px;
+  }
+  /*Content Cover Photo Template 2*/
+  .sc_cover_template_2.layout_sitecontentcoverphoto_content_cover_photo .seaocore_profile_cover_photo_wrapper,
+  .sc_cover_template_2 #sitecontent_cover_photo .seaocore_profile_cover_photo {
+    height: 400px !important;
+  }
+  .sc_cover_template_2 div#sitecontent_cover_photo #sitecontentcover_middle_content {
+    height: 380px;
+    margin-top: -380px;
+  }
+  .sc_cover_template_2 #sitecontent_cover_photo #sitecontentcover_middle_content .sc_cover_template_2_top_content {
+    height: 295px !important;
+  }
+  .sc_cover_template_2 #sitecontent_cover_photo.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner {
+    height: 380px !important;
+  }
+  div.sc_cover_template_2 div.seaocore_profile_cover_head_section_inner {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .sc_cover_template_2 #sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .seaocore_profile_coverinfo_statistics > div {
+    margin-left: 0;
+  }
+  .sc_cover_template_2 .sc_halfwidth_inside_coverphoto_template #sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .seaocore_profile_coverinfo_statistics > div,
+  .sc_cover_template_2 .sc_halfwidth_outside_coverphoto_template #sitecontent_cover_photo .seaocore_profile_coverinfo_buttons .seaocore_profile_coverinfo_statistics > div {
+    margin-left: 5px;
+  }
+  div.sc_cover_template_1 .seaocore_profile_cover_head_section_inner .seaocore_button > a,
+  div.sc_cover_template_2 .seaocore_profile_cover_head_section_inner .seaocore_button > a,
+  div.sc_cover_template_3 .seaocore_profile_cover_head_section_inner .seaocore_button > a {
+    padding: 4px;
+  }
+/*  div.sc_cover_template_2 #sitecontentcover_middle_content .seaocore_button.seaocore_profile_option_btn > a,
+  div.sc_cover_template_2 #sitecontent_cover_photo #others_button_dropdown > a {
+    padding-top: 3px !important;
+    padding-bottom: 2px !important;
+  }*/
+  /*div.sc_cover_template_2 #sitecontent_cover_photo #setting_button_dropdown > a,
+  div.sc_cover_template_3 #sitecontent_cover_photo #setting_button_dropdown > a {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }*/
+  div.sc_cover_template_3 .sc_halfwidth_outside_coverphoto_template #sitecontent_cover_photo #setting_button_dropdown > a {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+/*  .sc_cover_template_2  + .seaocore_profile_cover_head_section {
+    display: none;
+  }*/
+  .sc_cover_template_2 .sc_cover_template_2_top_content > div {
+    vertical-align: top;
+  }
+  .sc_cover_template_2 .sc_cover_template_2_btm_row {
+    height: auto;
+  }
+  .sc_cover_template_2 .sc_cover_template_2_btm_row ul {
+    width: 100%;
+  }
+  .sc_cover_template_2 .sc_cover_template_2_btm_row ul li i {
+    height: auto;
+    margin: 0 auto 5px;
+    display: block !important;
+  }
+  .sc_cover_template_2 .sc_cover_template_2_btm_row ul li i:before {
+    border: 1px solid;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .sc_cover_template_2 .sc_cover_template_2_btm_row ul li {
+    line-height: normal;
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 10px 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  } 
+  .sc_cover_template_2 .sc_cover_template_2_btm_count_3 ul li {
+    width: 32%;
+  }
+  .sc_cover_template_2 .sc_cover_template_2_btm_count_2 ul li {
+    width: 49%;
+  } 
+  .sc_cover_template_2 .sc_cover_template_2_btm_count_1 ul li {
+    width: 85%;
+  } 
+/*  .sc_cover_template_1 .sc_halfwidth_inside_coverphoto_template  + .seaocore_profile_cover_head_section {
+    display: none;
+  }*/
+  .sc_cover_template_1 #sitecontentcoverphoto_cover_options.seaocore_profile_cover_options .edit-button {
+    top: 10px;
+    right: 10px;
+  }
+  .sc_cover_template_1 .sc_halfwidth_outside_coverphoto_template .seaocore_profile_main_photo {
+    bottom: 40px;
+  }
+  .sc_cover_template_1 .sc_halfwidth_outside_coverphoto_template .seaocore_profile_cover_head_section_inner {
+    margin-left: 0px !important;
+  } 
+  .choose_collage_photo {
+		width: 150px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+.default_temp_outside .seaocore_profile_halfwidth_cover_photo div.seaocore_profile_main_photo .item_photo {
+    width: 115px;
+    min-height: 115px;
+    height: 115px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*.seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons {
+    top: auto;
+  }*/
+	div .seaocore_profile_coverinfo_buttons {bottom: -35px;margin: 0;}
+	/*Cover Photo Upload Photo Popup Starts Here*/
+  .seaocore_upload_photo_popup {margin: 10px auto; width:98%; box-sizing:border-box;}
+	/*Choose photos popup*/
+	.seaocore_choose_photos_content ul.thumbs li {margin: 1%; width: 46%;}
+	ul.thumbs .thumbs_photo { width: 100%; box-sizing: border-box;}
+	ul.thumbs .thumbs_photo > span {width: 100%;}
+  
+  /* Issue resolved in I-phone 5s portrait mode */
+ .seaocore_profile_fullwidth_cover_photo 
+ .seaocore_profile_coverinfo_buttons 
+ .siteevent_calender_button 
+ .siteevent_buttonlink, 
+ .seaocore_profile_fullwidth_cover_photo 
+ .seaocore_profile_cover_head_section_inner 
+ .seaocore_button > a, 
+ .seaocore_profile_fullwidth_cover_photo 
+ .seaocore_profile_cover_head_section_inner 
+ .seaocore_like_button a, 
+ .seaocore_profile_fullwidth_cover_photo 
+ .seaocore_profile_coverinfo_buttons 
+ .sitepage_button, 
+ .seaocore_profile_fullwidth_cover_photo 
+ .seaocore_profile_coverinfo_buttons 
+ .sitegroup_button:hover, 
+ .seaocore_profile_fullwidth_cover_photo 
+ .seaocore_profile_coverinfo_buttons 
+ .social_share_wrap > a.sitevideo_unsubscribe_icon, 
+ .seaocore_profile_fullwidth_cover_photo 
+ .seaocore_profile_coverinfo_buttons 
+ .social_share_wrap > a.sitevideo_subscribe_icon {
+    padding:5px 10px !important;
+  }
+  /*Tooltip*/
+  .toolTipElement .tooltiptext {
+    display: none;
+  } 
+  /*Collage Album*/
+  .collage_img2 {
+    right: 27%;
+    top: 40px;
+  }
+  .collage_img2_span {
+    width: 110px;
+    height: 110px;
+  }
+  .collage_img3 {
+    right: -56%;
+    top: -260px;
+  }
+  .collage_img3_span {
+    width: 110px;
+    height: 110px;
+  }
+  .collage_img6 {
+    top: 79px;
+    right: 17%;
+  }
+  .collage_img6_span {
+    width: 110px;
+    height: 110px;
+  }
+  html .collage_image_template .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_status {
+    margin-bottom: 5px;
+  }
+ 
+  /*Default Outer temp*/
+  .default_temp_outside .seaocore_profile_cover_head_section_inner{
+    left: 10px;
+    bottom: 40px;
+    width: 75%;
+  }
+  .default_temp_outside .seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_status {
+    width: 100%;
+  }
+ 
+  /*Content Cover Photo*/
+  #sitecontent_cover_photo div.sc_cover_desc,
+  #sitecontent_cover_photo div.sc_cover_midcontent_ratings {
+    display: none !important;
+  }
+  #sitecontent_cover_photo .sc_cover_adminname span, #sitecontent_cover_photo .sc_cover_adminname span a {
+    font-size: 14px !important;
+  }
+  .layout_sitecontentcoverphoto_content_cover_photo div.seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_info * {
+    font-size: 12px !important;
+  } 
+  /*Inside halfwidth Content Cover Photo Template*/
+  .sc_halfwidth_inside_coverphoto_template div.seaocore_profile_main_photo_wrapper {
+    top: -215px;
+    margin: 0 auto;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .sc_halfwidth_inside_coverphoto_template div.seaocore_profile_main_photo_wrapper .seaocore_profile_main_photo {
+    width: 160px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options.seaocore_profile_main_photo_options .edit-button {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 160px;
+  }
+  div .seaocore_profile_main_photo_wrapper + .seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_status {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-70%);
+  }
+  .seaocore_profile_coverinfo_status, .seaocore_profile_coverinfo_status h2, .seaocore_profile_coverinfo_status a, .seaocore_profile_coverinfo_status div, .seaocore_profile_coverinfo_statistics, .seaocore_profile_coverinfo_statistics div {
+    text-align: center;
+  }
+  .seaocore_profile_cover_info {
+    width: 100%;
+    max-width: 100%;
+  }
+  .seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_stats, .seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_stats a {
+    text-align: center;
+  }
+  div.sc_coverphoto_halfwidth_inside_content .seaocore_profile_coverinfo_buttons {
+    top: -150px !important;
+    bottom: 0;
+  }
+  /*.sc_halfwidth_inside_coverphoto_template .sc_coverphoto_halfwidth_inside_content {
+    margin-top: -150px;
+  }*/
+  .sc_coverphoto_halfwidth_inside_content .seaocore_profile_coverinfo_buttons {
+    left: 70px;
+  }
+  #sitecontent_cover_photo .sc_coverphoto_halfwidth_inside_content .seaocore_profile_coverinfo_buttons .seaocore_profile_coverinfo_statistics
+  {
+    text-align :left;
+  }
+  #sitecontent_cover_photo .sc_coverphoto_halfwidth_inside_content .seaocore_profile_coverinfo_buttons .sc_cover_midcontent_btns {
+    text-align: center;
+  }
+  /*Outside content coer photo halfwidth*/
+ 
+  /*Content Cover Photo Template 3*/
+  .sc_cover_template_3_middle_content .sc_cover_template_3_profile_photo {
+    width: 100px;
+    height: 100px;
+  }
+  .sc_cover_template_3_content_details {
+    padding-left: 0;
+    width: 100%;
+    margin-top: 10px;
+    display: inline-block;
+  }
+ /* .sc_cover_template_3 .seaocore_button > a {
+    padding: 5px 5px 4px 5px !important
+  }*/
+ /* .sc_cover_template_3 .seaocore_button#setting_button_dropdown > a {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+  } */
+  /*.sc_cover_template_3 #sitecontentcover_middle_content .seaocore_button#others_button_dropdown > a,
+  div.sc_cover_template_3 .sc_halfwidth_inside_coverphoto_template #sitecontent_cover_photo #setting_button_dropdown > a {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }*/
+  /*.sc_cover_template_3 .seaocore_profile_fullwidth_cover_photo #sitecontentcover_middle_content .seaocore_button#others_button_dropdown > a {
+    padding-top: 3px !important;
+    padding-bottom: 0 !important;
+  }*/
+  .sc_cover_template_3 .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons > .profile_button > a.trans_profile_coverinfo_buttons_dropdown:after, .sc_cover_template_3 .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .seaocore_button > a.default_profile_coverinfo_buttons_dropdown:after {
+    padding: 7px 0 5px 8px;
+  }
+  .sc_cover_template_2 div.sc_author_ratings {
+    padding: 3px 10px;
+    margin: 0 auto;
+  }
+  .sc_cover_template_3 div.sc_author_ratings {
+    padding: 3px 10px;
+    margin: 0;
+  }
+  .sc_cover_template_3 .sc_halfwidth_inside_coverphoto_template  .seaocore_profile_coverinfo_buttons, .sc_cover_template_2 .sc_halfwidth_inside_coverphoto_template  .seaocore_profile_coverinfo_buttons {
+  bottom: 0;  
+  }
+  .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .siteevent_calender_button .siteevent_buttonlink, .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner .seaocore_button > a, .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner .seaocore_like_button a, .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .sitepage_button, .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .sitegroup_button:hover, .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner a.seaocore_follow_button, .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .social_share_wrap > a.sitevideo_unsubscribe_icon, .seaocore_profile_fullwidth_cover_photo .seaocore_profile_coverinfo_buttons .social_share_wrap > a.sitevideo_subscribe_icon {
+	  padding: 4px 10px !important;
+	}
+  .seaocore_profile_cover_inside_tabs .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {
+        top: -100px !important;
+  }
+  div .seaocore_profile_coverinfo_status h2, div.seaocore_profile_coverinfo_status h2 {
+    text-align: left;
+  }
+} 
+@media only screen and (min-width: 540px) and (max-width: 599px) {
+  .collage_img3 {
+    right: -46%;
+    top: -260px;
+  }
+  .default_temp_outside .seaocore_profile_halfwidth_cover_photo div.seaocore_profile_main_photo .item_photo {
+    width: 105px;
+    min-height: 105px;
+    height: 105px;
+  }
+}
+@media only screen and (max-width: 480px) {
+   /*Collage Album*/  
+  .collage_img2{
+    right: 20%;
+    top: 51px;
+  }
+  .collage_img3{
+    right: -55%;
+    top: -250px;
+  }
+  .collage_img6{
+    top: 99px;
+    right: 10%;
+  }
+  .collage_img2_span {
+    width: 79.2291px;
+    height: 80.2384px;
+  }
+  .collage_img3_span {
+    width: 79.2291px;
+    height: 80.2384px;
+  }
+  .collage_img6_span {
+    width: 79.2291px;
+    height: 80.2384px;
+  }
+  .choose_collage_photo {
+    padding: 0 4px;
+	width:145px;
+  }
+ /* .collage_image_template .seaocore_profile_coverinfo_buttons .seaocore_like_button.profile_button > a,
+  .collage_image_template .seaocore_profile_coverinfo_buttons .seaocore_unlike_button.profile_button > a {
+    padding: 4px 5px !important;
+  }*/
+  
+  /*Default Temp Outside*/
+  .default_temp_outside .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {
+    top: -130px;
+  }
+  .default_temp_outside .seaocore_profile_fullwidth_cover_photo .seaocore_profile_main_photo_wrapper .seaocore_profile_cover_options .edit-button {
+    top: -50px;
+  }
+  .menu-button,
+  .menu-button a,
+  .menu-button-main {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .menu-button-main + .menu-button:hover a,
+  .menu-button-main:hover + .menu-button a {
+    width: 40px;
+    height: 40px;
+  }
+  .trans_cover_temp .temp_cover_options .menu-button {
+    top: 33px;
+    right: -20px;
+  }
+  .menu-button i,
+  .menu-button-main i {
+    font-size: 22px;
+  }
+  .trans_cover_temp .temp_cover_options .menu-button:hover a {
+    bottom: auto;
+  }
+  .trans_cover_temp .temp_cover_options .menu-button a {
+    top: 0;
+    right: 0;
+  }
+  .trans_cover_temp .temp_cover_options .menu-button-main:hover + .menu-button a:nth-child(2) {
+    right: 50px;
+    top: 0;
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -o-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+  .trans_cover_temp .temp_cover_options .menu-button-main:hover + .menu-button a:nth-child(3) {
+    right: 100px;
+    top: 0;
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .trans_cover_temp .temp_cover_options .menu-button-main:hover + .menu-button a:nth-child(4) {
+    right: 150px;
+    top: 0;
+    -webkit-transition-delay: 0.6s;
+    -moz-transition-delay: 0.6s;
+    -o-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+  }
+  .trans_cover_temp .temp_cover_options .menu-button-main:hover + .menu-button a:nth-child(5) {
+    right: 200px;
+    top: 0;
+    -webkit-transition-delay: 0.7s;
+    -moz-transition-delay: 0.7s;
+    -o-transition-delay: 0.7s;
+    transition-delay: 0.7s;
+  } 
+  .trans_cover_temp .temp_cover_options .menu-button-main:hover + .menu-button a:nth-child(6) {
+    right: 250px;
+    top: 0;
+    -webkit-transition-delay: 0.8s;
+    -moz-transition-delay: 0.8s;
+    -o-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+  } 
+  .trans_cover_temp .seaocore_profile_main_photo_wrapper .seaocore_profile_main_photo_options .menu-button,
+  .trans_cover_temp .seaocore_profile_main_photo_wrapper .seaocore_profile_main_photo_options .menu-button:hover a {
+    width: 40px;
+    height: 40px;
+  }
+  .trans_cover_temp .seaocore_profile_main_photo_wrapper .seaocore_profile_main_photo_options .menu-button i {
+    font-size: 20px;
+  }
+  .trans_cover_temp .seaocore_profile_main_photo_options .menu-button-main + .menu-button:hover a:nth-child(2) { 
+    right: 50px;
+    bottom: -55px;
+  }
+  .trans_cover_temp .seaocore_profile_main_photo_options .menu-button-main + .menu-button:hover a:nth-child(3) { 
+    right: 65px;
+    bottom: 5px;  
+  }
+  .trans_cover_temp .seaocore_profile_main_photo_options .menu-button-main + .menu-button:hover a:nth-child(4) { 
+    right: 40px;
+    bottom: 55px;
+  }
+  .trans_cover_temp .seaocore_profile_main_photo_options .menu-button-main + .menu-button:hover a:nth-child(5) { 
+    right: -15px;
+    bottom: 60px;
+  }
+  .trans_cover_temp .temp_cover_options .edit-button {
+    right: 25px;
+    top: 0px;
+  }
+  .generic_layout_container.layout_core_container_tabs.transparent_cover_tabs {
+    margin-top: 10px;
+  }
+  /*div.sc_cover_template_2 #sitecontent_cover_photo #setting_button_dropdown > a,
+  div.sc_cover_template_3 #sitecontent_cover_photo #setting_button_dropdown > a {
+    padding-top: 2px !important;
+    padding-bottom: 1px !important;
+  }*/
+  .sc_cover_template_1 .sc_halfwidth_outside_coverphoto_template .seaocore_profile_main_photo {
+    bottom: 40px;
+  }
+ .sc_cover_template_1 .sc_halfwidth_outside_coverphoto_template .seaocore_profile_cover_head_section_inner {
+   margin-left: 20px !important;
+  } 
+}
+@media only screen and (max-width: 450px) {
+	/*Album Cover photo*/
+	div.seaocore_profile_coverinfo_buttons > div {margin-right: 0;margin-left: 3px;}
+
+  /*Collage Album*/
+  .collage_img3{
+    right: -290px;
+  }
+  .collage_image_template .layout_sitemember_user_ratings {
+    display: none;
+  }
+  .default_temp_outside .seaocore_profile_cover_head_section_inner {  
+    left: 0;
+    bottom: 0px;
+    width: 65%;
+  }
+  .default_temp_outside .seaocore_profile_halfwidth_cover_photo .seaocore_profile_cover_photo {
+    height: 200px !important;
+  }
+  .default_temp_outside .seaocore_profile_fullwidth_cover_photo .seaocore_profile_cover_head_section_inner {
+    padding-bottom: 0;
+    vertical-align: top;
+  }
+  /*Content Cover Template 1*/
+  .sc_cover_template_1 #sitecontentcoverphoto_cover_options .edit-button {
+    top: 10px;
+    right: 10px;
+  }
+  .sc_halfwidth_outside_coverphoto_template .sc_cover_adminname{ margin-bottom: 5px !important;}
+  .sc_halfwidth_outside_coverphoto_template .seaocore_profile_cover_photo_wrapper {
+    padding-bottom: 20px;
+  }
+  .sc_coverphoto_halfwidth_inside_content .seaocore_profile_coverinfo_buttons {
+    left: 0;
+  }
+  .sc_cover_fullwidth_mid_content {
+    top: 170px;
+    transform: none;
+    z-index: 98;
+  }
+  /*.sc_cover_template_1 .sc_halfwidth_inside_coverphoto_template .sc_coverphoto_halfwidth_inside_content {
+    margin-top: -123px;
+  }*/
+  /*div .seaocore_profile_main_photo_wrapper + .seaocore_profile_cover_head_section_inner .seaocore_profile_coverinfo_status {
+    margin-left: 110px;
+  }*/
+  div.default_temp_outside .seaocore_profile_halfwidth_cover_photo div.seaocore_profile_main_photo {
+    bottom: -20px;
+  }
+	
+}
+  @media screen and (min-width: 355px) and (max-width: 479px) { 
+	.sc_cover_template_3 #others_button_dropdown ul.seaocore_profile_options_pulldown {
+		 right: auto !important;
+		 left: auto;
+     min-width: 215px;
+	 }
+}
+@media only screen and (max-width: 360px) {
+.sc_cover_template_1 .sc_halfwidth_outside_coverphoto_template .seaocore_profile_coverinfo_buttons > div {
+      margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 320px) {
+	.collage_mid_content_details .profile_button .trans_profile_coverinfo_buttons_dropdown + ul.seaocore_profile_options_pulldown {
+    left: auto;
+    right: auto;
+  }
+  .default_temp_outside .seaocore_profile_cover_head_section_inner {
+    left: 38%;
+    bottom: 0px;
+    width: 62%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .seaocore_cover_org_container_tabs {
+    display: none;
+  }
+/*  .seaocore_profile_cover_photo_wrapper .seaocore_profile_cover_photo img {
+    top: 0!important;
+  }*/
+}
+
+@media only screen and (max-width: 767px) {
+  .seaocore_cover_inside_container_tabs {
+    display: none;
+  }
+   .seaocore_profile_cover_photo_wrapper .seaocore_profile_cover_photo img {
+    top: 0!important;
+  }
+  .seaocore_profile_cover_inside_tabs .seaocore_profile_coverinfo_status h2{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .seaocore_profile_options_pulldown, .seaocore_cover_inside_container_tabs .tab_pulldown_contents_wrapper {
+    left: auto;
+  } 
+}
+
+@media only screen and (max-width: 360px) {
+  .seaocore_profile_options_pulldown, .seaocore_cover_inside_container_tabs .tab_pulldown_contents_wrapper {
+    left: auto;
+  } 
+}

@@ -1,0 +1,416 @@
+
+/* $Id: mobile.css 10257 2014-06-04 14:57:17Z lucas $ */
+
+
+/*
+BROWSE VIDEOS & FEED ITEMS
+Styles the browse videos page as well as videos embedded
+in the feed.
+*/
+.feed_item_attachments .video_thumb_wrapper
+{
+  margin-right: 7px;
+}
+.feed_item_attachments .video_info
+{
+  overflow: hidden;
+}
+.feed_item_attachments .video_info > a
+{
+  font-size: 1em;
+  font-weight: bold;
+}
+.video_title
+{
+  font-size: 1em;
+  font-weight: bold;
+  display: inline-block;
+  clear: both;
+}
+.feed_item_attachments .video_desc
+{
+  margin-top: 2px;
+  font-size: 1em;
+}
+ul.videos_browse
+{
+  overflow: hidden;
+}
+ul.videos_browse > li
+{
+  overflow: hidden;
+  text-align: center;
+}
+ul.videos_browse > li + li
+{
+  margin-top: 15px;
+}
+ul.videos_browse .video_title
+{
+  display: block;
+  font-size: 12pt;
+}
+.video_length
+{
+  +opacity(.7);
+  +rounded(4px);
+  display: inline-block;
+  position: absolute;
+  margin: 10px;
+  padding: 3px 5px 3px 5px;
+  background: #000;
+  color: #fff;
+  font-size: .7em;
+}
+.video_thumb_wrapper
+{
+  +rounded(4px);
+  float: left;
+  margin-bottom: 2px;
+  background: #666;
+  width: 130px;
+  height: 100px;
+  border: 4px solid;
+}
+.video_thumb_wrapper a
+{
+  display: block;
+  height: 100%;
+}
+.video_thumb_wrapper img,
+.video_thumb_wrapper span.item_nophoto
+{
+  +rounded;
+  margin: 5px;
+  border: 5px solid #3F4E61;
+}
+.video_author
+{
+  display: block;
+  text-align: center;
+}
+.video_stats
+{
+  text-align: center;
+}
+.video_stats .video_views
+{
+  display: block;
+  text-align: left;
+  color: $theme_font_color_light;
+}
+.video_stats .rating_star
+{
+  display: inline-block;
+  text-align: center;
+}
+
+/* Video Grid View */
+ul.grid_wrapper .video_thumb_wrapper
+{
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+ul.grid_wrapper .video_thumb_wrapper > a img
+{
+  margin:0;
+}
+ul.grid_wrapper .video_length
+{
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+[dir="rtl"] ul.grid_wrapper .video_length
+{
+  left: 0;
+  right: auto;
+}
+ul.grid_wrapper .video_grid_info
+{
+  margin-bottom: 25px;
+  width: 100%;
+  float: left;
+}
+ul.grid_wrapper .video_title
+{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align:center;
+}
+ul.grid_wrapper .video_grid_info .video_author
+{
+  margin: 5px 0;
+}
+ul.grid_wrapper .video_thumb_wrapper img,
+ul.grid_wrapper .video_thumb_wrapper span.item_nophoto
+{
+  border: 0;
+  border-radius:0;
+}
+
+/*
+MANAGE VIDEOS
+Styles the manage videos page.
+*/
+ul.videos_manage > li
+{
+  clear: both;
+  overflow: hidden;
+}
+ul.videos_manage > li + li
+{
+  margin-top: 15px;
+}
+ul.videos_manage .video_thumb_wrapper
+{
+  +rounded(4px);
+  float: left;
+  margin-bottom: 2px;
+  background: #2b3849;
+}
+ul.videos_manage .video_thumb_wrapper:hover
+{
+  background: #3F4E61;
+}
+ul.videos_manage .video_thumb_wrapper a
+{
+  display: block;
+}
+ul.videos_manage .video_thumb_wrapper img
+{
+  display: block;
+  margin: 5px;
+  border: 1px solid #3F4E61;
+}
+ul.videos_manage .video_info
+{
+  overflow: hidden;
+  padding-left: 10px;
+}
+ul.videos_manage .video_info h3
+{
+  margin-bottom: 0px;
+}
+ul.videos_manage .video_options
+{
+  display: none;
+}
+ul.videos_manage .video_title
+{
+  margin-bottom: 1px;
+  margin-left: -1px;
+}
+ul.videos_manage .video_author
+{
+  font-size: 1em;
+  display: block;
+}
+ul.videos_manage .video_stats
+{
+  margin-top: 2px;
+}
+ul.videos_manage .video_stats > span
+{
+  font-size: 1em;
+  color: $theme_font_color_light;
+}
+
+
+
+
+/*
+VIEW VIDEO
+Styles the view video page, where a single
+video is shown.
+*/
+#global_page_video-index-view #global_content > h2
+{
+  text-align: center;
+}
+div.video_view h3
+{
+  border-top-width: 1px;
+  padding-top: 7px;
+  margin-bottom: 2px;
+}
+div.video_view .video_desc
+{
+  text-align: center;
+}
+div.video_view .video_desc + .video_desc
+{
+  margin-top: 10px;
+}
+div.video_view .video_embed
+{
+  margin: 15px 0px 5px 0px;
+  text-align: center;
+}
+div.video_view .video_embed object,
+div.video_view .video_embed embed
+{
+  max-width: 90%;
+  max-height: 200px;
+}
+div.video_view .video_date
+{
+  color: $theme_font_color_light;
+  text-align: center;
+}
+div.video_view .rating
+{
+  margin-top: 7px;
+  display: inline-block;
+}
+.layout_page_video_index_view .layout_core_comments,
+div.video_view .comments
+{
+  margin-top: 10px;
+  width: auto;
+  text-align: center;
+}
+.layout_page_video_index_view .layout_core_comments .comments_options span,
+div.video_view .comments_options span
+{
+  font-weight: bold;
+  color: $theme_font_color_light;
+  margin-bottom: 6px;
+}
+.video_view_container
+{
+  text-align: center;
+}
+.video_view_container .video_options
+{
+  display: none;
+}
+
+/*
+Message VIDEO
+Styles for videos attached to the message page.
+*/
+div.message_attachment .video_info > a
+{
+  font-size: 1em;
+  font-weight: bold;
+}
+div.message_attachment .video_info
+{
+  overflow: hidden;
+  padding-left: 10px;
+}
+div.message_attachment .video_info h3
+{
+  margin-bottom: 0px;
+}
+div.message_attachment .video_desc
+{
+  margin-top: 2px;
+  font-size: 1em;
+}
+
+
+
+
+
+
+
+/* ACTION TYPE ICONS */
+.activity_icon_comment_video:before
+{
+  content: "\\f075";
+  font-family:'Font Awesome\ 5 Free';
+}
+
+/* ITEM TYPE ICONS */
+.item_icon_video:before
+{
+  content: "\\f03d";
+  font-family:'Font Awesome\ 5 Free';
+	font-weight:900 !important;
+}
+
+/* NOTIFICATION TYPE ICONS */
+.notification_type_video_processed:before
+{
+  content: "\\f03d";
+	font-weight:900 !important;
+}
+
+/*
+ACTIVITY FEED COMPOSER VIDEO
+Used for the attachment composer above the main feed.
+*/
+#compose-video-activator:before,
+#compose-video-menu span:before
+{
+  content: "\\f03d";
+  font-family:'Font Awesome\ 5 Free';
+  color: #ff5722;
+  margin-right:6px;
+	font-weight:900 !important;
+}
+[dir="rtl"] #compose-video-activator:before,
+[dir="rtl"] #compose-video-menu span:before
+{
+  margin-right: 0px;
+  margin-left :6px;
+}
+
+#compose-video-form-input
+{
+  width: 300px;
+  margin-top: 5px;
+}
+#compose-video-form-submit
+{
+  margin-top: 5px;
+  clear: both;
+}
+
+
+
+
+/* ICONS */
+.icon_video_new:before
+{
+  content: "\\f03d";
+	font-weight:900 !important;
+}
+.icon_video_edit:before
+{
+  content: "\\f303";
+	font-weight: 900 !important;
+}
+.icon_video_delete:before
+{
+  content: "\\f056";
+	font-weight: 900 !important;
+}
+
+/* VIDEO IFRAMES */
+.vimeo_iframe_big
+{
+  width: 100%;
+}
+.vimeo_iframe_small
+{
+  width: 100%;
+}
+.youtube_iframe_big
+{
+  width: 100%;
+}
+.youtube_iframe_small
+{
+  width: 100%;
+}
+
+.video_object
+{
+  display: none;
+  margin-bottom: 10px;
+}

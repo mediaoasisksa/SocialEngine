@@ -1,0 +1,1215 @@
+{
+    "type": "module",
+    "name": "music",
+    "version": "6.2.2",
+    "revision": "10267",
+    "path": "application\/modules\/Music\/",
+    "repository": null,
+    "sku": null,
+    "date": "Tue, 23 Aug 2022 12:11:20 +0000",
+    "title": "Music",
+    "description": "Music",
+    "thumb": null,
+    "developer": null,
+    "authors": [
+        "Webligo Developments"
+    ],
+    "meta": {
+        "date": "Tue, 23 Aug 2022 12:11:20 +0000",
+        "title": "Music",
+        "description": "Music",
+        "developer": null,
+        "authors": [
+            "Webligo Developments"
+        ],
+        "changeLog": null
+    },
+    "actions": [
+        "install",
+        "upgrade",
+        "refresh",
+        "enable",
+        "disable"
+    ],
+    "callback": {
+        "path": "application\/modules\/Music\/settings\/install.php",
+        "class": "Music_Installer",
+        "priority": 100
+    },
+    "dependencies": {
+        "module-core": {
+            "type": "module",
+            "name": "core",
+            "guid": "module-core",
+            "minVersion": "5.0.0",
+            "maxVersion": null,
+            "excludeExcept": null
+        }
+    },
+    "tests": [],
+    "permissions": [],
+    "structure": {
+        "application\/modules\/Music": {
+            "type": "directory",
+            "path": "application\/modules\/Music",
+            "structure": [
+                {
+                    "path": "settings",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 672,
+                    "sha1": null
+                },
+                {
+                    "path": "settings\/my-upgrade-4.10.2-4.10.3.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 238,
+                    "sha1": "adeb477efbc4dc8020289c1b056b37fd86c1b13b"
+                },
+                {
+                    "path": "settings\/my-upgrade-6.0.0b1-6.0.0rc1.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 196,
+                    "sha1": "f52747d974f74fbf877208001dc19c44bf916f55"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.0.5p2-4.1.0.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2714,
+                    "sha1": "b87f330848bc8c9dad091d6880adf5b7dda97a27"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.1.0-4.1.1.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 263,
+                    "sha1": "bc6b8d71468c1718029c88a38163ce4bcf0af607"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.0.3-4.0.4.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 609,
+                    "sha1": "a890bf03094e241329b24616802a835ef25e3f2b"
+                },
+                {
+                    "path": "settings\/install.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 19645,
+                    "sha1": "e3396918c673bf8f0918d68ee471b433c420d7fb"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.10.5-5.0.0b1.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 705,
+                    "sha1": "97dcb31dd27a19331f30bb8d7dacd8f0a3699215"
+                },
+                {
+                    "path": "settings\/my-upgrade-6.0.1-6.1.0.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 2151,
+                    "sha1": "49ddc56d96844fb3b8abff7da8c00a36c987ec1d"
+                },
+                {
+                    "path": "settings\/my.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 14117,
+                    "sha1": "c72dc8737f85784917d3e6e8103e2228a8fe0a63"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.8.9-4.9.0.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 1719,
+                    "sha1": "932b548617410dc77174f2b56ecd05078beadb27"
+                },
+                {
+                    "path": "settings\/content.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 4338,
+                    "sha1": "2bb5269510f3a3906560d850ce4936a4ccdc82e9"
+                },
+                {
+                    "path": "settings\/manifest.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3822,
+                    "sha1": "bedd2500ae787ec3e807e16330fb1a3e302e2ef4"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.0.4-4.0.5.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 235,
+                    "sha1": "e55023c05ea77dfb69a1c72b21d905d6e24334b5"
+                },
+                {
+                    "path": "settings\/my-upgrade-6.2.0-6.2.2.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 270,
+                    "sha1": "08946658de86b1eab191a0b7fee3bff680022d81"
+                },
+                {
+                    "path": "settings\/my-upgrade-5.1.0-5.2.0.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 440,
+                    "sha1": "aecdcbe6ccbc25d23958c0002f5b3b2058e7b393"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.0.1-4.0.2.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3757,
+                    "sha1": "b06c9ba1d151aa1988c6807d49dbab088a90c9ba"
+                },
+                {
+                    "path": "settings\/my-upgrade-6.1.1-6.2.0.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 502,
+                    "sha1": "ea3015d2606d374700cc8493451ca480d9c79ba7"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.1.3-4.1.4.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 0,
+                    "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.10.4-4.10.5.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 611,
+                    "sha1": "c0b0ea389cd8922275a29cf517e8f321c78be5d5"
+                },
+                {
+                    "path": "Form",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 256,
+                    "sha1": null
+                },
+                {
+                    "path": "Form\/Admin",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 192,
+                    "sha1": null
+                },
+                {
+                    "path": "Form\/Admin\/Category.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 3626,
+                    "sha1": "c101cde4e3835c04089e153b27ec2bd653979af5"
+                },
+                {
+                    "path": "Form\/Admin\/Settings",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 96,
+                    "sha1": null
+                },
+                {
+                    "path": "Form\/Admin\/Settings\/Level.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 7631,
+                    "sha1": "edc3152f78979a0fa81dc445a3ff97679b42ea8f"
+                },
+                {
+                    "path": "Form\/Admin\/Global.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2830,
+                    "sha1": "b7bb4a6560f29d6b1457783e5fdea2fd705bc15e"
+                },
+                {
+                    "path": "Form\/Admin\/Widget",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 96,
+                    "sha1": null
+                },
+                {
+                    "path": "Form\/Admin\/Widget\/HomePlaylist.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 836,
+                    "sha1": "c71f25b7709693111e5214b4f4816499a970c050"
+                },
+                {
+                    "path": "Form\/Song",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 96,
+                    "sha1": null
+                },
+                {
+                    "path": "Form\/Song\/Append.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 4367,
+                    "sha1": "24d95cbf70f7a7237a72ed705fe7cb8abf59f32e"
+                },
+                {
+                    "path": "Form\/Create.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 12356,
+                    "sha1": "c19f8a8ee2260c4e5b3dad7d8c0d58d13447fbef"
+                },
+                {
+                    "path": "Form\/Search.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2627,
+                    "sha1": "3c65df8b3661988c6397e51fbaa30e6818b3821f"
+                },
+                {
+                    "path": "Form\/Delete.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1462,
+                    "sha1": "84d9259454bdb7fdbd2f406ee9ba26e34d8dc7ad"
+                },
+                {
+                    "path": "Form\/Edit.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 4471,
+                    "sha1": "75bd3569c4405ff4d9f558fa753983291cecfefb"
+                },
+                {
+                    "path": "externals",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 192,
+                    "sha1": null
+                },
+                {
+                    "path": "externals\/images",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 288,
+                    "sha1": null
+                },
+                {
+                    "path": "externals\/images\/nophoto_playlist_main.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 6154,
+                    "sha1": "9af36bd243f6bd94c2a02291e50c6c8aac30d78b"
+                },
+                {
+                    "path": "externals\/images\/music_noart.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 6154,
+                    "sha1": "9af36bd243f6bd94c2a02291e50c6c8aac30d78b"
+                },
+                {
+                    "path": "externals\/images\/nophoto_playlist_thumb_icon.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3379,
+                    "sha1": "7981cfbf99dce77febefa033c7e5a1a45cd3a83c"
+                },
+                {
+                    "path": "externals\/images\/nophoto_playlist_song_thumb_icon.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3379,
+                    "sha1": "7981cfbf99dce77febefa033c7e5a1a45cd3a83c"
+                },
+                {
+                    "path": "externals\/images\/nophoto_playlist_thumb.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2246,
+                    "sha1": "1a6109ec6c8cd6948504eebd771f4c3ea2334f5a"
+                },
+                {
+                    "path": "externals\/images\/nophoto_music_playlist.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 6154,
+                    "sha1": "9af36bd243f6bd94c2a02291e50c6c8aac30d78b"
+                },
+                {
+                    "path": "externals\/images\/music_noart_thumb.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2246,
+                    "sha1": "1a6109ec6c8cd6948504eebd771f4c3ea2334f5a"
+                },
+                {
+                    "path": "externals\/styles",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 160,
+                    "sha1": null
+                },
+                {
+                    "path": "externals\/styles\/admin",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 96,
+                    "sha1": null
+                },
+                {
+                    "path": "externals\/styles\/admin\/main.css",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1109,
+                    "sha1": "e4167d782f46b59aa4a83b113afde73b9926d4c8"
+                },
+                {
+                    "path": "externals\/styles\/main.css",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 16621,
+                    "sha1": "54b62c0867c7a047f5f66dabd27a93b95b369da2"
+                },
+                {
+                    "path": "externals\/styles\/mobile.css",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 13189,
+                    "sha1": "d76286bc6fa09925efadf8a6019876a3013ccc12"
+                },
+                {
+                    "path": "externals\/scripts",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 160,
+                    "sha1": null
+                },
+                {
+                    "path": "externals\/scripts\/core.js",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 5504,
+                    "sha1": "8026a5e96519a09eecad1e2db52eef03af9011b8"
+                },
+                {
+                    "path": "externals\/scripts\/composer_music.js",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 6687,
+                    "sha1": "31204af7f1ac58a9b2d11789dfe4707fc64cdc03"
+                },
+                {
+                    "path": "externals\/scripts\/player.js",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 9379,
+                    "sha1": "6b0de09d1787731790dba910e038fad84c809a70"
+                },
+                {
+                    "path": "externals\/.htaccess",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1042,
+                    "sha1": "6c835f103d253edf70bfd5ba2430ebe3fa8cacdd"
+                },
+                {
+                    "path": "Plugin",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 224,
+                    "sha1": null
+                },
+                {
+                    "path": "Plugin\/Menus.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1164,
+                    "sha1": "57ae150fa167517c577e4c2dcf3d9ce2971e31a4"
+                },
+                {
+                    "path": "Plugin\/Composer.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 837,
+                    "sha1": "c16066ddcc23ee566e66eae45c1d41bcbdca8670"
+                },
+                {
+                    "path": "Plugin\/Task",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 96,
+                    "sha1": null
+                },
+                {
+                    "path": "Plugin\/Task\/Cleanup.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1615,
+                    "sha1": "c52097cee17feb76a2cc14d490a0c42499a57b3d"
+                },
+                {
+                    "path": "Plugin\/Job",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 96,
+                    "sha1": null
+                },
+                {
+                    "path": "Plugin\/Job\/Maintenance",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 96,
+                    "sha1": null
+                },
+                {
+                    "path": "Plugin\/Job\/Maintenance\/RebuildPrivacy.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 4052,
+                    "sha1": "4113defdaca757c6bea9f286770f6adb05af220e"
+                },
+                {
+                    "path": "Plugin\/Core.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1581,
+                    "sha1": "96d0e40e07ca2a4ae9589ad5c34fd23940610be4"
+                },
+                {
+                    "path": "Bootstrap.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 536,
+                    "sha1": "27459787704d529b2ddfa818d488f6c23e60b34a"
+                },
+                {
+                    "path": "Model",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 288,
+                    "sha1": null
+                },
+                {
+                    "path": "Model\/Category.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 1320,
+                    "sha1": "3a71df206d20450057a6ea404f8d1a30de0f0ee0"
+                },
+                {
+                    "path": "Model\/Playlist.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 7241,
+                    "sha1": "c7a59ce478473f1e67c7b10e858c6da7aa6dafcb"
+                },
+                {
+                    "path": "Model\/Song.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 520,
+                    "sha1": "cede54dbe87e13b700738c7aed211bb9bf59a3ab"
+                },
+                {
+                    "path": "Model\/DbTable",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 224,
+                    "sha1": null
+                },
+                {
+                    "path": "Model\/DbTable\/Ratings.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 2212,
+                    "sha1": "cbd0a074527c2de89a0a9dedef49097f9bbdf5d6"
+                },
+                {
+                    "path": "Model\/DbTable\/Playlists.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2300,
+                    "sha1": "5cb62b5ee13bc22c7566d972e7125b9d611ffb66"
+                },
+                {
+                    "path": "Model\/DbTable\/PlaylistSongs.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 737,
+                    "sha1": "cf0e0526ccd58be4b7a36f97ae468f1be8ba1c3b"
+                },
+                {
+                    "path": "Model\/DbTable\/Songs.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 596,
+                    "sha1": "beb90ad059a78a15acf34da1d477452b51eaeec9"
+                },
+                {
+                    "path": "Model\/DbTable\/Categories.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 5977,
+                    "sha1": "4ba895b47155cccdbdd3ebd9f19f12d0c3e04a58"
+                },
+                {
+                    "path": "Model\/Exception.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 520,
+                    "sha1": "517cb0515bab0de0f5bf3b6774133c4a3d962a3d"
+                },
+                {
+                    "path": "Model\/Rating.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 831,
+                    "sha1": "93cd6aa8ff720cec5df93127af3176842145396f"
+                },
+                {
+                    "path": "Model\/PlaylistSong.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3911,
+                    "sha1": "714fb071bd2435c4554b27d38c3b34ba9be38996"
+                },
+                {
+                    "path": "Api",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 96,
+                    "sha1": null
+                },
+                {
+                    "path": "Api\/Core.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 5938,
+                    "sha1": "d8bb33e9dbed41d0a7e43e7d6b87a3d573af30dd"
+                },
+                {
+                    "path": "controllers",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 256,
+                    "sha1": null
+                },
+                {
+                    "path": "controllers\/AdminLevelController.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2412,
+                    "sha1": "63d904b281e68d4547e50d126641ed5b9453e43a"
+                },
+                {
+                    "path": "controllers\/PlaylistController.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 14579,
+                    "sha1": "04702352131863f2ca8a2c183c2ddf817cc5ce72"
+                },
+                {
+                    "path": "controllers\/AdminManageController.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3454,
+                    "sha1": "fc3701fb635d0798a93f670e104e240fec0d13ba"
+                },
+                {
+                    "path": "controllers\/SongController.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 10600,
+                    "sha1": "9db989a9a077884053199ea051852101b947c03c"
+                },
+                {
+                    "path": "controllers\/IndexController.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 9847,
+                    "sha1": "2c1e843ea75a07da67e194a03a3963b85b17ade9"
+                },
+                {
+                    "path": "controllers\/AdminSettingsController.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 9650,
+                    "sha1": "e8e32400772d1668bd6258b7a7d4e6097386d1a9"
+                },
+                {
+                    "path": "views",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 96,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 352,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts\/playlist",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 192,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts\/playlist\/view.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 4374,
+                    "sha1": "d40abb97a87db20ab07de1147c62652e5a3580b4"
+                },
+                {
+                    "path": "views\/scripts\/playlist\/delete.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1787,
+                    "sha1": "9d041d17300d713c00a8370b0e2f1672b33702ab"
+                },
+                {
+                    "path": "views\/scripts\/playlist\/add-song.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 468,
+                    "sha1": "c8a68e67bd6498b714b6cdfb07717f91abe6e3c4"
+                },
+                {
+                    "path": "views\/scripts\/playlist\/edit.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 6241,
+                    "sha1": "fb2634ffd7765dac9a1d3443388269c272779698"
+                },
+                {
+                    "path": "views\/scripts\/song",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 96,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts\/song\/append.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1564,
+                    "sha1": "581d5ea9433d30cc4352591b2079e4952374eb01"
+                },
+                {
+                    "path": "views\/scripts\/_FancyUpload.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 11513,
+                    "sha1": "b781d835fbabbc1f06325226e3c5eb6f64500e46"
+                },
+                {
+                    "path": "views\/scripts\/index",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 192,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts\/index\/create.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2840,
+                    "sha1": "a3543abdc57cb953341050c1c262973ffdc8ffeb"
+                },
+                {
+                    "path": "views\/scripts\/index\/delete.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 348,
+                    "sha1": "f7e12ab228ecb38ce30760de19c553a0febfd4dc"
+                },
+                {
+                    "path": "views\/scripts\/index\/manage.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 4428,
+                    "sha1": "3186ee0eef56b0f6d94252f7327928528cd7d515"
+                },
+                {
+                    "path": "views\/scripts\/index\/browse.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3577,
+                    "sha1": "9414ce71894e0a4b6ae63b65a1998afb30a6fd32"
+                },
+                {
+                    "path": "views\/scripts\/_Player.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 7571,
+                    "sha1": "9008715c434dce79bb8c305dc2e5cbec942a6376"
+                },
+                {
+                    "path": "views\/scripts\/admin-settings",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 160,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts\/admin-settings\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1085,
+                    "sha1": "ebe13f2a8e2764bd78d678a53bc3cd3e4a34d833"
+                },
+                {
+                    "path": "views\/scripts\/admin-settings\/categories.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 8547,
+                    "sha1": "50d55121b596b2ec31e3685324c29e00e2d0e2e9"
+                },
+                {
+                    "path": "views\/scripts\/admin-settings\/form.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 367,
+                    "sha1": "eaa48f7dd208756da26a6dfee03a5dba36afeb0e"
+                },
+                {
+                    "path": "views\/scripts\/_composeMusic.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3258,
+                    "sha1": "a04f722197539dcb889b13d218ec12edee656354"
+                },
+                {
+                    "path": "views\/scripts\/admin-manage",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 128,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts\/admin-manage\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3745,
+                    "sha1": "b40b6822c6bfd35f62e478c8cdc0e41f56ee7b87"
+                },
+                {
+                    "path": "views\/scripts\/admin-manage\/delete.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1105,
+                    "sha1": "322ac298d8d1fc7548b74e8c291fd9c716aabfd0"
+                },
+                {
+                    "path": "views\/scripts\/admin-level",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 96,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts\/admin-level\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 908,
+                    "sha1": "dd6c6c4a33002a94d6eff0bba9f1ad61da6dc77c"
+                },
+                {
+                    "path": "widgets",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 384,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/profile-player",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 128,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/profile-player\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 908,
+                    "sha1": "494ae791c1b3d44e839fb2d90981b573c26687c1"
+                },
+                {
+                    "path": "widgets\/profile-player\/Controller.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1429,
+                    "sha1": "ee80a9ba804d88f67cced463f8b41dd296d859ca"
+                },
+                {
+                    "path": "widgets\/list-popular-playlists",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 128,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/list-popular-playlists\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2331,
+                    "sha1": "b730054c4ff4a69c6d272936d57fa8889e3fa207"
+                },
+                {
+                    "path": "widgets\/list-popular-playlists\/Controller.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1670,
+                    "sha1": "0ec281e27894591c7e3f8de6d708919e47eac09e"
+                },
+                {
+                    "path": "widgets\/profile-music",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 128,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/profile-music\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3382,
+                    "sha1": "db83827894f154dd9fda4d5c7109ec547bf651fa"
+                },
+                {
+                    "path": "widgets\/profile-music\/Controller.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1966,
+                    "sha1": "d24bc9cb847562c3393a72180f34bfd17bd6df62"
+                },
+                {
+                    "path": "widgets\/browse-search",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 128,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/browse-search\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1851,
+                    "sha1": "f7474e5c9ea688dca48377f093687efa5db5c434"
+                },
+                {
+                    "path": "widgets\/browse-search\/Controller.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1372,
+                    "sha1": "180594c8551b5992ce98aa807de1af1f981fb294"
+                },
+                {
+                    "path": "widgets\/browse-menu-quick",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 128,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/browse-menu-quick\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 607,
+                    "sha1": "ea69394592914252d4dc3bdf1a187cf3ca239b55"
+                },
+                {
+                    "path": "widgets\/browse-menu-quick\/Controller.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 864,
+                    "sha1": "0b499717a426e979e58d3fbc45fb24829ec31a19"
+                },
+                {
+                    "path": "widgets\/list-categories",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 128,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/list-categories\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 4204,
+                    "sha1": "298e46d6d1e5ad5adfc0287fefd164cb13241af1"
+                },
+                {
+                    "path": "widgets\/list-categories\/Controller.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 777,
+                    "sha1": "9d439e579b1e461b7ee15ad80fc2c891d9e6e839"
+                },
+                {
+                    "path": "widgets\/list-recent-playlists",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 128,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/list-recent-playlists\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1517,
+                    "sha1": "3335100d494b8a4d5e422f1ec0e683bcec5c0905"
+                },
+                {
+                    "path": "widgets\/list-recent-playlists\/Controller.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2006,
+                    "sha1": "fa234d68da80753cb6a13b9ebd986cdd86ba0bef"
+                },
+                {
+                    "path": "widgets\/home-playlist",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 160,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/home-playlist\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 861,
+                    "sha1": "db968a21c63acd7ce6fe9a99fc98a0f3587ba45c"
+                },
+                {
+                    "path": "widgets\/home-playlist\/Controller.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1613,
+                    "sha1": "89ede3b48b9705e5d34e88c7f6eae8700c34f516"
+                },
+                {
+                    "path": "widgets\/home-playlist\/admin.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 6122,
+                    "sha1": "2fde32f5338b930f7bbeff1a4ccb616d6809ed5a"
+                },
+                {
+                    "path": "widgets\/breadcrumb",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 128,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/breadcrumb\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 1957,
+                    "sha1": "fc0f31328d5635a64d20c2d8e6a49c20a4018f6e"
+                },
+                {
+                    "path": "widgets\/breadcrumb\/Controller.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 758,
+                    "sha1": "614f2561ea547ebdb5c73bfa1f4d9405a1128334"
+                },
+                {
+                    "path": "widgets\/browse-menu",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 128,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/browse-menu\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 615,
+                    "sha1": "b1a001b2c0447308055d640fbab5f9751a3fee4f"
+                },
+                {
+                    "path": "widgets\/browse-menu\/Controller.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 862,
+                    "sha1": "2d638141b1337c66a6c76992939f5aa11ecd1bf3"
+                }
+            ]
+        },
+        "application\/languages\/en\/music.csv": {
+            "type": "file",
+            "path": "application\/languages\/en\/music.csv",
+            "structure": {
+                "path": "music.csv",
+                "dir": false,
+                "file": true,
+                "perms": "0755",
+                "size": 12626,
+                "sha1": "be9441168f0858d423c180fc82e974ae8a8a7020"
+            }
+        }
+    }
+}

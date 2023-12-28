@@ -1,0 +1,2 @@
+INSERT IGNORE INTO `engine4_core_menuitems` (`name`, `module`, `label`, `plugin`, `params`, `menu`, `submenu`, `enabled`, `custom`, `order`) VALUES
+("siteapi_admin_profile_settings", "siteapi", "Profile Page Settings", NULL, '{"route":"admin_default","module":"siteapi","controller":"settings", "action":"profile-settings"}', "siteapi_admin_main", NULL, 1, 0, 4);

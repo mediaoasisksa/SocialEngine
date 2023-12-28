@@ -1,0 +1,48 @@
+/* ---------------- themes insignia------------------- */
+@constants
+{
+theme_pulldown_font_color_active: #fff;
+}
+
+/* Advanced main menu */
+#sitemenu_main_menu_wrapper {
+	margin-bottom: 0;
+}
+#sitemenu_main_menu_wrapper > nav {
+	width: 90%;
+	margin: 0 auto;
+}
+#sitemenu_mini_currency_updates_pulldown {
+	display: table-cell;
+}
+
+.layout_sitemenu_menu_mini {
+	padding-right: 5%;
+	display: inline-block;
+}
+.layout_sitemenu_menu_mini .layout_core_menu_mini {
+	padding-right: 0;
+}
+#global_header .layout_siteadvsearch_menu_mini #global_search_form,
+#global_header .layout_siteadvsearch_search_box #global_search_form {
+	margin-right: 10px;
+}
+.layout_sitemenu_menu_mini .layout_core_menu_mini > div > ul {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+
+/* color of main menu label on hover main menu widget  */
+.sitemenu_main_menu > li > a.over{
+	color: #fff;
+	background: rgba(255, 255, 255, .2);
+}
+ 
+
+
+/*Profile Advanced Tabs*/
+.contentblock_right_inner_heading a:link{
+  color: #5f727f;
+}
+

@@ -1,0 +1,246 @@
+{
+  "type": "external",
+  "name": "font-awesome",
+  "version": "6.2.2",
+  "revision": "10270",
+  "path": "externals\/font-awesome",
+  "repository": null,
+  "sku": null,
+  "date": "Tue, 23 Aug 2022 12:11:24 +0000",
+  "title": "Font Awesome",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "meta": {
+    "date": "Tue, 23 Aug 2022 12:11:24 +0000",
+    "title": "Font Awesome",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/font-awesome": {
+      "type": "directory",
+      "path": "externals\/font-awesome",
+      "structure": [
+        {
+          "path": "css",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 96,
+          "sha1": null
+        },
+        {
+          "path": "css\/all.min.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 57233,
+          "sha1": "22cb1039053d1f97ad3d97b7d020642b9282a70f"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 390,
+          "sha1": "d613078d230981246c3b075eed73c9c8572f260b"
+        },
+        {
+          "path": "fonts",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 736,
+          "sha1": null
+        },
+        {
+          "path": "fonts\/fa-solid-900.ttf",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 192472,
+          "sha1": "40d9789010f6137e543e4d97025b867707d2f425"
+        },
+        {
+          "path": "fonts\/fontawesome-webfont.svg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 444379,
+          "sha1": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed"
+        },
+        {
+          "path": "fonts\/FontAwesome.otf",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 134808,
+          "sha1": "048707bc52ac4b6563aaa383bfe8660a0ddc908c"
+        },
+        {
+          "path": "fonts\/fa-regular-400.svg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 144452,
+          "sha1": "dd1b42f8776d9b48adda30b0069aa0e5f18989d3"
+        },
+        {
+          "path": "fonts\/fa-regular-400.woff2",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 13584,
+          "sha1": "be142af0f56062f6e864de121b98054c7b5954fd"
+        },
+        {
+          "path": "fonts\/fa-solid-900.eot",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 192758,
+          "sha1": "340ee70e87850176047733192ea8109dd6380082"
+        },
+        {
+          "path": "fonts\/fontawesome-webfont.woff2",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 77160,
+          "sha1": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c"
+        },
+        {
+          "path": "fonts\/fa-brands-400.svg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 700503,
+          "sha1": "3e9abaae5dc647f4019a4dcdde1b51f14c2054e8"
+        },
+        {
+          "path": "fonts\/fa-regular-400.woff",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 16804,
+          "sha1": "7626840dab0e2ae37b2d16572a6f183a71a0dd73"
+        },
+        {
+          "path": "fonts\/fa-brands-400.eot",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 130906,
+          "sha1": "7ed86fe71d4dc31d5edf492f7472d6fb88c3c3c9"
+        },
+        {
+          "path": "fonts\/fa-solid-900.svg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 842605,
+          "sha1": "55a9f6dd285c88c6c9847fee0d5ce127c4c61c52"
+        },
+        {
+          "path": "fonts\/fontawesome-webfont.ttf",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 165548,
+          "sha1": "13b1eab65a983c7a73bc7997c479d66943f7c6cb"
+        },
+        {
+          "path": "fonts\/fa-solid-900.woff",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 98384,
+          "sha1": "43dae5c2482bfb5d04d896529600eb621181103a"
+        },
+        {
+          "path": "fonts\/fa-regular-400.ttf",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 34096,
+          "sha1": "5d5375ce3ae5b500df039da009ccdaca29d52fc0"
+        },
+        {
+          "path": "fonts\/fontawesome-webfont.woff",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 98024,
+          "sha1": "28b782240b3e76db824e12c02754a9731a167527"
+        },
+        {
+          "path": "fonts\/fa-solid-900.woff2",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 75728,
+          "sha1": "b2879f9e1d0985a96842bf7f55a2b2cc4c636d04"
+        },
+        {
+          "path": "fonts\/fa-brands-400.woff2",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 75336,
+          "sha1": "5fe986cda635681b4b6bbd6111df2f26d7fca286"
+        },
+        {
+          "path": "fonts\/fa-brands-400.woff",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 88428,
+          "sha1": "6900998c1d878e73b2f9ac3a9a9746365d49a54f"
+        },
+        {
+          "path": "fonts\/fa-brands-400.ttf",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 130600,
+          "sha1": "c5a1a93f668d15f55deac38b4728f8d901bd4748"
+        },
+        {
+          "path": "fonts\/fontawesome-webfont.eot",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 165742,
+          "sha1": "d980c2ce873dc43af460d4d572d441304499f400"
+        },
+        {
+          "path": "fonts\/fa-regular-400.eot",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 34394,
+          "sha1": "1115185386ada5846eecc4e2e1f076ca7617e0cd"
+        }
+      ]
+    }
+  }
+}

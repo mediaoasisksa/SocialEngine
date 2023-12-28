@@ -1,0 +1,10 @@
+[09-Oct-2021 15:41:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function encodeURIComponent() in /home/janagate/public_html/pay/consul2/next-step.php:56
+Stack trace:
+#0 /home/janagate/public_html/pay/consul2/next-step.php(78): request()
+#1 {main}
+  thrown in /home/janagate/public_html/pay/consul2/next-step.php on line 56
+[09-Oct-2021 15:42:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function encodeURIComponent() in /home/janagate/public_html/pay/consul2/next-step.php:56
+Stack trace:
+#0 /home/janagate/public_html/pay/consul2/next-step.php(78): request()
+#1 {main}
+  thrown in /home/janagate/public_html/pay/consul2/next-step.php on line 56

@@ -1,0 +1,3 @@
+INSERT IGNORE INTO `engine4_core_menuitems` (`name`, `module`, `label`, `plugin`, `params`, `menu`, `submenu`, `order`) VALUES
+('core_admin_main_plugins_sescompany', 'sescompany', 'SES - Company Theme', '', '{"route":"admin_default","module":"sescompany","controller":"settings"}', 'core_admin_main', '', 888),
+('sescompany_admin_main_settings', 'sescompany', 'Global Settings', '', '{"route":"admin_default","module":"sescompany","controller":"settings"}', 'sescompany_admin_main', '', 1);

@@ -1,0 +1,295 @@
+/* ICONS */
+.icon_employment_new:before{
+	content:"\\f067";
+}
+.icon_employment_edit:before{
+	content:"\\f303";
+	font-weight:900 !important;
+}
+.icon_employment_close:before{
+	content:"\\f023";
+	font-weight:900 !important;
+}
+.icon_employment_open:before{
+	content:"\\f13e";
+	font-weight:900 !important;
+}
+.icon_employment_delete:before{
+	content:"\\f056";
+	font-weight:900 !important;
+}
+.icon_employment_photo_new:before{
+	content:"\\f03e";
+}
+.icon_employment_viewall:before{
+	content:"\\f060";
+	font-weight:900 !important;
+}
+.employments_close_icon{
+	color:#f00;
+	margin-left:5px;
+}
+.employments_close_icon:before{
+	content:"\\f05e";
+	font-family: "Font Awesome 5 Free";
+	font-weight:700;
+	font-style: normal;
+	font-size: 14px;
+}
+/* ITEM TYPE ICONS */
+.item_icon_employment:before{
+	content:"\\f0b1";
+	font-family:'Font Awesome\ 5 Free';
+	font-weight:700;
+}
+/* ACTION TYPE ICONS */
+.activity_icon_comment_employment:before{
+	content:"\\f075";
+	font-family:'Font Awesome\ 5 Free';
+}
+/*
+FEED ITEMS
+Styles items with employment attachments in the feed.
+*/
+ul.feed .feed_attachment_employment{
+	display:block;
+	overflow:hidden;
+	margin:0px 5px 5px 0px;
+	vertical-align:top;
+}
+html[dir="rtl"] ul.feed .feed_attachment_employment{
+	margin:0px 0px 5px 5px;
+}
+ul.feed .feed_attachment_employment > div > a{
+	display:block;
+	margin-bottom:10px;
+}
+ul.feed .feed_attachment_employment > div > a > img{
+	display:block;
+	width:100%;
+	max-width:100%;
+	max-height:250px;
+	object-fit:cover;
+	object-position:center;
+	vertical-align:top;
+}
+ul.feed .feed_attachment_employment > div > div{
+	overflow:hidden;
+}
+/*
+COMPOSE EMPLOYMENT LISTING
+Styles the compose employment listing form.
+*/
+.employments_form .global_form div.form-label{
+	float:none;
+	text-align:left;
+	margin:0px;
+	padding:0px 0px 5px 0px;
+}
+[dir="rtl"] .employments_form .global_form div.form-label{
+	text-align:right;
+}
+.employments_form .global_form label i{
+  margin-right:5px;
+  width: 15px;
+  text-align: center;
+}
+[dir="rtl"] .employments_form .global_form label i{
+  margin-right:0;
+  margin-left:5px;
+}
+.employments_form .global_form div.form-element{
+	float:none;
+}
+.employments_form .global_form #tags-wrapper,
+.employments_form .global_form #tags-element{
+	overflow:visible !important;
+}
+
+/*
+BROWSE EMPLOYMENTS
+These styles are used on the browse employments page
+*/
+.employments_browse_filters span.overTxtLabel{
+  color:$theme_font_color_light;
+}
+.employments_browse_filters > ul > li{
+	clear:both;
+	overflow:hidden;
+}
+.employments_browse_filters > ul > li + li,
+.employments_browse_filters .browse-range-wrapper{
+	margin-top:10px;
+}
+.employments_browse_filters > ul > li > span{
+	display:block;
+	margin-bottom:3px;
+}
+.employments_browse_filters .browse-range-wrapper input{
+  width:49% !important;
+}
+.employments_browse > li{
+	background-color: $theme_list_background_color;
+	border-width:1px;
+	display: flex;
+	flex-wrap:wrap;
+}
+.employments_browse > li + li{
+	margin-top: 15px;
+}
+.employments_browse_info{
+	flex:1;
+}
+.employments_browse_info{
+	padding:15px;
+}
+.employments_browse_info_title{
+	display: flex;
+}
+.employments_browse_info_title h3{
+  margin:0;
+	padding:0 0 5px;
+	font-weight:700;
+	flex:1;	
+}
+.employments_browse_footer{
+	border-top-width:1px;
+	background-color: $theme_list_background_color_alt;
+	padding:10px 15px;
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+}
+.employments_browse_footer_info{
+  font-size:$theme_font_size_small;
+	padding-left:1px;
+	display:flex;
+}
+[dir="rtl"] .employments_browse_footer_info{
+	padding-left:0;
+	padding-right:1px;
+}
+.employments_browse_footer_info > span + span:before{
+	content: "-";
+	margin:0 5px;
+}
+.employments_browse_footer_info i{
+  margin-right:5px;
+}
+[dir="rtl"] .employments_browse_footer_info i{
+  margin-right:0;
+	margin-left:5px;	
+}
+.generic_layout_container .layout_employment_browse_search, 
+.generic_layout_container .layout_employment_browse_menu_quick{
+	margin-bottom:15px;
+}
+/*
+VIEW EMPLOYMENT
+Styles both the 'view employments' and the 'view employment listing'
+pages, including the right-side gutter column by default.
+*/
+.employment_breadcrumb > p{
+	margin-bottom:0;
+}
+.employment_top h2{
+	border-bottom-width:1px;
+	padding-bottom:10px;
+	color:$theme_button_background_color;
+}
+.employment_entrylist_entry_date{
+	color: $theme_font_color_light;
+}
+.employments_entrylist .profile_fields > ul{
+	padding:10px 0;
+}
+.employment_entrylist_fields .profile_fields > ul > li > span:first-child{
+	width:80px;
+}
+.employment_entrylist_fields .profile_fields > ul > li > span:last-child{
+  color:$theme_button_background_color;
+	font-weight:600;
+	width:auto;
+}
+.employment_view .tip{
+	margin-top:15px;
+}
+.employment_view .tip span{
+	margin:0;
+}
+.employment_entrylist_entry_body{
+	margin:15px 0;
+}
+.employment_entrylist_entry_body > h3{
+	font-weight:600;
+	border-bottom-width:1px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+.employment_entrylist_entry_body p{
+	line-height:1.5em;
+	margin-bottom:10px;
+}
+.employment_entrylist_entry_body br{
+  display:none;
+}
+.employment_entrylist_entry_body ul,
+.employment_entrylist_entry_body ol{
+  margin-bottom:10px;
+}
+.employment_entrylist_entry_body img{
+	max-width:100%;
+}
+.employment_entrylist_entry_body .employments_tags{
+	overflow:hidden;
+}
+.employment_entrylist_entry_body .employments_tags > a{
+	border-radius:5px;
+	display:inline-block;
+	margin:10px 4px 0 0;
+	padding:2px 10px;
+}
+.employment_entrylis_options{
+	border-top-width: 1px;
+	border-top-style:dashed;
+	padding-top:10px;
+}
+.employment_entrylis_options > a{
+	font-weight:bold;
+}
+.layout_page_employment_index_view .layout_core_comments h3{
+	display:none;
+}
+.employment_rating_view_page {
+  margin: 0 0 8px;
+}
+/*SIDEBAR LISTING*/
+.employment_list_widget > ul > li + li{
+	border-top-width: 1px;
+	margin-top:10px;
+	padding-top:10px;
+}
+.employment_list_widget_title{
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.employment_list_widget_date{
+	color: $theme_font_color_light;
+	font-size:$theme_font_size_small;
+}
+.employment_list_widget_description .profile_fields{
+	margin:5px 0;
+}
+.employment_list_widget_description .profile_fields > ul > li > span:nth-child(1){
+	width:80px;
+}
+.employment_list_widget_description .profile_fields > ul > li > span:nth-last-child(1){
+	width:auto;
+}
+.employment_list_widget_more{
+	margin-top: 10px;
+	overflow: hidden;
+}
+.employment_list_widget_more a{
+	padding:0;
+}

@@ -1,0 +1,603 @@
+
+/* ICONS */
+.icon_bizlist_new:before{
+  content:"\\f067" !important;
+}
+.icon_bizlist_edit:before{
+  content:"\\f303";
+  font-weight:900 !important;
+}
+.icon_bizlist_close:before{
+  content:"\\f023";
+  font-weight:900 !important;
+}
+.icon_bizlist_open:before{
+  content:"\\f13e";
+  font-weight:900 !important;
+}
+.icon_bizlist_delete:before{
+  content:"\\f056";
+  font-weight:900 !important;
+}
+.icon_bizlist_photo_new:before{
+  content:"\\f03e";
+}
+.icon_bizlist_viewall:before{
+  content:"\\f060";
+  font-weight:900 !important;
+}
+.bizlist_close_icon{
+	color:#f00;
+	margin-left:5px;
+}
+.bizlist_close_icon:before{
+	content:"\\f05e";
+	font-family: "Font Awesome 5 Free";
+	font-weight:700;
+	font-style: normal;
+	font-size: 14px;
+}
+/* ITEM TYPE ICONS */
+.item_icon_bizlist:before{
+  content:"\\f0b1";
+  font-family:'Font Awesome\ 5 Free';
+  font-weight: 900 !important;
+}
+/* ACTION TYPE ICONS */
+.activity_icon_comment_bizlist:before{
+  content:"\\f075";
+  font-family:'Font Awesome\ 5 Free';
+}
+/* DEFAULT PHOTO THUMB */
+.bg_item_nophoto.bg_item_photo_bizlist:before{
+  content:"\\f1ad";
+}
+.bg_thumb_profile.bg_item_photo_bizlist.bg_item_nophoto:before{
+  font-size: 15ch;
+}
+/*
+FEED ITEMS
+Styles items with bizlist attachments in the feed.
+*/
+ul.feed .feed_attachment_bizlist{
+  display:block;
+  overflow:hidden;
+  margin:0px 5px 5px 0px;
+  vertical-align:top;
+}
+html[dir="rtl"] ul.feed .feed_attachment_bizlist{
+  margin:0px 0px 5px 5px;
+}
+ul.feed .feed_attachment_bizlist > div > a{
+  display:block;
+  margin-bottom:10px;
+}
+ul.feed .feed_attachment_bizlist > div > a > img{
+  display:block;
+  width:100%;
+  max-width:100%;
+  max-height:250px;
+  object-fit:cover;
+  object-position:center;
+  vertical-align:middle;
+}
+ul.feed .feed_attachment_bizlist > div > div{
+  overflow:hidden;
+}
+/*
+COMPOSE BIZLIST LISTING
+Styles the compose bizlist listing form.
+*/
+.bizlist_form .global_form div.form-label{
+  float:none;
+  text-align:left;
+  margin:0px;
+  padding:0px 0px 5px 0px;
+}
+[dir="rtl"] .bizlist_form .global_form div.form-label{
+  text-align:right;
+}
+.bizlist_form .global_form div.form-element{
+  float:none;
+}
+.bizlist_form .global_form #tags-wrapper,
+.bizlist_form .global_form #tags-element{
+  overflow:visible !important;
+}
+.bizlist_form .global_form label i{
+  margin-right:5px;
+  width: 15px;
+  text-align: center;
+}
+[dir="rtl"] .bizlist_form .global_form label i{
+  margin-right:0;
+  margin-left:5px;
+}
+/*
+BROWSE BIZLISTS
+These styles are used on the browse bizlists page
+*/
+.bizlists_browse_item{
+  margin-bottom:1.5rem;
+}
+.bizlists_browse_item > .bizlists_browse_item_inner{
+  position:relative;
+  border-width:1px;
+  border-bottom-width:4px;
+  border-radius:10px;
+  overflow:hidden;
+  height:100%;
+}
+.bizlists_browse_item  .bizlists_browse_photo{
+  position:relative;
+  overflow:hidden;
+  width:100%;
+  height:180px;
+}
+.bizlists_browse_item .bizlists_browse_photo span{
+  border:0;
+}
+.bizlists_browse_item .bizlists_browse_info{
+  padding:15px;
+}
+.bizlists_browse_item .bizlists_browse_info_title h3{
+  font-weight:bold;
+  padding: 0;
+}
+.bizlists_browse_item .bizlists_browse_info_date{
+  font-size:$theme_font_size_small;
+  color:$theme_font_color_light;
+}
+.bizlists_browse_item .bizlists_browse_info_des{
+  margin-top:5px;
+}
+.bizlists_browse_filters > ul > li {
+  margin-bottom: 10px;
+}
+.bizlists_browse_filters > ul > li button{
+  margin-top: 8px;
+}
+.bizlists_browse_filters > ul > li:last-child{
+  margin-bottom: 0;
+}
+.bizlists_browse_filters textarea {
+  height: 80px;
+  max-width: 100%;
+  min-width: inherit;
+  width: 100%;
+}
+.bizlists_browse_filters .browse-separator-wrapper{
+  display:none;
+}
+.bizlists_browse_info .star_rating_wrapper {
+  display: block;
+}
+/*
+VIEW BIZLIST
+Styles both the 'view bizlists' and the 'view bizlist listing'
+pages, including the right-side gutter column by default.
+*/
+.bizlist_breadcrumb > p{
+  margin-bottom:0;
+}
+.bizlist_top{
+  display:flex;
+}
+.bizlist_top > .bizlist_left{
+  width:45%;
+  display:flex;
+  padding-right:20px;
+}
+[dir="rtl"] .bizlist_top > .bizlist_left{
+  padding-right:0;
+  padding-left: 20px;
+}
+.bizlist_top > .bizlist_left .bizlists_thumbs_nav{
+  width:80px;
+  min-width:80px;
+  margin-right:20px;
+}
+[dir="rtl"] .bizlist_top > .bizlist_left .bizlists_thumbs_nav{
+  margin-right:0;
+  margin-left:20px;
+}
+.bizlist_top > .bizlist_left .bizlists_thumbs_nav .slick-slide > div{
+  height:80px !important;
+  margin-bottom:10px;
+}
+.bizlist_top > .bizlist_left .bizlists_thumbs_nav img{
+  border-width:1px;
+  width:98%;
+  height:80px;
+  object-fit:cover;
+}
+.bizlist_top > .bizlist_left .bizlists_thumbs_main_image{
+  flex:1;
+  max-width:80%;
+}
+.bizlist_top > .bizlist_left .bizlists_thumbs_main img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
+}
+.bizlists_thumbs_description{
+  padding:10px 0;
+  word-break:break-word;
+}
+.bizlists_thumbs_main{
+  border-width:1px;
+  height:350px;
+  overflow:hidden;
+}
+.bizlists_thumbs_nav .slick-arrow{
+  font-size:0;
+  background:none !important;
+  border:0 !important;
+  opacity:1 !important;
+}
+.bizlists_thumbs_nav .slick-disabled{
+  display:none !important;
+}
+.bizlists_thumbs_nav .slick-slide{
+  outline:0;
+  border:0 !important;
+}
+.bizlists_thumbs_nav .slick-arrow:before{
+  background:$theme_list_background_color;
+  border:1px solid $theme_border_color;
+  color:$theme_font_color;
+  position:absolute;
+  display:block;
+  font-family:'Font Awesome 5 Free';
+  font-size:16px;
+  width:30px;
+  height:30px;
+  line-height:30px;
+  margin:auto;
+  left:0;
+  right:0;
+  top:5px;
+  font-weight:600;
+  z-index:9;
+}
+.bizlists_thumbs_nav .slick-prev:before{
+  content:"\\f077";
+}
+.bizlists_thumbs_nav .slick-next:before{
+  content:"\\f078";
+  top:auto;
+  bottom:25px;
+}
+.bizlist_top > .bizlist_right{
+  width:55%;
+}
+.bizlist_right h2{
+  border-bottom-width:1px;
+  padding-bottom:10px;
+  color:$theme_button_background_color;
+  margin-bottom:10px;
+}
+.bizlist_right .bizlist_entrylist_entry_date{
+  color:$theme_font_color_light;
+  font-size:$theme_font_size_small;
+}
+.bizlist_right h3{
+  padding:0;
+  margin: 8px 0;
+  font-weight: 500;
+}
+.bizlist_entrylist_entry_body{
+  margin:30px 5px;
+}
+.bizlists_entrylist .profile_fields > ul{
+  padding:10px 0;
+}
+.bizlists_entrylist .profile_fields > ul > li > span:nth-child(1){
+  display:inline-flex;
+}
+.bizlists_entrylist .profile_fields > ul > li > span > i{
+  margin-top: 3px;
+  margin-right: 5px;
+  text-align: center;
+}
+[dir="rtl"] .bizlists_entrylist .profile_fields > ul > li > span > i{
+  margin-right: 0px;
+  margin-left: 5px;
+}
+.bizlists_entrylist .profile_fields > ul > li > span:last-child{
+  font-weight:600;
+  background:none;
+  width:auto;
+}
+.bizlists_entrylist .profile_fields > ul > li > span:last-child ul,
+.bizlists_entrylist .profile_fields > ul > li > span:last-child ol {
+  padding-left:20px;
+}
+.bizlists_entrylist .profile_fields > ul > li > span:last-child ul{
+  list-style-type:disc;
+}
+.bizlists_entrylist .profile_fields > ul > li > span:last-child br,
+.bizlist_right br {
+  display: none;
+}
+.bizlist_entrylist_entry_body h4{
+  font-weight:600;
+  border-bottom-width:1px;
+  padding-bottom:10px;
+  margin-bottom:10px;
+}
+.bizlist_entrylist_entry_body p{
+  line-height:1.5em;
+  font-weight: 400;
+}
+.bizlist_entrylist_entry_body .bizlists_tags > a{
+  border-radius:5px;
+  display:inline-block;
+  margin:10px 4px 0 0;
+  padding:2px 10px;
+}
+.bizlists_entrylist_options{
+  border-top-width:1px;
+  border-top-style:dashed;
+  padding-top:10px;
+}
+.bizlists_entrylist_options > a{
+  font-weight:bold;
+}
+.layout_page_bizlist_index_view .layout_core_comments h3{
+  display:none;
+}
+.bizlists_entrylist_options .rating {
+  margin: 0 0 8px;
+}
+/*
+EDIT BIZLIST LISTING
+*/
+ul.bizlists_editphotos{
+  width:600px;
+}
+ul.bizlists_editphotos > li{
+  padding-top:15px;
+  clear:both;
+  overflow:hidden;
+  padding-bottom:15px;
+}
+ul.bizlists_editphotos .bizlists_editphotos_photo{
+  float:left;
+  margin-right:15px;
+  overflow:hidden;
+}
+ul.bizlists_editphotos .bizlists_editphotos_photo img{
+  display:block;
+  margin:3px;
+  width:170px;
+}
+ul.bizlists_editphotos .bizlists_editphotos_info{
+  overflow:hidden;
+}
+ul.bizlists_editphotos .bizlists_editphotos_title_input input{
+  margin:2px 0px 6px 0px;
+  width:25em;
+}
+ul.bizlists_editphotos .bizlists_editphotos_caption_input textarea{
+  margin:2px 0px 6px 0px;
+  width:25em;
+  height:3em;
+  min-height:0px;
+}
+ul.bizlists_editphotos .bizlists_editphotos_label{
+  float:left;
+}
+ul.bizlists_editphotos .bizlists_editphotos_cover{
+  float:left;
+}
+ul.bizlists_editphotos .photo-delete-wrapper{
+  float:left;
+  margin-right:15px;
+}
+ul.bizlists_editphotos .photo-delete-wrapper > label{
+  display:block;
+  float:left;
+}
+/*
+BIZLIST PHOTOS UPLOAD FORM
+Some minor changes to the global form.
+*/
+.bizlist_form_upload #file-label,
+.bizlist_form_upload #submit-label{
+  display:none;
+}
+/* MANAGE BIZLISTS */
+ul.list_wrapper .bizlists_photo{
+  float:left;
+  overflow:hidden;
+  width:180px;
+  height:120px;
+}
+[dir="rtl"] ul.list_wrapper .bizlists_photo{
+  float:right;
+}
+ul.list_wrapper .bizlists_options{
+  float:right;
+  overflow:hidden;
+  width:150px;
+  padding-left:15px;
+}
+[dir="rtl"] ul.list_wrapper .bizlists_options{
+  padding-left:0;
+  padding-right:15px;
+  float:left;
+}
+ul.list_wrapper .bizlists_info{
+  padding-left:10px;
+  overflow:hidden;
+}
+[dir="rtl"] ul.list_wrapper .bizlists_info{
+  padding-left:0;
+  padding-right:10px;
+}
+.profile_fields ul > .field_textarea span > ul{
+  list-style-type:disc;
+  padding-left:20px;
+  margin-left:-4px;
+}
+.profile_fields ul > .field_textarea span > ol{
+  padding-left:20px;
+  margin-left:-6px;
+}
+ul.bizlists_entrylist .bizlist_entrylist_entry_body ul{
+  list-style-type:initial;
+}
+ul.bizlists_entrylist .bizlist_entrylist_entry_body ul,
+ul.bizlists_entrylist .bizlist_entrylist_entry_body ol{
+  padding-left:20px;
+}
+ul.bizlists_entrylist .bizlist_entrylist_entry_body br{
+  display:none;
+}
+.bizlists_manage .bizlists_browse_info_date{
+  font-size:$theme_font_size_small;
+  margin:3px 0;
+}
+.bizlists_manage .bizlists_browse_info_title h3{
+  margin:0;
+  padding: 0;
+}
+.bizlists_ratong_manage_page {
+  display: inline-block;
+  padding-left: 2px;
+}
+[dir="rtl"] .bizlists_ratong_manage_page{
+  padding-left: 0;
+  padding-right: 2px;  
+}
+/* View all button*/
+.bizlists_list_widget_more{
+	margin-top: 10px;
+	overflow: hidden;
+}
+.bizlists_list_widget_more a{
+	padding:0;
+}
+/*quick links*/
+.quicklinks ul.bizlist_categories {
+  margin: 0;
+}
+/* RESPONSIVE */
+@media(min-width:768px) and (max-width:900px){
+  .bizlist_top > .bizlist_left .bizlists_thumbs_main{
+    height:300px;
+  }
+  .bizlists_thumbs_nav .slick-next:before{
+    bottom:auto;
+    margin-top:-40px;
+  }
+}
+@media(min-width:768px){
+  .bizlist_top > .bizlist_left .bizlists_thumbs_nav{
+    max-height:400px;
+  }
+}
+@media(max-width:767px){
+  .bizlists_thumbs_main{
+    display:none;
+  }
+  .bizlist_top > .bizlist_left,
+  .bizlist_top > .bizlist_right,
+  .bizlist_top{
+    width:100%;
+    display:block;
+    padding:0;
+  }
+  .bizlist_top > .bizlist_left .bizlists_thumbs_nav{
+    width:100%;
+    margin-bottom:15px;
+    margin-right:0;
+  }
+  .bizlists_thumbs_nav .slick-slide{
+    height:200px;
+  }
+  .bizlist_top > .bizlist_left .bizlists_thumbs_nav img{
+    width:100%;
+    height:200px;
+    border:0;
+    border-radius:8px;
+  }
+  .bizlists_thumbs_nav .slick-slide > div{
+    height:200px !important;
+    margin:0;
+  }
+  .bizlists_thumbs_nav .slick-dots > li{
+    display:inline-block;
+    margin:0 3px;
+  }
+  .bizlists_thumbs_nav .slick-dots{
+    text-align:center;
+  }
+  .bizlists_thumbs_nav .slick-dots li button{
+    width:8px;
+    font-size:0;
+    height:8px;
+    border-radius:20px;
+    background:$theme_font_color !important;
+    opacity:.2;
+    border:0 !important;
+  }
+  .bizlists_thumbs_nav .slick-dots li.slick-active button{
+    opacity:1;
+  }
+  .bizlist_right > h3{
+    display:none;
+  }
+  ul.bizlists_editphotos{
+    width:100%;
+  }
+  ul.bizlists_editphotos .bizlists_editphotos_photo img{
+    width:60px;
+  }
+  .bizlist_entrylist_entry_body {
+    margin: 5px;
+  }
+  .bizlists_entrylist .profile_fields{
+    margin-top: 0;
+  }
+  .bizlists_entrylist_options {
+    margin-top: 30px;
+  }
+  .bizlists_thumbs_description{
+    padding: 0;
+  }
+  .bizlists_entrylist .profile_fields > ul > li > span{
+    float: none;
+    margin-right: 0;
+    margin-bottom: 5px;
+    display:block !important;
+    width: auto;
+  }
+  html ul.list_wrapper .bizlists_photo{
+    float:none;
+    width:100%;
+    height:150px;
+  }
+  ul.list_wrapper .bizlists_info{
+    padding-top:5px;
+    padding-left: 0 !important;
+  }
+  .bizlists_manage .bizlists_browse_info_title h3{
+    padding: 0;
+  }
+  html ul.list_wrapper .bizlists_options{
+    width:auto;
+    padding-top:10px;
+    padding-left:0;
+    float: none;
+  }
+  ul.list_wrapper .bizlists_options > a{
+    margin-right:10px;
+  }
+  [dir="rtl"] ul.list_wrapper .bizlists_options > a{
+    margin-right:0;
+    margin-left:10px;
+  }
+}

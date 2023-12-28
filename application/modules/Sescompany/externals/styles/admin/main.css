@@ -1,0 +1,237 @@
+.core_admin_main_plugins_sescompany {
+	border-radius: 3px 3px 0 0;
+	background-color: #0EC6EF;
+	color: #fff !important;
+}
+.tabs.sescompany_navigation ul li a{
+	padding:5px;
+}
+.tabs.sescompany_navigation ul li.tab_active a,
+.tabs.sescompany_navigation ul li.active a{
+	padding:6px 5px;
+}
+/*Global Form*/
+.sescompany_admin_form #sescompany_block_1-wrapper {
+	border-top: 1px solid #ddd;
+}
+.company_manangemenu_table {
+	width: 40%;
+}
+.company_manangemenu_icon {
+	background-color: #bbb;
+	max-width: 30px;
+	padding: 10px;
+}
+/*Advanced HTML Widget Editor*/
+#global_page_core-admin-content-widget .mce-tinymce.mce-container {
+	margin-top: 15px;
+	width: 800px;
+}
+/*Manage Slideshow*/
+.company_manage_slides {
+	width: 60%;
+}
+.company_manage_slides_head > div {
+	background-color: #f5f5f5;
+	padding: 10px;
+	border-bottom: 1px solid #aaa;
+	float: left;
+	font-weight: bold;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	white-space: nowrap;
+}
+.company_manage_slides_list {
+	margin-bottom: 10px;
+}
+.company_manage_slides_list li {
+	border-bottom: 1px solid #eee;
+	cursor: move;
+	clear: both;
+	overflow: hidden;
+}
+.company_manage_slides_list li:nth-child(odd) {
+	background-color: #fff;
+}
+.company_manage_slides_list li:nth-child(even) {
+	background-color: #f8f8f8;
+}
+.company_manage_slides_list li > div {
+	padding: 10px;
+	font-size: .9em;
+	float: left;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	vertical-align: top;
+	white-space: normal;
+}
+.company_manangeslides_slide {
+	width: 100px;
+}
+/*Global Form*/
+div .sescompany_admin_form .form-description {
+	max-width: inherit;
+}
+div .sescompany_admin_form .form-element .description {
+	max-width: 650px;
+}
+.sescompany-form {
+ +foreground;
+	padding: 10px;
+	overflow: hidden;
+}
+.sescompany-form > div {
+	background: #fff;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	padding: 0px;
+}
+.sescompany-form-cont {
+	padding: 0 15px 15px;
+}
+.sescompany-form-cont:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+.sescompany-form .settings form, .sescompany-form .settings form > div {
+	border-width: 0;
+	background-color: transparent;
+	padding: 0;
+}
+/*Contact SocialEngineSolution Form*/
+.sescompany_site_view {
+	border: 5px solid #f5f5f5;
+	margin-top: 15px;
+}
+/*Color Scheme Form*/
+.sescompany_themes_form .form-label {
+	margin-bottom: 5px;
+}
+.sescompany_themes_form #theme_color-label {
+	border-bottom-width: 1px;
+	font-size: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	width: 100%;
+}
+.sescompany_themes_form #theme_color-wrapper .form-element {
+	clear: both;
+	text-align: center;
+}
+.sescompany_themes_form #theme_color-wrapper .form-element li {
+	box-sizing: border-box;
+	float: left;
+	margin: 10px 10px 0 0;
+	padding-bottom: 30px;
+	position: relative;
+	width: 275px;
+}
+.sescompany_themes_form #theme_color-wrapper .form-element li input {
+	bottom: 0;
+	float: none;
+	left: 50%;
+	margin-bottom: 10px;
+	position: absolute;
+}
+.sescompany_themes_form #theme_color-wrapper .form-element li label {
+	cursor: pointer;
+}
+.sescompany_themes_form #theme_color-wrapper .form-element li img {
+	width: 100%;
+}
+.sescompany_themes_form #theme_color-wrapper .form-element li:last-child {
+	clear: both;
+	display: block;
+	float: none;
+	margin: 0 auto;
+	padding-top: 20px;
+	width: 400px;
+}
+.sescompany_themes_form #theme_color-wrapper .form-element li:last-child:before {
+	content: "Make your Own Theme";
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.sescompany_themes_form #theme_color-wrapper .form-element li:last-child img {
+	margin-top: 10px;
+}
+.sescompany_themes_form #header_settings-wrapper, .sescompany_themes_form #footer_settings-wrapper, .sescompany_themes_form #body_settings-wrapper {
+	border-bottom-width: 1px;
+}
+.sescompany_themes_form #header_settings-wrapper .form-label, .sescompany_themes_form #footer_settings-wrapper .form-label, .sescompany_themes_form #body_settings-wrapper .form-label {
+	font-size: 15px;
+	width: auto;
+}
+.sescompany_themes_form #header_settings_group > fieldset > div, .sescompany_themes_form #footer_settings_group > fieldset > div, .sescompany_themes_form #body_settings_group > fieldset > div {
+	margin-right: 3%;
+	display: inline-block;
+	width: 30%;
+}
+.sescompany_themes_form #header_settings_group > fieldset > div > div, .sescompany_themes_form #footer_settings_group > fieldset > div > div, .sescompany_themes_form #body_settings_group > fieldset > div > div {
+	width: 100%;
+}
+.company_header_settings_form #company_header_type-element {
+	clear: both;
+}
+.company_header_settings_form #company_header_type-element .form-options-wrapper li {
+	margin: 10px 0px;
+	display: inline-block;
+}
+.company_header_settings_form #company_header_type-element .form-options-wrapper label {
+	display: block;
+}
+.company_header_settings_form #company_header_type-element .form-options-wrapper label img {
+	width: 100%;
+}
+.company_header_settings_form #company_header_type-element .form-options-wrapper label img.header-3-1 {
+	width: 50%;
+	padding-right: 5px;
+	box-sizing: border-box;
+	float: left;
+}
+.company_header_settings_form #company_header_type-element .form-options-wrapper label img.header-3-2 {
+	width: 50%;
+	padding-left: 5px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+#global_page_sescompany-admin-settings-index #popup_settings-wrapper {
+	border-top-width: 1px;
+	margin-top: 10px;
+}
+#global_page_sescompany-admin-settings-index #popup_settings-wrapper .form-label {
+	font-size: 15px;
+	width: auto;
+}
+/*Popup Form CSS*/
+.sescompany_popup_form{
+	width:600px;
+	margin: 10px 0 0 10px;
+}
+.sescompany_popup_form input[type=text],
+.sescompany_popup_form textarea,
+.sescompany_popup_form select{
+	width:100% !important;
+	max-width:100%;
+	box-sizing:border-box;
+	min-width:inherit !important;
+}
+.sescompany_popup_form .settings .form-label{
+	width:120px;
+}
+/* landing_page_Settings CSS */
+.landing_page_settings #sescompany_la1slider-label, .landing_page_settings #sescompany_la1aboutus-label, .landing_page_settings #sescompany_la1counter-label, .landing_page_settings #sescompany_la1features-label, .landing_page_settings #sescompany_la1clients-label, .landing_page_settings #sescompany_la2photos-label, .landing_page_settings #sescompany_la2contacts-label, .landing_page_settings #sescompany_mngcontents-label, .landing_page_settings #sescompany_mngtestimonials-label, .landing_page_settings #sescompany_la2teams-label{
+    font-size: 16px;
+		width: auto;
+}
+.landing_page_settings #sescompany_la1slider-wrapper, .landing_page_settings #sescompany_la1counter-wrapper, .landing_page_settings #sescompany_la1clients-wrapper, .landing_page_settings #sescompany_mngcontents-wrapper, .landing_page_settings #sescompany_la2photos-wrapper, .landing_page_settings #sescompany_la2contacts-wrapper, .landing_page_settings #sescompany_la1aboutus-wrapper, .landing_page_settings #sescompany_la1features-wrapper, .landing_page_settings #sescompany_mngtestimonials-wrapper, .landing_page_settings #sescompany_la2teams-wrapper{
+    border-top: 1px solid #c0c0c0;
+		margin-top: 10px;
+}
+.landing_page_settings #sescompany_la1aboutus-element, .landing_page_settings #sescompany_la1counter-element,
+.landing_page_settings #sescompany_la1features-element, .landing_page_settings #sescompany_la1clients-element,
+.landing_page_settings #sescompany_mngtestimonials-element, .landing_page_settings #sescompany_la2teams-element{
+	  width: 100%;
+}
